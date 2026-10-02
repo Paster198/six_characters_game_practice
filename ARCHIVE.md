@@ -1,6 +1,6 @@
 # Complete project archive
 
-All original non-APK files are tracked in this private repository. All 15 original APKs, including intermediate builds, are preserved as binary parts in the `full-archive-2026-10-02` Release.
+All original non-APK files are tracked in this private repository. All 16 original APKs, including intermediate builds, are preserved as binary parts in the `full-archive-2026-10-02` Release.
 
 Download `apk-manifest.json` and every `.partNNN` attachment from that Release into one directory. Run:
 

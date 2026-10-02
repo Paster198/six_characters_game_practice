@@ -1,0 +1,103 @@
+{
+	"entries": [{
+			"minor": 1,
+			"requiredPurchase": "core",
+			"storyType": "nvl",
+			"clearSongId": "viyella",
+			"clearCharaId": 1,
+			"charIcon1": 1,
+			"charIcon2": -1,
+			"storyCgPath": "app-data/story/cg/2-1.jpg",
+            "icon": "entry_ec"
+		},
+		{
+			"minor": 2,
+			"requiredPurchase": "core",
+			"requiredMinor": 1,
+			"storyType": "nvl",
+			"clearSongId": "essenceoftwilight",
+			"clearCharaId": 1,
+			"charIcon1": 1,
+			"charIcon2": -1,
+            "icon": "entry_ec"
+		},
+		{
+			"minor": 3,
+			"requiredPurchase": "core",
+			"requiredMinor": 2,
+			"storyType": "nvl",
+			"clearSongId": "sheriruth",
+			"clearCharaId": 1,
+			"charIcon1": 1,
+			"charIcon2": -1,
+            "icon": "entry_ec"
+		},
+		{
+			"minor": 4,
+			"requiredPurchase": "yugamu",
+			"storyType": "nvl",
+			"clearSongId": "iconoclast",
+			"clearCharaId": 1,
+			"charIcon1": 1,
+			"charIcon2": -1,
+            "icon": "entry_vl"
+		},
+		{
+			"minor": 5,
+			"requiredPurchase": "yugamu",
+			"requiredMinor": 4,
+			"storyType": "nvl",
+			"clearSongId": "conflict",
+			"clearCharaId": 1,
+			"charIcon1": 1,
+			"charIcon2": -1,
+            "icon": "entry_vl"
+		},
+		{
+			"minor": 6,
+			"requiredPurchase": "yugamu",
+			"requiredMinor": 5,
+			"storyType": "nvl",
+			"clearSongId": "axiumcrisis",
+			"alternateSuffix": "D",
+			"clearCharaId": 6,
+			"charIcon1": 1,
+			"charIcon2": -1,
+			"storyCgPath": "app-data/story/cg/2-D.jpg",
+            "icon": "entry_vl"
+		},
+		{
+			"minor": 7,
+			"requiredPurchase": "yugamu",
+			"requiredMinor": 5,
+			"storyType": "nvl",
+			"requirementAnomalyId": "grievouslady",
+			"charIcon1": 1,
+			"charIcon2": -1,
+            "icon": "entry_vl"
+		},
+		{
+			"minor": 8,
+			"requiredPurchase": "yugamu",
+			"requiredMinor": 7,
+			"storyType": "nvl",
+			"clearSongId": "grievouslady",
+			"clearCharaId": 1,
+			"charIcon1": 1,
+			"charIcon2": -1,
+			"storyCgPath": "app-data/story/cg/2-8.jpg",
+            "icon": "entry_vl"
+		},
+		{
+			"minor": 9,
+			"requiredPurchase": "yugamu",
+			"requiredMinor": 8,
+			"storyType": "nvl",
+			"clearSongId": "grievouslady",
+			"clearCharaId": 7,
+			"charIcon1": 1,
+			"charIcon2": -1,
+            "icon": "entry_vl"
+		}
+	]
+}

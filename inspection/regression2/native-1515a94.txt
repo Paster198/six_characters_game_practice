@@ -1,0 +1,46 @@
+01515a94 stp      x29, x30, [sp, #-0x30]!
+01515a98 stp      x22, x21, [sp, #0x10]
+01515a9c stp      x20, x19, [sp, #0x20]
+01515aa0 mov      x29, sp
+01515aa4 mov      x19, x0
+01515aa8 bl       #0x17303f8
+01515aac adrp     x21, #0x1b82000
+01515ab0 ldrb     w8, [x19, #0x160]
+01515ab4 ldr      x21, [x21, #0xf50]
+01515ab8 mov      x20, x0
+01515abc cbz      w8, #0x1515adc
+01515ac0 ldr      x8, [x21]
+01515ac4 mov      x1, x19
+01515ac8 ldr      x0, [x8, #0x38]
+01515acc bl       #0x14ff234
+01515ad0 tbnz     w0, #0, #0x1515ae4
+01515ad4 mov      w20, #1
+01515ad8 b        #0x1515af4
+01515adc ldrb     w8, [x20, #0xf0]
+01515ae0 cbz      w8, #0x1515b44
+01515ae4 mov      x0, x20
+01515ae8 bl       #0xe16058
+01515aec mvn      w8, w0
+01515af0 and      w20, w8, #1
+01515af4 mov      x0, x19
+01515af8 bl       #0x18d6ac0
+01515afc ldrb     w8, [x0, #0xbb]
+01515b00 ldrb     w9, [x0, #0xbc]
+01515b04 mov      w22, #1
+01515b08 orr      w9, w8, w9
+01515b0c mov      w8, #1
+01515b10 cbz      w9, #0x1515b2c
+01515b14 ldr      x8, [x21]
+01515b18 mov      x1, x19
+01515b1c ldr      x0, [x8, #0x38]
+01515b20 bl       #0x133b904
+01515b24 mvn      w8, w0
+01515b28 and      w8, w8, #1
+01515b2c tst      w8, w20
+01515b30 cinc     w0, w22, ne
+01515b34 ldp      x20, x19, [sp, #0x20]
+01515b38 ldp      x22, x21, [sp, #0x10]
+01515b3c ldp      x29, x30, [sp], #0x30
+01515b40 ret      
+01515b44 mov      w0, wzr
+01515b48 b        #0x1515b34

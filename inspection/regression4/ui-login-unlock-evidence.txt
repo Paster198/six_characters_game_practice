@@ -1,0 +1,188 @@
+Original engine SHA256: 72e42cb4925655ecfef98bf2dbf92a5ac05145eb005a531c96c11b927a46e6dc
+KEY: You must be online and logged in to unlock songs.
+Log in via Network on the main menu.
+ZH-HANS: 你需要登录来解锁歌曲
+通过主菜单的「网络」选项登录
+Cleanup TBZ: w19=0 -> return; w19=1 -> downloader, verified from real word.
+
+Actual AFF and music checks
+00d2a418 f36b40f9 ldr      x19, [sp, #0xd0]
+00d2a41c e1031b2a mov      w1, w27
+00d2a420 e00313aa mov      x0, x19
+00d2a424 40af3094 bl       #0x1956124
+00d2a428 08000012 and      w8, w0, #1
+00d2a42c e00313aa mov      x0, x19
+00d2a430 e1031b2a mov      w1, w27
+00d2a434 e2031f2a mov      w2, wzr
+00d2a438 e303192a mov      w3, w25
+00d2a43c e8f30b39 strb     w8, [sp, #0x2fc]
+00d2a440 d24af297 bl       #0x9bcf88
+00d2a444 f903002a mov      w25, w0
+00d2a448 e8830b91 add      x8, sp, #0x2e0
+00d2a44c e00313aa mov      x0, x19
+00d2a450 e1031b2a mov      w1, w27
+00d2a454 e2031f2a mov      w2, wzr
+00d2a458 7f762294 bl       #0x15c7e54
+00d2a45c 8de32f94 bl       #0x1923290
+00d2a460 080040f9 ldr      x8, [x0]
+00d2a464 088540f9 ldr      x8, [x8, #0x108]
+00d2a468 e1830b91 add      x1, sp, #0x2e0
+00d2a46c 00013fd6 blr      x8
+00d2a470 fc830f91 add      x28, sp, #0x3e0
+00d2a474 fa430791 add      x26, sp, #0x1d0
+00d2a478 08000012 and      w8, w0, #1
+00d2a47c f43300f9 str      x20, [sp, #0x60]
+00d2a480 e8730b39 strb     w8, [sp, #0x2dc]
+00d2a484 20070036 tbz      w0, #0, #0xd2a568
+00d2a488 e8f34b39 ldrb     w8, [sp, #0x2fc]
+00d2a48c e8060034 cbz      w8, #0xd2a568
+00d2a490 1f070071 cmp      w24, #1
+
+Missing-resource flag
+00d2a9d0 880340f9 ldr      x8, [x28]
+00d2a9d4 002d40f9 ldr      x0, [x8, #0x58]
+00d2a9d8 28102294 bl       #0x15aea78
+00d2a9dc a8035238 ldurb    w8, [x29, #-0xe0]
+00d2a9e0 68000036 tbz      w8, #0, #0xd2a9ec
+00d2a9e4 a00353f8 ldur     x0, [x29, #-0xd0]
+00d2a9e8 6ac23494 bl       #0x1a5b390
+00d2a9ec 33008052 mov      w19, #1
+00d2a9f0 e8834b39 ldrb     w8, [sp, #0x2e0]
+00d2a9f4 682e0037 tbnz     w8, #0, #0xd2afc0
+00d2a9f8 74010014 b        #0xd2afc8
+
+Cleanup retains downloader fallthrough
+00d2afb4 f3031f2a mov      w19, wzr
+00d2afb8 e8834b39 ldrb     w8, [sp, #0x2e0]
+00d2afbc 68000036 tbz      w8, #0, #0xd2afc8
+00d2afc0 e07b41f9 ldr      x0, [sp, #0x2f0]
+00d2afc4 f3c03494 bl       #0x1a5b390
+00d2afc8 73050036 tbz      w19, #0, #0xd2b074
+00d2afcc 880340f9 ldr      x8, [x28]
+00d2afd0 896b0090 adrp     x9, #0x1a9a000
+00d2afd4 eb6d0090 adrp     x11, #0x1ae6000
+00d2afd8 29a11891 add      x9, x9, #0x628
+00d2afdc 002d40f9 ldr      x0, [x8, #0x58]
+00d2afe0 eac31791 add      x10, sp, #0x5f0
+00d2afe4 6b013e91 add      x11, x11, #0xf80
+00d2afe8 f3031791 add      x19, sp, #0x5c0
+00d2afec e9fb02f9 str      x9, [sp, #0x5f0]
+00d2aff0 f4ff02f9 str      x20, [sp, #0x5f8]
+00d2aff4 ea0b03f9 str      x10, [sp, #0x610]
+00d2aff8 ebe302f9 str      x11, [sp, #0x5c0]
+00d2affc f4e702f9 str      x20, [sp, #0x5c8]
+00d2b000 f3f302f9 str      x19, [sp, #0x5e0]
+00d2b004 e16b40f9 ldr      x1, [sp, #0xd0]
+00d2b008 e5c31791 add      x5, sp, #0x5f0
+00d2b00c e6031791 add      x6, sp, #0x5c0
+00d2b010 e2031b2a mov      w2, w27
+00d2b014 e30316aa mov      x3, x22
+00d2b018 e40314aa mov      x4, x20
+00d2b01c 7ced2794 bl       #0x172660c
+
+Downloader offline checks
+0172662c e61700f9 str      x6, [sp, #0x28]
+01726630 e23700b9 str      w2, [sp, #0x34]
+01726634 57d03bd5 mrs      x23, tpidr_el0
+01726638 e81640f9 ldr      x8, [x23, #0x28]
+0172663c fb0300aa mov      x27, x0
+01726640 f50305aa mov      x21, x5
+01726644 f30304aa mov      x19, x4
+01726648 a8831ef8 stur     x8, [x29, #-0x18]
+0172664c 004840f9 ldr      x0, [x0, #0x90]
+01726650 f40303aa mov      x20, x3
+01726654 f60301aa mov      x22, x1
+01726658 104bd797 bl       #0xcf9298
+0172665c 20050036 tbz      w0, #0, #0x1726700
+01726660 604b40f9 ldr      x0, [x27, #0x90]
+01726664 f390d997 bl       #0xd8aa30
+01726668 c0040036 tbz      w0, #0, #0x1726700
+0172666c e8220090 adrp     x8, #0x1b82000
+
+Downloader invokes error callback
+01726700 a01240f9 ldr      x0, [x21, #0x20]
+01726704 a06600b4 cbz      x0, #0x17273d8
+01726708 080040f9 ldr      x8, [x0]
+0172670c 081940f9 ldr      x8, [x8, #0x30]
+01726710 00013fd6 blr      x8
+01726714 e81640f9 ldr      x8, [x23, #0x28]
+
+Exact popup callback
+00da5b94 000440f9 ldr      x0, [x0, #8]
+00da5b98 abc10f14 b        #0x1196244
+
+Localized dialog construction
+01196244 ff0304d1 sub      sp, sp, #0x100
+01196248 fd7b0da9 stp      x29, x30, [sp, #0xd0]
+0119624c f6570ea9 stp      x22, x21, [sp, #0xe0]
+01196250 f44f0fa9 stp      x20, x19, [sp, #0xf0]
+01196254 fd430391 add      x29, sp, #0xd0
+01196258 55d03bd5 mrs      x21, tpidr_el0
+0119625c a81640f9 ldr      x8, [x21, #0x28]
+01196260 f30300aa mov      x19, x0
+01196264 e09cff90 adrp     x0, #0x532000
+01196268 00802c91 add      x0, x0, #0xb20
+0119626c a8831ff8 stur     x8, [x29, #-8]
+01196270 e8230191 add      x8, sp, #0x48
+01196274 5c11fa97 bl       #0x101a7e4
+01196278 c09eff90 adrp     x0, #0x56e000
+0119627c 00d83891 add      x0, x0, #0xe36
+01196280 e8c30091 add      x8, sp, #0x30
+01196284 5811fa97 bl       #0x101a7e4
+01196288 809cffb0 adrp     x0, #0x527000
+0119628c 003c2c91 add      x0, x0, #0xb0f
+01196290 e8630091 add      x8, sp, #0x18
+01196294 5411fa97 bl       #0x101a7e4
+01196298 c09dfff0 adrp     x0, #0x551000
+0119629c 00e02391 add      x0, x0, #0x8f8
+011962a0 e8030091 mov      x8, sp
+011962a4 5011fa97 bl       #0x101a7e4
+011962a8 e84600b0 adrp     x8, #0x1a73000
+011962ac aa4c0090 adrp     x10, #0x1b2a000
+011962b0 08412e91 add      x8, x8, #0xb90
+011962b4 a90301d1 sub      x9, x29, #0x40
+011962b8 4ac10791 add      x10, x10, #0x1f0
+011962bc f6830191 add      x22, sp, #0x60
+011962c0 a84f3ca9 stp      x8, x19, [x29, #-0x40]
+011962c4 a9031ef8 stur     x9, [x29, #-0x20]
+011962c8 ea3300f9 str      x10, [sp, #0x60]
+011962cc f64300f9 str      x22, [sp, #0x80]
+011962d0 e0230191 add      x0, sp, #0x48
+011962d4 e1c30091 add      x1, sp, #0x30
+011962d8 e2630091 add      x2, sp, #0x18
+011962dc e3030091 mov      x3, sp
+011962e0 a40301d1 sub      x4, x29, #0x40
+011962e4 e5830191 add      x5, sp, #0x60
+011962e8 07fe0794 bl       #0x1395b04
+011962ec f40300aa mov      x20, x0
+
+World unlock lambda
+012e4514 080440f9 ldr      x8, [x0, #8]
+012e4518 09c15339 ldrb     w9, [x8, #0x4f0]
+012e451c 49000034 cbz      w9, #0x12e4524
+012e4520 c0035fd6 ret      
+012e4524 004542f9 ldr      x0, [x8, #0x488]
+012e4528 016942f9 ldr      x1, [x8, #0x4d0]
+012e452c 02c944b9 ldr      w2, [x8, #0x4c8]
+012e4530 709fea17 b        #0xd8c2f0
+
+World unlock delegate wrapper
+00d8c2f0 000c40f9 ldr      x0, [x0, #0x18]
+00d8c2f4 a00000b4 cbz      x0, #0xd8c308
+00d8c2f8 080040f9 ldr      x8, [x0]
+00d8c2fc e203022a mov      w2, w2
+00d8c300 031540f9 ldr      x3, [x8, #0x28]
+00d8c304 60001fd6 br       x3
+00d8c308 c0035fd6 ret      
+
+World unlock callback binding
+015986dc 082900d0 adrp     x8, #0x1aba000
+015986e0 08c11691 add      x8, x8, #0x5b0
+015986e4 f5c30991 add      x21, sp, #0x270
+015986e8 e83b01f9 str      x8, [sp, #0x270]
+015986ec f33f01f9 str      x19, [sp, #0x278]
+015986f0 f54b01f9 str      x21, [sp, #0x290]
+015986f4 e1c30991 add      x1, sp, #0x270
+015986f8 e00317aa mov      x0, x23
+015986fc 3288d197 bl       #0x9fa7c4
+

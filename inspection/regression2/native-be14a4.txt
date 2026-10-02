@@ -1,0 +1,21 @@
+00be14a4 stp      x29, x30, [sp, #-0x20]!
+00be14a8 str      x19, [sp, #0x10]
+00be14ac mov      x29, sp
+00be14b0 mov      x19, x0
+00be14b4 bl       #0x1809390
+00be14b8 cbz      w1, #0xbe14c4
+00be14bc mov      w0, #1
+00be14c0 b        #0xbe14ec
+00be14c4 adrp     x8, #0x1b83000
+00be14c8 ldr      x8, [x8, #0x758]
+00be14cc ldrb     w8, [x8]
+00be14d0 cbz      w8, #0xbe14dc
+00be14d4 ldrb     w8, [x19, #0x1e0]
+00be14d8 cbz      w8, #0xbe14bc
+00be14dc adrp     x8, #0x1bed000
+00be14e0 ldrb     w8, [x8, #0x610]
+00be14e4 cmp      w8, #0
+00be14e8 cset     w0, ne
+00be14ec ldr      x19, [sp, #0x10]
+00be14f0 ldp      x29, x30, [sp], #0x20
+00be14f4 ret      

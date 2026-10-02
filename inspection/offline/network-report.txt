@@ -1,0 +1,126 @@
+Offline startup and login UI analysis (provided arm64 APK only)
+=============================================================
+Original libcocos2dcpp.so SHA256:
+72e42cb4925655ecfef98bf2dbf92a5ac05145eb005a531c96c11b927a46e6dc
+
+1. Login state is native, not AppActivity Java.
+   Cocos2dxHelper uses SharedPreferences file Cocos2dxPrefsFile. Native strings
+   include lastLoggedInUsername, a_t (access token), vtvtvt (another credential),
+   showRegistrationWelcomeDialogOnLanding, showVerificationPromptOnLanding.
+   No confirmed skipLogin/offline boolean preference was found. Do not invent
+   an account/user or set arbitrary preferences to pretend to be authenticated.
+
+2. Verified native startup path.
+   RTTI std::function<StartScene::performExistingLoginAttempt::$_46> refers to
+   vtable 0x1b0c0c0, constructed inside function 0x132d3d8. Its callback is
+   0x9cf4b8. StartScene::attemptLoginWithAccessToken is 0x9e0520 (verified through
+   its corresponding callback RTTI/vtable 0x1a847e8, callback 0x1298090).
+
+   performExistingLoginAttempt pseudo-control-flow:
+     readiness/setup calls 0xde9a30 then 0x19af19c
+     return if not ready, this+0x353 already set, or global conditions fail
+     if provider reports access credentials (0xacac18):
+       show wait UI (0x136a3e0); attemptLoginWithAccessToken(); return
+     if provider reports another credential (0xb97e90):
+       show wait UI; request at 0x154114c with callback; return
+     else:
+       this+0x353 = true
+       0x1668e8c(this) // remove/fade login-wait UI
+       return
+
+   Applied patch at VA 0x132d42c (ELF file offset also 0x132d42c):
+     607a41f9  ldr x0,[x19,#0x2f0]
+     22000014  b 0x132d4b4
+   This preserves the preceding readiness checks and chooses the existing
+   no-credentials branch regardless of stored credentials. It does not issue
+   either login request, install fake auth data, or bypass content loading.
+   The branch sets the existing attempt-complete flag, so repeated callers
+   return at the original check instead of repeatedly opening login UI.
+
+   0x1668e8c only operates on optional scene children; it null-checks this+0x320
+   and another tagged child before hiding them. No prior wait overlay required.
+
+   Startup callback 0x9cf4b8 has a failure path setting
+   showVerificationPromptOnLanding and calling hideNetworkIcon (0x16dd69c).
+   Reusing the existing no-token branch avoids this callback/prompt entirely.
+
+   Retained old-save landing flags are also handled without clearing the save:
+   at 0x12ef264, an actual named read of showRegistrationWelcomeDialogOnLanding
+   returns in w0; 0x12ef268 originally TBZs to 0x12ef290 when false. The true
+   path clears that pref then shows a dialog at 0xc9adac. Patch the TBZ to B
+   0x12ef290, following the original false path without writing the pref.
+   At 0x12ef2a8 the named showVerificationPromptOnLanding read returns in w0;
+   0x12ef2ac originally TBZs to 0x12ef2e4 when false. The true path clears that
+   pref, checks credentials and opens a dialog at 0x15b5f64. Patch to B
+   0x12ef2e4, again retaining saved data. These are separate branches from
+   startup token checks, so they also cover stale flags from earlier installs.
+
+3. The English 'Continue Offline' string at 0x592d4d is NOT startup login.
+   Xref 0xb7591c is TransitionShutter::performNextSceneInit's elapsed network
+   timeout callback. Dialog text says the song could not be started online.
+   The offline callback vtable is 0x1ada600, invoke=0x115f1f4. Do not use that
+   callback as the startup skip-login patch.
+
+4. MainMenu network UI.
+   MainMenu.csb has /Layer/networkButton (Button), WidgetOptions at file byte
+   0x2074. Original visible=1, touchEnabled=1. Constructor looks up this exact
+   name around native 0x915000 and attaches its handler. Deleting/renaming the
+   node would leave a null result later dereferenced; keep it present.
+   Native refresh at 0x15a3c00 finds the button (x24) and changes its textures
+   via 0x185ac54 at 0x15a4398/0x15a4600. No direct setVisible on this pointer
+   was found in that routine.
+   Its CSB timelines: Position, Scale, RotationSkew, Alpha, AnchorPoint. There
+   is no VisibleForFrame timeline that would reverse a static visible=false.
+
+5. TopBar purchase UI.
+   TopBar.csb has /Layer/memoriesButton (Button), WidgetOptions at 0x15b0.
+   It is preserved but hidden with touch disabled. TopBar also has statusBg,
+   statusLabel, memoriesLabel and memoriesCountLabel; static hiding of the
+   memoriesButton alone does not establish that all dynamically-generated
+   login entry points are removed. Follow-up from inspect_native verified
+   TopBar::updateLoginStatus at 0x14b9a04: statusBg/statusLabel are non-touch
+   Sprite/Text nodes and no click handler is added. The dynamic UserCell
+   callbacks invoke UI fade/expand delegates, not login. Status visibility
+   instructions 0x14b9b64 and 0x14b9b78 remain ORIGINAL so offline status is
+   still shown. No speculative login callback patch was included.
+
+6. CSB patch mechanics (tools/prepare_offline_layouts.py).
+   Both visible fields are absent and therefore default to true in the schema.
+   Both target WidgetOptions tables have object bytes +4..6 as unused zero
+   padding, touch at +7 and the first other field at +8. Copy only each target's
+   vtable to the end of the CSB, assign visible to +4 and touchEnabled to +5,
+   and update that table's signed vtable offset. Fields have their own zero
+   bytes, no aliases, no relocation/repacking of data or node deletion.
+   FlatBuffers supports negative table-to-vtable offsets; these original
+   CSBs already use shared vtables stored after their objects.
+   Exact input SHA fingerprints, all original node names/identities, all
+   non-target properties, all timelines, and untouched payloads are verified.
+
+7. Network boundary.
+   Parent's manifest patch removes android.permission.INTERNET, denying the
+   app process its normal network capability. The native startup/UI patches
+   prevent expected foreground auth attempts and login entry; manifest removal
+   is still needed because unrelated native requests/SDK code may remain.
+   No patch in this report redirects requests or supplies synthetic responses.
+
+8. Outputs and limitations.
+   tools/prepare_offline_native.py:
+     build/offline/lib/arm64-v8a/libcocos2dcpp.so
+     build/offline/native-report.json
+     also includes separately verified Arcahv ordinary-loader branch from
+     inspect_native (0x176b008 -> 0x176b064); applies to all selector modes.
+   tools/prepare_offline_layouts.py:
+     build/offline/assets/layouts/mainmenu/MainMenu.csb
+     build/offline/assets/layouts/topbar/TopBar.csb
+     build/offline/layouts-report.json
+   All validation so far is binary/structure/host-side. No Android device is
+   connected; actual startup, navigation and absence of runtime dialogs still
+   require device validation. Sparse 31-song catalog integration may have
+   independent hardcoded-song-reference hazards; handled by parent/native agent.
+
+Final engine: exactly four branch patches; no TopBar instruction changes.
+Final engine SHA256:
+aa07faf8c488e893ddb5471eea2782ff2db5cb2505194f0d300a0fc150e48857
+
+Schema reference:
+https://raw.githubusercontent.com/cocos2d/cocos2d-x/v3/cocos/editor-support/cocostudio/CSParseBinary_generated.h

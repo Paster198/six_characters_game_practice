@@ -1,0 +1,15 @@
+{
+  "apk": "arcaea-offline-practice-arm64-fix1.apk",
+  "size_bytes": 2207338680,
+  "sha256": "f837e2e5285cbffdb7ae8b9d3e233c1fab6f979338d5745d20e7c8c93fd37f68",
+  "original_sha256": "76f009eb4bcaf2e3647adf7b32422a395d4a52fb20ea2392a0b4e510c51d2335",
+  "unchanged_payload_entries": 7934,
+  "zip_crc": "passed",
+  "new_payload_hashes": "matched build outputs",
+  "android_runtime_test": "not performed: no connected device",
+  "offline_catalogue": {
+    "songs": 31,
+    "charts": 100
+  },
+  "offline_patch_verification": "manifest, native branches, startup metadata fingerprints, Cocos layouts and local song assets passed"
+}

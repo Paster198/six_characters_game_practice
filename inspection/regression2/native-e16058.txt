@@ -1,0 +1,76 @@
+00e16058 sub      sp, sp, #0x60
+00e1605c stp      x29, x30, [sp, #0x40]
+00e16060 stp      x20, x19, [sp, #0x50]
+00e16064 add      x29, sp, #0x40
+00e16068 mrs      x20, tpidr_el0
+00e1606c ldr      x8, [x20, #0x28]
+00e16070 stur     x8, [x29, #-8]
+00e16074 ldrb     w8, [x0, #0xf0]
+00e16078 cbz      w8, #0xe16114
+00e1607c ldr      w8, [x0, #0x124]
+00e16080 mov      x19, x0
+00e16084 cmp      w8, #5
+00e16088 csinc    w0, w8, wzr, lo
+00e1608c add      x8, sp, #8
+00e16090 bl       #0x1a5b510
+00e16094 ldrb     w8, [x19, #0xb8]
+00e16098 ldp      x11, x10, [x19, #0xc0]
+00e1609c add      x9, x19, #0xb9
+00e160a0 tst      w8, #1
+00e160a4 lsr      x8, x8, #1
+00e160a8 csel     x2, x9, x10, eq
+00e160ac csel     x3, x8, x11, eq
+00e160b0 add      x0, sp, #8
+00e160b4 mov      x1, xzr
+00e160b8 bl       #0x1a5b7f0
+00e160bc ldr      x8, [x0, #0x10]
+00e160c0 ldr      q0, [x0]
+00e160c4 str      x8, [sp, #0x30]
+00e160c8 str      q0, [sp, #0x20]
+00e160cc stp      xzr, xzr, [x0, #8]
+00e160d0 str      xzr, [x0]
+00e160d4 ldrb     w8, [sp, #8]
+00e160d8 tbz      w8, #0, #0xe160e4
+00e160dc ldr      x0, [sp, #0x18]
+00e160e0 bl       #0x1a5b390
+00e160e4 ldrb     w8, [x19, #0xf0]
+00e160e8 cbz      w8, #0xe1611c
+00e160ec adrp     x8, #0x1b82000
+00e160f0 ldr      x8, [x8, #0xf50]
+00e160f4 ldr      x8, [x8]
+00e160f8 ldr      x0, [x8, #0x38]
+00e160fc add      x1, sp, #0x20
+00e16100 bl       #0x14ff234
+00e16104 mov      w19, w0
+00e16108 ldrb     w8, [sp, #0x20]
+00e1610c tbnz     w8, #0, #0xe16128
+00e16110 b        #0xe16130
+00e16114 mov      w19, #1
+00e16118 b        #0xe16130
+00e1611c mov      w19, #1
+00e16120 ldrb     w8, [sp, #0x20]
+00e16124 tbz      w8, #0, #0xe16130
+00e16128 ldr      x0, [sp, #0x30]
+00e1612c bl       #0x1a5b390
+00e16130 ldr      x8, [x20, #0x28]
+00e16134 ldur     x9, [x29, #-8]
+00e16138 cmp      x8, x9
+00e1613c b.ne     #0xe16154
+00e16140 and      w0, w19, #1
+00e16144 ldp      x20, x19, [sp, #0x50]
+00e16148 ldp      x29, x30, [sp, #0x40]
+00e1614c add      sp, sp, #0x60
+00e16150 ret      
+00e16154 bl       #0x1a5b3f0
+00e16158 ldrb     w8, [sp, #0x20]
+00e1615c mov      x19, x0
+00e16160 tbz      w8, #0, #0xe16180
+00e16164 ldr      x0, [sp, #0x30]
+00e16168 b        #0xe1617c
+00e1616c ldrb     w8, [sp, #8]
+00e16170 mov      x19, x0
+00e16174 tbz      w8, #0, #0xe16180
+00e16178 ldr      x0, [sp, #0x18]
+00e1617c bl       #0x1a5b390
+00e16180 mov      x0, x19
+00e16184 bl       #0x16c2190

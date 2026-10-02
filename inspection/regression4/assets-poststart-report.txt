@@ -1,0 +1,72 @@
+Post-Start independent read-only review
+======================================
+
+Conclusion
+----------
+No additional actionable BYD / Inscribed account or token gate was found after
+the successful Start callback on the current offline path. The existing local
+AFF-getter correction is shared by Start's existence check and GameScene's
+actual chart load. No additional patch is proposed by this review.
+
+Scope and evidence
+------------------
+SongSelectScene::startGameScene is 0xf818d8. This identity was independently
+recovered from 15 std::function RTTI types named startGameScene and their
+construction xrefs inside f818d8 (assets-start-scene-rtti.txt).
+
+Its ordinary continuation at f82164 calls 150560c, whose local actual-difficulty
+branch was already repaired in fix2. f824e0 onward prepares normal play;
+f82944 invokes GameScene constructor 7eafb0, f82a18 constructs its loading/
+transition wrapper through 178de80, and f82a24 replaces the Director scene.
+The reviewed ordinary continuation has no BYD-only account/token predicate.
+
+Some real online/story callbacks remain in the unmodified original function.
+They are not a generic chart gate. In particular, f82240 calls 932c68 to choose
+Divine Oblivion / konzetsu story behavior; states 1/2/3 can enter story layers
+or callbacks 118e0ec/119d82c that call the online routine 14d28c8. This was
+reported to the parent as a conditional risk rather than presumed reachable.
+The helper first checks original ownership records for konzetsu via 10bbaf0
+at 932cc8; false returns state 0 at 932d4c. The native specialist independently
+closed this current offline path as returning 0, hence ordinary continuation.
+No modification to those story callbacks is necessary for this fix.
+
+GameScene::init is eb2494. The ordinary mode clears SpecialSceneModifier via
+the already integrated selector change at 176ab0c. The chart factory call at
+eb2b28 is 134a8c8. That factory obtains its filename by calling 903168 at
+134a910, reads the actual file through FileUtils at 134a928, rejects an empty
+read at 134a940/134aa8c, parses via eee14c, and creates rendering/chart state
+through f197cc. No account/login/token check appears in that file-loading
+chain; the local filename correction applies to this actual gameplay load.
+The later eb34cc call to the same getter is part of the chart-load failure
+diagnostic path, not the primary load. This clarifies the earlier report's
+less precise description of the eb34cc site.
+
+The user/world flags also remain explicit and independent:
+All 561 actual fix3 songs have world_unlock=false. Parser 193b2b0..bc reads
+that boolean, 193b300 saves SP+104, 193f754..58 passes callerSP+40, and
+constructor 195dbe0/195dc08 writes Song+160. Song+161 byd_local_unlock is a
+separate callerSP+60 byte. Missing +161 does not set or combine into +160.
+
+Parent/native/audio message-level trace
+--------------------------------------
+The parent relayed the independently closed error route:
+missing AFF -> d2a9ec sets W19=1 -> d2afc8 falls into d2afcc -> 172660c offline
+error callback, vtable 1a9a628 invoke da5b94 -> 1196244 exact login message.
+This explains how the AFF-path defect produces the reported login prompt.
+That message trace is credited to the native/audio reviewers; the resource and
+scene-creation checks above were independently inspected here.
+
+Limits
+------
+This is a static review of the ordinary offline path, not an Android execution
+trace or a claim that every optional story/challenge branch was exhaustively
+audited. Existing online/story features were not modified. No new blocking
+evidence was found, and no additional patch is recommended.
+
+Evidence files
+--------------
+assets-start-scene-rtti.txt: lambda identities, vtables and construction xrefs.
+assets-poststart.txt: startGameScene and relevant callbacks.
+assets-poststart-extra.txt: story selector and state predicates.
+assets-chartload.txt: actual file load/parser and scene base-init helper.
+All created under inspection/regression4. Shared sources and build unchanged.

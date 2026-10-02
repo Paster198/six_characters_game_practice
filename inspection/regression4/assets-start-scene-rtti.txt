@@ -1,0 +1,45 @@
+NSt6__ndk110__function6__funcIZN15SongSelectScene14startGameSceneEP4Song15DifficultyClassP7MapStep8GameModeiP20SpecialSceneModifier14PlayParametersE4$_80NS_9allocatorISC_EEFvvEEE
+ vt 0x1abb3e0 [(0, '0x125f508'), (1, '0x10841e4'), (2, '0x1902d2c'), (3, '0x17ac6c8'), (4, '0x9c1a98'), (5, '0x111ee14'), (6, '0x119d82c'), (7, '0x1615c20')]
+ construct-xref [('0xf822e4', '0xf818d8', '0x1abb3e0', 'add'), ('0x17ac6cc', '0x17ac6c8', '0x1abb3e0', 'add'), ('0x1902d54', '0x1902d2c', '0x1abb3e0', 'add')]
+NSt6__ndk110__function6__funcIZZN15SongSelectScene14startGameSceneEP4Song15DifficultyClassP7MapStep8GameModeiP20SpecialSceneModifier14PlayParametersENK4$_78clEvEUlb11OnlineErrorE_NS_9allocatorISE_EEFvbSD_EEE
+ vt 0x1b35410 [(0, '0x8ed880'), (1, '0x78f3f8'), (2, '0xb4144c'), (3, '0x149be60'), (4, '0xd9a990'), (5, '0xba37e8'), (6, '0x17d2844'), (7, '0xe9fe74')]
+ construct-xref [('0xb41478', '0xb4144c', '0x1b35410', 'add'), ('0x118e13c', '0x118e0ec', '0x1b35410', 'add'), ('0x149be64', '0x149be60', '0x1b35410', 'add')]
+NSt6__ndk110__function6__funcIZZZN15SongSelectScene14startGameSceneEP4Song15DifficultyClassP7MapStep8GameModeiP20SpecialSceneModifier14PlayParametersENK4$_78clEvENKUlb11OnlineErrorE_clEbSD_EUlP11DialogLayerE_NS_9allocatorISH_EEFvSG_EEE
+ vt 0x1a82790 [(0, '0xc2cb38'), (1, '0x9f06dc'), (2, '0xe1d3c4'), (3, '0xe2de5c'), (4, '0xea205c'), (5, '0x12e0c04'), (6, '0xd59c30'), (7, '0x7b7f48')]
+ construct-xref [('0xe1d3d8', '0xe1d3c4', '0x1a82790', 'add'), ('0xe2de60', '0xe2de5c', '0x1a82790', 'add'), ('0x17d28f8', '0x17d2844', '0x1a82790', 'add')]
+NSt6__ndk110__function6__funcIZN15SongSelectScene14startGameSceneEP4Song15DifficultyClassP7MapStep8GameModeiP20SpecialSceneModifier14PlayParametersE4$_76NS_9allocatorISC_EEFvP12StoryLayerV2bbEEE
+ vt 0x1acd950 [(0, '0xafc100'), (1, '0x1412f64'), (2, '0xe71efc'), (3, '0xd81748'), (4, '0xef6318'), (5, '0xf3b010'), (6, '0xea0544'), (7, '0x114c67c')]
+ construct-xref [('0xd8174c', '0xd81748', '0x1acd950', 'add'), ('0xe71f30', '0xe71efc', '0x1acd950', 'add'), ('0xf82030', '0xf818d8', '0x1acd950', 'add')]
+NSt6__ndk110__function6__funcIZZN15SongSelectScene14startGameSceneEP4Song15DifficultyClassP7MapStep8GameModeiP20SpecialSceneModifier14PlayParametersENK4$_77clEvEUlbE_NS_9allocatorISD_EEFPN7cocos2d5SceneEbEEE
+ vt 0x1b315f0 [(0, '0xc529ec'), (1, '0x9d0600'), (2, '0xdece20'), (3, '0xa18ae0'), (4, '0x955940'), (5, '0x1908c60'), (6, '0xf55708'), (7, '0xea2cec')]
+ construct-xref [('0xa18ae4', '0xa18ae0', '0x1b315f0', 'add'), ('0xdece48', '0xdece20', '0x1b315f0', 'add'), ('0x11251e0', '0x112516c', '0x1b315f0', 'add')]
+NSt6__ndk110__function6__funcIZN15SongSelectScene14startGameSceneEP4Song15DifficultyClassP7MapStep8GameModeiP20SpecialSceneModifier14PlayParametersE4$_78NS_9allocatorISC_EEFvvEEE
+ vt 0x1b1b478 [(0, '0x125f508'), (1, '0x1a32e6c'), (2, '0xc7ae08'), (3, '0xd39adc'), (4, '0x78f5a4'), (5, '0x1162640'), (6, '0x118e0ec'), (7, '0xaef2c8')]
+ construct-xref [('0xc7ae34', '0xc7ae08', '0x1b1b478', 'add'), ('0xd39ae0', '0xd39adc', '0x1b1b478', 'add'), ('0xf8245c', '0xf818d8', '0x1b1b478', 'add')]
+NSt6__ndk110__function6__funcIZN15SongSelectScene14startGameSceneEP4Song15DifficultyClassP7MapStep8GameModeiP20SpecialSceneModifier14PlayParametersE4$_72NS_9allocatorISC_EEFvvEEE
+ vt 0x1b528f0 [(0, '0x125f508'), (1, '0xec6354'), (2, '0x7e2ef0'), (3, '0x106b484'), (4, '0x81312c'), (5, '0x116b198'), (6, '0x7b6aec'), (7, '0xd57bfc')]
+ construct-xref [('0x7e2f14', '0x7e2ef0', '0x1b528f0', 'add'), ('0xf81f48', '0xf818d8', '0x1b528f0', 'add'), ('0x106b488', '0x106b484', '0x1b528f0', 'add')]
+NSt6__ndk110__function6__funcIZZN15SongSelectScene14startGameSceneEP4Song15DifficultyClassP7MapStep8GameModeiP20SpecialSceneModifier14PlayParametersENK4$_80clEvEUlb11OnlineErrorE_NS_9allocatorISE_EEFvbSD_EEE
+ vt 0x1a88930 [(0, '0x8ed880'), (1, '0xd28720'), (2, '0xe9c1f0'), (3, '0x926140'), (4, '0x9a9a7c'), (5, '0xe4ab58'), (6, '0x136c4bc'), (7, '0xf199c0')]
+ construct-xref [('0x926144', '0x926140', '0x1a88930', 'add'), ('0xe9c218', '0xe9c1f0', '0x1a88930', 'add'), ('0x119d880', '0x119d82c', '0x1a88930', 'add')]
+NSt6__ndk110__function6__funcIZN15SongSelectScene14startGameSceneEP4Song15DifficultyClassP7MapStep8GameModeiP20SpecialSceneModifier14PlayParametersE4$_74NS_9allocatorISC_EEFvfEEE
+ vt 0x1adbb40 [(0, '0xccdc8c'), (1, '0x113e1b8'), (2, '0x19dd2c0'), (3, '0x1330bec'), (4, '0xd5562c'), (5, '0x7a7c04'), (6, '0xe28f80'), (7, '0x1732d84')]
+ construct-xref [('0xccdc94', '0xccdc8c', '0x1adbb40', 'add'), ('0xf81d7c', '0xf818d8', '0x1adbb40', 'add'), ('0x113e1d0', '0x113e1b8', '0x1adbb40', 'add'), ('0x1330bfc', '0x1330bec', '0x1adbb40', 'add'), ('0x19dd2e4', '0x19dd2c0', '0x1adbb40', 'add')]
+NSt6__ndk110__function6__funcIZZN15SongSelectScene14startGameSceneEP4Song15DifficultyClassP7MapStep8GameModeiP20SpecialSceneModifier14PlayParametersENK4$_74clEfEUlvE_NS_9allocatorISD_EEFvvEEE
+ vt 0x1a892c8 [(0, '0xbfc76c'), (1, '0x8b9ad0'), (2, '0x161e988'), (3, '0x9efab8'), (4, '0xb5f4b0'), (5, '0x1804dc0'), (6, '0x17300a8'), (7, '0x836f8c')]
+ construct-xref [('0x8b9ae8', '0x8b9ad0', '0x1a892c8', 'add'), ('0x9efac8', '0x9efab8', '0x1a892c8', 'add'), ('0xbfc774', '0xbfc76c', '0x1a892c8', 'add'), ('0xe2902c', '0xe28f80', '0x1a892c8', 'add'), ('0x161e9ac', '0x161e988', '0x1a892c8', 'add')]
+NSt6__ndk110__function6__funcIZN15SongSelectScene14startGameSceneEP4Song15DifficultyClassP7MapStep8GameModeiP20SpecialSceneModifier14PlayParametersE4$_79NS_9allocatorISC_EEFvP12StoryLayerV2bbEEE
+ vt 0x1a9fd78 [(0, '0xafc100'), (1, '0x1127570'), (2, '0x138b4e4'), (3, '0x116cf24'), (4, '0xa34280'), (5, '0x179254c'), (6, '0xf72e44'), (7, '0x950b44')]
+ construct-xref [('0xf82340', '0xf818d8', '0x1a9fd78', 'add'), ('0x116cf28', '0x116cf24', '0x1a9fd78', 'add'), ('0x138b518', '0x138b4e4', '0x1a9fd78', 'add')]
+NSt6__ndk110__function6__funcIZZZN15SongSelectScene14startGameSceneEP4Song15DifficultyClassP7MapStep8GameModeiP20SpecialSceneModifier14PlayParametersENK4$_80clEvENKUlb11OnlineErrorE_clEbSD_EUlP11DialogLayerE_NS_9allocatorISH_EEFvSG_EEE
+ vt 0x1b54118 [(0, '0xc2cb38'), (1, '0x19af4c0'), (2, '0xf4a07c'), (3, '0xa8a0a4'), (4, '0x1a2fcb4'), (5, '0x14c6f44'), (6, '0x1479c40'), (7, '0x14ee0b8')]
+ construct-xref [('0xa8a0a8', '0xa8a0a4', '0x1b54118', 'add'), ('0xf4a090', '0xf4a07c', '0x1b54118', 'add'), ('0x136c690', '0x136c4bc', '0x1b54118', 'add')]
+NSt6__ndk110__function6__funcIZN15SongSelectScene14startGameSceneEP4Song15DifficultyClassP7MapStep8GameModeiP20SpecialSceneModifier14PlayParametersE4$_75NS_9allocatorISC_EEFvfEEE
+ vt 0x1a9d018 [(0, '0x1190128'), (1, '0x15c41a8'), (2, '0xeb4b68'), (3, '0x142f00c'), (4, '0xbc93a8'), (5, '0x10bcc58'), (6, '0xa55554'), (7, '0x10dc774')]
+ construct-xref [('0xeb4b88', '0xeb4b68', '0x1a9d018', 'add'), ('0xf82690', '0xf818d8', '0x1a9d018', 'add'), ('0x1190130', '0x1190128', '0x1a9d018', 'add'), ('0x142f01c', '0x142f00c', '0x1a9d018', 'add'), ('0x15c41c0', '0x15c41a8', '0x1a9d018', 'add')]
+NSt6__ndk110__function6__funcIZN15SongSelectScene14startGameSceneEP4Song15DifficultyClassP7MapStep8GameModeiP20SpecialSceneModifier14PlayParametersE4$_73NS_9allocatorISC_EEFvvEEE
+ vt 0x1b21ca8 [(0, '0x125f508'), (1, '0x119fad4'), (2, '0xc184d0'), (3, '0x147d76c'), (4, '0x9ff200'), (5, '0xeb56b8'), (6, '0x1085818'), (7, '0x12e0be8')]
+ construct-xref [('0xc184f4', '0xc184d0', '0x1b21ca8', 'add'), ('0xf81c64', '0xf818d8', '0x1b21ca8', 'add'), ('0x147d770', '0x147d76c', '0x1b21ca8', 'add')]
+NSt6__ndk110__function6__funcIZZN15SongSelectScene14startGameSceneEP4Song15DifficultyClassP7MapStep8GameModeiP20SpecialSceneModifier14PlayParametersENK4$_75clEfEUlvE_NS_9allocatorISD_EEFvvEEE
+ vt 0x1ae3350 [(0, '0xc57eb4'), (1, '0x1908ff8'), (2, '0x1902a78'), (3, '0x14991a8'), (4, '0x10ab5c8'), (5, '0x11fb0f8'), (6, '0x110baec'), (7, '0x12e4658')]
+ construct-xref [('0xa555e8', '0xa55554', '0x1ae3350', 'add'), ('0xc57ebc', '0xc57eb4', '0x1ae3350', 'add'), ('0x14991b8', '0x14991a8', '0x1ae3350', 'add'), ('0x1902a98', '0x1902a78', '0x1ae3350', 'add'), ('0x1909010', '0x1908ff8', '0x1ae3350', 'add')]

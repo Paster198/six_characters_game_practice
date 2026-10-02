@@ -1,0 +1,19 @@
+{
+  "song_count": 561,
+  "difficulties": 1839,
+  "byd": 68,
+  "remote_dl": {
+    "False": 561
+  },
+  "byd_local_unlock": {
+    "MISSING": 561
+  },
+  "diffworld": {
+    "False": 1839
+  },
+  "diffhidden": {
+    "": 1839
+  },
+  "byd_missing_files": [],
+  "songlist_matches_fix2": true
+}

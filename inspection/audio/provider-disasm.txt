@@ -1,0 +1,2364 @@
+
+_ZN24AudioProviderFMODAndroid7loadBGMEPKci 0x3a4e0 size 928
+0003a4e0: sub      sp, sp, #0x100
+0003a4e4: stp      x29, x30, [sp, #0xa0]
+0003a4e8: stp      x28, x27, [sp, #0xb0]
+0003a4ec: stp      x26, x25, [sp, #0xc0]
+0003a4f0: stp      x24, x23, [sp, #0xd0]
+0003a4f4: stp      x22, x21, [sp, #0xe0]
+0003a4f8: stp      x20, x19, [sp, #0xf0]
+0003a4fc: add      x29, sp, #0xa0
+0003a500: mrs      x27, tpidr_el0
+0003a504: ldr      x8, [x27, #0x28]
+0003a508: mov      x20, x0
+0003a50c: mov      w21, w2
+0003a510: sxtw     x28, w21
+0003a514: stur     x8, [x29, #-8]
+0003a518: ldp      x8, x9, [x20, #0x38]!
+0003a51c: sub      x9, x9, x8
+0003a520: cmp      x28, x9, asr #4
+0003a524: b.hs     #0x3a7dc
+0003a528: adrp     x25, #0x58000
+0003a52c: mov      x19, x0
+0003a530: ldr      x0, [x25, #0x4f8]
+0003a534: add      x4, x8, x28, lsl #4
+0003a538: mov      w2, #0x4002
+0003a53c: mov      x3, xzr
+0003a540: mov      x23, x1
+0003a544: bl       #0x4b810 ; _ZN4FMOD6System12createStreamEPKcjP22FMOD_CREATESOUNDEXINFOPPNS_5SoundE
+0003a548: mov      w22, w0
+0003a54c: stp      xzr, xzr, [x29, #-0x30]
+0003a550: stur     xzr, [x29, #-0x20]
+0003a554: cbz      w0, #0x3a58c
+0003a558: mov      x0, x23
+0003a55c: bl       #0x4b820 ; strlen
+0003a560: cmn      x0, #0x10
+0003a564: b.hs     #0x3a7e4
+0003a568: mov      x24, x0
+0003a56c: cmp      x0, #0x17
+0003a570: b.hs     #0x3a598
+0003a574: sub      x9, x29, #0x48
+0003a578: lsl      w8, w24, #1
+0003a57c: orr      x25, x9, #1
+0003a580: sturb    w8, [x29, #-0x48]
+0003a584: cbnz     x24, #0x3a5b8
+0003a588: b        #0x3a5c8
+0003a58c: mov      x24, xzr
+0003a590: mov      w23, wzr
+0003a594: b        #0x3a648
+0003a598: add      x8, x24, #0x10
+0003a59c: and      x26, x8, #0xfffffffffffffff0
+0003a5a0: mov      x0, x26
+0003a5a4: bl       #0x4b720 ; _Znwm
+0003a5a8: orr      x8, x26, #1
+0003a5ac: mov      x25, x0
+0003a5b0: stp      x24, x0, [x29, #-0x40]
+0003a5b4: stur     x8, [x29, #-0x48]
+0003a5b8: mov      x0, x25
+0003a5bc: mov      x1, x23
+0003a5c0: mov      x2, x24
+0003a5c4: bl       #0x4b830 ; memcpy
+0003a5c8: strb     wzr, [x25, x24]
+0003a5cc: adrp     x2, #0x18000
+0003a5d0: add      x2, x2, #0x4bf
+0003a5d4: sub      x0, x29, #0x48
+0003a5d8: mov      x1, xzr
+0003a5dc: bl       #0x4b840 ; _ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEmPKc
+0003a5e0: ldrb     w23, [x0]
+0003a5e4: ldrb     w25, [x0, #1]
+0003a5e8: ldur     x8, [x0, #2]
+0003a5ec: ldp      x9, x24, [x0, #8]
+0003a5f0: stp      xzr, xzr, [x0, #8]
+0003a5f4: str      xzr, [x0]
+0003a5f8: ldurb    w10, [x29, #-0x30]
+0003a5fc: sub      x26, x29, #0x18
+0003a600: stur     x8, [x29, #-0x18]
+0003a604: stur     x9, [x26, #6]
+0003a608: tbz      w10, #0, #0x3a614
+0003a60c: ldur     x0, [x29, #-0x20]
+0003a610: bl       #0x4b730 ; _ZdlPv
+0003a614: ldur     x8, [x29, #-0x18]
+0003a618: ldur     x9, [x26, #6]
+0003a61c: ldurb    w10, [x29, #-0x48]
+0003a620: sturb    w23, [x29, #-0x30]
+0003a624: sturb    w25, [x29, #-0x2f]
+0003a628: stur     x8, [x29, #-0x2e]
+0003a62c: stp      x9, x24, [x29, #-0x28]
+0003a630: tbz      w10, #0, #0x3a644
+0003a634: ldur     x0, [x29, #-0x38]
+0003a638: bl       #0x4b730 ; _ZdlPv
+0003a63c: ldurb    w23, [x29, #-0x30]
+0003a640: ldur     x24, [x29, #-0x20]
+0003a644: adrp     x25, #0x58000
+0003a648: adrp     x10, #0x18000
+0003a64c: add      x10, x10, #0x1ca
+0003a650: ldr      x10, [x10]
+0003a654: mov      w8, #0x18
+0003a658: mov      w9, #0x6572
+0003a65c: sub      x11, x29, #0x30
+0003a660: movk     w9, #0x6d61, lsl #16
+0003a664: tst      w23, #1
+0003a668: strb     w8, [sp, #0x40]
+0003a66c: orr      x8, x11, #1
+0003a670: strb     wzr, [sp, #0x4d]
+0003a674: stur     w9, [sp, #0x49]
+0003a678: stur     x10, [sp, #0x41]
+0003a67c: csel     x3, x8, x24, eq
+0003a680: add      x1, sp, #0x40
+0003a684: mov      w0, w22
+0003a688: mov      w2, wzr
+0003a68c: bl       #0x34660 ; 
+0003a690: ldrb     w8, [sp, #0x40]
+0003a694: tbz      w8, #0, #0x3a6a0
+0003a698: ldr      x0, [sp, #0x50]
+0003a69c: bl       #0x4b730 ; _ZdlPv
+0003a6a0: ldp      x8, x9, [x19, #0x38]
+0003a6a4: sub      x9, x9, x8
+0003a6a8: asr      x9, x9, #4
+0003a6ac: cmp      x9, x28
+0003a6b0: cbz      w21, #0x3a718
+0003a6b4: b.ls     #0x3a7ec
+0003a6b8: add      x4, x8, x28, lsl #4
+0003a6bc: ldr      x0, [x25, #0x4f8]
+0003a6c0: ldr      x1, [x4], #8
+0003a6c4: mov      w3, #1
+0003a6c8: mov      x2, xzr
+0003a6cc: bl       #0x4b850 ; _ZN4FMOD6System9playSoundEPNS_5SoundEPNS_12ChannelGroupEbPPNS_7ChannelE
+0003a6d0: adrp     x8, #0x17000
+0003a6d4: add      x8, x8, #0x6dd
+0003a6d8: ldr      q0, [x8]
+0003a6dc: ldur     x8, [x8, #0xd]
+0003a6e0: mov      w9, #0x2a
+0003a6e4: strb     w9, [sp, #8]
+0003a6e8: stur     q0, [sp, #9]
+0003a6ec: stur     x8, [sp, #0x16]
+0003a6f0: strb     wzr, [sp, #0x1e]
+0003a6f4: add      x1, sp, #8
+0003a6f8: mov      w2, wzr
+0003a6fc: mov      x3, xzr
+0003a700: bl       #0x34660 ; 
+0003a704: ldrb     w8, [sp, #8]
+0003a708: tbz      w8, #0, #0x3a79c
+0003a70c: ldr      x0, [sp, #0x18]
+0003a710: bl       #0x4b730 ; _ZdlPv
+0003a714: b        #0x3a79c
+0003a718: b.ls     #0x3a7f4
+0003a71c: add      x4, x8, x28, lsl #4
+0003a720: ldr      x0, [x25, #0x4f8]
+0003a724: ldr      x1, [x4], #8
+0003a728: ldr      x2, [x19, #0x18]
+0003a72c: mov      w3, wzr
+0003a730: bl       #0x4b850 ; _ZN4FMOD6System9playSoundEPNS_5SoundEPNS_12ChannelGroupEbPPNS_7ChannelE
+0003a734: mov      w20, w0
+0003a738: mov      w0, #0x20
+0003a73c: bl       #0x4b720 ; _Znwm
+0003a740: adrp     x9, #0x17000
+0003a744: adrp     x8, #0x13000
+0003a748: add      x9, x9, #0xa5d
+0003a74c: ldr      q0, [x8, #0xf00]
+0003a750: ldr      q1, [x9]
+0003a754: ldur     q2, [x9, #0xe]
+0003a758: str      x0, [sp, #0x30]
+0003a75c: str      q0, [sp, #0x20]
+0003a760: str      q1, [x0]
+0003a764: stur     q2, [x0, #0xe]
+0003a768: strb     wzr, [x0, #0x1e]
+0003a76c: add      x1, sp, #0x20
+0003a770: mov      w0, w20
+0003a774: mov      w2, wzr
+0003a778: mov      x3, xzr
+0003a77c: bl       #0x34660 ; 
+0003a780: ldrb     w8, [sp, #0x20]
+0003a784: tbz      w8, #0, #0x3a790
+0003a788: ldr      x0, [sp, #0x30]
+0003a78c: bl       #0x4b730 ; _ZdlPv
+0003a790: ldr      x0, [x19, #0x18]
+0003a794: mov      w1, #1
+0003a798: bl       #0x4b860 ; _ZN4FMOD14ChannelControl9setPausedEb
+0003a79c: ldurb    w8, [x29, #-0x30]
+0003a7a0: tbz      w8, #0, #0x3a7ac
+0003a7a4: ldur     x0, [x29, #-0x20]
+0003a7a8: bl       #0x4b730 ; _ZdlPv
+0003a7ac: ldr      x8, [x27, #0x28]
+0003a7b0: ldur     x9, [x29, #-8]
+0003a7b4: cmp      x8, x9
+0003a7b8: b.ne     #0x3a7fc
+0003a7bc: ldp      x20, x19, [sp, #0xf0]
+0003a7c0: ldp      x22, x21, [sp, #0xe0]
+0003a7c4: ldp      x24, x23, [sp, #0xd0]
+0003a7c8: ldp      x26, x25, [sp, #0xc0]
+0003a7cc: ldp      x28, x27, [sp, #0xb0]
+0003a7d0: ldp      x29, x30, [sp, #0xa0]
+0003a7d4: add      sp, sp, #0x100
+0003a7d8: ret      
+0003a7dc: mov      x0, x20
+0003a7e0: bl       #0x4b870 ; _ZNKSt6__ndk120__vector_base_commonILb1EE20__throw_out_of_rangeEv
+0003a7e4: sub      x0, x29, #0x48
+0003a7e8: bl       #0x4b880 ; _ZNKSt6__ndk121__basic_string_commonILb1EE20__throw_length_errorEv
+0003a7ec: mov      x0, x20
+0003a7f0: bl       #0x4b870 ; _ZNKSt6__ndk120__vector_base_commonILb1EE20__throw_out_of_rangeEv
+0003a7f4: mov      x0, x20
+0003a7f8: bl       #0x4b870 ; _ZNKSt6__ndk120__vector_base_commonILb1EE20__throw_out_of_rangeEv
+0003a7fc: bl       #0x4b6f0 ; __stack_chk_fail
+0003a800: ldrb     w8, [sp, #0x20]
+0003a804: mov      x19, x0
+0003a808: tbz      w8, #0, #0x3a868
+0003a80c: ldr      x0, [sp, #0x30]
+0003a810: bl       #0x4b730 ; _ZdlPv
+0003a814: b        #0x3a868
+0003a818: ldrb     w8, [sp, #8]
+0003a81c: mov      x19, x0
+0003a820: tbz      w8, #0, #0x3a868
+0003a824: ldr      x0, [sp, #0x18]
+0003a828: bl       #0x4b730 ; _ZdlPv
+0003a82c: b        #0x3a868
+0003a830: ldurb    w8, [x29, #-0x48]
+0003a834: mov      x19, x0
+0003a838: tbz      w8, #0, #0x3a868
+0003a83c: ldur     x0, [x29, #-0x38]
+0003a840: bl       #0x4b730 ; _ZdlPv
+0003a844: b        #0x3a868
+0003a848: b        #0x3a864
+0003a84c: ldrb     w8, [sp, #0x40]
+0003a850: mov      x19, x0
+0003a854: tbz      w8, #0, #0x3a868
+0003a858: ldr      x0, [sp, #0x50]
+0003a85c: bl       #0x4b730 ; _ZdlPv
+0003a860: b        #0x3a868
+0003a864: mov      x19, x0
+0003a868: ldurb    w8, [x29, #-0x30]
+0003a86c: tbz      w8, #0, #0x3a878
+0003a870: ldur     x0, [x29, #-0x20]
+0003a874: bl       #0x4b730 ; _ZdlPv
+0003a878: mov      x0, x19
+0003a87c: bl       #0x47c70 ; 
+
+_ZN24AudioProviderFMODAndroid17unloadSFXInternalEPN4FMOD5SoundE 0x3ce44 size 8
+0003ce44: mov      x0, x1
+0003ce48: b        #0x4b900
+
+_ZN24AudioProviderFMODAndroid12playAsyncSFXEPKcbbf 0x2976c size 332
+0002976c: sub      sp, sp, #0x70
+00029770: str      d8, [sp, #0x30]
+00029774: stp      x29, x30, [sp, #0x38]
+00029778: str      x23, [sp, #0x48]
+0002977c: stp      x22, x21, [sp, #0x50]
+00029780: stp      x20, x19, [sp, #0x60]
+00029784: add      x29, sp, #0x38
+00029788: mrs      x23, tpidr_el0
+0002978c: ldr      x8, [x23, #0x28]
+00029790: adrp     x22, #0x58000
+00029794: mov      w19, w3
+00029798: mov      w20, w2
+0002979c: stur     x8, [x29, #-0x10]
+000297a0: ldr      x8, [x22, #0x4f8]
+000297a4: mov      x21, x0
+000297a8: sub      x4, x29, #0x18
+000297ac: mov      w2, #0x102
+000297b0: mov      x0, x8
+000297b4: mov      x3, xzr
+000297b8: fmov     s8, s0
+000297bc: bl       #0x4b8f0 ; _ZN4FMOD6System11createSoundEPKcjP22FMOD_CREATESOUNDEXINFOPPNS_5SoundE
+000297c0: ldr      x0, [x22, #0x4f8]
+000297c4: ldur     x1, [x29, #-0x18]
+000297c8: add      x4, sp, #0x18
+000297cc: mov      w3, #1
+000297d0: mov      x2, xzr
+000297d4: str      xzr, [sp, #0x18]
+000297d8: bl       #0x4b850 ; _ZN4FMOD6System9playSoundEPNS_5SoundEPNS_12ChannelGroupEbPPNS_7ChannelE
+000297dc: ldr      s0, [x21, #8]
+000297e0: mov      w22, w0
+000297e4: ldr      x0, [sp, #0x18]
+000297e8: fmov     s1, #-1.00000000
+000297ec: mov      w8, #0xcccd
+000297f0: movk     w8, #0x3f4c, lsl #16
+000297f4: fcmp     s8, s1
+000297f8: fcsel    s0, s0, s8, eq
+000297fc: tst      w19, #1
+00029800: fmov     s1, w8
+00029804: fcsel    s0, s1, s0, ne
+00029808: bl       #0x4b920 ; _ZN4FMOD14ChannelControl9setVolumeEf
+0002980c: ldr      x0, [sp, #0x18]
+00029810: sbfx     w1, w20, #0, #1
+00029814: bl       #0x4b910 ; _ZN4FMOD7Channel12setLoopCountEi
+00029818: ldr      x0, [sp, #0x18]
+0002981c: mov      w1, wzr
+00029820: bl       #0x4b860 ; _ZN4FMOD14ChannelControl9setPausedEb
+00029824: adrp     x8, #0x17000
+00029828: add      x8, x8, #0x6dd
+0002982c: ldr      q0, [x8]
+00029830: ldur     x8, [x8, #0xd]
+00029834: mov      w9, #0x2a
+00029838: strb     w9, [sp]
+0002983c: stur     q0, [sp, #1]
+00029840: stur     x8, [sp, #0xe]
+00029844: strb     wzr, [sp, #0x16]
+00029848: mov      x1, sp
+0002984c: mov      w0, w22
+00029850: mov      w2, wzr
+00029854: mov      x3, xzr
+00029858: bl       #0x34660 ; 
+0002985c: ldrb     w8, [sp]
+00029860: tbz      w8, #0, #0x2986c
+00029864: ldr      x0, [sp, #0x10]
+00029868: bl       #0x4b730 ; _ZdlPv
+0002986c: ldr      x8, [x23, #0x28]
+00029870: ldur     x9, [x29, #-0x10]
+00029874: cmp      x8, x9
+00029878: b.ne     #0x29898
+0002987c: ldp      x20, x19, [sp, #0x60]
+00029880: ldp      x22, x21, [sp, #0x50]
+00029884: ldr      x23, [sp, #0x48]
+00029888: ldp      x29, x30, [sp, #0x38]
+0002988c: ldr      d8, [sp, #0x30]
+00029890: add      sp, sp, #0x70
+00029894: ret      
+00029898: bl       #0x4b6f0 ; __stack_chk_fail
+0002989c: ldrb     w8, [sp]
+000298a0: mov      x19, x0
+000298a4: tbz      w8, #0, #0x298b0
+000298a8: ldr      x0, [sp, #0x10]
+000298ac: bl       #0x4b730 ; _ZdlPv
+000298b0: mov      x0, x19
+000298b4: bl       #0x47c70 ; 
+
+_ZN24AudioProviderFMODAndroid12getSFXVolumeEPKc 0x47e9c size 520
+00047e9c: sub      sp, sp, #0x90
+00047ea0: str      d8, [sp, #0x40]
+00047ea4: stp      x29, x30, [sp, #0x50]
+00047ea8: stp      x24, x23, [sp, #0x60]
+00047eac: stp      x22, x21, [sp, #0x70]
+00047eb0: stp      x20, x19, [sp, #0x80]
+00047eb4: add      x29, sp, #0x50
+00047eb8: mrs      x24, tpidr_el0
+00047ebc: ldr      x8, [x24, #0x28]
+00047ec0: mov      x19, x0
+00047ec4: mov      x0, x1
+00047ec8: mov      x20, x1
+00047ecc: stur     x8, [x29, #-0x18]
+00047ed0: str      wzr, [sp, #0x24]
+00047ed4: bl       #0x4b820 ; strlen
+00047ed8: cmn      x0, #0x10
+00047edc: b.hs     #0x48078
+00047ee0: mov      x21, x0
+00047ee4: cmp      x0, #0x17
+00047ee8: b.hs     #0x47f04
+00047eec: add      x9, sp, #8
+00047ef0: lsl      w8, w21, #1
+00047ef4: orr      x22, x9, #1
+00047ef8: strb     w8, [sp, #8]
+00047efc: cbnz     x21, #0x47f24
+00047f00: b        #0x47f34
+00047f04: add      x8, x21, #0x10
+00047f08: and      x23, x8, #0xfffffffffffffff0
+00047f0c: mov      x0, x23
+00047f10: bl       #0x4b720 ; _Znwm
+00047f14: orr      x8, x23, #1
+00047f18: mov      x22, x0
+00047f1c: stp      x21, x0, [sp, #0x10]
+00047f20: str      x8, [sp, #8]
+00047f24: mov      x0, x22
+00047f28: mov      x1, x20
+00047f2c: mov      x2, x21
+00047f30: bl       #0x4b830 ; memcpy
+00047f34: strb     wzr, [x22, x21]
+00047f38: add      x0, x19, #0x68
+00047f3c: add      x1, sp, #8
+00047f40: bl       #0x38bc0 ; 
+00047f44: add      x8, x19, #0x70
+00047f48: cmp      x8, x0
+00047f4c: b.eq     #0x47f7c
+00047f50: add      x8, sp, #8
+00047f54: stur     x8, [x29, #-0x20]
+00047f58: adrp     x2, #0x15000
+00047f5c: add      x2, x2, #0xbf5
+00047f60: add      x0, x19, #0x68
+00047f64: add      x1, sp, #8
+00047f68: sub      x3, x29, #0x20
+00047f6c: add      x4, sp, #0x28
+00047f70: bl       #0x38f9c ; 
+00047f74: ldr      x0, [x0, #0x38]
+00047f78: cbnz     x0, #0x48024
+00047f7c: ldrb     w8, [sp, #8]
+00047f80: ldp      x9, x10, [sp, #0x10]
+00047f84: ldp      x22, x23, [x19, #0x20]
+00047f88: add      x11, sp, #8
+00047f8c: orr      x11, x11, #1
+00047f90: ands     w21, w8, #1
+00047f94: lsr      x8, x8, #1
+00047f98: csel     x19, x8, x9, eq
+00047f9c: csel     x20, x11, x10, eq
+00047fa0: b        #0x47fa8
+00047fa4: add      x22, x22, #0x28
+00047fa8: cmp      x22, x23
+00047fac: b.eq     #0x48034
+00047fb0: ldrb     w9, [x22]
+00047fb4: ldr      x10, [x22, #8]
+00047fb8: lsr      x8, x9, #1
+00047fbc: tst      w9, #1
+00047fc0: csel     x10, x8, x10, eq
+00047fc4: cmp      x10, x19
+00047fc8: b.ne     #0x47fa4
+00047fcc: ldr      x10, [x22, #0x10]
+00047fd0: ands     w9, w9, #1
+00047fd4: csinc    x0, x10, x22, ne
+00047fd8: cbnz     w9, #0x48008
+00047fdc: cbz      x19, #0x4801c
+00047fe0: mov      x9, xzr
+00047fe4: add      x10, x22, x9
+00047fe8: ldrb     w10, [x10, #1]
+00047fec: ldrb     w11, [x20, x9]
+00047ff0: cmp      w10, w11
+00047ff4: b.ne     #0x47fa4
+00047ff8: add      x9, x9, #1
+00047ffc: cmp      x8, x9
+00048000: b.ne     #0x47fe4
+00048004: b        #0x4801c
+00048008: cbz      x19, #0x4801c
+0004800c: mov      x1, x20
+00048010: mov      x2, x19
+00048014: bl       #0x4b990 ; memcmp
+00048018: cbnz     w0, #0x47fa4
+0004801c: ldr      x0, [x22, #0x20]
+00048020: cbz      x0, #0x48034
+00048024: add      x1, sp, #0x24
+00048028: bl       #0x4b9a0 ; _ZN4FMOD14ChannelControl9getVolumeEPf
+0004802c: ldrb     w8, [sp, #8]
+00048030: and      w21, w8, #1
+00048034: ldr      s8, [sp, #0x24]
+00048038: tst      w21, #0xff
+0004803c: b.eq     #0x48048
+00048040: ldr      x0, [sp, #0x18]
+00048044: bl       #0x4b730 ; _ZdlPv
+00048048: ldr      x8, [x24, #0x28]
+0004804c: ldur     x9, [x29, #-0x18]
+00048050: cmp      x8, x9
+00048054: b.ne     #0x48080
+00048058: fmov     s0, s8
+0004805c: ldp      x20, x19, [sp, #0x80]
+00048060: ldp      x22, x21, [sp, #0x70]
+00048064: ldp      x24, x23, [sp, #0x60]
+00048068: ldp      x29, x30, [sp, #0x50]
+0004806c: ldr      d8, [sp, #0x40]
+00048070: add      sp, sp, #0x90
+00048074: ret      
+00048078: add      x0, sp, #8
+0004807c: bl       #0x4b880 ; _ZNKSt6__ndk121__basic_string_commonILb1EE20__throw_length_errorEv
+00048080: bl       #0x4b6f0 ; __stack_chk_fail
+00048084: b        #0x48088
+00048088: ldrb     w8, [sp, #8]
+0004808c: mov      x19, x0
+00048090: tbz      w8, #0, #0x4809c
+00048094: ldr      x0, [sp, #0x18]
+00048098: bl       #0x4b730 ; _ZdlPv
+0004809c: mov      x0, x19
+000480a0: bl       #0x47c70 ; 
+
+_ZN24AudioProviderFMODAndroidD0Ev 0x2b868 size 36
+0002b868: stp      x29, x30, [sp, #-0x20]!
+0002b86c: str      x19, [sp, #0x10]
+0002b870: mov      x29, sp
+0002b874: mov      x19, x0
+0002b878: bl       #0x4b9c0 ; _ZN24AudioProviderFMODAndroidD2Ev
+0002b87c: mov      x0, x19
+0002b880: ldr      x19, [sp, #0x10]
+0002b884: ldp      x29, x30, [sp], #0x20
+0002b888: b        #0x4b730
+
+_ZN24AudioProviderFMODAndroidD2Ev 0x4b5b4 size 224
+0004b5b4: stp      x29, x30, [sp, #-0x30]!
+0004b5b8: str      x21, [sp, #0x10]
+0004b5bc: stp      x20, x19, [sp, #0x20]
+0004b5c0: mov      x29, sp
+0004b5c4: adrp     x8, #0x53000
+0004b5c8: mov      x19, x0
+0004b5cc: ldr      x0, [x0, #0x90]
+0004b5d0: ldr      x8, [x8, #0x448]
+0004b5d4: add      x8, x8, #0x10
+0004b5d8: str      x8, [x19]
+0004b5dc: cbz      x0, #0x4b5f0
+0004b5e0: ldr      x20, [x0]
+0004b5e4: bl       #0x4b730 ; _ZdlPv
+0004b5e8: mov      x0, x20
+0004b5ec: cbnz     x20, #0x4b5e0
+0004b5f0: ldr      x0, [x19, #0x80]
+0004b5f4: str      xzr, [x19, #0x80]
+0004b5f8: cbz      x0, #0x4b600
+0004b5fc: bl       #0x4b730 ; _ZdlPv
+0004b600: ldr      x1, [x19, #0x70]
+0004b604: add      x0, x19, #0x68
+0004b608: bl       #0x37a2c ; 
+0004b60c: ldr      x1, [x19, #0x58]
+0004b610: add      x0, x19, #0x50
+0004b614: bl       #0x2b334 ; 
+0004b618: ldr      x0, [x19, #0x38]
+0004b61c: cbz      x0, #0x4b628
+0004b620: str      x0, [x19, #0x40]
+0004b624: bl       #0x4b730 ; _ZdlPv
+0004b628: ldr      x20, [x19, #0x20]
+0004b62c: cbz      x20, #0x4b66c
+0004b630: ldr      x8, [x19, #0x28]
+0004b634: cmp      x8, x20
+0004b638: b.eq     #0x4b67c
+0004b63c: mov      x21, x8
+0004b640: b        #0x4b650
+0004b644: cmp      x21, x20
+0004b648: mov      x8, x21
+0004b64c: b.eq     #0x4b664
+0004b650: ldrb     w9, [x21, #-0x28]!
+0004b654: tbz      w9, #0, #0x4b644
+0004b658: ldur     x0, [x8, #-0x18]
+0004b65c: bl       #0x4b730 ; _ZdlPv
+0004b660: b        #0x4b644
+0004b664: ldr      x0, [x19, #0x20]
+0004b668: b        #0x4b680
+0004b66c: ldp      x20, x19, [sp, #0x20]
+0004b670: ldr      x21, [sp, #0x10]
+0004b674: ldp      x29, x30, [sp], #0x30
+0004b678: ret      
+0004b67c: mov      x0, x20
+0004b680: str      x20, [x19, #0x28]
+0004b684: ldp      x20, x19, [sp, #0x20]
+0004b688: ldr      x21, [sp, #0x10]
+0004b68c: ldp      x29, x30, [sp], #0x30
+0004b690: b        #0x4b730
+
+_ZN24AudioProviderFMODAndroid14setBGMPositionEii 0x26efc size 436
+00026efc: sub      sp, sp, #0xb0
+00026f00: str      d8, [sp, #0x60]
+00026f04: stp      x29, x30, [sp, #0x70]
+00026f08: stp      x24, x23, [sp, #0x80]
+00026f0c: stp      x22, x21, [sp, #0x90]
+00026f10: stp      x20, x19, [sp, #0xa0]
+00026f14: add      x29, sp, #0x70
+00026f18: mrs      x24, tpidr_el0
+00026f1c: ldr      x8, [x24, #0x28]
+00026f20: mov      w21, w1
+00026f24: mov      w1, wzr
+00026f28: mov      w23, w2
+00026f2c: stur     x8, [x29, #-0x18]
+00026f30: ldr      x8, [x0]
+00026f34: mov      x20, x0
+00026f38: ldr      x8, [x8, #0x38]
+00026f3c: blr      x8
+00026f40: mov      x19, x20
+00026f44: ldp      x8, x10, [x19, #0x38]!
+00026f48: sxtw     x9, w23
+00026f4c: sub      x10, x10, x8
+00026f50: cmp      x9, x10, asr #4
+00026f54: b.hs     #0x27084
+00026f58: add      x8, x8, x9, lsl #4
+00026f5c: mov      w22, w0
+00026f60: ldr      x0, [x8, #8]
+00026f64: mov      w2, #1
+00026f68: mov      w1, w21
+00026f6c: bl       #0x4b940 ; _ZN4FMOD7Channel11setPositionEjj
+00026f70: cbz      w23, #0x26fa0
+00026f74: ldr      x8, [x24, #0x28]
+00026f78: ldur     x9, [x29, #-0x18]
+00026f7c: cmp      x8, x9
+00026f80: b.ne     #0x2708c
+00026f84: ldp      x20, x19, [sp, #0xa0]
+00026f88: ldp      x22, x21, [sp, #0x90]
+00026f8c: ldp      x24, x23, [sp, #0x80]
+00026f90: ldp      x29, x30, [sp, #0x70]
+00026f94: ldr      d8, [sp, #0x60]
+00026f98: add      sp, sp, #0xb0
+00026f9c: ret      
+00026fa0: adrp     x8, #0x58000
+00026fa4: ldr      x0, [x8, #0x4f8]
+00026fa8: sub      x1, x29, #0x1c
+00026fac: sub      x2, x29, #0x24
+00026fb0: sub      x3, x29, #0x20
+00026fb4: bl       #0x4b8b0 ; _ZN4FMOD6System17getSoftwareFormatEPiP16FMOD_SPEAKERMODES1_
+00026fb8: ldp      x8, x9, [x20, #0x38]
+00026fbc: cmp      x9, x8
+00026fc0: b.eq     #0x27084
+00026fc4: ldr      x0, [x8, #8]
+00026fc8: sub      x1, x29, #0x30
+00026fcc: add      x2, sp, #0x38
+00026fd0: bl       #0x4b8c0 ; _ZN4FMOD14ChannelControl11getDSPClockEPyS1_
+00026fd4: ldp      x19, x20, [x20, #0x20]
+00026fd8: cmp      x19, x20
+00026fdc: b.eq     #0x26f74
+00026fe0: sub      w8, w21, w22
+00026fe4: mov      w9, #0x447a0000
+00026fe8: scvtf    s0, w8
+00026fec: fmov     s1, w9
+00026ff0: fdiv     s8, s0, s1
+00026ff4: b        #0x27004
+00026ff8: add      x19, x19, #0x28
+00026ffc: cmp      x19, x20
+00027000: b.eq     #0x26f74
+00027004: add      x0, sp, #0x10
+00027008: mov      x1, x19
+0002700c: bl       #0x4b890 ; _ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1ERKS5_
+00027010: ldr      x8, [x19, #0x18]
+00027014: str      x8, [sp, #0x28]
+00027018: ldr      x0, [x19, #0x20]
+0002701c: str      x0, [sp, #0x30]
+00027020: add      x1, sp, #8
+00027024: mov      x2, sp
+00027028: mov      x3, xzr
+0002702c: bl       #0x4b950 ; _ZN4FMOD14ChannelControl8getDelayEPyS1_Pb
+00027030: ldur     s0, [x29, #-0x1c]
+00027034: ldr      x8, [sp, #8]
+00027038: ldp      x0, x9, [sp, #0x30]
+0002703c: scvtf    s0, s0
+00027040: ucvtf    s1, x8
+00027044: fmul     s0, s8, s0
+00027048: fsub     s0, s1, s0
+0002704c: ucvtf    s1, x9
+00027050: fcmp     s0, s1
+00027054: b.pl     #0x27060
+00027058: bl       #0x4b960 ; _ZN4FMOD14ChannelControl4stopEv
+0002705c: b        #0x27070
+00027060: fcvtzu   x1, s0
+00027064: mov      w3, #1
+00027068: mov      x2, xzr
+0002706c: bl       #0x4b8d0 ; _ZN4FMOD14ChannelControl8setDelayEyyb
+00027070: ldrb     w8, [sp, #0x10]
+00027074: tbz      w8, #0, #0x26ff8
+00027078: ldr      x0, [sp, #0x20]
+0002707c: bl       #0x4b730 ; _ZdlPv
+00027080: b        #0x26ff8
+00027084: mov      x0, x19
+00027088: bl       #0x4b870 ; _ZNKSt6__ndk120__vector_base_commonILb1EE20__throw_out_of_rangeEv
+0002708c: bl       #0x4b6f0 ; __stack_chk_fail
+00027090: b        #0x27094
+00027094: ldrb     w8, [sp, #0x10]
+00027098: mov      x19, x0
+0002709c: tbz      w8, #0, #0x270a8
+000270a0: ldr      x0, [sp, #0x20]
+000270a4: bl       #0x4b730 ; _ZdlPv
+000270a8: mov      x0, x19
+000270ac: bl       #0x47c70 ; 
+
+_ZN24AudioProviderFMODAndroid6updateEv 0x24a48 size 168
+00024a48: sub      sp, sp, #0x40
+00024a4c: stp      x29, x30, [sp, #0x20]
+00024a50: str      x19, [sp, #0x30]
+00024a54: add      x29, sp, #0x20
+00024a58: mrs      x19, tpidr_el0
+00024a5c: ldr      x8, [x19, #0x28]
+00024a60: stur     x8, [x29, #-8]
+00024a64: adrp     x8, #0x58000
+00024a68: ldr      x0, [x8, #0x4f8]
+00024a6c: bl       #0x4b9b0 ; _ZN4FMOD6System6updateEv
+00024a70: mov      w9, #0x7075
+00024a74: mov      w8, #0xc
+00024a78: movk     w9, #0x6164, lsl #16
+00024a7c: mov      w10, #0x6574
+00024a80: strb     w8, [sp]
+00024a84: stur     w9, [sp, #1]
+00024a88: sturh    w10, [sp, #5]
+00024a8c: strb     wzr, [sp, #7]
+00024a90: mov      x1, sp
+00024a94: mov      w2, wzr
+00024a98: mov      x3, xzr
+00024a9c: bl       #0x34660 ; 
+00024aa0: ldrb     w8, [sp]
+00024aa4: tbz      w8, #0, #0x24ab0
+00024aa8: ldr      x0, [sp, #0x10]
+00024aac: bl       #0x4b730 ; _ZdlPv
+00024ab0: ldr      x8, [x19, #0x28]
+00024ab4: ldur     x9, [x29, #-8]
+00024ab8: cmp      x8, x9
+00024abc: b.ne     #0x24ad0
+00024ac0: ldr      x19, [sp, #0x30]
+00024ac4: ldp      x29, x30, [sp, #0x20]
+00024ac8: add      sp, sp, #0x40
+00024acc: ret      
+00024ad0: bl       #0x4b6f0 ; __stack_chk_fail
+00024ad4: ldrb     w8, [sp]
+00024ad8: mov      x19, x0
+00024adc: tbz      w8, #0, #0x24ae8
+00024ae0: ldr      x0, [sp, #0x10]
+00024ae4: bl       #0x4b730 ; _ZdlPv
+00024ae8: mov      x0, x19
+00024aec: bl       #0x47c70 ; 
+
+_ZN24AudioProviderFMODAndroid7stopSFXEPKc 0x27e8c size 496
+00027e8c: sub      sp, sp, #0x70
+00027e90: stp      x29, x30, [sp, #0x30]
+00027e94: stp      x24, x23, [sp, #0x40]
+00027e98: stp      x22, x21, [sp, #0x50]
+00027e9c: stp      x20, x19, [sp, #0x60]
+00027ea0: add      x29, sp, #0x30
+00027ea4: mrs      x24, tpidr_el0
+00027ea8: ldr      x8, [x24, #0x28]
+00027eac: mov      x19, x0
+00027eb0: mov      x0, x1
+00027eb4: mov      x20, x1
+00027eb8: stur     x8, [x29, #-8]
+00027ebc: bl       #0x4b820 ; strlen
+00027ec0: cmn      x0, #0x10
+00027ec4: b.hs     #0x28050
+00027ec8: mov      x21, x0
+00027ecc: cmp      x0, #0x17
+00027ed0: b.hs     #0x27eec
+00027ed4: mov      x9, sp
+00027ed8: lsl      w8, w21, #1
+00027edc: orr      x22, x9, #1
+00027ee0: strb     w8, [sp]
+00027ee4: cbnz     x21, #0x27f0c
+00027ee8: b        #0x27f1c
+00027eec: add      x8, x21, #0x10
+00027ef0: and      x23, x8, #0xfffffffffffffff0
+00027ef4: mov      x0, x23
+00027ef8: bl       #0x4b720 ; _Znwm
+00027efc: orr      x8, x23, #1
+00027f00: mov      x22, x0
+00027f04: stp      x21, x0, [sp, #8]
+00027f08: str      x8, [sp]
+00027f0c: mov      x0, x22
+00027f10: mov      x1, x20
+00027f14: mov      x2, x21
+00027f18: bl       #0x4b830 ; memcpy
+00027f1c: strb     wzr, [x22, x21]
+00027f20: add      x0, x19, #0x68
+00027f24: mov      x1, sp
+00027f28: bl       #0x38bc0 ; 
+00027f2c: add      x8, x19, #0x70
+00027f30: cmp      x8, x0
+00027f34: b.eq     #0x27f64
+00027f38: mov      x8, sp
+00027f3c: stur     x8, [x29, #-0x10]
+00027f40: adrp     x2, #0x15000
+00027f44: add      x2, x2, #0xbf5
+00027f48: add      x0, x19, #0x68
+00027f4c: mov      x1, sp
+00027f50: sub      x3, x29, #0x10
+00027f54: add      x4, sp, #0x18
+00027f58: bl       #0x38f9c ; 
+00027f5c: ldr      x0, [x0, #0x38]
+00027f60: cbnz     x0, #0x2800c
+00027f64: ldrb     w8, [sp]
+00027f68: ldp      x9, x10, [sp, #8]
+00027f6c: ldp      x22, x23, [x19, #0x20]
+00027f70: mov      x11, sp
+00027f74: orr      x11, x11, #1
+00027f78: ands     w21, w8, #1
+00027f7c: lsr      x8, x8, #1
+00027f80: csel     x19, x8, x9, eq
+00027f84: csel     x20, x11, x10, eq
+00027f88: b        #0x27f90
+00027f8c: add      x22, x22, #0x28
+00027f90: cmp      x22, x23
+00027f94: b.eq     #0x28018
+00027f98: ldrb     w9, [x22]
+00027f9c: ldr      x10, [x22, #8]
+00027fa0: lsr      x8, x9, #1
+00027fa4: tst      w9, #1
+00027fa8: csel     x10, x8, x10, eq
+00027fac: cmp      x10, x19
+00027fb0: b.ne     #0x27f8c
+00027fb4: ldr      x10, [x22, #0x10]
+00027fb8: ands     w9, w9, #1
+00027fbc: csinc    x0, x10, x22, ne
+00027fc0: cbnz     w9, #0x27ff0
+00027fc4: cbz      x19, #0x28004
+00027fc8: mov      x9, xzr
+00027fcc: add      x10, x22, x9
+00027fd0: ldrb     w10, [x10, #1]
+00027fd4: ldrb     w11, [x20, x9]
+00027fd8: cmp      w10, w11
+00027fdc: b.ne     #0x27f8c
+00027fe0: add      x9, x9, #1
+00027fe4: cmp      x8, x9
+00027fe8: b.ne     #0x27fcc
+00027fec: b        #0x28004
+00027ff0: cbz      x19, #0x28004
+00027ff4: mov      x1, x20
+00027ff8: mov      x2, x19
+00027ffc: bl       #0x4b990 ; memcmp
+00028000: cbnz     w0, #0x27f8c
+00028004: ldr      x0, [x22, #0x20]
+00028008: cbz      x0, #0x28018
+0002800c: bl       #0x4b960 ; _ZN4FMOD14ChannelControl4stopEv
+00028010: ldrb     w8, [sp]
+00028014: and      w21, w8, #1
+00028018: tst      w21, #0xff
+0002801c: b.eq     #0x28028
+00028020: ldr      x0, [sp, #0x10]
+00028024: bl       #0x4b730 ; _ZdlPv
+00028028: ldr      x8, [x24, #0x28]
+0002802c: ldur     x9, [x29, #-8]
+00028030: cmp      x8, x9
+00028034: b.ne     #0x28058
+00028038: ldp      x20, x19, [sp, #0x60]
+0002803c: ldp      x22, x21, [sp, #0x50]
+00028040: ldp      x24, x23, [sp, #0x40]
+00028044: ldp      x29, x30, [sp, #0x30]
+00028048: add      sp, sp, #0x70
+0002804c: ret      
+00028050: mov      x0, sp
+00028054: bl       #0x4b880 ; _ZNKSt6__ndk121__basic_string_commonILb1EE20__throw_length_errorEv
+00028058: bl       #0x4b6f0 ; __stack_chk_fail
+0002805c: b        #0x28060
+00028060: ldrb     w8, [sp]
+00028064: mov      x19, x0
+00028068: tbz      w8, #0, #0x28074
+0002806c: ldr      x0, [sp, #0x10]
+00028070: bl       #0x4b730 ; _ZdlPv
+00028074: mov      x0, x19
+00028078: bl       #0x47c70 ; 
+
+_ZN24AudioProviderFMODAndroid12setBGMPausedEbi 0x379e8 size 68
+000379e8: stp      x29, x30, [sp, #-0x10]!
+000379ec: mov      x29, sp
+000379f0: cbz      w2, #0x37a14
+000379f4: ldp      x8, x10, [x0, #0x38]!
+000379f8: sxtw     x9, w2
+000379fc: sub      x10, x10, x8
+00037a00: cmp      x9, x10, asr #4
+00037a04: b.hs     #0x37a28
+00037a08: add      x8, x8, x9, lsl #4
+00037a0c: add      x8, x8, #8
+00037a10: b        #0x37a18
+00037a14: add      x8, x0, #0x18
+00037a18: ldr      x0, [x8]
+00037a1c: and      w1, w1, #1
+00037a20: ldp      x29, x30, [sp], #0x10
+00037a24: b        #0x4b860
+00037a28: bl       #0x4b870 ; _ZNKSt6__ndk120__vector_base_commonILb1EE20__throw_out_of_rangeEv
+
+_ZN24AudioProviderFMODAndroid9unloadBGMEi 0x22ae8 size 440
+00022ae8: sub      sp, sp, #0x70
+00022aec: stp      x29, x30, [sp, #0x20]
+00022af0: str      x25, [sp, #0x30]
+00022af4: stp      x24, x23, [sp, #0x40]
+00022af8: stp      x22, x21, [sp, #0x50]
+00022afc: stp      x20, x19, [sp, #0x60]
+00022b00: add      x29, sp, #0x20
+00022b04: mrs      x22, tpidr_el0
+00022b08: ldr      x8, [x22, #0x28]
+00022b0c: mov      w20, w1
+00022b10: mov      x19, x0
+00022b14: stur     x8, [x29, #-8]
+00022b18: cbz      w1, #0x22bc0
+00022b1c: mov      x21, x19
+00022b20: ldp      x8, x9, [x21, #0x38]!
+00022b24: sxtw     x23, w20
+00022b28: sub      x9, x9, x8
+00022b2c: cmp      x23, x9, asr #4
+00022b30: b.hs     #0x22c78
+00022b34: lsl      x20, x23, #4
+00022b38: ldr      x0, [x8, x20]
+00022b3c: bl       #0x4b900 ; _ZN4FMOD5Sound7releaseEv
+00022b40: ldp      x8, x9, [x19, #0x38]
+00022b44: sub      x9, x9, x8
+00022b48: cmp      x23, x9, asr #4
+00022b4c: b.hs     #0x22c78
+00022b50: adrp     x9, #0x17000
+00022b54: add      x9, x9, #0xd2d
+00022b58: ldr      x9, [x9]
+00022b5c: str      xzr, [x8, x20]
+00022b60: mov      w8, #0x12
+00022b64: strb     w8, [sp]
+00022b68: mov      w8, #0x4d
+00022b6c: sturh    w8, [sp, #9]
+00022b70: stur     x9, [sp, #1]
+00022b74: mov      x1, sp
+00022b78: mov      w2, wzr
+00022b7c: mov      x3, xzr
+00022b80: bl       #0x34660 ; 
+00022b84: ldrb     w8, [sp]
+00022b88: tbz      w8, #0, #0x22b94
+00022b8c: ldr      x0, [sp, #0x10]
+00022b90: bl       #0x4b730 ; _ZdlPv
+00022b94: ldr      x8, [x22, #0x28]
+00022b98: ldur     x9, [x29, #-8]
+00022b9c: cmp      x8, x9
+00022ba0: b.ne     #0x22c80
+00022ba4: ldp      x20, x19, [sp, #0x60]
+00022ba8: ldp      x22, x21, [sp, #0x50]
+00022bac: ldp      x24, x23, [sp, #0x40]
+00022bb0: ldr      x25, [sp, #0x30]
+00022bb4: ldp      x29, x30, [sp, #0x20]
+00022bb8: add      sp, sp, #0x70
+00022bbc: ret      
+00022bc0: ldp      x21, x8, [x19, #0x20]
+00022bc4: cmp      x21, x8
+00022bc8: b.ne     #0x22bdc
+00022bcc: b        #0x22b1c
+00022bd0: cmp      x21, x23
+00022bd4: str      x23, [x19, #0x28]
+00022bd8: b.eq     #0x22b1c
+00022bdc: ldr      x0, [x21, #0x18]
+00022be0: bl       #0x4b900 ; _ZN4FMOD5Sound7releaseEv
+00022be4: ldr      x24, [x19, #0x28]
+00022be8: add      x8, x21, #0x28
+00022bec: cmp      x8, x24
+00022bf0: b.eq     #0x22c4c
+00022bf4: mov      x25, x21
+00022bf8: b        #0x22c28
+00022bfc: ldur     q0, [x25, #0x28]
+00022c00: ldur     q1, [x25, #0x38]
+00022c04: ldr      x8, [x25, #0x48]
+00022c08: add      x23, x25, #0x28
+00022c0c: add      x9, x25, #0x50
+00022c10: strh     wzr, [x25, #0x28]
+00022c14: cmp      x9, x24
+00022c18: stp      q0, q1, [x25]
+00022c1c: str      x8, [x25, #0x20]
+00022c20: mov      x25, x23
+00022c24: b.eq     #0x22c3c
+00022c28: ldrb     w8, [x25]
+00022c2c: tbz      w8, #0, #0x22bfc
+00022c30: ldr      x0, [x25, #0x10]
+00022c34: bl       #0x4b730 ; _ZdlPv
+00022c38: b        #0x22bfc
+00022c3c: ldr      x8, [x19, #0x28]
+00022c40: cmp      x23, x8
+00022c44: b.ne     #0x22c50
+00022c48: b        #0x22bd0
+00022c4c: mov      x23, x21
+00022c50: mov      x24, x8
+00022c54: b        #0x22c64
+00022c58: cmp      x24, x23
+00022c5c: mov      x8, x24
+00022c60: b.eq     #0x22bd0
+00022c64: ldrb     w9, [x24, #-0x28]!
+00022c68: tbz      w9, #0, #0x22c58
+00022c6c: ldur     x0, [x8, #-0x18]
+00022c70: bl       #0x4b730 ; _ZdlPv
+00022c74: b        #0x22c58
+00022c78: mov      x0, x21
+00022c7c: bl       #0x4b870 ; _ZNKSt6__ndk120__vector_base_commonILb1EE20__throw_out_of_rangeEv
+00022c80: bl       #0x4b6f0 ; __stack_chk_fail
+00022c84: ldrb     w8, [sp]
+00022c88: mov      x19, x0
+00022c8c: tbz      w8, #0, #0x22c98
+00022c90: ldr      x0, [sp, #0x10]
+00022c94: bl       #0x4b730 ; _ZdlPv
+00022c98: mov      x0, x19
+00022c9c: bl       #0x47c70 ; 
+
+_ZN24AudioProviderFMODAndroid27loadAndScheduleSfxOnMainBGMENSt6__ndk16vectorINS0_4pairINS0_12basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEEiEENS6_IS9_EEEE 0x4acac size 676
+0004acac: sub      sp, sp, #0xe0
+0004acb0: stp      x29, x30, [sp, #0x80]
+0004acb4: stp      x28, x27, [sp, #0x90]
+0004acb8: stp      x26, x25, [sp, #0xa0]
+0004acbc: stp      x24, x23, [sp, #0xb0]
+0004acc0: stp      x22, x21, [sp, #0xc0]
+0004acc4: stp      x20, x19, [sp, #0xd0]
+0004acc8: add      x29, sp, #0x80
+0004accc: mrs      x8, tpidr_el0
+0004acd0: str      x8, [sp, #8]
+0004acd4: ldr      x8, [x8, #0x28]
+0004acd8: mov      x19, x0
+0004acdc: mov      x21, x1
+0004ace0: mov      w1, #1
+0004ace4: stur     x8, [x29, #-8]
+0004ace8: ldr      x0, [x0, #0x18]
+0004acec: bl       #0x4b860 ; _ZN4FMOD14ChannelControl9setPausedEb
+0004acf0: ldp      x20, x26, [x21]
+0004acf4: cmp      x20, x26
+0004acf8: b.eq     #0x4aeb0
+0004acfc: sub      x27, x29, #0x28
+0004ad00: adrp     x22, #0x15000
+0004ad04: add      x8, x19, #0x38
+0004ad08: add      x22, x22, #0xbf5
+0004ad0c: adrp     x28, #0x58000
+0004ad10: orr      x21, x27, #1
+0004ad14: mov      w25, #0x447a0000
+0004ad18: str      x8, [sp]
+0004ad1c: b        #0x4ad2c
+0004ad20: add      x20, x20, #0x20
+0004ad24: cmp      x20, x26
+0004ad28: b.eq     #0x4aeb0
+0004ad2c: sub      x0, x29, #0x28
+0004ad30: mov      x1, x20
+0004ad34: bl       #0x4b890 ; _ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1ERKS5_
+0004ad38: ldurb    w9, [x29, #-0x28]
+0004ad3c: ldur     x10, [x29, #-0x18]
+0004ad40: ldr      w8, [x20, #0x18]
+0004ad44: tst      w9, #1
+0004ad48: csel     x1, x21, x10, eq
+0004ad4c: stur     w8, [x29, #-0x10]
+0004ad50: bl       #0x4b8a0 ; _ZN24AudioProviderFMODAndroid18preloadSFXInternalEPKc
+0004ad54: ldr      x8, [x19]
+0004ad58: ldurb    w9, [x29, #-0x28]
+0004ad5c: ldur     x10, [x29, #-0x18]
+0004ad60: mov      x23, x0
+0004ad64: ldr      x8, [x8, #0x70]
+0004ad68: tst      w9, #1
+0004ad6c: csel     x1, x21, x10, eq
+0004ad70: fmov     s0, #-1.00000000
+0004ad74: mov      w3, #1
+0004ad78: mov      x0, x19
+0004ad7c: mov      w2, wzr
+0004ad80: mov      w4, wzr
+0004ad84: mov      w5, wzr
+0004ad88: blr      x8
+0004ad8c: str      x27, [sp, #0x10]
+0004ad90: add      x0, x19, #0x68
+0004ad94: sub      x1, x29, #0x28
+0004ad98: add      x3, sp, #0x10
+0004ad9c: add      x4, sp, #0x40
+0004ada0: mov      x2, x22
+0004ada4: bl       #0x38f9c ; 
+0004ada8: ldr      x24, [x0, #0x38]
+0004adac: add      x0, x19, #0x68
+0004adb0: sub      x1, x29, #0x28
+0004adb4: bl       #0x46928 ; 
+0004adb8: ldr      x0, [x28, #0x4f8]
+0004adbc: sub      x1, x29, #0x2c
+0004adc0: sub      x2, x29, #0x34
+0004adc4: sub      x3, x29, #0x30
+0004adc8: bl       #0x4b8b0 ; _ZN4FMOD6System17getSoftwareFormatEPiP16FMOD_SPEAKERMODES1_
+0004adcc: ldp      x8, x9, [x19, #0x38]
+0004add0: cmp      x9, x8
+0004add4: b.eq     #0x4aee4
+0004add8: ldr      x0, [x8, #8]
+0004addc: add      x1, sp, #0x40
+0004ade0: add      x2, sp, #0x38
+0004ade4: bl       #0x4b8c0 ; _ZN4FMOD14ChannelControl11getDSPClockEPyS1_
+0004ade8: ldur     s0, [x29, #-0x10]
+0004adec: ldur     s2, [x29, #-0x2c]
+0004adf0: ldr      x8, [sp, #0x38]
+0004adf4: fmov     s1, w25
+0004adf8: scvtf    s0, s0
+0004adfc: fdiv     s0, s0, s1
+0004ae00: scvtf    s1, s2
+0004ae04: ucvtf    s3, x8
+0004ae08: fmul     s0, s0, s1
+0004ae0c: fadd     s0, s0, s3
+0004ae10: fcvtzu   x1, s0
+0004ae14: mov      w3, #1
+0004ae18: mov      x0, x24
+0004ae1c: mov      x2, xzr
+0004ae20: bl       #0x4b8d0 ; _ZN4FMOD14ChannelControl8setDelayEyyb
+0004ae24: ldr      x1, [x19, #0x18]
+0004ae28: mov      x0, x24
+0004ae2c: bl       #0x4b8e0 ; _ZN4FMOD7Channel15setChannelGroupEPNS_12ChannelGroupE
+0004ae30: add      x0, sp, #0x10
+0004ae34: sub      x1, x29, #0x28
+0004ae38: bl       #0x4b890 ; _ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1ERKS5_
+0004ae3c: ldp      x8, x9, [x19, #0x28]
+0004ae40: stp      x23, x24, [sp, #0x28]
+0004ae44: cmp      x8, x9
+0004ae48: b.hs     #0x4ae80
+0004ae4c: ldr      x9, [sp, #0x20]
+0004ae50: ldr      q0, [sp, #0x10]
+0004ae54: add      x10, x8, #0x28
+0004ae58: str      x9, [x8, #0x10]
+0004ae5c: str      q0, [x8]
+0004ae60: ldr      x9, [sp, #0x28]
+0004ae64: stp      xzr, xzr, [sp, #0x18]
+0004ae68: str      xzr, [sp, #0x10]
+0004ae6c: str      x9, [x8, #0x18]
+0004ae70: ldr      x9, [sp, #0x30]
+0004ae74: str      x9, [x8, #0x20]
+0004ae78: str      x10, [x19, #0x28]
+0004ae7c: b        #0x4ae9c
+0004ae80: add      x0, x19, #0x20
+0004ae84: add      x1, sp, #0x10
+0004ae88: bl       #0x34f88 ; 
+0004ae8c: ldrb     w8, [sp, #0x10]
+0004ae90: tbz      w8, #0, #0x4ae9c
+0004ae94: ldr      x0, [sp, #0x20]
+0004ae98: bl       #0x4b730 ; _ZdlPv
+0004ae9c: ldurb    w8, [x29, #-0x28]
+0004aea0: tbz      w8, #0, #0x4ad20
+0004aea4: ldur     x0, [x29, #-0x18]
+0004aea8: bl       #0x4b730 ; _ZdlPv
+0004aeac: b        #0x4ad20
+0004aeb0: ldr      x8, [sp, #8]
+0004aeb4: ldr      x8, [x8, #0x28]
+0004aeb8: ldur     x9, [x29, #-8]
+0004aebc: cmp      x8, x9
+0004aec0: b.ne     #0x4aeec
+0004aec4: ldp      x20, x19, [sp, #0xd0]
+0004aec8: ldp      x22, x21, [sp, #0xc0]
+0004aecc: ldp      x24, x23, [sp, #0xb0]
+0004aed0: ldp      x26, x25, [sp, #0xa0]
+0004aed4: ldp      x28, x27, [sp, #0x90]
+0004aed8: ldp      x29, x30, [sp, #0x80]
+0004aedc: add      sp, sp, #0xe0
+0004aee0: ret      
+0004aee4: ldr      x0, [sp]
+0004aee8: bl       #0x4b870 ; _ZNKSt6__ndk120__vector_base_commonILb1EE20__throw_out_of_rangeEv
+0004aeec: bl       #0x4b6f0 ; __stack_chk_fail
+0004aef0: ldrb     w8, [sp, #0x10]
+0004aef4: mov      x19, x0
+0004aef8: tbnz     w8, #0, #0x4af0c
+0004aefc: ldurb    w8, [x29, #-0x28]
+0004af00: tbnz     w8, #0, #0x4af40
+0004af04: mov      x0, x19
+0004af08: bl       #0x47c70 ; 
+0004af0c: ldr      x0, [sp, #0x20]
+0004af10: bl       #0x4b730 ; _ZdlPv
+0004af14: ldurb    w8, [x29, #-0x28]
+0004af18: tbz      w8, #0, #0x4af04
+0004af1c: b        #0x4af40
+0004af20: b        #0x4af34
+0004af24: b        #0x4af34
+0004af28: b        #0x4af34
+0004af2c: b        #0x4af34
+0004af30: b        #0x4af34
+0004af34: mov      x19, x0
+0004af38: ldurb    w8, [x29, #-0x28]
+0004af3c: tbz      w8, #0, #0x4af04
+0004af40: ldur     x0, [x29, #-0x18]
+0004af44: bl       #0x4b730 ; _ZdlPv
+0004af48: mov      x0, x19
+0004af4c: bl       #0x47c70 ; 
+
+_ZN24AudioProviderFMODAndroid12setSFXVolumeEPKcf 0x3ca40 size 512
+0003ca40: sub      sp, sp, #0x80
+0003ca44: str      d8, [sp, #0x30]
+0003ca48: stp      x29, x30, [sp, #0x40]
+0003ca4c: stp      x24, x23, [sp, #0x50]
+0003ca50: stp      x22, x21, [sp, #0x60]
+0003ca54: stp      x20, x19, [sp, #0x70]
+0003ca58: add      x29, sp, #0x40
+0003ca5c: mrs      x24, tpidr_el0
+0003ca60: ldr      x8, [x24, #0x28]
+0003ca64: mov      x19, x0
+0003ca68: mov      x0, x1
+0003ca6c: fmov     s8, s0
+0003ca70: mov      x20, x1
+0003ca74: stur     x8, [x29, #-0x18]
+0003ca78: bl       #0x4b820 ; strlen
+0003ca7c: cmn      x0, #0x10
+0003ca80: b.hs     #0x3cc14
+0003ca84: mov      x21, x0
+0003ca88: cmp      x0, #0x17
+0003ca8c: b.hs     #0x3caa8
+0003ca90: mov      x9, sp
+0003ca94: lsl      w8, w21, #1
+0003ca98: orr      x22, x9, #1
+0003ca9c: strb     w8, [sp]
+0003caa0: cbnz     x21, #0x3cac8
+0003caa4: b        #0x3cad8
+0003caa8: add      x8, x21, #0x10
+0003caac: and      x23, x8, #0xfffffffffffffff0
+0003cab0: mov      x0, x23
+0003cab4: bl       #0x4b720 ; _Znwm
+0003cab8: orr      x8, x23, #1
+0003cabc: mov      x22, x0
+0003cac0: stp      x21, x0, [sp, #8]
+0003cac4: str      x8, [sp]
+0003cac8: mov      x0, x22
+0003cacc: mov      x1, x20
+0003cad0: mov      x2, x21
+0003cad4: bl       #0x4b830 ; memcpy
+0003cad8: strb     wzr, [x22, x21]
+0003cadc: add      x0, x19, #0x68
+0003cae0: mov      x1, sp
+0003cae4: bl       #0x38bc0 ; 
+0003cae8: add      x8, x19, #0x70
+0003caec: cmp      x8, x0
+0003caf0: b.eq     #0x3cb20
+0003caf4: mov      x8, sp
+0003caf8: str      x8, [sp, #0x20]
+0003cafc: adrp     x2, #0x15000
+0003cb00: add      x2, x2, #0xbf5
+0003cb04: add      x0, x19, #0x68
+0003cb08: mov      x1, sp
+0003cb0c: add      x3, sp, #0x20
+0003cb10: add      x4, sp, #0x18
+0003cb14: bl       #0x38f9c ; 
+0003cb18: ldr      x0, [x0, #0x38]
+0003cb1c: cbnz     x0, #0x3cbc8
+0003cb20: ldrb     w8, [sp]
+0003cb24: ldp      x9, x10, [sp, #8]
+0003cb28: ldp      x22, x23, [x19, #0x20]
+0003cb2c: mov      x11, sp
+0003cb30: orr      x11, x11, #1
+0003cb34: ands     w21, w8, #1
+0003cb38: lsr      x8, x8, #1
+0003cb3c: csel     x19, x8, x9, eq
+0003cb40: csel     x20, x11, x10, eq
+0003cb44: b        #0x3cb4c
+0003cb48: add      x22, x22, #0x28
+0003cb4c: cmp      x22, x23
+0003cb50: b.eq     #0x3cbd8
+0003cb54: ldrb     w9, [x22]
+0003cb58: ldr      x10, [x22, #8]
+0003cb5c: lsr      x8, x9, #1
+0003cb60: tst      w9, #1
+0003cb64: csel     x10, x8, x10, eq
+0003cb68: cmp      x10, x19
+0003cb6c: b.ne     #0x3cb48
+0003cb70: ldr      x10, [x22, #0x10]
+0003cb74: ands     w9, w9, #1
+0003cb78: csinc    x0, x10, x22, ne
+0003cb7c: cbnz     w9, #0x3cbac
+0003cb80: cbz      x19, #0x3cbc0
+0003cb84: mov      x9, xzr
+0003cb88: add      x10, x22, x9
+0003cb8c: ldrb     w10, [x10, #1]
+0003cb90: ldrb     w11, [x20, x9]
+0003cb94: cmp      w10, w11
+0003cb98: b.ne     #0x3cb48
+0003cb9c: add      x9, x9, #1
+0003cba0: cmp      x8, x9
+0003cba4: b.ne     #0x3cb88
+0003cba8: b        #0x3cbc0
+0003cbac: cbz      x19, #0x3cbc0
+0003cbb0: mov      x1, x20
+0003cbb4: mov      x2, x19
+0003cbb8: bl       #0x4b990 ; memcmp
+0003cbbc: cbnz     w0, #0x3cb48
+0003cbc0: ldr      x0, [x22, #0x20]
+0003cbc4: cbz      x0, #0x3cbd8
+0003cbc8: fmov     s0, s8
+0003cbcc: bl       #0x4b920 ; _ZN4FMOD14ChannelControl9setVolumeEf
+0003cbd0: ldrb     w8, [sp]
+0003cbd4: and      w21, w8, #1
+0003cbd8: tst      w21, #0xff
+0003cbdc: b.eq     #0x3cbe8
+0003cbe0: ldr      x0, [sp, #0x10]
+0003cbe4: bl       #0x4b730 ; _ZdlPv
+0003cbe8: ldr      x8, [x24, #0x28]
+0003cbec: ldur     x9, [x29, #-0x18]
+0003cbf0: cmp      x8, x9
+0003cbf4: b.ne     #0x3cc1c
+0003cbf8: ldp      x20, x19, [sp, #0x70]
+0003cbfc: ldp      x22, x21, [sp, #0x60]
+0003cc00: ldp      x24, x23, [sp, #0x50]
+0003cc04: ldp      x29, x30, [sp, #0x40]
+0003cc08: ldr      d8, [sp, #0x30]
+0003cc0c: add      sp, sp, #0x80
+0003cc10: ret      
+0003cc14: mov      x0, sp
+0003cc18: bl       #0x4b880 ; _ZNKSt6__ndk121__basic_string_commonILb1EE20__throw_length_errorEv
+0003cc1c: bl       #0x4b6f0 ; __stack_chk_fail
+0003cc20: b        #0x3cc24
+0003cc24: ldrb     w8, [sp]
+0003cc28: mov      x19, x0
+0003cc2c: tbz      w8, #0, #0x3cc38
+0003cc30: ldr      x0, [sp, #0x10]
+0003cc34: bl       #0x4b730 ; _ZdlPv
+0003cc38: mov      x0, x19
+0003cc3c: bl       #0x47c70 ; 
+
+_ZN24AudioProviderFMODAndroid18setMasterBGMVolumeEfb 0x36710 size 284
+00036710: stp      x29, x30, [sp, #-0x30]!
+00036714: str      x21, [sp, #0x10]
+00036718: stp      x20, x19, [sp, #0x20]
+0003671c: mov      x29, sp
+00036720: str      s0, [x0, #0xc]
+00036724: tbz      w1, #0, #0x3681c
+00036728: ldp      x9, x8, [x0, #0x38]
+0003672c: mov      x19, x0
+00036730: cmp      x8, x9
+00036734: b.eq     #0x3681c
+00036738: mov      x20, xzr
+0003673c: mov      w21, #0x7fffffff
+00036740: b        #0x36768
+00036744: ldr      s0, [x13, #0x14]
+00036748: ldr      s1, [x19, #0xc]
+0003674c: fmul     s0, s0, s1
+00036750: bl       #0x4b920 ; _ZN4FMOD14ChannelControl9setVolumeEf
+00036754: ldp      x9, x8, [x19, #0x38]
+00036758: add      x20, x20, #1
+0003675c: sub      x10, x8, x9
+00036760: cmp      x20, x10, asr #4
+00036764: b.hs     #0x3681c
+00036768: add      x10, x9, x20, lsl #4
+0003676c: ldr      x0, [x10, #8]
+00036770: cbz      x0, #0x36758
+00036774: ldr      x10, [x19, #0x88]
+00036778: cbz      x10, #0x36758
+0003677c: fmov     d0, x10
+00036780: cnt      v0.8b, v0.8b
+00036784: uaddlv   h0, v0.8b
+00036788: fmov     w11, s0
+0003678c: cmp      x11, #1
+00036790: b.hi     #0x367a0
+00036794: add      x12, x10, x21
+00036798: and      x12, x12, x20
+0003679c: b        #0x367b4
+000367a0: cmp      x10, x20
+000367a4: mov      x12, x20
+000367a8: b.hi     #0x367b4
+000367ac: udiv     x12, x20, x10
+000367b0: msub     x12, x12, x10, x20
+000367b4: ldr      x13, [x19, #0x80]
+000367b8: ldr      x13, [x13, x12, lsl #3]
+000367bc: cbz      x13, #0x36758
+000367c0: ldr      x13, [x13]
+000367c4: cbz      x13, #0x36758
+000367c8: sub      x14, x10, #1
+000367cc: b        #0x367e4
+000367d0: ldr      w15, [x13, #0x10]
+000367d4: cmp      x20, x15
+000367d8: b.eq     #0x36744
+000367dc: ldr      x13, [x13]
+000367e0: cbz      x13, #0x36758
+000367e4: ldr      x15, [x13, #8]
+000367e8: cmp      x15, x20
+000367ec: b.eq     #0x367d0
+000367f0: cmp      x11, #1
+000367f4: b.hi     #0x36800
+000367f8: and      x15, x15, x14
+000367fc: b        #0x36810
+00036800: cmp      x15, x10
+00036804: b.lo     #0x36810
+00036808: udiv     x16, x15, x10
+0003680c: msub     x15, x16, x10, x15
+00036810: cmp      x15, x12
+00036814: b.eq     #0x367dc
+00036818: b        #0x36758
+0003681c: ldp      x20, x19, [sp, #0x20]
+00036820: ldr      x21, [sp, #0x10]
+00036824: ldp      x29, x30, [sp], #0x30
+00036828: ret      
+
+_ZN24AudioProviderFMODAndroid12setBGMVolumeEfi 0x3b62c size 172
+0003b62c: sub      sp, sp, #0x50
+0003b630: str      d8, [sp, #0x20]
+0003b634: stp      x29, x30, [sp, #0x30]
+0003b638: stp      x20, x19, [sp, #0x40]
+0003b63c: add      x29, sp, #0x30
+0003b640: mrs      x20, tpidr_el0
+0003b644: ldr      x8, [x20, #0x28]
+0003b648: adrp     x2, #0x15000
+0003b64c: mov      x19, x0
+0003b650: add      x9, sp, #4
+0003b654: str      x8, [sp, #0x18]
+0003b658: str      w1, [sp, #4]
+0003b65c: add      x2, x2, #0xbf5
+0003b660: add      x0, x0, #0x80
+0003b664: add      x1, sp, #4
+0003b668: add      x3, sp, #0x10
+0003b66c: add      x4, sp, #8
+0003b670: fmov     s8, s0
+0003b674: str      x9, [sp, #0x10]
+0003b678: bl       #0x38238 ; 
+0003b67c: str      s8, [x0, #0x14]
+0003b680: mov      x0, x19
+0003b684: ldp      x8, x10, [x0, #0x38]!
+0003b688: ldrsw    x9, [sp, #4]
+0003b68c: sub      x10, x10, x8
+0003b690: cmp      x9, x10, asr #4
+0003b694: b.hs     #0x3b6d0
+0003b698: add      x8, x8, x9, lsl #4
+0003b69c: ldr      s0, [x19, #0xc]
+0003b6a0: ldr      x0, [x8, #8]
+0003b6a4: fmul     s0, s0, s8
+0003b6a8: bl       #0x4b920 ; _ZN4FMOD14ChannelControl9setVolumeEf
+0003b6ac: ldr      x8, [x20, #0x28]
+0003b6b0: ldr      x9, [sp, #0x18]
+0003b6b4: cmp      x8, x9
+0003b6b8: b.ne     #0x3b6d4
+0003b6bc: ldp      x20, x19, [sp, #0x40]
+0003b6c0: ldp      x29, x30, [sp, #0x30]
+0003b6c4: ldr      d8, [sp, #0x20]
+0003b6c8: add      sp, sp, #0x50
+0003b6cc: ret      
+0003b6d0: bl       #0x4b870 ; _ZNKSt6__ndk120__vector_base_commonILb1EE20__throw_out_of_rangeEv
+0003b6d4: bl       #0x4b6f0 ; __stack_chk_fail
+
+_ZN24AudioProviderFMODAndroid6resumeEv 0x36620 size 208
+00036620: sub      sp, sp, #0x40
+00036624: stp      x29, x30, [sp, #0x20]
+00036628: stp      x20, x19, [sp, #0x30]
+0003662c: add      x29, sp, #0x20
+00036630: mrs      x20, tpidr_el0
+00036634: ldr      x8, [x20, #0x28]
+00036638: mov      w9, #1
+0003663c: stur     x8, [x29, #-8]
+00036640: adrp     x8, #0x58000
+00036644: ldr      x8, [x8, #0x4f8]
+00036648: strb     w9, [x0, #0x10]
+0003664c: mov      x0, x8
+00036650: bl       #0x4b700 ; _ZN4FMOD6System11mixerResumeEv
+00036654: mov      w19, w0
+00036658: mov      w0, #0x20
+0003665c: bl       #0x4b720 ; _Znwm
+00036660: adrp     x9, #0x18000
+00036664: adrp     x8, #0x13000
+00036668: add      x9, x9, #0x551
+0003666c: ldr      q0, [x8, #0xf10]
+00036670: ldr      q1, [x9]
+00036674: ldur     x8, [x9, #0xf]
+00036678: str      x0, [sp, #0x10]
+0003667c: str      q0, [sp]
+00036680: str      q1, [x0]
+00036684: stur     x8, [x0, #0xf]
+00036688: strb     wzr, [x0, #0x17]
+0003668c: mov      x1, sp
+00036690: mov      w0, w19
+00036694: mov      w2, wzr
+00036698: mov      x3, xzr
+0003669c: bl       #0x34660 ; 
+000366a0: ldrb     w8, [sp]
+000366a4: tbz      w8, #0, #0x366b0
+000366a8: ldr      x0, [sp, #0x10]
+000366ac: bl       #0x4b730 ; _ZdlPv
+000366b0: ldr      x8, [x20, #0x28]
+000366b4: ldur     x9, [x29, #-8]
+000366b8: cmp      x8, x9
+000366bc: b.ne     #0x366d0
+000366c0: ldp      x20, x19, [sp, #0x30]
+000366c4: ldp      x29, x30, [sp, #0x20]
+000366c8: add      sp, sp, #0x40
+000366cc: ret      
+000366d0: bl       #0x4b6f0 ; __stack_chk_fail
+000366d4: ldrb     w8, [sp]
+000366d8: mov      x19, x0
+000366dc: tbz      w8, #0, #0x366e8
+000366e0: ldr      x0, [sp, #0x10]
+000366e4: bl       #0x4b730 ; _ZdlPv
+000366e8: mov      x0, x19
+000366ec: bl       #0x47c70 ; 
+
+_ZN24AudioProviderFMODAndroid7playSFXEPKcbbfii 0x48d24 size 708
+00048d24: sub      sp, sp, #0xe0
+00048d28: str      d8, [sp, #0x70]
+00048d2c: stp      x29, x30, [sp, #0x80]
+00048d30: stp      x28, x27, [sp, #0x90]
+00048d34: stp      x26, x25, [sp, #0xa0]
+00048d38: stp      x24, x23, [sp, #0xb0]
+00048d3c: stp      x22, x21, [sp, #0xc0]
+00048d40: stp      x20, x19, [sp, #0xd0]
+00048d44: add      x29, sp, #0x80
+00048d48: mrs      x28, tpidr_el0
+00048d4c: ldr      x8, [x28, #0x28]
+00048d50: mov      x19, x0
+00048d54: mov      x0, x1
+00048d58: mov      w21, w5
+00048d5c: mov      w20, w4
+00048d60: fmov     s8, s0
+00048d64: mov      w23, w3
+00048d68: mov      w22, w2
+00048d6c: mov      x24, x1
+00048d70: stur     x8, [x29, #-0x18]
+00048d74: stur     xzr, [x29, #-0x30]
+00048d78: bl       #0x4b820 ; strlen
+00048d7c: cmn      x0, #0x10
+00048d80: b.hs     #0x48f80
+00048d84: mov      x25, x0
+00048d88: cmp      x0, #0x17
+00048d8c: b.hs     #0x48da8
+00048d90: add      x9, sp, #0x38
+00048d94: lsl      w8, w25, #1
+00048d98: orr      x26, x9, #1
+00048d9c: strb     w8, [sp, #0x38]
+00048da0: cbnz     x25, #0x48dc8
+00048da4: b        #0x48dd8
+00048da8: add      x8, x25, #0x10
+00048dac: and      x27, x8, #0xfffffffffffffff0
+00048db0: mov      x0, x27
+00048db4: bl       #0x4b720 ; _Znwm
+00048db8: orr      x8, x27, #1
+00048dbc: mov      x26, x0
+00048dc0: stp      x25, x0, [sp, #0x40]
+00048dc4: str      x8, [sp, #0x38]
+00048dc8: mov      x0, x26
+00048dcc: mov      x1, x24
+00048dd0: mov      x2, x25
+00048dd4: bl       #0x4b830 ; memcpy
+00048dd8: strb     wzr, [x26, x25]
+00048ddc: add      x0, x19, #0x50
+00048de0: sub      x1, x29, #0x20
+00048de4: add      x2, sp, #0x38
+00048de8: bl       #0x4b498 ; 
+00048dec: ldr      x8, [x0]
+00048df0: cbz      x8, #0x48f88
+00048df4: ldr      x1, [x8, #0x38]
+00048df8: adrp     x8, #0x58000
+00048dfc: ldr      x0, [x8, #0x4f8]
+00048e00: sub      x4, x29, #0x30
+00048e04: mov      w3, #1
+00048e08: mov      x2, xzr
+00048e0c: bl       #0x4b850 ; _ZN4FMOD6System9playSoundEPNS_5SoundEPNS_12ChannelGroupEbPPNS_7ChannelE
+00048e10: adrp     x8, #0x17000
+00048e14: add      x8, x8, #0x6dd
+00048e18: ldr      q0, [x8]
+00048e1c: ldur     x8, [x8, #0xd]
+00048e20: mov      w9, #0x2a
+00048e24: strb     w9, [sp, #0x20]
+00048e28: stur     q0, [sp, #0x21]
+00048e2c: stur     x8, [sp, #0x2e]
+00048e30: strb     wzr, [sp, #0x36]
+00048e34: add      x1, sp, #0x20
+00048e38: mov      w2, wzr
+00048e3c: mov      x3, xzr
+00048e40: bl       #0x34660 ; 
+00048e44: ldrb     w8, [sp, #0x20]
+00048e48: tbz      w8, #0, #0x48e54
+00048e4c: ldr      x0, [sp, #0x30]
+00048e50: bl       #0x4b730 ; _ZdlPv
+00048e54: ldur     x0, [x29, #-0x30]
+00048e58: tbz      w23, #0, #0x48e70
+00048e5c: mov      w8, #0xcccd
+00048e60: movk     w8, #0x3f4c, lsl #16
+00048e64: fmov     s0, w8
+00048e68: bl       #0x4b920 ; _ZN4FMOD14ChannelControl9setVolumeEf
+00048e6c: b        #0x48e84
+00048e70: ldr      s0, [x19, #8]
+00048e74: fmov     s1, #-1.00000000
+00048e78: fcmp     s8, s1
+00048e7c: fcsel    s0, s0, s8, eq
+00048e80: bl       #0x4b920 ; _ZN4FMOD14ChannelControl9setVolumeEf
+00048e84: ldur     x0, [x29, #-0x30]
+00048e88: sbfx     w1, w22, #0, #1
+00048e8c: bl       #0x4b910 ; _ZN4FMOD7Channel12setLoopCountEi
+00048e90: cbz      w21, #0x48eec
+00048e94: ldur     x0, [x29, #-0x30]
+00048e98: sub      w3, w21, #1
+00048e9c: mov      w2, #1
+00048ea0: mov      w4, #1
+00048ea4: mov      w1, w20
+00048ea8: bl       #0x4b970 ; _ZN4FMOD7Channel13setLoopPointsEjjjj
+00048eac: adrp     x9, #0x19000
+00048eb0: add      x9, x9, #0xb
+00048eb4: ldr      q0, [x9]
+00048eb8: mov      w8, #0x22
+00048ebc: strb     w8, [sp, #8]
+00048ec0: mov      w8, #0x73
+00048ec4: sturh    w8, [sp, #0x19]
+00048ec8: stur     q0, [sp, #9]
+00048ecc: add      x1, sp, #8
+00048ed0: mov      w2, wzr
+00048ed4: mov      x3, xzr
+00048ed8: bl       #0x34660 ; 
+00048edc: ldrb     w8, [sp, #8]
+00048ee0: tbz      w8, #0, #0x48eec
+00048ee4: ldr      x0, [sp, #0x18]
+00048ee8: bl       #0x4b730 ; _ZdlPv
+00048eec: ldur     x0, [x29, #-0x30]
+00048ef0: mov      w1, wzr
+00048ef4: bl       #0x4b860 ; _ZN4FMOD14ChannelControl9setPausedEb
+00048ef8: ldur     x20, [x29, #-0x30]
+00048efc: add      x0, x19, #0x68
+00048f00: add      x8, sp, #0x38
+00048f04: stur     x8, [x29, #-0x20]
+00048f08: adrp     x2, #0x15000
+00048f0c: add      x2, x2, #0xbf5
+00048f10: add      x1, sp, #0x38
+00048f14: sub      x3, x29, #0x20
+00048f18: sub      x4, x29, #0x28
+00048f1c: bl       #0x38f9c ; 
+00048f20: ldur     x8, [x29, #-0x30]
+00048f24: str      x20, [x0, #0x38]
+00048f28: sub      x1, x29, #0x20
+00048f2c: mov      x0, x8
+00048f30: bl       #0x4b980 ; _ZN4FMOD7Channel8getIndexEPi
+00048f34: ldrb     w8, [sp, #0x38]
+00048f38: ldur     w19, [x29, #-0x20]
+00048f3c: tbz      w8, #0, #0x48f48
+00048f40: ldr      x0, [sp, #0x48]
+00048f44: bl       #0x4b730 ; _ZdlPv
+00048f48: ldr      x8, [x28, #0x28]
+00048f4c: ldur     x9, [x29, #-0x18]
+00048f50: cmp      x8, x9
+00048f54: b.ne     #0x48f94
+00048f58: mov      w0, w19
+00048f5c: ldp      x20, x19, [sp, #0xd0]
+00048f60: ldp      x22, x21, [sp, #0xc0]
+00048f64: ldp      x24, x23, [sp, #0xb0]
+00048f68: ldp      x26, x25, [sp, #0xa0]
+00048f6c: ldp      x28, x27, [sp, #0x90]
+00048f70: ldp      x29, x30, [sp, #0x80]
+00048f74: ldr      d8, [sp, #0x70]
+00048f78: add      sp, sp, #0xe0
+00048f7c: ret      
+00048f80: add      x0, sp, #0x38
+00048f84: bl       #0x4b880 ; _ZNKSt6__ndk121__basic_string_commonILb1EE20__throw_length_errorEv
+00048f88: adrp     x0, #0x18000
+00048f8c: add      x0, x0, #0x164
+00048f90: bl       #0x27e34 ; 
+00048f94: bl       #0x4b6f0 ; __stack_chk_fail
+00048f98: ldrb     w8, [sp, #8]
+00048f9c: mov      x19, x0
+00048fa0: tbz      w8, #0, #0x48fd0
+00048fa4: ldr      x0, [sp, #0x18]
+00048fa8: bl       #0x4b730 ; _ZdlPv
+00048fac: b        #0x48fd0
+00048fb0: b        #0x48fcc
+00048fb4: ldrb     w8, [sp, #0x20]
+00048fb8: mov      x19, x0
+00048fbc: tbz      w8, #0, #0x48fd0
+00048fc0: ldr      x0, [sp, #0x30]
+00048fc4: bl       #0x4b730 ; _ZdlPv
+00048fc8: b        #0x48fd0
+00048fcc: mov      x19, x0
+00048fd0: ldrb     w8, [sp, #0x38]
+00048fd4: tbz      w8, #0, #0x48fe0
+00048fd8: ldr      x0, [sp, #0x48]
+00048fdc: bl       #0x4b730 ; _ZdlPv
+00048fe0: mov      x0, x19
+00048fe4: bl       #0x47c70 ; 
+
+_ZN24AudioProviderFMODAndroid9unloadSFXEPKc 0x3012c size 792
+0003012c: sub      sp, sp, #0x80
+00030130: stp      x29, x30, [sp, #0x30]
+00030134: str      x25, [sp, #0x40]
+00030138: stp      x24, x23, [sp, #0x50]
+0003013c: stp      x22, x21, [sp, #0x60]
+00030140: stp      x20, x19, [sp, #0x70]
+00030144: add      x29, sp, #0x30
+00030148: mrs      x24, tpidr_el0
+0003014c: ldr      x8, [x24, #0x28]
+00030150: mov      x19, x0
+00030154: mov      x0, x1
+00030158: mov      x20, x1
+0003015c: stur     x8, [x29, #-8]
+00030160: bl       #0x4b820 ; strlen
+00030164: cmn      x0, #0x10
+00030168: b.hs     #0x30414
+0003016c: mov      x21, x0
+00030170: cmp      x0, #0x17
+00030174: add      x25, x19, #0x50
+00030178: b.hs     #0x30194
+0003017c: add      x9, sp, #8
+00030180: lsl      w8, w21, #1
+00030184: orr      x22, x9, #1
+00030188: strb     w8, [sp, #8]
+0003018c: cbnz     x21, #0x301b4
+00030190: b        #0x301c4
+00030194: add      x8, x21, #0x10
+00030198: and      x23, x8, #0xfffffffffffffff0
+0003019c: mov      x0, x23
+000301a0: bl       #0x4b720 ; _Znwm
+000301a4: orr      x8, x23, #1
+000301a8: mov      x22, x0
+000301ac: stp      x21, x0, [sp, #0x10]
+000301b0: str      x8, [sp, #8]
+000301b4: mov      x0, x22
+000301b8: mov      x1, x20
+000301bc: mov      x2, x21
+000301c0: bl       #0x4b830 ; memcpy
+000301c4: strb     wzr, [x22, x21]
+000301c8: add      x0, x19, #0x50
+000301cc: sub      x1, x29, #0x10
+000301d0: add      x2, sp, #8
+000301d4: bl       #0x4b498 ; 
+000301d8: ldr      x21, [x0]
+000301dc: mov      x22, x0
+000301e0: cbnz     x21, #0x30248
+000301e4: mov      w0, #0x40
+000301e8: bl       #0x4b720 ; _Znwm
+000301ec: ldur     q0, [sp, #8]
+000301f0: ldr      x8, [sp, #0x18]
+000301f4: ldur     x9, [x29, #-0x10]
+000301f8: stp      xzr, xzr, [sp, #0x10]
+000301fc: str      xzr, [sp, #8]
+00030200: stp      xzr, xzr, [x0]
+00030204: str      q0, [x0, #0x20]
+00030208: stp      x8, xzr, [x0, #0x30]
+0003020c: str      x9, [x0, #0x10]
+00030210: str      x0, [x22]
+00030214: ldr      x8, [x25]
+00030218: mov      x21, x0
+0003021c: ldr      x8, [x8]
+00030220: cbz      x8, #0x30230
+00030224: str      x8, [x25]
+00030228: ldr      x1, [x22]
+0003022c: b        #0x30234
+00030230: mov      x1, x21
+00030234: ldr      x0, [x19, #0x58]
+00030238: bl       #0x3f780 ; 
+0003023c: ldr      x8, [x19, #0x60]
+00030240: add      x8, x8, #1
+00030244: str      x8, [x19, #0x60]
+00030248: ldrb     w8, [sp, #8]
+0003024c: ldr      x21, [x21, #0x38]
+00030250: tbz      w8, #0, #0x3025c
+00030254: ldr      x0, [sp, #0x18]
+00030258: bl       #0x4b730 ; _ZdlPv
+0003025c: cbz      x21, #0x303e8
+00030260: mov      x0, x21
+00030264: bl       #0x4b900 ; _ZN4FMOD5Sound7releaseEv
+00030268: mov      x0, x20
+0003026c: bl       #0x4b820 ; strlen
+00030270: cmn      x0, #0x10
+00030274: b.hs     #0x30414
+00030278: mov      x21, x0
+0003027c: cmp      x0, #0x17
+00030280: b.hs     #0x3029c
+00030284: add      x9, sp, #8
+00030288: lsl      w8, w21, #1
+0003028c: orr      x22, x9, #1
+00030290: strb     w8, [sp, #8]
+00030294: cbnz     x21, #0x302bc
+00030298: b        #0x302cc
+0003029c: add      x8, x21, #0x10
+000302a0: and      x23, x8, #0xfffffffffffffff0
+000302a4: mov      x0, x23
+000302a8: bl       #0x4b720 ; _Znwm
+000302ac: orr      x8, x23, #1
+000302b0: mov      x22, x0
+000302b4: stp      x21, x0, [sp, #0x10]
+000302b8: str      x8, [sp, #8]
+000302bc: mov      x0, x22
+000302c0: mov      x1, x20
+000302c4: mov      x2, x21
+000302c8: bl       #0x4b830 ; memcpy
+000302cc: strb     wzr, [x22, x21]
+000302d0: add      x0, x19, #0x68
+000302d4: add      x1, sp, #8
+000302d8: bl       #0x46928 ; 
+000302dc: ldrb     w8, [sp, #8]
+000302e0: tbz      w8, #0, #0x302ec
+000302e4: ldr      x0, [sp, #0x18]
+000302e8: bl       #0x4b730 ; _ZdlPv
+000302ec: mov      x0, x20
+000302f0: bl       #0x4b820 ; strlen
+000302f4: cmn      x0, #0x10
+000302f8: b.hs     #0x30414
+000302fc: mov      x21, x0
+00030300: cmp      x0, #0x17
+00030304: b.hs     #0x30320
+00030308: add      x9, sp, #8
+0003030c: lsl      w8, w21, #1
+00030310: orr      x22, x9, #1
+00030314: strb     w8, [sp, #8]
+00030318: cbnz     x21, #0x30340
+0003031c: b        #0x30350
+00030320: add      x8, x21, #0x10
+00030324: and      x23, x8, #0xfffffffffffffff0
+00030328: mov      x0, x23
+0003032c: bl       #0x4b720 ; _Znwm
+00030330: orr      x8, x23, #1
+00030334: mov      x22, x0
+00030338: stp      x21, x0, [sp, #0x10]
+0003033c: str      x8, [sp, #8]
+00030340: mov      x0, x22
+00030344: mov      x1, x20
+00030348: mov      x2, x21
+0003034c: bl       #0x4b830 ; memcpy
+00030350: strb     wzr, [x22, x21]
+00030354: add      x0, x19, #0x50
+00030358: sub      x1, x29, #0x10
+0003035c: add      x2, sp, #8
+00030360: bl       #0x4b498 ; 
+00030364: ldr      x20, [x0]
+00030368: mov      x21, x0
+0003036c: cbnz     x20, #0x303d4
+00030370: mov      w0, #0x40
+00030374: bl       #0x4b720 ; _Znwm
+00030378: ldur     q0, [sp, #8]
+0003037c: ldr      x8, [sp, #0x18]
+00030380: ldur     x9, [x29, #-0x10]
+00030384: stp      xzr, xzr, [sp, #0x10]
+00030388: str      xzr, [sp, #8]
+0003038c: stp      xzr, xzr, [x0]
+00030390: str      q0, [x0, #0x20]
+00030394: stp      x8, xzr, [x0, #0x30]
+00030398: str      x9, [x0, #0x10]
+0003039c: str      x0, [x21]
+000303a0: ldr      x8, [x25]
+000303a4: mov      x20, x0
+000303a8: ldr      x8, [x8]
+000303ac: cbz      x8, #0x303bc
+000303b0: str      x8, [x25]
+000303b4: ldr      x1, [x21]
+000303b8: b        #0x303c0
+000303bc: mov      x1, x20
+000303c0: ldr      x0, [x19, #0x58]
+000303c4: bl       #0x3f780 ; 
+000303c8: ldr      x8, [x19, #0x60]
+000303cc: add      x8, x8, #1
+000303d0: str      x8, [x19, #0x60]
+000303d4: ldrb     w8, [sp, #8]
+000303d8: str      xzr, [x20, #0x38]
+000303dc: tbz      w8, #0, #0x303e8
+000303e0: ldr      x0, [sp, #0x18]
+000303e4: bl       #0x4b730 ; _ZdlPv
+000303e8: ldr      x8, [x24, #0x28]
+000303ec: ldur     x9, [x29, #-8]
+000303f0: cmp      x8, x9
+000303f4: b.ne     #0x3041c
+000303f8: ldp      x20, x19, [sp, #0x70]
+000303fc: ldp      x22, x21, [sp, #0x60]
+00030400: ldp      x24, x23, [sp, #0x50]
+00030404: ldr      x25, [sp, #0x40]
+00030408: ldp      x29, x30, [sp, #0x30]
+0003040c: add      sp, sp, #0x80
+00030410: ret      
+00030414: add      x0, sp, #8
+00030418: bl       #0x4b880 ; _ZNKSt6__ndk121__basic_string_commonILb1EE20__throw_length_errorEv
+0003041c: bl       #0x4b6f0 ; __stack_chk_fail
+00030420: b        #0x30428
+00030424: b        #0x30428
+00030428: ldrb     w8, [sp, #8]
+0003042c: mov      x19, x0
+00030430: tbz      w8, #0, #0x3043c
+00030434: ldr      x0, [sp, #0x18]
+00030438: bl       #0x4b730 ; _ZdlPv
+0003043c: mov      x0, x19
+00030440: bl       #0x47c70 ; 
+
+_ZN24AudioProviderFMODAndroid7playBGMEbii 0x4818c size 420
+0004818c: sub      sp, sp, #0x70
+00048190: stp      x29, x30, [sp, #0x30]
+00048194: str      x23, [sp, #0x40]
+00048198: stp      x22, x21, [sp, #0x50]
+0004819c: stp      x20, x19, [sp, #0x60]
+000481a0: add      x29, sp, #0x30
+000481a4: mrs      x22, tpidr_el0
+000481a8: ldr      x8, [x22, #0x28]
+000481ac: mov      x19, x0
+000481b0: sxtw     x23, w2
+000481b4: stur     x8, [x29, #-8]
+000481b8: ldp      x8, x9, [x19, #0x38]!
+000481bc: stur     w2, [x29, #-0x14]
+000481c0: sub      x9, x9, x8
+000481c4: cmp      x23, x9, asr #4
+000481c8: b.hs     #0x48324
+000481cc: add      x8, x8, x23, lsl #4
+000481d0: mov      x20, x0
+000481d4: ldr      x0, [x8, #8]
+000481d8: sbfx     w1, w1, #0, #1
+000481dc: mov      w21, w3
+000481e0: bl       #0x4b910 ; _ZN4FMOD7Channel12setLoopCountEi
+000481e4: ldp      x8, x9, [x20, #0x38]
+000481e8: sub      x9, x9, x8
+000481ec: cmp      x23, x9, asr #4
+000481f0: b.hs     #0x48324
+000481f4: add      x8, x8, x23, lsl #4
+000481f8: ldr      x0, [x8, #8]
+000481fc: ldr      s0, [x20, #0xc]
+00048200: bl       #0x4b920 ; _ZN4FMOD14ChannelControl9setVolumeEf
+00048204: adrp     x2, #0x15000
+00048208: sub      x8, x29, #0x14
+0004820c: add      x2, x2, #0xbf5
+00048210: add      x0, x20, #0x80
+00048214: sub      x1, x29, #0x14
+00048218: sub      x3, x29, #0x10
+0004821c: add      x4, sp, #8
+00048220: stur     x8, [x29, #-0x10]
+00048224: bl       #0x38238 ; 
+00048228: adrp     x8, #0x58000
+0004822c: ldr      x8, [x8, #0x4f8]
+00048230: mov      w9, #0x3f800000
+00048234: str      w9, [x0, #0x14]
+00048238: add      x1, sp, #0x18
+0004823c: add      x2, sp, #0x10
+00048240: add      x3, sp, #0x14
+00048244: mov      x0, x8
+00048248: bl       #0x4b8b0 ; _ZN4FMOD6System17getSoftwareFormatEPiP16FMOD_SPEAKERMODES1_
+0004824c: ldp      x8, x10, [x20, #0x38]
+00048250: ldursw   x9, [x29, #-0x14]
+00048254: sub      x10, x10, x8
+00048258: cmp      x9, x10, asr #4
+0004825c: b.hs     #0x48324
+00048260: add      x8, x8, x9, lsl #4
+00048264: ldr      x0, [x8, #8]
+00048268: sub      x1, x29, #0x10
+0004826c: add      x2, sp, #8
+00048270: bl       #0x4b8c0 ; _ZN4FMOD14ChannelControl11getDSPClockEPyS1_
+00048274: ldp      x8, x10, [x20, #0x38]
+00048278: ldursw   x9, [x29, #-0x14]
+0004827c: sub      x10, x10, x8
+00048280: cmp      x9, x10, asr #4
+00048284: b.hs     #0x48324
+00048288: ldr      s1, [sp, #0x18]
+0004828c: add      x8, x8, x9, lsl #4
+00048290: ldr      x9, [sp, #8]
+00048294: mov      w10, #0x447a0000
+00048298: scvtf    s0, w21
+0004829c: fmov     s2, w10
+000482a0: ldr      x0, [x8, #8]
+000482a4: fdiv     s0, s0, s2
+000482a8: scvtf    s1, s1
+000482ac: ucvtf    s2, x9
+000482b0: fmul     s0, s0, s1
+000482b4: fadd     s0, s0, s2
+000482b8: fcvtzu   x1, s0
+000482bc: mov      w3, #1
+000482c0: mov      x2, xzr
+000482c4: bl       #0x4b8d0 ; _ZN4FMOD14ChannelControl8setDelayEyyb
+000482c8: ldursw   x8, [x29, #-0x14]
+000482cc: cbz      w8, #0x482ec
+000482d0: ldp      x9, x10, [x20, #0x38]
+000482d4: sub      x10, x10, x9
+000482d8: cmp      x8, x10, asr #4
+000482dc: b.hs     #0x48324
+000482e0: add      x8, x9, x8, lsl #4
+000482e4: add      x8, x8, #8
+000482e8: b        #0x482f0
+000482ec: add      x8, x20, #0x18
+000482f0: ldr      x0, [x8]
+000482f4: mov      w1, wzr
+000482f8: bl       #0x4b860 ; _ZN4FMOD14ChannelControl9setPausedEb
+000482fc: ldr      x8, [x22, #0x28]
+00048300: ldur     x9, [x29, #-8]
+00048304: cmp      x8, x9
+00048308: b.ne     #0x4832c
+0004830c: ldp      x20, x19, [sp, #0x60]
+00048310: ldp      x22, x21, [sp, #0x50]
+00048314: ldr      x23, [sp, #0x40]
+00048318: ldp      x29, x30, [sp, #0x30]
+0004831c: add      sp, sp, #0x70
+00048320: ret      
+00048324: mov      x0, x19
+00048328: bl       #0x4b870 ; _ZNKSt6__ndk120__vector_base_commonILb1EE20__throw_out_of_rangeEv
+0004832c: bl       #0x4b6f0 ; __stack_chk_fail
+
+_ZN24AudioProviderFMODAndroid10preloadSFXEPKc 0x2fa68 size 376
+0002fa68: sub      sp, sp, #0x70
+0002fa6c: stp      x29, x30, [sp, #0x30]
+0002fa70: stp      x24, x23, [sp, #0x40]
+0002fa74: stp      x22, x21, [sp, #0x50]
+0002fa78: stp      x20, x19, [sp, #0x60]
+0002fa7c: add      x29, sp, #0x30
+0002fa80: mrs      x24, tpidr_el0
+0002fa84: ldr      x8, [x24, #0x28]
+0002fa88: mov      x20, x0
+0002fa8c: mov      x0, x1
+0002fa90: mov      x19, x1
+0002fa94: stur     x8, [x29, #-8]
+0002fa98: bl       #0x4b820 ; strlen
+0002fa9c: cmn      x0, #0x10
+0002faa0: b.hs     #0x2fbb0
+0002faa4: mov      x21, x0
+0002faa8: cmp      x0, #0x17
+0002faac: b.hs     #0x2fac8
+0002fab0: mov      x9, sp
+0002fab4: lsl      w8, w21, #1
+0002fab8: orr      x22, x9, #1
+0002fabc: strb     w8, [sp]
+0002fac0: cbnz     x21, #0x2fae8
+0002fac4: b        #0x2faf8
+0002fac8: add      x8, x21, #0x10
+0002facc: and      x23, x8, #0xfffffffffffffff0
+0002fad0: mov      x0, x23
+0002fad4: bl       #0x4b720 ; _Znwm
+0002fad8: orr      x8, x23, #1
+0002fadc: mov      x22, x0
+0002fae0: stp      x21, x0, [sp, #8]
+0002fae4: str      x8, [sp]
+0002fae8: mov      x0, x22
+0002faec: mov      x1, x19
+0002faf0: mov      x2, x21
+0002faf4: bl       #0x4b830 ; memcpy
+0002faf8: strb     wzr, [x22, x21]
+0002fafc: add      x21, x20, #0x50
+0002fb00: add      x0, x20, #0x50
+0002fb04: mov      x1, sp
+0002fb08: bl       #0x3f18c ; 
+0002fb0c: add      x8, x20, #0x58
+0002fb10: cmp      x8, x0
+0002fb14: b.eq     #0x2fb44
+0002fb18: mov      x8, sp
+0002fb1c: stur     x8, [x29, #-0x10]
+0002fb20: adrp     x2, #0x15000
+0002fb24: add      x2, x2, #0xbf5
+0002fb28: mov      x1, sp
+0002fb2c: sub      x3, x29, #0x10
+0002fb30: add      x4, sp, #0x18
+0002fb34: mov      x0, x21
+0002fb38: bl       #0x3e0bc ; 
+0002fb3c: ldr      x8, [x0, #0x38]
+0002fb40: cbnz     x8, #0x2fb78
+0002fb44: mov      x1, x19
+0002fb48: bl       #0x4b8a0 ; _ZN24AudioProviderFMODAndroid18preloadSFXInternalEPKc
+0002fb4c: mov      x19, x0
+0002fb50: mov      x8, sp
+0002fb54: stur     x8, [x29, #-0x10]
+0002fb58: adrp     x2, #0x15000
+0002fb5c: add      x2, x2, #0xbf5
+0002fb60: mov      x1, sp
+0002fb64: sub      x3, x29, #0x10
+0002fb68: add      x4, sp, #0x18
+0002fb6c: mov      x0, x21
+0002fb70: bl       #0x3e0bc ; 
+0002fb74: str      x19, [x0, #0x38]
+0002fb78: ldrb     w8, [sp]
+0002fb7c: tbz      w8, #0, #0x2fb88
+0002fb80: ldr      x0, [sp, #0x10]
+0002fb84: bl       #0x4b730 ; _ZdlPv
+0002fb88: ldr      x8, [x24, #0x28]
+0002fb8c: ldur     x9, [x29, #-8]
+0002fb90: cmp      x8, x9
+0002fb94: b.ne     #0x2fbb8
+0002fb98: ldp      x20, x19, [sp, #0x60]
+0002fb9c: ldp      x22, x21, [sp, #0x50]
+0002fba0: ldp      x24, x23, [sp, #0x40]
+0002fba4: ldp      x29, x30, [sp, #0x30]
+0002fba8: add      sp, sp, #0x70
+0002fbac: ret      
+0002fbb0: mov      x0, sp
+0002fbb4: bl       #0x4b880 ; _ZNKSt6__ndk121__basic_string_commonILb1EE20__throw_length_errorEv
+0002fbb8: bl       #0x4b6f0 ; __stack_chk_fail
+0002fbbc: b        #0x2fbc4
+0002fbc0: b        #0x2fbc4
+0002fbc4: ldrb     w8, [sp]
+0002fbc8: mov      x19, x0
+0002fbcc: tbz      w8, #0, #0x2fbd8
+0002fbd0: ldr      x0, [sp, #0x10]
+0002fbd4: bl       #0x4b730 ; _ZdlPv
+0002fbd8: mov      x0, x19
+0002fbdc: bl       #0x47c70 ; 
+
+_ZN24AudioProviderFMODAndroid7suspendEv 0x312a0 size 204
+000312a0: sub      sp, sp, #0x40
+000312a4: stp      x29, x30, [sp, #0x20]
+000312a8: stp      x20, x19, [sp, #0x30]
+000312ac: add      x29, sp, #0x20
+000312b0: mrs      x20, tpidr_el0
+000312b4: ldr      x8, [x20, #0x28]
+000312b8: stur     x8, [x29, #-8]
+000312bc: adrp     x8, #0x58000
+000312c0: ldr      x8, [x8, #0x4f8]
+000312c4: strb     wzr, [x0, #0x10]
+000312c8: mov      x0, x8
+000312cc: bl       #0x4b710 ; _ZN4FMOD6System12mixerSuspendEv
+000312d0: mov      w19, w0
+000312d4: mov      w0, #0x20
+000312d8: bl       #0x4b720 ; _Znwm
+000312dc: adrp     x9, #0x18000
+000312e0: adrp     x8, #0x13000
+000312e4: add      x9, x9, #0xd77
+000312e8: ldr      q0, [x8, #0xed0]
+000312ec: ldr      q1, [x9]
+000312f0: ldr      x8, [x9, #0x10]
+000312f4: str      x0, [sp, #0x10]
+000312f8: str      q0, [sp]
+000312fc: str      q1, [x0]
+00031300: str      x8, [x0, #0x10]
+00031304: strb     wzr, [x0, #0x18]
+00031308: mov      x1, sp
+0003130c: mov      w0, w19
+00031310: mov      w2, wzr
+00031314: mov      x3, xzr
+00031318: bl       #0x34660 ; 
+0003131c: ldrb     w8, [sp]
+00031320: tbz      w8, #0, #0x3132c
+00031324: ldr      x0, [sp, #0x10]
+00031328: bl       #0x4b730 ; _ZdlPv
+0003132c: ldr      x8, [x20, #0x28]
+00031330: ldur     x9, [x29, #-8]
+00031334: cmp      x8, x9
+00031338: b.ne     #0x3134c
+0003133c: ldp      x20, x19, [sp, #0x30]
+00031340: ldp      x29, x30, [sp, #0x20]
+00031344: add      sp, sp, #0x40
+00031348: ret      
+0003134c: bl       #0x4b6f0 ; __stack_chk_fail
+00031350: ldrb     w8, [sp]
+00031354: mov      x19, x0
+00031358: tbz      w8, #0, #0x31364
+0003135c: ldr      x0, [sp, #0x10]
+00031360: bl       #0x4b730 ; _ZdlPv
+00031364: mov      x0, x19
+00031368: bl       #0x47c70 ; 
+
+_ZN24AudioProviderFMODAndroid14getBGMPositionEi 0x2cc70 size 116
+0002cc70: sub      sp, sp, #0x30
+0002cc74: stp      x29, x30, [sp, #0x10]
+0002cc78: str      x19, [sp, #0x20]
+0002cc7c: add      x29, sp, #0x10
+0002cc80: mrs      x19, tpidr_el0
+0002cc84: ldr      x8, [x19, #0x28]
+0002cc88: sxtw     x9, w1
+0002cc8c: str      x8, [sp, #8]
+0002cc90: ldp      x8, x10, [x0, #0x38]!
+0002cc94: str      wzr, [sp, #4]
+0002cc98: sub      x10, x10, x8
+0002cc9c: cmp      x9, x10, asr #4
+0002cca0: b.hs     #0x2ccdc
+0002cca4: add      x8, x8, x9, lsl #4
+0002cca8: ldr      x0, [x8, #8]
+0002ccac: add      x1, sp, #4
+0002ccb0: mov      w2, #1
+0002ccb4: bl       #0x4b930 ; _ZN4FMOD7Channel11getPositionEPjj
+0002ccb8: ldr      w0, [sp, #4]
+0002ccbc: ldr      x8, [x19, #0x28]
+0002ccc0: ldr      x9, [sp, #8]
+0002ccc4: cmp      x8, x9
+0002ccc8: b.ne     #0x2cce0
+0002cccc: ldr      x19, [sp, #0x20]
+0002ccd0: ldp      x29, x30, [sp, #0x10]
+0002ccd4: add      sp, sp, #0x30
+0002ccd8: ret      
+0002ccdc: bl       #0x4b870 ; _ZNKSt6__ndk120__vector_base_commonILb1EE20__throw_out_of_rangeEv
+0002cce0: bl       #0x4b6f0 ; __stack_chk_fail
+
+_ZN24AudioProviderFMODAndroid18preloadSFXInternalEPKc 0x45f44 size 544
+00045f44: sub      sp, sp, #0xb0
+00045f48: stp      x29, x30, [sp, #0x70]
+00045f4c: stp      x24, x23, [sp, #0x80]
+00045f50: stp      x22, x21, [sp, #0x90]
+00045f54: stp      x20, x19, [sp, #0xa0]
+00045f58: add      x29, sp, #0x70
+00045f5c: mrs      x24, tpidr_el0
+00045f60: ldr      x8, [x24, #0x28]
+00045f64: sub      x4, x29, #0x20
+00045f68: mov      w2, #0x102
+00045f6c: mov      x3, xzr
+00045f70: stur     x8, [x29, #-8]
+00045f74: adrp     x8, #0x58000
+00045f78: ldr      x0, [x8, #0x4f8]
+00045f7c: mov      x20, x1
+00045f80: bl       #0x4b8f0 ; _ZN4FMOD6System11createSoundEPKcjP22FMOD_CREATESOUNDEXINFOPPNS_5SoundE
+00045f84: mov      w19, w0
+00045f88: stp      xzr, xzr, [sp, #0x38]
+00045f8c: str      xzr, [sp, #0x48]
+00045f90: cbz      w0, #0x45fc8
+00045f94: mov      x0, x20
+00045f98: bl       #0x4b820 ; strlen
+00045f9c: cmn      x0, #0x10
+00045fa0: b.hs     #0x46110
+00045fa4: mov      x21, x0
+00045fa8: cmp      x0, #0x17
+00045fac: b.hs     #0x45fd4
+00045fb0: add      x9, sp, #0x20
+00045fb4: lsl      w8, w21, #1
+00045fb8: orr      x22, x9, #1
+00045fbc: strb     w8, [sp, #0x20]
+00045fc0: cbnz     x21, #0x45ff4
+00045fc4: b        #0x46004
+00045fc8: mov      x20, xzr
+00045fcc: mov      w8, #1
+00045fd0: b        #0x4607c
+00045fd4: add      x8, x21, #0x10
+00045fd8: and      x23, x8, #0xfffffffffffffff0
+00045fdc: mov      x0, x23
+00045fe0: bl       #0x4b720 ; _Znwm
+00045fe4: orr      x8, x23, #1
+00045fe8: mov      x22, x0
+00045fec: stp      x21, x0, [sp, #0x28]
+00045ff0: str      x8, [sp, #0x20]
+00045ff4: mov      x0, x22
+00045ff8: mov      x1, x20
+00045ffc: mov      x2, x21
+00046000: bl       #0x4b830 ; memcpy
+00046004: strb     wzr, [x22, x21]
+00046008: adrp     x2, #0x16000
+0004600c: add      x2, x2, #0xcb9
+00046010: add      x0, sp, #0x20
+00046014: mov      x1, xzr
+00046018: bl       #0x4b840 ; _ZNSt6__ndk112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEmPKc
+0004601c: ldrb     w21, [x0]
+00046020: ldrb     w22, [x0, #1]
+00046024: ldur     x8, [x0, #2]
+00046028: ldp      x9, x20, [x0, #8]
+0004602c: stp      xzr, xzr, [x0, #8]
+00046030: str      xzr, [x0]
+00046034: ldrb     w10, [sp, #0x38]
+00046038: stur     x8, [x29, #-0x18]
+0004603c: stur     x9, [x29, #-0x12]
+00046040: tbz      w10, #0, #0x4604c
+00046044: ldr      x0, [sp, #0x48]
+00046048: bl       #0x4b730 ; _ZdlPv
+0004604c: ldur     x8, [x29, #-0x18]
+00046050: ldur     x9, [x29, #-0x12]
+00046054: ldrb     w10, [sp, #0x20]
+00046058: strb     w21, [sp, #0x38]
+0004605c: strb     w22, [sp, #0x39]
+00046060: stur     x8, [sp, #0x3a]
+00046064: stp      x9, x20, [sp, #0x40]
+00046068: tbz      w10, #0, #0x46074
+0004606c: ldr      x0, [sp, #0x30]
+00046070: bl       #0x4b730 ; _ZdlPv
+00046074: tst      w21, #1
+00046078: cset     w8, eq
+0004607c: adrp     x10, #0x16000
+00046080: add      x10, x10, #0xffd
+00046084: cmp      w8, #0
+00046088: ldr      q0, [x10]
+0004608c: ldur     x8, [x10, #0xe]
+00046090: mov      w9, #0x2c
+00046094: add      x11, sp, #0x38
+00046098: strb     w9, [sp, #8]
+0004609c: orr      x9, x11, #1
+000460a0: strb     wzr, [sp, #0x1f]
+000460a4: stur     q0, [sp, #9]
+000460a8: stur     x8, [sp, #0x17]
+000460ac: csel     x3, x9, x20, ne
+000460b0: add      x1, sp, #8
+000460b4: mov      w0, w19
+000460b8: mov      w2, wzr
+000460bc: bl       #0x34660 ; 
+000460c0: ldrb     w8, [sp, #8]
+000460c4: tbz      w8, #0, #0x460d0
+000460c8: ldr      x0, [sp, #0x18]
+000460cc: bl       #0x4b730 ; _ZdlPv
+000460d0: ldrb     w8, [sp, #0x38]
+000460d4: ldur     x19, [x29, #-0x20]
+000460d8: tbz      w8, #0, #0x460e4
+000460dc: ldr      x0, [sp, #0x48]
+000460e0: bl       #0x4b730 ; _ZdlPv
+000460e4: ldr      x8, [x24, #0x28]
+000460e8: ldur     x9, [x29, #-8]
+000460ec: cmp      x8, x9
+000460f0: b.ne     #0x46118
+000460f4: mov      x0, x19
+000460f8: ldp      x20, x19, [sp, #0xa0]
+000460fc: ldp      x22, x21, [sp, #0x90]
+00046100: ldp      x24, x23, [sp, #0x80]
+00046104: ldp      x29, x30, [sp, #0x70]
+00046108: add      sp, sp, #0xb0
+0004610c: ret      
+00046110: add      x0, sp, #0x20
+00046114: bl       #0x4b880 ; _ZNKSt6__ndk121__basic_string_commonILb1EE20__throw_length_errorEv
+00046118: bl       #0x4b6f0 ; __stack_chk_fail
+0004611c: ldrb     w8, [sp, #0x20]
+00046120: mov      x19, x0
+00046124: tbz      w8, #0, #0x4614c
+00046128: ldr      x0, [sp, #0x30]
+0004612c: b        #0x46148
+00046130: mov      x19, x0
+00046134: b        #0x4614c
+00046138: ldrb     w8, [sp, #8]
+0004613c: mov      x19, x0
+00046140: tbz      w8, #0, #0x4614c
+00046144: ldr      x0, [sp, #0x18]
+00046148: bl       #0x4b730 ; _ZdlPv
+0004614c: ldrb     w8, [sp, #0x38]
+00046150: tbz      w8, #0, #0x4615c
+00046154: ldr      x0, [sp, #0x48]
+00046158: bl       #0x4b730 ; _ZdlPv
+0004615c: mov      x0, x19
+00046160: bl       #0x47c70 ; 
+
+_ZN24AudioProviderFMODAndroid4initEff 0x3b758 size 596
+0003b758: sub      sp, sp, #0xa0
+0003b75c: stp      d9, d8, [sp, #0x50]
+0003b760: stp      x29, x30, [sp, #0x60]
+0003b764: str      x23, [sp, #0x70]
+0003b768: stp      x22, x21, [sp, #0x80]
+0003b76c: stp      x20, x19, [sp, #0x90]
+0003b770: add      x29, sp, #0x60
+0003b774: mrs      x21, tpidr_el0
+0003b778: ldr      x8, [x21, #0x28]
+0003b77c: mov      x19, x0
+0003b780: mov      w0, #0xa0
+0003b784: fmov     s8, s1
+0003b788: fmov     s9, s0
+0003b78c: stur     x8, [x29, #-0x18]
+0003b790: bl       #0x4b720 ; _Znwm
+0003b794: movi     v0.2d, #0000000000000000
+0003b798: mov      x23, x19
+0003b79c: mov      x20, x0
+0003b7a0: add      x22, x0, #0xa0
+0003b7a4: stp      q0, q0, [x0]
+0003b7a8: stp      q0, q0, [x0, #0x20]
+0003b7ac: stp      q0, q0, [x0, #0x40]
+0003b7b0: ldr      x0, [x23, #0x38]!
+0003b7b4: stp      q0, q0, [x20, #0x60]
+0003b7b8: stp      q0, q0, [x20, #0x80]
+0003b7bc: cbz      x0, #0x3b7d0
+0003b7c0: str      x0, [x19, #0x40]
+0003b7c4: bl       #0x4b730 ; _ZdlPv
+0003b7c8: stp      xzr, xzr, [x23]
+0003b7cc: str      xzr, [x23, #0x10]
+0003b7d0: adrp     x0, #0x58000
+0003b7d4: mov      w1, #0x307
+0003b7d8: add      x0, x0, #0x4f8
+0003b7dc: movk     w1, #2, lsl #16
+0003b7e0: stp      x20, x22, [x19, #0x38]
+0003b7e4: str      x22, [x19, #0x48]
+0003b7e8: stp      s9, s8, [x19, #8]
+0003b7ec: bl       #0x4b740 ; FMOD_System_Create
+0003b7f0: adrp     x9, #0x17000
+0003b7f4: add      x9, x9, #0xc48
+0003b7f8: ldr      q0, [x9]
+0003b7fc: mov      w9, #0x6165
+0003b800: mov      w8, #0x26
+0003b804: movk     w9, #0x6574, lsl #16
+0003b808: strb     w8, [sp, #0x30]
+0003b80c: str      w9, [sp, #0x40]
+0003b810: stur     q0, [sp, #0x31]
+0003b814: strb     wzr, [sp, #0x44]
+0003b818: add      x1, sp, #0x30
+0003b81c: mov      w2, wzr
+0003b820: mov      x3, xzr
+0003b824: bl       #0x34660 ; 
+0003b828: ldrb     w8, [sp, #0x30]
+0003b82c: tbz      w8, #0, #0x3b838
+0003b830: ldr      x0, [sp, #0x40]
+0003b834: bl       #0x4b730 ; _ZdlPv
+0003b838: adrp     x8, #0x58000
+0003b83c: ldrb     w8, [x8, #0x508]
+0003b840: adrp     x20, #0x58000
+0003b844: cbz      w8, #0x3b854
+0003b848: ldr      x0, [x20, #0x4f8]
+0003b84c: mov      w1, #0xb
+0003b850: bl       #0x4b750 ; _ZN4FMOD6System9setOutputE15FMOD_OUTPUTTYPE
+0003b854: adrp     x8, #0x58000
+0003b858: ldr      x0, [x20, #0x4f8]
+0003b85c: ldr      w1, [x8, #0x50c]
+0003b860: mov      w2, #4
+0003b864: bl       #0x4b760 ; _ZN4FMOD6System16setDSPBufferSizeEji
+0003b868: ldr      x0, [x20, #0x4f8]
+0003b86c: mov      w1, #0x200
+0003b870: mov      w2, wzr
+0003b874: mov      x3, xzr
+0003b878: bl       #0x4b770 ; _ZN4FMOD6System4initEijPv
+0003b87c: adrp     x8, #0x16000
+0003b880: add      x8, x8, #0x522
+0003b884: ldr      q0, [x8]
+0003b888: mov      w8, #0x20
+0003b88c: strb     w8, [sp, #0x18]
+0003b890: strb     wzr, [sp, #0x29]
+0003b894: stur     q0, [sp, #0x19]
+0003b898: add      x1, sp, #0x18
+0003b89c: mov      w2, wzr
+0003b8a0: mov      x3, xzr
+0003b8a4: bl       #0x34660 ; 
+0003b8a8: ldrb     w8, [sp, #0x18]
+0003b8ac: tbz      w8, #0, #0x3b8b8
+0003b8b0: ldr      x0, [sp, #0x28]
+0003b8b4: bl       #0x4b730 ; _ZdlPv
+0003b8b8: ldr      x0, [x20, #0x4f8]
+0003b8bc: adrp     x1, #0x18000
+0003b8c0: add      x2, x19, #0x18
+0003b8c4: add      x1, x1, #0x544
+0003b8c8: bl       #0x4b780 ; _ZN4FMOD6System18createChannelGroupEPKcPPNS_12ChannelGroupE
+0003b8cc: mov      w19, w0
+0003b8d0: mov      w0, #0x30
+0003b8d4: bl       #0x4b720 ; _Znwm
+0003b8d8: adrp     x8, #0x13000
+0003b8dc: ldr      q0, [x8, #0xee0]
+0003b8e0: adrp     x9, #0x17000
+0003b8e4: add      x9, x9, #0x1e1
+0003b8e8: mov      x8, sp
+0003b8ec: str      q0, [sp]
+0003b8f0: ldp      q0, q1, [x9]
+0003b8f4: mov      w9, #0x6f72
+0003b8f8: movk     w9, #0x7075, lsl #16
+0003b8fc: add      x20, x8, #0x10
+0003b900: str      x0, [sp, #0x10]
+0003b904: str      w9, [x0, #0x20]
+0003b908: stp      q0, q1, [x0]
+0003b90c: strb     wzr, [x0, #0x24]
+0003b910: mov      x1, sp
+0003b914: mov      w0, w19
+0003b918: mov      w2, wzr
+0003b91c: mov      x3, xzr
+0003b920: bl       #0x34660 ; 
+0003b924: ldrb     w8, [sp]
+0003b928: tbz      w8, #0, #0x3b934
+0003b92c: ldr      x0, [sp, #0x10]
+0003b930: bl       #0x4b730 ; _ZdlPv
+0003b934: ldr      x8, [x21, #0x28]
+0003b938: ldur     x9, [x29, #-0x18]
+0003b93c: cmp      x8, x9
+0003b940: b.ne     #0x3b960
+0003b944: ldp      x20, x19, [sp, #0x90]
+0003b948: ldp      x22, x21, [sp, #0x80]
+0003b94c: ldr      x23, [sp, #0x70]
+0003b950: ldp      x29, x30, [sp, #0x60]
+0003b954: ldp      d9, d8, [sp, #0x50]
+0003b958: add      sp, sp, #0xa0
+0003b95c: ret      
+0003b960: bl       #0x4b6f0 ; __stack_chk_fail
+0003b964: ldrb     w8, [sp]
+0003b968: mov      x19, x0
+0003b96c: tbnz     w8, #0, #0x3b99c
+0003b970: b        #0x3b9a4
+0003b974: ldrb     w8, [sp, #0x18]
+0003b978: mov      x19, x0
+0003b97c: tbz      w8, #0, #0x3b9a4
+0003b980: add      x8, sp, #0x18
+0003b984: b        #0x3b998
+0003b988: ldrb     w8, [sp, #0x30]
+0003b98c: mov      x19, x0
+0003b990: tbz      w8, #0, #0x3b9a4
+0003b994: add      x8, sp, #0x30
+0003b998: add      x20, x8, #0x10
+0003b99c: ldr      x0, [x20]
+0003b9a0: bl       #0x4b730 ; _ZdlPv
+0003b9a4: mov      x0, x19
+0003b9a8: bl       #0x47c70 ; 

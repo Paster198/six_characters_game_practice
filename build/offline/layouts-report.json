@@ -1,0 +1,34 @@
+[
+  {
+    "entry": "assets/layouts/mainmenu/MainMenu.csb",
+    "input_sha256": "71bf577f41846228be90d3e7f2eb011e2409dcac4d46c6d6c0a086f4c15e1858",
+    "output_sha256": "2b9127f0c53c4aa12e8b7444ce3509ce552518772871707a2b0c892ffe4738df",
+    "changes": [
+      {
+        "node": "/Layer/networkButton",
+        "widget_offset": "0x2074",
+        "old_vtable": "0x247a",
+        "new_vtable": "0x50bc",
+        "visible": false,
+        "touch_enabled": false
+      }
+    ],
+    "node_count": 27
+  },
+  {
+    "entry": "assets/layouts/topbar/TopBar.csb",
+    "input_sha256": "e31e15232203c6bcab8751c03599eb61fa7c24a8ea1043a86b30799dc11a5e34",
+    "output_sha256": "91c1f2c1f0daf84602692dc863f8a8c1d00eac040bd7264dbdcc135c35c7d970",
+    "changes": [
+      {
+        "node": "/Layer/memoriesButton",
+        "widget_offset": "0x15b0",
+        "old_vtable": "0x2252",
+        "new_vtable": "0x2474",
+        "visible": false,
+        "touch_enabled": false
+      }
+    ],
+    "node_count": 22
+  }
+]

@@ -1,0 +1,53 @@
+DIE IN Start follow-up (read-only analysis)
+=========================================
+
+Strong native fault candidate, separate from central difficulty-state logic
+------------------------------------------------------------------------
+The original helper 8a6048 returns false for every song other than diein and
+every difficulty other than ETR (4). For DIE IN ETR it checks DJMAX purchase
+requirements, but even when pack-ownership checks succeed, it unconditionally
+loads the ETR difficulty's UnlockCondition pointer and calls its evaluator:
+  8a62a4: w0 = 4
+  8a62a8: difficulty-index mapping 863e1c
+  8a62b0: x8 = Song.difficulties[index] (Song+228)
+  8a62b4: x0 = [x8] (difficulty UnlockCondition pointer)
+  8a62b8: call 1313478
+  131348c: ldp x22,x23,[x0,#28] -- no null guard
+
+Original assets/songs/unlocks has a diein/4 object with conditions on nightmare
+ETR, wereallgonnadie ETR, potential and credits. The offline empty unlocks list
+removes this object. This path is not dependent on a story flag and is distinct
+from the central 1809390 null-vtable path.
+
+There are four direct helper callers: c76d10, d94114, 12fbc74, 131e188. The native
+agent's patch at 8a60f4 uses the existing false-return epilogue 8a6340. It occurs
+after the temporary ID string cleanup and w21=0, and before constructing the
+purchase-pack vector. The analogous Aether Crest ETR patch at 114e2ec ->114e58c
+has the same safe object-lifetime shape. Independent review found no blocker.
+Original Aether Crest ETR also has a real unlock object, so empty unlocks would
+otherwise expose its identical unchecked call at 114e4b0.
+
+Limit: no device crash stack is available. If the reported DIE IN crash is on
+PST/PRS/FTR, this ETR-only helper cannot explain that occurrence.
+
+Excluded resource/format candidates
+----------------------------------
+There is one engine diein string at 52f1e0 and one djmax_nightmare string at
+581370. The six diein xrefs are in 7e185c,8a6048,c76b80,d93f88,12fbb14,131d814;
+these are unlock/purchase/UI paths. djmax_nightmare's sole xref is 128a650 in
+the common background-name registry initializer 1289a40. No DIE IN special
+scene class or DIE IN selector branch was found; no evidence links the crash
+to removing scene+308 for ordinary gameplay. Its base background and clear
+layer are original engine assets already present in the APK.
+
+PST and PRS use ordinary timing/hold/arc/arctap commands. FTR includes 70 arcs
+with an optional eleventh float parameter 2.00; ETR uses hidegroup/noinput
+timing groups. The eleventh arc parameter IS supported by the original engine:
+Arc parser 9f4a1c checks a comma after the boolean at 9f4dd4..9f4de4, uses a
+default s12=1.0, and if present consumes/read the float at 9f4df4/9f4e1c/9f4e34.
+ArcNote constructor 14e547c stores this parameter to +88 at 14e5540, and its
+serializer reads it at ca7fd4. No chart stripping or rewriting is warranted.
+
+Evidence: assets-diein-native.txt, assets-arc-parser.txt; previous image/Ogg
+framing checks are in assets-audit.json. Input APKs and all shared build/native/
+Java outputs were left unchanged during this follow-up.

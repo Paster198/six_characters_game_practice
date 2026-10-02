@@ -1,0 +1,16 @@
+{
+  "apk": "arcaea-full-offline-practice-arm64-fix4.apk",
+  "unchanged_entry_payloads_by_crc_and_size": 9757,
+  "signing_metadata_excluded": [
+    "META-INF/TESTKEY.SF",
+    "META-INF/TESTKEY.RSA",
+    "META-INF/MANIFEST.MF"
+  ],
+  "engine_change": "Only instruction at 0x9031d4 changes; all other engine bytes match fix3",
+  "identical_practice_bridge_sha256": {
+    "classes2.dex": "301107c68d205a923d6ecf23eaccaf885d12995dbda07b7aa5000e86f1082e60",
+    "classes3.dex": "92a549d2b8c5c53a1fc474ed5cc43a75b210af372d5f58520b4c5e028cd5c4d1",
+    "lib/arm64-v8a/libpractice.so": "aba4a97d51a4e6ad643745fecf95cb1da8066aca6c90153fff7377a47791d100"
+  },
+  "android_runtime_test": "not performed: no test device"
+}

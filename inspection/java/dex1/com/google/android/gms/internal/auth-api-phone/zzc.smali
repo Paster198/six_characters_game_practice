@@ -1,0 +1,103 @@
+.class public final Lcom/google/android/gms/internal/auth-api-phone/zzc;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-auth-api-phone@@18.0.2"
+
+
+# static fields
+.field private static final zza:Ljava/lang/ClassLoader;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 1
+
+    .line 1
+    const-class v0, Lcom/google/android/gms/internal/auth-api-phone/zzc;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/google/android/gms/internal/auth-api-phone/zzc;->zza:Ljava/lang/ClassLoader;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .registers 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static zza(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    .registers 3
+
+    .line 1
+    invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
+
+    move-result v0
+
+    if-nez v0, :cond_8
+
+    const/4 p0, 0x0
+
+    return-object p0
+
+    .line 2
+    :cond_8
+    invoke-interface {p1, p0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroid/os/Parcelable;
+
+    return-object p0
+.end method
+
+.method public static zzb(Landroid/os/Parcel;)V
+    .registers 4
+
+    .line 1
+    invoke-virtual {p0}, Landroid/os/Parcel;->dataAvail()I
+
+    move-result p0
+
+    if-gtz p0, :cond_7
+
+    return-void
+
+    .line 2
+    :cond_7
+    new-instance v0, Landroid/os/BadParcelableException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "Parcel data not fully consumed, unread size: "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Landroid/os/BadParcelableException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public static zzc(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    .registers 2
+
+    .line 1
+    invoke-interface {p1}, Landroid/os/IInterface;->asBinder()Landroid/os/IBinder;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
+
+    return-void
+.end method

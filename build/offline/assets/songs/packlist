@@ -1,0 +1,18 @@
+{
+  "packs": [
+    {
+      "id": "base",
+      "section": "arcaea",
+      "plus_character": -1,
+      "custom_banner": true,
+      "cutout_pack_image": true,
+      "name_localized": {
+        "en": "Arcaea"
+      },
+      "description_localized": {
+        "en": "",
+        "ja": ""
+      }
+    }
+  ]
+}

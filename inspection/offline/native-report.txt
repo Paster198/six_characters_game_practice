@@ -1,0 +1,112 @@
+Offline native review (arm64, supplied Arcaea APK)
+================================================
+Input: inspection/lib/arm64-v8a/libcocos2dcpp.so
+SHA256: 72e42cb4925655ecfef98bf2dbf92a5ac05145eb005a531c96c11b927a46e6dc
+Analysis is static. No Android device run has been performed.
+
+Locally complete content
+-----------------------
+The resource inventory reports 31 songs and 100 difficulties. Of the complete
+songs, only Arcahv intersects the hardcoded GameScene modifier selector below.
+Resource changes are made separately by tools/prepare_offline_assets.py.
+
+Song metadata parser: 0x19398d8; Song constructor: 0x195d8f0.
+Song id is a libc++ std::string at +0. Constructor stores idx at +0x18.
+The parser updates manager+0x78 with the maximum encountered idx at
+0x193efbc..0x193efd0; idx is not required to equal the current JSON position
+at that point. The original songlist already has a gap in idx values.
+Song lookup is by string-key map (0x19e8f54), not vector position.
+
+Verified Song fields and parse behavior:
+  +0x190 Pack* (set resolves through getPack 0xeb0a04)
+  +0x198 libc++ string purchase (ctor 0x195dc28..0x195dc30)
+  +0x1c0 bool remote_dl (parser 0x193ac70..0x193ad98; missing -> false)
+  +0x160 bool world_unlock (parser 0x193b1c4..0x193b300; missing -> false)
+The actual binary contains no require_online, songlist_hidden, or
+hidden_until_unlocked key bytes. The hidden_until key is parsed. Do not rely
+on undocumented songlist_hidden as a way to retain-but-hide removed songs.
+
+Arcahv ordinary practice scene
+-----------------------------
+GameScene::init calls selector 0x176aabc. Selector compares Song.id, creating
+the Arcahv modifier through 0x9f9918 when id == arcahv. Factory creates
+SpecialSceneArcahvChallenge, vtable 0x1ab8a68. Modifier state +0x2f5 controls
+its story update 0x19d6c68 and finish 0x15d61ac. Normal chart loading and chart
+scenecontrol handling occur outside this modifier.
+
+Patch given to tools/prepare_offline_native.py owner:
+  address / file offset: 0x176b008
+  original: f5 02 00 36   tbz w21,#0,0x176b064
+  replacement: 17 00 00 14   b 0x176b064
+This skips only the Arcahv factory branch and continues comparisons. It
+applies to every mode using this selector, not just normal mode. For this
+offline package the retained list intersects this selector only at Arcahv.
+
+Selector IDs:
+axiumcrisis, antagonism, dantalion, equilibrium, ifi, etherstrike, singularity,
+tempestissimo, aegleseeker, testify, arcahv, last, lasteternity, arghena,
+desive, alterego, designant, lamentrain, yourbestnightmare, dreadarea,
+cataclysmcry, deinosphainein, ember.
+
+Startup / removed metadata review
+---------------------------------
+getSong 0x19e8f54 returns nullptr for an absent id; it compares map find
+against end and does not substitute an arbitrary song.
+StartScene::init 0x121de7c and MainMenu::init 0x913f10 have no direct calls
+to getSong. This is a direct-call check, not a proof of all transitive paths.
+No direct mandatory startup getSong("testify") was identified.
+
+SongSelectScene::init 0x1654590 has conditional special-song lookups. Results
+from 0x165637c / 0x165645c / 0x1656570 / 0x165743c / 0x165758c / 0x1658348
+are passed to selector 0x10b0270. Its first semantic check is
+0x10b02a0: cbz x1,0x10b0b80, which returns if Song* is null.
+Other lookup blocks at 0x1655c98 and 0x1655eac check null directly.
+This prevents missing special-selection ids from immediate dereference.
+
+getPack 0xeb0a04 also returns null when absent (0xeb0ab4). Pack selection
+0x16f607c checks null at 0x16f60bc and 0x16f6168; missing pack goes through
+0x16f61e8, which constructs the literal "all" and clears the Pack* before
+list filtering. Thus this path has an all-songs fallback for removed packs.
+
+No definite normal startup blocker was found in these reviewed paths.
+Legacy selected-song persistence was not fully traced; the inspected
+selection routine rejects a missing Song* safely. The same routine checks
+the requested difficulty through 0x8bed58 (reads a Song+0x250 byte flag
+after enum conversion 0x863e1c). On false, 0x10b0374..0x10b0378 assigns
+difficulty 2; it subsequently checks the selectable list and can pick its
+first available entry. This covers the observed removed-BYD selection
+path, not every persisted value used anywhere in the application.
+All course/story/world
+and imported-save flows are outside this bounded static review. A clean
+install, menu entry, song selection and return still require device tests.
+
+Login path
+----------
+The sibling native patch owner verified StartScene::performExistingLoginAttempt
+0x132d3d8 and uses the existing no-token branch from 0x132d42c to 0x132d4b4.
+No login-success, token, OnlineUser or entitlement response is synthesized.
+Manifest network permission removal and UI entry suppression are separate.
+
+TopBar follow-up review
+----------------------
+TopBar::updateLoginStatus is 0x14b9a04, recovered from its std::function
+RTTI references. It looks up statusBg and statusLabel and changes their
+text, position and visibility. Original TopBar.csb identifies statusBg as
+Sprite with touch=0 and statusLabel as Text with touch=0. This routine does
+not register a click callback on either node. The suggestion that these
+labels were themselves dynamic login buttons was not supported by the
+actual code; no native patch to these nodes is needed or applied.
+
+The separately created UserCell has TopBar callbacks for expansion and
+collapse: $_2 -> 0x1016230 -> delegate+0x30; $_3 -> 0x1769ec0 ->
+delegate+0x38. For MainMenu these resolve to 0xb31a94 / 0x15a91cc and
+animate the menu background/child UI, so they must not be replaced with
+no-ops as if they were login handlers. The offline status remains visible.
+MainMenu networkButton hiding and automatic login/landing-gate changes
+remain owned by the packaging/native patch scripts.
+
+Reproduction
+------------
+inspection/offline/check_native_evidence.py verifies the engine fingerprint,
+records key instruction windows and reproduces selector intersection from
+the generated offline songlist. It does not edit any engine binary.

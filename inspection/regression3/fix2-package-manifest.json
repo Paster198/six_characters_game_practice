@@ -1,0 +1,24 @@
+{
+  "base_apk": "arcaea.apk",
+  "resource_apk": "E:\\Desktop1\\Package\\Project\\Arcaea\\2\\Arcaea Infinity_7.0.1f.apk",
+  "unsigned_apk": "arcaea-full-offline-practice-unsigned.apk",
+  "final_apk": "arcaea-full-offline-practice-arm64-fix2.apk",
+  "size_bytes": 3825363433,
+  "architecture": "arm64-v8a",
+  "retained_entries": 6230,
+  "imported_entries": 3518,
+  "generated": {
+    "classes2.dex": "301107c68d205a923d6ecf23eaccaf885d12995dbda07b7aa5000e86f1082e60",
+    "classes3.dex": "92a549d2b8c5c53a1fc474ed5cc43a75b210af372d5f58520b4c5e028cd5c4d1",
+    "lib/arm64-v8a/libpractice.so": "aba4a97d51a4e6ad643745fecf95cb1da8066aca6c90153fff7377a47791d100",
+    "lib/arm64-v8a/libcocos2dcpp.so": "323051d171fa1a19124eb806fde1f9dc8f159d5a1862af38c7e247117cec95ce",
+    "AndroidManifest.xml": "d9852f1e0d71ee64ba900a5fd25830e2ad70b2ebb3522b410cfece32b9089b61",
+    "assets/layouts/mainmenu/MainMenu.csb": "2b9127f0c53c4aa12e8b7444ce3509ce552518772871707a2b0c892ffe4738df",
+    "assets/layouts/topbar/TopBar.csb": "91c1f2c1f0daf84602692dc863f8a8c1d00eac040bd7264dbdcc135c35c7d970",
+    "assets/songs/songlist": "68151d1dbffacc178fd98d2c03534c74936058da68fe46c145fe7e81fe7c9e14",
+    "assets/songs/packlist": "e0f79d95394f5a30076f72a1b57065f24e323ade70dcd545a047a6fe8daaf7bf",
+    "assets/songs/unlocks": "5d7afc619586bc0b8fb138e6353a7b8f8f5f5b887f1c0741db66d5f5aff0fbc0"
+  },
+  "songs": 561,
+  "charts": 1839
+}

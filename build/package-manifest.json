@@ -1,0 +1,23 @@
+{
+  "input": "arcaea.apk",
+  "output": "arcaea-practice-unsigned.apk",
+  "architecture": "arm64-v8a",
+  "added_or_replaced": {
+    "classes2.dex": "301107c68d205a923d6ecf23eaccaf885d12995dbda07b7aa5000e86f1082e60",
+    "classes3.dex": "e9da476bb6272281ab701377724d8c5e1739662d0a97a50210f7edb60b270c90",
+    "lib/arm64-v8a/libpractice.so": "c251289e2ebaf167f50c4319f525bc85b2d132747f983670fe2932cb1f1a77d5"
+  },
+  "removed": [
+    "META-INF/ANDROID.RSA",
+    "META-INF/ANDROID.SF",
+    "META-INF/MANIFEST.MF",
+    "lib/armeabi-v7a/libcocos2dcpp.so",
+    "lib/armeabi-v7a/libcrashlytics-common.so",
+    "lib/armeabi-v7a/libcrashlytics-handler.so",
+    "lib/armeabi-v7a/libcrashlytics-trampoline.so",
+    "lib/armeabi-v7a/libcrashlytics.so",
+    "lib/armeabi-v7a/libdatastore_shared_counter.so",
+    "lib/armeabi-v7a/libfmod.so",
+    "lib/armeabi-v7a/libfmodProvider.so"
+  ]
+}

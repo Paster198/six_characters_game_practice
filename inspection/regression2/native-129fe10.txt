@@ -1,0 +1,17 @@
+0129fe10 stp      x29, x30, [sp, #-0x20]!
+0129fe14 str      x19, [sp, #0x10]
+0129fe18 mov      x29, sp
+0129fe1c adrp     x8, #0x1b82000
+0129fe20 ldr      x8, [x8, #0xf50]
+0129fe24 ldr      x19, [x0, #8]
+0129fe28 mov      w1, #0xd
+0129fe2c mov      w2, #1
+0129fe30 ldr      x8, [x8]
+0129fe34 mov      w3, wzr
+0129fe38 mov      w4, wzr
+0129fe3c ldr      x0, [x8, #0x10]
+0129fe40 bl       #0xb367a0
+0129fe44 mov      x0, x19
+0129fe48 ldr      x19, [sp, #0x10]
+0129fe4c ldp      x29, x30, [sp], #0x20
+0129fe50 b        #0x1196244

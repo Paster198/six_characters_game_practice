@@ -1,0 +1,239 @@
+[
+  {
+    "id": "mission_1_1_tutorial",
+    "tier": 1,
+    "requirements": [
+      {"type": "local_clear"}
+    ],
+    "reward_bundles": ["fragment10"]
+  },
+  {
+    "id": "mission_1_2_clearsong",
+    "tier": 1,
+    "requirements": [
+      {"type": "local_clear"}
+    ],
+    "reward_bundles": ["fragment10"]
+  },
+  {
+    "id": "mission_1_3_settings",
+    "tier": 1,
+    "requirements": [
+      {"type": "local_clear"}
+    ],
+    "reward_bundles": ["fragment10"]
+  },
+  {
+    "id": "mission_1_4_allsongsview",
+    "tier": 1,
+    "requirements": [
+      {"type": "local_clear"}
+    ],
+    "reward_bundles": ["fragment10"]
+  },
+  {
+    "id": "mission_1_5_fragunlock",
+    "tier": 1,
+    "requirements": [
+      {"type": "local_clear"}
+    ],
+    "reward_bundles": ["core_generic_1"]
+  },
+  {
+    "id": "mission_1_end",
+    "tier": 1,
+    "missionsToClearTier": 5,
+    "requirements": [
+      {"id": "mission_1_5_fragunlock", "type": "clear_mission_id"}
+    ],
+    "reward_bundles": ["fragment100"]
+  },
+  {
+    "id": "mission_2_1_account",
+    "tier": 2,
+    "requirements": [
+      {"type": "local_clear"}
+    ],
+    "reward_bundles": ["fragment20"]
+  },
+  {
+    "id": "mission_2_2_profile",
+    "tier": 2,
+    "requirements": [
+      {"type": "local_clear"}
+    ],
+    "reward_bundles": ["fragment20"]
+  },
+  {
+    "id": "mission_2_3_partner",
+    "tier": 2,
+    "requirements": [
+      {"id": "mission_2_3_partner", "type": "custom"}
+    ],
+    "reward_bundles": ["fragment20"]
+  },
+  {
+    "id": "mission_2_4_usestamina",
+    "tier": 2,
+    "requirements": [
+      {"id": "mission_2_4_usestamina", "type": "custom"}
+    ],
+    "reward_bundles": ["core_generic_1"]
+  },
+  {
+    "id": "mission_2_5_prologuestart",
+    "tier": 2,
+    "requirements": [
+      {"type": "local_clear"}
+    ],
+    "reward_bundles": ["core_generic_1"]
+  },
+  {
+    "id": "mission_2_end",
+    "tier": 2,
+    "missionsToClearTier": 5,
+    "requirements": [
+      {"id": "mission_2_4_usestamina", "type": "clear_mission_id"},
+      {"id": "mission_2_5_prologuestart", "type": "clear_mission_id"}
+    ],
+    "reward_bundles": ["core_generic_3"]
+  },
+  {
+    "id": "mission_3_1_prsclear",
+    "tier": 3,
+    "requirements": [
+      {"type": "local_clear"}
+    ],
+    "reward_bundles": ["fragment50"]
+  },
+  {
+    "id": "mission_3_2_etherdrop",
+    "tier": 3,
+    "requirements": [
+      {"id": "mission_3_2_etherdrop", "type": "custom"}
+    ],
+    "reward_bundles": ["stamina2"]
+  },
+  {
+    "id": "mission_3_3_step50",
+    "tier": 3,
+    "requirements": [
+      {"id": "mission_3_3_step50", "type": "custom"}
+    ],
+    "reward_bundles": ["fragment50"]
+  },
+  {
+    "id": "mission_3_4_frag60",
+    "tier": 3,
+    "requirements": [
+      {"id": "mission_3_4_frag60", "type": "custom"}
+    ],
+    "reward_bundles": ["stamina2"]
+  },
+  {
+    "id": "mission_3_end",
+    "tier": 3,
+    "missionsToClearTier": 4,
+    "requirements": [
+      {"id": "mission_2_end", "type": "clear_mission_id"},
+      {"id": "mission_3_2_etherdrop", "type": "clear_mission_id"},
+      {"id": "mission_3_4_frag60", "type": "clear_mission_id"}
+    ],
+    "reward_bundles": ["stamina6"]
+  },
+  {
+    "id": "mission_4_1_exgrade",
+    "tier": 4,
+    "requirements": [
+      {"type": "local_clear"}
+    ],
+    "reward_bundles": ["fragment100"]
+  },
+  {
+    "id": "mission_4_2_potential350",
+    "tier": 4,
+    "requirements": [
+      {"value": 350, "type": "potential"}
+    ],
+    "reward_bundles": ["stamina2"]
+  },
+  {
+    "id": "mission_4_3_twomaps",
+    "tier": 4,
+    "requirements": [
+      {"id": "mission_4_3_twomaps", "type": "custom"}
+    ],
+    "reward_bundles": ["fragment100"]
+  },
+  {
+    "id": "mission_4_4_worldsongunlock",
+    "tier": 4,
+    "requirements": [
+      {"id": "mission_4_4_worldsongunlock", "type": "custom"}
+    ],
+    "reward_bundles": ["core_generic_3"]
+  },
+  {
+    "id": "mission_4_5_prologuefinish",
+    "tier": 4,
+    "requirements": [
+      {"type": "local_clear"}
+    ],
+    "reward_bundles": ["stamina2"]
+  },
+  {
+    "id": "mission_4_end",
+    "tier": 4,
+    "missionsToClearTier": 5,
+    "requirements": [
+      {"id": "mission_3_end", "type": "clear_mission_id"},
+      {"id": "mission_4_2_potential350", "type": "clear_mission_id"},
+      {"id": "mission_4_4_worldsongunlock", "type": "clear_mission_id"},
+      {"id": "mission_4_5_prologuefinish", "type": "clear_mission_id"}
+    ],
+    "reward_bundles": ["innocence"]
+  },
+  {
+    "id": "mission_5_1_songgrouping",
+    "tier": 5,
+    "requirements": [
+      {"type": "local_clear"}
+    ],
+    "reward_bundles": ["fragment50"]
+  },
+  {
+    "id": "mission_5_2_partnerlv12",
+    "tier": 5,
+    "requirements": [
+      {"id": "mission_5_2_partnerlv12", "type": "custom"}
+    ],
+    "reward_bundles": ["fragment250"]
+  },
+  {
+    "id": "mission_5_3_cores",
+    "tier": 5,
+    "requirements": [
+      {"id": "mission_5_3_cores", "type": "custom"}
+    ],
+    "reward_bundles": ["core_generic_3"]
+  },
+  {
+    "id": "mission_5_4_courseclear",
+    "tier": 5,
+    "requirements": [
+      {"id": "mission_5_4_courseclear", "type": "custom"}
+    ],
+    "reward_bundles": ["core_generic_3"]
+  },
+  {
+    "id": "mission_5_end",
+    "tier": 5,
+    "missionsToClearTier": 4,
+    "requirements": [
+      {"id": "mission_4_end", "type": "clear_mission_id"},
+      {"id": "mission_5_3_cores", "type": "clear_mission_id"},
+      {"id": "mission_5_4_courseclear", "type": "clear_mission_id"}
+    ],
+    "reward_bundles": ["pick_ticket"]
+  }
+]

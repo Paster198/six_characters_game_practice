@@ -1,0 +1,90 @@
+Regression 4 independent metadata / local-path review
+====================================================
+
+Scope and conclusion
+--------------------
+Read-only inspection of fix3 metadata, native Song fields and Start path.
+Confirmed a remaining AFF file-routing defect: local BYD/Inscribed charts are
+forced to DownloadManager cache paths instead of their packaged 3.aff files.
+This defect is independently actionable. It must not be presented as proven to
+be the sole cause of the reported login message; the other agents are tracing
+the precise message-producing guard separately.
+
+Actual fix3 metadata
+--------------------
+561 songs, 1839 playable difficulties, 68 class-3 charts (including four INS).
+All songs have remote_dl=false. All difficulties have world_unlock=false and
+hidden_until="". All songs omit byd_local_unlock. No BYD AFF/audio file missing.
+Actual songlist is byte-identical to fix2; parser defaults are unchanged.
+Details: assets-fix3-metadata.json. Previous full payload CRC checks are in
+inspection/regression3/assets-audit.json; path-verify.py rechecks them itself.
+
+byd_local_unlock does not provide an independent Start-login fix
+---------------------------------------------------------------
+The parser's missing value is false, stored at Song+0x161. Exact parsing and
+constructor mapping were independently established in regression3.
+An exact LDRB-immediate scan of executable text found five offset-0x161 loads.
+Only 0x9bd098 is a Song field read. The others (0xd34be8, 0x10610d4, 0x125fdc8,
+0x1691d8c) concern PNG structures or a stack byte, not this Song flag.
+0x9bd098 controls the non-forced download status path; fix3 already fixes the
+factory supplying both forced and non-forced queries. Metadata changes to this
+flag do not change the independent AFF getter identified below.
+This scan is evidence for observed direct loads, not a proof ruling out every
+possible indirect or overlapping field access.
+
+15a5a6c is the Advanced Tutorial dialog, not a login-unlock dialog
+----------------------------------------------------------------
+Only direct caller: d2a410 inside Start handler d2a368.
+15a5a94 immediately declines difficulty zero.
+15a5ab8 loads string key 52bbdc, "tutorialSeenAdvanced".
+The dialog title 556052 is "Level Warning"; 54be80 recommends playing the
+Advanced Tutorial before Present difficulties and above.
+Buttons are "Advanced Tutorial" (56b9d5), "Skip" (585961).
+Do not patch this function to address the login feedback.
+Evidence: assets-startguard.txt, assets-startcaller.txt, assets-aff-proof.txt.
+
+Confirmed AFF-routing defect
+----------------------------
+Getter 903168 uses Song.remote_dl (+0x1c0) to choose its path.
+Remote songs are sent to the cache arm at 9031b8 or 9031cc.
+For a local song, 9031d0 compares difficulty to 3, and 9031d4 branches to the
+same cache arm 9032d4 when equal. Thus all local class-3 charts, including INS
+aliases, still become '<songid>_3' requests to c23908 (903340).
+The actual fix3 native library retains bytes 00080054 at 9031d4.
+Start's 1956124 calls this getter at 1956174, then invokes FileUtils existence
+check at 1956188. Its false result therefore does not establish that the APK
+lacks the chart: it queried a different path.
+GameScene::init (eb2494) also calls the same getter at eb34cc, so correcting this
+shared getter aligns both file-existence checks and actual gameplay loading.
+
+Minimal proposed correction
+---------------------------
+VA 9031d4: 00080054 (B.EQ 9032d4) -> 1f2003d5 (NOP).
+Only the remote_dl=false, difficulty=3 case changes. Remote true already branched
+away; local 0/1/2/4 already followed the local path and continue unchanged.
+The local path calls 130ac5c, whose jump table maps Difficulty+0x124 values
+0..4 to 0.aff/1.aff/2.aff/3.aff/4.aff. It does not use ratingClassAlias.
+Thus the four INS aliases still resolve to their actual packaged 3.aff files.
+All original allocation, SSO/heap cleanup, exception cleanup and epilogue bytes
+stay unchanged. Existing local filename code supports class 3 explicitly.
+
+Audio needs no analogous patch
+-----------------------------
+Audio getter 15c7e54 reads audioOverride at Difficulty+0xe9 and constructs
+either '/<difficulty>.ogg' or '/base.ogg'. At 15c8064..68, remote_dl=false
+branches directly to the local path at 15c8134 without a BYD special case.
+The eight BYD overrides map to 3.ogg; the remaining 60 map to base.ogg,
+including all four INS songs. All of these exact entries exist in fix3.
+
+Independent verification tool
+-----------------------------
+inspection/regression4/path-verify.py PREPARED_ENGINE [--apk ACTUAL_APK]
+Verifies the expected original instruction, patched NOP, and whole AFF getter
+having no other byte changes. Checks original cleanup, filename helper and audio
+gate bytes; interprets actual branch instructions for 20 combinations of
+original/prepared, local/remote and difficulty 0..4; checks all 68 packaged AFF
+and audio streams using ZIP CRC, file size, and headers. Outputs path-verify.json.
+Syntax check and all 20 in-memory candidate branch fixtures passed before handoff.
+Prepared-engine run is performed after the parent generates the new native file.
+
+No tools/, build/, native/, Java, input APK or output APK was modified here.

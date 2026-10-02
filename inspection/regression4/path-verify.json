@@ -1,0 +1,1772 @@
+{
+  "prepared_engine": "build\\full-offline\\lib\\arm64-v8a\\libcocos2dcpp.so",
+  "apk": "arcaea-full-offline-practice-arm64-fix4.apk",
+  "checks": [
+    {
+      "name": "same engine length",
+      "pass": true
+    },
+    {
+      "name": "original instruction fingerprint",
+      "pass": true
+    },
+    {
+      "name": "prepared instruction is NOP",
+      "pass": true
+    },
+    {
+      "name": "entire AFF getter differs only at intended instruction",
+      "pass": true
+    },
+    {
+      "name": "SSO/heap normal and exception cleanup unchanged",
+      "pass": true
+    },
+    {
+      "name": "difficulty filename getter unchanged",
+      "pass": true
+    },
+    {
+      "name": "difficulty filename jump table supports all five classes",
+      "pass": true
+    },
+    {
+      "name": "audio local gate unchanged",
+      "pass": true
+    },
+    {
+      "name": "68 packaged class-3 charts",
+      "pass": true
+    },
+    {
+      "name": "four Inscribed aliases",
+      "pass": true
+    },
+    {
+      "name": "eight separate BYD audio files",
+      "pass": true
+    }
+  ],
+  "routes": [
+    {
+      "engine": "original",
+      "remote_dl": false,
+      "ratingClass": 0,
+      "path": "local",
+      "visited": [
+        "0x9031cc",
+        "0x9031d0",
+        "0x9031d4"
+      ],
+      "pass": true
+    },
+    {
+      "engine": "prepared",
+      "remote_dl": false,
+      "ratingClass": 0,
+      "path": "local",
+      "visited": [
+        "0x9031cc",
+        "0x9031d0",
+        "0x9031d4"
+      ],
+      "pass": true
+    },
+    {
+      "engine": "original",
+      "remote_dl": false,
+      "ratingClass": 1,
+      "path": "local",
+      "visited": [
+        "0x9031cc",
+        "0x9031d0",
+        "0x9031d4"
+      ],
+      "pass": true
+    },
+    {
+      "engine": "prepared",
+      "remote_dl": false,
+      "ratingClass": 1,
+      "path": "local",
+      "visited": [
+        "0x9031cc",
+        "0x9031d0",
+        "0x9031d4"
+      ],
+      "pass": true
+    },
+    {
+      "engine": "original",
+      "remote_dl": false,
+      "ratingClass": 2,
+      "path": "local",
+      "visited": [
+        "0x9031cc",
+        "0x9031d0",
+        "0x9031d4"
+      ],
+      "pass": true
+    },
+    {
+      "engine": "prepared",
+      "remote_dl": false,
+      "ratingClass": 2,
+      "path": "local",
+      "visited": [
+        "0x9031cc",
+        "0x9031d0",
+        "0x9031d4"
+      ],
+      "pass": true
+    },
+    {
+      "engine": "original",
+      "remote_dl": false,
+      "ratingClass": 3,
+      "path": "cache",
+      "visited": [
+        "0x9031cc",
+        "0x9031d0",
+        "0x9031d4"
+      ],
+      "pass": true
+    },
+    {
+      "engine": "prepared",
+      "remote_dl": false,
+      "ratingClass": 3,
+      "path": "local",
+      "visited": [
+        "0x9031cc",
+        "0x9031d0",
+        "0x9031d4"
+      ],
+      "pass": true
+    },
+    {
+      "engine": "original",
+      "remote_dl": false,
+      "ratingClass": 4,
+      "path": "local",
+      "visited": [
+        "0x9031cc",
+        "0x9031d0",
+        "0x9031d4"
+      ],
+      "pass": true
+    },
+    {
+      "engine": "prepared",
+      "remote_dl": false,
+      "ratingClass": 4,
+      "path": "local",
+      "visited": [
+        "0x9031cc",
+        "0x9031d0",
+        "0x9031d4"
+      ],
+      "pass": true
+    },
+    {
+      "engine": "original",
+      "remote_dl": true,
+      "ratingClass": 0,
+      "path": "cache",
+      "visited": [
+        "0x9031cc"
+      ],
+      "pass": true
+    },
+    {
+      "engine": "prepared",
+      "remote_dl": true,
+      "ratingClass": 0,
+      "path": "cache",
+      "visited": [
+        "0x9031cc"
+      ],
+      "pass": true
+    },
+    {
+      "engine": "original",
+      "remote_dl": true,
+      "ratingClass": 1,
+      "path": "cache",
+      "visited": [
+        "0x9031cc"
+      ],
+      "pass": true
+    },
+    {
+      "engine": "prepared",
+      "remote_dl": true,
+      "ratingClass": 1,
+      "path": "cache",
+      "visited": [
+        "0x9031cc"
+      ],
+      "pass": true
+    },
+    {
+      "engine": "original",
+      "remote_dl": true,
+      "ratingClass": 2,
+      "path": "cache",
+      "visited": [
+        "0x9031cc"
+      ],
+      "pass": true
+    },
+    {
+      "engine": "prepared",
+      "remote_dl": true,
+      "ratingClass": 2,
+      "path": "cache",
+      "visited": [
+        "0x9031cc"
+      ],
+      "pass": true
+    },
+    {
+      "engine": "original",
+      "remote_dl": true,
+      "ratingClass": 3,
+      "path": "cache",
+      "visited": [
+        "0x9031cc"
+      ],
+      "pass": true
+    },
+    {
+      "engine": "prepared",
+      "remote_dl": true,
+      "ratingClass": 3,
+      "path": "cache",
+      "visited": [
+        "0x9031cc"
+      ],
+      "pass": true
+    },
+    {
+      "engine": "original",
+      "remote_dl": true,
+      "ratingClass": 4,
+      "path": "cache",
+      "visited": [
+        "0x9031cc"
+      ],
+      "pass": true
+    },
+    {
+      "engine": "prepared",
+      "remote_dl": true,
+      "ratingClass": 4,
+      "path": "cache",
+      "visited": [
+        "0x9031cc"
+      ],
+      "pass": true
+    }
+  ],
+  "songs": [
+    {
+      "id": "lostcivilization",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/lostcivilization/3.aff",
+        "size": 35979,
+        "crc32": "1c6ba2a9",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/lostcivilization/base.ogg",
+        "size": 3016192,
+        "crc32": "7b8ae679",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "goodtek",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/goodtek/3.aff",
+        "size": 41773,
+        "crc32": "e63af85e",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/goodtek/base.ogg",
+        "size": 3066727,
+        "crc32": "5baf427a",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "fairytale",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/fairytale/3.aff",
+        "size": 24343,
+        "crc32": "9518d44c",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/fairytale/base.ogg",
+        "size": 3171343,
+        "crc32": "2299d0a0",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "snowwhite",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/snowwhite/3.aff",
+        "size": 50467,
+        "crc32": "12ed9c46",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/snowwhite/base.ogg",
+        "size": 3612336,
+        "crc32": "56606cec",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "shadesoflight",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/shadesoflight/3.aff",
+        "size": 32314,
+        "crc32": "0f51e6c9",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/shadesoflight/base.ogg",
+        "size": 3644662,
+        "crc32": "05d67ad1",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "vexaria",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/vexaria/3.aff",
+        "size": 37311,
+        "crc32": "7e69fa02",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/vexaria/base.ogg",
+        "size": 3223710,
+        "crc32": "592e9813",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "qualia",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/qualia/3.aff",
+        "size": 43080,
+        "crc32": "6a1ac170",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/qualia/base.ogg",
+        "size": 3483708,
+        "crc32": "f25706d3",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pragmatism",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": true,
+      "chart": {
+        "entry": "assets/songs/pragmatism/3.aff",
+        "size": 68586,
+        "crc32": "4b8860d9",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/pragmatism/3.ogg",
+        "size": 3851093,
+        "crc32": "56cd5446",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "lumia",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/lumia/3.aff",
+        "size": 25381,
+        "crc32": "d7adea28",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/lumia/base.ogg",
+        "size": 2999053,
+        "crc32": "2fd5d1f0",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "dement",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/dement/3.aff",
+        "size": 27012,
+        "crc32": "03aa6c48",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/dement/base.ogg",
+        "size": 3137844,
+        "crc32": "fe974cc5",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "anokumene",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/anokumene/3.aff",
+        "size": 28604,
+        "crc32": "a7116857",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/anokumene/base.ogg",
+        "size": 2818063,
+        "crc32": "1f0b5757",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "infinityheaven",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/infinityheaven/3.aff",
+        "size": 18733,
+        "crc32": "4b773906",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/infinityheaven/base.ogg",
+        "size": 3752608,
+        "crc32": "b79e1639",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "partyvinyl",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/partyvinyl/3.aff",
+        "size": 47968,
+        "crc32": "2ec8f23f",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/partyvinyl/base.ogg",
+        "size": 2692161,
+        "crc32": "87f756e5",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "kanagawa",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/kanagawa/3.aff",
+        "size": 47190,
+        "crc32": "d1c17693",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/kanagawa/base.ogg",
+        "size": 3618886,
+        "crc32": "7a8db4fe",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "ignotus",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": true,
+      "chart": {
+        "entry": "assets/songs/ignotus/3.aff",
+        "size": 68149,
+        "crc32": "52bdafb7",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/ignotus/3.ogg",
+        "size": 3400401,
+        "crc32": "d96af7ce",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "moonheart",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/moonheart/3.aff",
+        "size": 48366,
+        "crc32": "faa2d813",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/moonheart/base.ogg",
+        "size": 3246287,
+        "crc32": "7997d352",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "trappola",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/trappola/3.aff",
+        "size": 49165,
+        "crc32": "1edca42e",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/trappola/base.ogg",
+        "size": 2911723,
+        "crc32": "21fd24f4",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "axiumcrisis",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": true,
+      "chart": {
+        "entry": "assets/songs/axiumcrisis/3.aff",
+        "size": 78543,
+        "crc32": "88cb2467",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/axiumcrisis/3.ogg",
+        "size": 3785904,
+        "crc32": "3ce79cc5",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "redandblue",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": true,
+      "chart": {
+        "entry": "assets/songs/redandblue/3.aff",
+        "size": 56264,
+        "crc32": "a43dd11f",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/redandblue/3.ogg",
+        "size": 3678714,
+        "crc32": "41eb5f3c",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "singularity",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": true,
+      "chart": {
+        "entry": "assets/songs/singularity/3.aff",
+        "size": 60443,
+        "crc32": "a88d43ec",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/singularity/3.ogg",
+        "size": 3340452,
+        "crc32": "3c0003f7",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "nexttoyou",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/nexttoyou/3.aff",
+        "size": 35528,
+        "crc32": "88193279",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/nexttoyou/base.ogg",
+        "size": 3214918,
+        "crc32": "e8aaa0d9",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "bethere",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/bethere/3.aff",
+        "size": 56706,
+        "crc32": "41e42ccc",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/bethere/base.ogg",
+        "size": 3207538,
+        "crc32": "a09714aa",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "cyberneciacatharsis",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/cyberneciacatharsis/3.aff",
+        "size": 50448,
+        "crc32": "476e21d5",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/cyberneciacatharsis/base.ogg",
+        "size": 3168157,
+        "crc32": "f7965946",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "inkarusi",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/inkarusi/3.aff",
+        "size": 40458,
+        "crc32": "088254f4",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/inkarusi/base.ogg",
+        "size": 3497093,
+        "crc32": "7367af3c",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "bookmaker",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/bookmaker/3.aff",
+        "size": 50400,
+        "crc32": "27d5fa0f",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/bookmaker/base.ogg",
+        "size": 3624161,
+        "crc32": "bec78387",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "dropdead",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": true,
+      "chart": {
+        "entry": "assets/songs/dropdead/3.aff",
+        "size": 67666,
+        "crc32": "c7d63ab0",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/dropdead/3.ogg",
+        "size": 3827951,
+        "crc32": "694efe4b",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "nhelv",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/nhelv/3.aff",
+        "size": 73130,
+        "crc32": "325641b6",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/nhelv/base.ogg",
+        "size": 3920626,
+        "crc32": "991618d0",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "purgatorium",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/purgatorium/3.aff",
+        "size": 44753,
+        "crc32": "800fcb91",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/purgatorium/base.ogg",
+        "size": 3633450,
+        "crc32": "5de6f90e",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "merlin",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/merlin/3.aff",
+        "size": 35422,
+        "crc32": "e9c398b5",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/merlin/base.ogg",
+        "size": 3145276,
+        "crc32": "f590cffa",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "omakeno",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/omakeno/3.aff",
+        "size": 44394,
+        "crc32": "f8ff38ca",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/omakeno/base.ogg",
+        "size": 2836573,
+        "crc32": "8210e580",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "libertas",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/libertas/3.aff",
+        "size": 49100,
+        "crc32": "5541d7ec",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/libertas/base.ogg",
+        "size": 3189934,
+        "crc32": "46e880f4",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "antithese",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/antithese/3.aff",
+        "size": 34074,
+        "crc32": "fd7f825d",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/antithese/base.ogg",
+        "size": 3417802,
+        "crc32": "2715ca9d",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "viciousheroism",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": true,
+      "chart": {
+        "entry": "assets/songs/viciousheroism/3.aff",
+        "size": 114871,
+        "crc32": "42e90d4d",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/viciousheroism/3.ogg",
+        "size": 3621435,
+        "crc32": "30ee36e2",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "heavensdoor",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/heavensdoor/3.aff",
+        "size": 68365,
+        "crc32": "8f08552d",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/heavensdoor/base.ogg",
+        "size": 3184433,
+        "crc32": "49fe83f2",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "freefall",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/freefall/3.aff",
+        "size": 75036,
+        "crc32": "f01923bd",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/freefall/base.ogg",
+        "size": 3700493,
+        "crc32": "97eeffd8",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "heavenlycaress",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/heavenlycaress/3.aff",
+        "size": 47465,
+        "crc32": "685bab70",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/heavenlycaress/base.ogg",
+        "size": 3290960,
+        "crc32": "9e6b842b",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "laqryma",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/laqryma/3.aff",
+        "size": 31169,
+        "crc32": "d62fa446",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/laqryma/base.ogg",
+        "size": 3476047,
+        "crc32": "8bf3a80a",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "einherjar",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/einherjar/3.aff",
+        "size": 62936,
+        "crc32": "a2d647db",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/einherjar/base.ogg",
+        "size": 3369969,
+        "crc32": "02e2f378",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "oblivia",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/oblivia/3.aff",
+        "size": 39338,
+        "crc32": "eadb7a94",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/oblivia/base.ogg",
+        "size": 3592166,
+        "crc32": "3b9f9b6e",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "tempestissimo",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/tempestissimo/3.aff",
+        "size": 68305,
+        "crc32": "2af6e32a",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/tempestissimo/base.ogg",
+        "size": 3330349,
+        "crc32": "91484800",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "altale",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/altale/3.aff",
+        "size": 61011,
+        "crc32": "0594d6b6",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/altale/base.ogg",
+        "size": 3699248,
+        "crc32": "38ec3a92",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "teriqma",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/teriqma/3.aff",
+        "size": 59390,
+        "crc32": "529a60ca",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/teriqma/base.ogg",
+        "size": 3563149,
+        "crc32": "6236c344",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "purpleverse",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/purpleverse/3.aff",
+        "size": 63717,
+        "crc32": "59ef730e",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/purpleverse/base.ogg",
+        "size": 3528522,
+        "crc32": "e881f18a",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "eccentrictale",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/eccentrictale/3.aff",
+        "size": 35565,
+        "crc32": "f91f765e",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/eccentrictale/base.ogg",
+        "size": 3331135,
+        "crc32": "58ce1f3a",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "kyogenkigo",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/kyogenkigo/3.aff",
+        "size": 52809,
+        "crc32": "6138c1b6",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/kyogenkigo/base.ogg",
+        "size": 3624149,
+        "crc32": "9b7eaf6e",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "smallcloud",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/smallcloud/3.aff",
+        "size": 71924,
+        "crc32": "439f0e4d",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/smallcloud/base.ogg",
+        "size": 3236533,
+        "crc32": "c5a62ee6",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "quonwacca",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/quonwacca/3.aff",
+        "size": 42450,
+        "crc32": "d581b41f",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/quonwacca/base.ogg",
+        "size": 3018904,
+        "crc32": "cb5f3afe",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "energysynergymatrix",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/energysynergymatrix/3.aff",
+        "size": 70361,
+        "crc32": "8342d349",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/energysynergymatrix/base.ogg",
+        "size": 2679396,
+        "crc32": "46c93203",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "lastendconductor",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/lastendconductor/3.aff",
+        "size": 62018,
+        "crc32": "7213a28b",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/lastendconductor/base.ogg",
+        "size": 4485849,
+        "crc32": "0672eefd",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "infinitestrife",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/infinitestrife/3.aff",
+        "size": 78812,
+        "crc32": "49da8189",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/infinitestrife/base.ogg",
+        "size": 4151140,
+        "crc32": "279cc55e",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "worldender",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/worldender/3.aff",
+        "size": 89446,
+        "crc32": "149c7ac5",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/worldender/base.ogg",
+        "size": 3843906,
+        "crc32": "164bd17f",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pentiment",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/pentiment/3.aff",
+        "size": 109168,
+        "crc32": "727ca810",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/pentiment/base.ogg",
+        "size": 3962602,
+        "crc32": "90b34328",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "arcanaeden",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/arcanaeden/3.aff",
+        "size": 88049,
+        "crc32": "eebaba80",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/arcanaeden/base.ogg",
+        "size": 4392249,
+        "crc32": "639bccc1",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "testify",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/testify/3.aff",
+        "size": 104081,
+        "crc32": "d8e14675",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/testify/base.ogg",
+        "size": 4286363,
+        "crc32": "1706a40d",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "last",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": true,
+      "chart": {
+        "entry": "assets/songs/last/3.aff",
+        "size": 36551,
+        "crc32": "6fcbdd60",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/last/3.ogg",
+        "size": 3579651,
+        "crc32": "d245c3f7",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "lasteternity",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/lasteternity/3.aff",
+        "size": 88767,
+        "crc32": "5b5aaff6",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/lasteternity/base.ogg",
+        "size": 3580188,
+        "crc32": "b73f5b9e",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "impact",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/impact/3.aff",
+        "size": 74527,
+        "crc32": "40f71305",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/impact/base.ogg",
+        "size": 3665061,
+        "crc32": "4b4f7ba7",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "saintorsinner",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/saintorsinner/3.aff",
+        "size": 65279,
+        "crc32": "a4d67d52",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/saintorsinner/base.ogg",
+        "size": 3590329,
+        "crc32": "2dc86f40",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "renegade",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/renegade/3.aff",
+        "size": 55634,
+        "crc32": "de806e7c",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/renegade/base.ogg",
+        "size": 3526281,
+        "crc32": "555b0076",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "raysofremnant",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/raysofremnant/3.aff",
+        "size": 56144,
+        "crc32": "f522471e",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/raysofremnant/base.ogg",
+        "size": 3189307,
+        "crc32": "ee4cc893",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "breachoffaith",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/breachoffaith/3.aff",
+        "size": 71399,
+        "crc32": "d6a861f2",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/breachoffaith/base.ogg",
+        "size": 3845051,
+        "crc32": "c5b770a8",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "lamentrain",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/lamentrain/3.aff",
+        "size": 86182,
+        "crc32": "a8e793e5",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/lamentrain/base.ogg",
+        "size": 4012243,
+        "crc32": "e5fbf71a",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "designant",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/designant/3.aff",
+        "size": 125802,
+        "crc32": "4416f696",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/designant/base.ogg",
+        "size": 4340249,
+        "crc32": "00ae064d",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "yourbestnightmare",
+      "ratingClass": 3,
+      "ratingClassAlias": null,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/yourbestnightmare/3.aff",
+        "size": 204258,
+        "crc32": "2156a3f5",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/yourbestnightmare/base.ogg",
+        "size": 4247015,
+        "crc32": "5096e576",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "dreadarea",
+      "ratingClass": 3,
+      "ratingClassAlias": 1,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/dreadarea/3.aff",
+        "size": 96876,
+        "crc32": "90383edb",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/dreadarea/base.ogg",
+        "size": 3667177,
+        "crc32": "939985f5",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "rivenpilgrim",
+      "ratingClass": 3,
+      "ratingClassAlias": 1,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/rivenpilgrim/3.aff",
+        "size": 94745,
+        "crc32": "c74beae7",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/rivenpilgrim/base.ogg",
+        "size": 3934024,
+        "crc32": "a3b0c388",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "cataclysmcry",
+      "ratingClass": 3,
+      "ratingClassAlias": 1,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/cataclysmcry/3.aff",
+        "size": 116005,
+        "crc32": "4af89963",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/cataclysmcry/base.ogg",
+        "size": 4250575,
+        "crc32": "8b12a85c",
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "id": "deinosphainein",
+      "ratingClass": 3,
+      "ratingClassAlias": 1,
+      "remote_dl": false,
+      "world_unlock": false,
+      "hidden_until": "",
+      "audioOverride": false,
+      "chart": {
+        "entry": "assets/songs/deinosphainein/3.aff",
+        "size": 154013,
+        "crc32": "56d1f12f",
+        "pass": true
+      },
+      "audio": {
+        "entry": "assets/songs/deinosphainein/base.ogg",
+        "size": 4079963,
+        "crc32": "f0efa0fd",
+        "pass": true
+      },
+      "pass": true
+    }
+  ],
+  "failures": [],
+  "pass": true
+}

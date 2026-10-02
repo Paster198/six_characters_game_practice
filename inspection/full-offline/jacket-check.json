@@ -1,0 +1,8684 @@
+[
+  {
+    "id": "sayonarahatsukoi",
+    "stem": "base",
+    "found": [
+      "assets/songs/sayonarahatsukoi/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "sayonarahatsukoi",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/sayonarahatsukoi/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lostcivilization",
+    "stem": "base",
+    "found": [
+      "assets/songs/lostcivilization/base.jpg"
+    ]
+  },
+  {
+    "id": "lostcivilization",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lostcivilization/base_256.jpg"
+    ]
+  },
+  {
+    "id": "lostcivilization",
+    "stem": "3",
+    "found": [
+      "assets/songs/lostcivilization/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "lostcivilization",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/lostcivilization/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "goodtek",
+    "stem": "base",
+    "found": [
+      "assets/songs/goodtek/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "goodtek",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/goodtek/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "goodtek",
+    "stem": "3",
+    "found": [
+      "assets/songs/goodtek/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "goodtek",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/goodtek/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "viyella",
+    "stem": "base",
+    "found": [
+      "assets/songs/viyella/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "viyella",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/viyella/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "rise",
+    "stem": "base",
+    "found": [
+      "assets/songs/rise/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "rise",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/rise/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lucifer",
+    "stem": "base",
+    "found": [
+      "assets/songs/lucifer/base.jpg"
+    ]
+  },
+  {
+    "id": "lucifer",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lucifer/base_256.jpg"
+    ]
+  },
+  {
+    "id": "fairytale",
+    "stem": "base",
+    "found": [
+      "assets/songs/fairytale/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "fairytale",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/fairytale/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "fairytale",
+    "stem": "3",
+    "found": [
+      "assets/songs/fairytale/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "fairytale",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/fairytale/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "hearditsaid",
+    "stem": "base",
+    "found": [
+      "assets/songs/hearditsaid/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "hearditsaid",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/hearditsaid/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "babaroque",
+    "stem": "base",
+    "found": [
+      "assets/songs/babaroque/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "babaroque",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/babaroque/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "memoryfactory",
+    "stem": "base",
+    "found": [
+      "assets/songs/memoryfactory/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "memoryfactory",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/memoryfactory/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "snowwhite",
+    "stem": "base",
+    "found": [
+      "assets/songs/snowwhite/base.jpg"
+    ]
+  },
+  {
+    "id": "snowwhite",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/snowwhite/base_256.jpg"
+    ]
+  },
+  {
+    "id": "relentless",
+    "stem": "base",
+    "found": [
+      "assets/songs/relentless/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "relentless",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/relentless/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "shadesoflight",
+    "stem": "base",
+    "found": [
+      "assets/songs/shadesoflight/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "shadesoflight",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/shadesoflight/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "shadesoflight",
+    "stem": "3",
+    "found": [
+      "assets/songs/shadesoflight/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "shadesoflight",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/shadesoflight/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "vexaria",
+    "stem": "base",
+    "found": [
+      "assets/songs/vexaria/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "vexaria",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/vexaria/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "vexaria",
+    "stem": "3",
+    "found": [
+      "assets/songs/vexaria/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "vexaria",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/vexaria/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "essenceoftwilight",
+    "stem": "base",
+    "found": [
+      "assets/songs/essenceoftwilight/base.jpg"
+    ]
+  },
+  {
+    "id": "essenceoftwilight",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/essenceoftwilight/base_256.jpg"
+    ]
+  },
+  {
+    "id": "qualia",
+    "stem": "base",
+    "found": [
+      "assets/songs/qualia/base.jpg"
+    ]
+  },
+  {
+    "id": "qualia",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/qualia/base_256.jpg"
+    ]
+  },
+  {
+    "id": "qualia",
+    "stem": "3",
+    "found": [
+      "assets/songs/qualia/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "qualia",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/qualia/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "pragmatism",
+    "stem": "base",
+    "found": [
+      "assets/songs/pragmatism/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "pragmatism",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/pragmatism/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "pragmatism",
+    "stem": "3",
+    "found": [
+      "assets/songs/pragmatism/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "pragmatism",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/pragmatism/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "sheriruth",
+    "stem": "base",
+    "found": [
+      "assets/songs/sheriruth/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "sheriruth",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/sheriruth/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lumia",
+    "stem": "base",
+    "found": [
+      "assets/songs/lumia/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lumia",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lumia/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lumia",
+    "stem": "3",
+    "found": [
+      "assets/songs/lumia/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "lumia",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/lumia/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "dement",
+    "stem": "base",
+    "found": [
+      "assets/songs/dement/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "dement",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/dement/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "dement",
+    "stem": "3",
+    "found": [
+      "assets/songs/dement/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "dement",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/dement/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "dandelion",
+    "stem": "base",
+    "found": [
+      "assets/songs/dandelion/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "dandelion",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/dandelion/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "anokumene",
+    "stem": "base",
+    "found": [
+      "assets/songs/anokumene/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "anokumene",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/anokumene/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "infinityheaven",
+    "stem": "base",
+    "found": [
+      "assets/songs/infinityheaven/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "infinityheaven",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/infinityheaven/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "infinityheaven",
+    "stem": "3",
+    "found": [
+      "assets/songs/infinityheaven/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "infinityheaven",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/infinityheaven/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "partyvinyl",
+    "stem": "base",
+    "found": [
+      "assets/songs/partyvinyl/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "partyvinyl",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/partyvinyl/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "partyvinyl",
+    "stem": "3",
+    "found": [
+      "assets/songs/partyvinyl/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "partyvinyl",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/partyvinyl/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "flashback",
+    "stem": "base",
+    "found": [
+      "assets/songs/flashback/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "flashback",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/flashback/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "flyburg",
+    "stem": "base",
+    "found": [
+      "assets/songs/flyburg/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "flyburg",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/flyburg/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "nirvluce",
+    "stem": "base",
+    "found": [
+      "assets/songs/nirvluce/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "nirvluce",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/nirvluce/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "paradise",
+    "stem": "base",
+    "found": [
+      "assets/songs/paradise/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "paradise",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/paradise/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "brandnewworld",
+    "stem": "base",
+    "found": [
+      "assets/songs/brandnewworld/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "brandnewworld",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/brandnewworld/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "dataerror",
+    "stem": "base",
+    "found": [
+      "assets/songs/dataerror/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "dataerror",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/dataerror/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "crosssoul",
+    "stem": "base",
+    "found": [
+      "assets/songs/crosssoul/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "crosssoul",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/crosssoul/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "yourvoiceso",
+    "stem": "base",
+    "found": [
+      "assets/songs/yourvoiceso/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "yourvoiceso",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/yourvoiceso/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "chronostasis",
+    "stem": "base",
+    "found": [
+      "assets/songs/chronostasis/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "chronostasis",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/chronostasis/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "kanagawa",
+    "stem": "base",
+    "found": [
+      "assets/songs/kanagawa/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "kanagawa",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/kanagawa/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "kanagawa",
+    "stem": "3",
+    "found": [
+      "assets/songs/kanagawa/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "kanagawa",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/kanagawa/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "moonlightofsandcastle",
+    "stem": "base",
+    "found": [
+      "assets/songs/moonlightofsandcastle/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "moonlightofsandcastle",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/moonlightofsandcastle/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "reconstruction",
+    "stem": "base",
+    "found": [
+      "assets/songs/reconstruction/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "reconstruction",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/reconstruction/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "evoltex",
+    "stem": "base",
+    "found": [
+      "assets/songs/evoltex/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "evoltex",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/evoltex/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "oracle",
+    "stem": "base",
+    "found": [
+      "assets/songs/oracle/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "oracle",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/oracle/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "aterlbus",
+    "stem": "base",
+    "found": [
+      "assets/songs/aterlbus/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "aterlbus",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/aterlbus/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "clotho",
+    "stem": "base",
+    "found": [
+      "assets/songs/clotho/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "clotho",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/clotho/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "impurebird",
+    "stem": "base",
+    "found": [
+      "assets/songs/impurebird/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "impurebird",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/impurebird/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ignotus",
+    "stem": "base",
+    "found": [
+      "assets/songs/ignotus/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "ignotus",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/ignotus/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ignotus",
+    "stem": "3",
+    "found": [
+      "assets/songs/ignotus/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "ignotus",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/ignotus/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "lethaeus",
+    "stem": "base",
+    "found": [
+      "assets/songs/lethaeus/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lethaeus",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lethaeus/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "romancewars",
+    "stem": "base",
+    "found": [
+      "assets/songs/romancewars/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "romancewars",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/romancewars/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "blossoms",
+    "stem": "base",
+    "found": [
+      "assets/songs/blossoms/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "blossoms",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/blossoms/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "moonheart",
+    "stem": "base",
+    "found": [
+      "assets/songs/moonheart/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "moonheart",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/moonheart/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "moonheart",
+    "stem": "3",
+    "found": [
+      "assets/songs/moonheart/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "moonheart",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/moonheart/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "genesis",
+    "stem": "base",
+    "found": [
+      "assets/songs/genesis/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "genesis",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/genesis/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "harutopia",
+    "stem": "base",
+    "found": [
+      "assets/songs/harutopia/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "harutopia",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/harutopia/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "auxesia",
+    "stem": "base",
+    "found": [
+      "assets/songs/auxesia/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "auxesia",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/auxesia/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "rabbitintheblackroom",
+    "stem": "base",
+    "found": [
+      "assets/songs/rabbitintheblackroom/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "rabbitintheblackroom",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/rabbitintheblackroom/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "modelista",
+    "stem": "base",
+    "found": [
+      "assets/songs/modelista/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "modelista",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/modelista/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "soundwitch",
+    "stem": "base",
+    "found": [
+      "assets/songs/soundwitch/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "soundwitch",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/soundwitch/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "trappola",
+    "stem": "base",
+    "found": [
+      "assets/songs/trappola/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "trappola",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/trappola/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "trappola",
+    "stem": "3",
+    "found": [
+      "assets/songs/trappola/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "trappola",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/trappola/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "iconoclast",
+    "stem": "base",
+    "found": [
+      "assets/songs/iconoclast/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "iconoclast",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/iconoclast/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "conflict",
+    "stem": "base",
+    "found": [
+      "assets/songs/conflict/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "conflict",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/conflict/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "axiumcrisis",
+    "stem": "base",
+    "found": [
+      "assets/songs/axiumcrisis/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "axiumcrisis",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/axiumcrisis/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "axiumcrisis",
+    "stem": "3",
+    "found": [
+      "assets/songs/axiumcrisis/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "axiumcrisis",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/axiumcrisis/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "grievouslady",
+    "stem": "base",
+    "found": [
+      "assets/songs/grievouslady/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "grievouslady",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/grievouslady/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "dreaminattraction",
+    "stem": "base",
+    "found": [
+      "assets/songs/dreaminattraction/base.jpg"
+    ]
+  },
+  {
+    "id": "dreaminattraction",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/dreaminattraction/base_256.jpg"
+    ]
+  },
+  {
+    "id": "redandblue",
+    "stem": "base",
+    "found": [
+      "assets/songs/redandblue/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "redandblue",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/redandblue/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "redandblue",
+    "stem": "3",
+    "found": [
+      "assets/songs/redandblue/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "redandblue",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/redandblue/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "onelastdrive",
+    "stem": "base",
+    "found": [
+      "assets/songs/onelastdrive/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "onelastdrive",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/onelastdrive/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "surrender",
+    "stem": "base",
+    "found": [
+      "assets/songs/surrender/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "surrender",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/surrender/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "yozakurafubuki",
+    "stem": "base",
+    "found": [
+      "assets/songs/yozakurafubuki/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "yozakurafubuki",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/yozakurafubuki/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "cyanine",
+    "stem": "base",
+    "found": [
+      "assets/songs/cyanine/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "cyanine",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/cyanine/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "dreamgoeson",
+    "stem": "base",
+    "found": [
+      "assets/songs/dreamgoeson/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "dreamgoeson",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/dreamgoeson/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "journey",
+    "stem": "base",
+    "found": [
+      "assets/songs/journey/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "journey",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/journey/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "specta",
+    "stem": "base",
+    "found": [
+      "assets/songs/specta/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "specta",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/specta/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "quon",
+    "stem": "base",
+    "found": [
+      "assets/songs/quon/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "quon",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/quon/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "syro",
+    "stem": "base",
+    "found": [
+      "assets/songs/syro/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "syro",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/syro/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "reinvent",
+    "stem": "base",
+    "found": [
+      "assets/songs/reinvent/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "reinvent",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/reinvent/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "silentrush",
+    "stem": "base",
+    "found": [
+      "assets/songs/silentrush/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "silentrush",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/silentrush/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "singularity",
+    "stem": "base",
+    "found": [
+      "assets/songs/singularity/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "singularity",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/singularity/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "singularity",
+    "stem": "3",
+    "found": [
+      "assets/songs/singularity/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "singularity",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/singularity/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "memoryforest",
+    "stem": "base",
+    "found": [
+      "assets/songs/memoryforest/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "memoryforest",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/memoryforest/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "strongholds",
+    "stem": "base",
+    "found": [
+      "assets/songs/strongholds/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "strongholds",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/strongholds/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "nexttoyou",
+    "stem": "base",
+    "found": [
+      "assets/songs/nexttoyou/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "nexttoyou",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/nexttoyou/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "nexttoyou",
+    "stem": "3",
+    "found": [
+      "assets/songs/nexttoyou/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "nexttoyou",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/nexttoyou/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "metallicpunisher",
+    "stem": "base",
+    "found": [
+      "assets/songs/metallicpunisher/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "metallicpunisher",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/metallicpunisher/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "blaster",
+    "stem": "base",
+    "found": [
+      "assets/songs/blaster/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "blaster",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/blaster/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "guardina",
+    "stem": "base",
+    "found": [
+      "assets/songs/guardina/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "guardina",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/guardina/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "carminescythe",
+    "stem": "base",
+    "found": [
+      "assets/songs/carminescythe/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "carminescythe",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/carminescythe/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "bethere",
+    "stem": "base",
+    "found": [
+      "assets/songs/bethere/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "bethere",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/bethere/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "bethere",
+    "stem": "3",
+    "found": [
+      "assets/songs/bethere/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "bethere",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/bethere/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "cyberneciacatharsis",
+    "stem": "base",
+    "found": [
+      "assets/songs/cyberneciacatharsis/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "cyberneciacatharsis",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/cyberneciacatharsis/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "cyberneciacatharsis",
+    "stem": "3",
+    "found": [
+      "assets/songs/cyberneciacatharsis/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "cyberneciacatharsis",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/cyberneciacatharsis/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "callmyname",
+    "stem": "base",
+    "found": [
+      "assets/songs/callmyname/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "callmyname",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/callmyname/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "inkarusi",
+    "stem": "base",
+    "found": [
+      "assets/songs/inkarusi/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "inkarusi",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/inkarusi/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "inkarusi",
+    "stem": "3",
+    "found": [
+      "assets/songs/inkarusi/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "inkarusi",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/inkarusi/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "mazenine",
+    "stem": "base",
+    "found": [
+      "assets/songs/mazenine/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "mazenine",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/mazenine/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "themessage",
+    "stem": "base",
+    "found": [
+      "assets/songs/themessage/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "themessage",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/themessage/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "sulfur",
+    "stem": "base",
+    "found": [
+      "assets/songs/sulfur/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "sulfur",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/sulfur/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "halcyon",
+    "stem": "base",
+    "found": [
+      "assets/songs/halcyon/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "halcyon",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/halcyon/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "etherstrike",
+    "stem": "base",
+    "found": [
+      "assets/songs/etherstrike/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "etherstrike",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/etherstrike/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "fractureray",
+    "stem": "base",
+    "found": [
+      "assets/songs/fractureray/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "fractureray",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/fractureray/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "suomi",
+    "stem": "base",
+    "found": [
+      "assets/songs/suomi/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "suomi",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/suomi/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "bookmaker",
+    "stem": "base",
+    "found": [
+      "assets/songs/bookmaker/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "bookmaker",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/bookmaker/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "bookmaker",
+    "stem": "3",
+    "found": [
+      "assets/songs/bookmaker/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "bookmaker",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/bookmaker/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "darakunosono",
+    "stem": "base",
+    "found": [
+      "assets/songs/darakunosono/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "darakunosono",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/darakunosono/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "dropdead",
+    "stem": "base",
+    "found": [
+      "assets/songs/dropdead/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "dropdead",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/dropdead/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "dropdead",
+    "stem": "3",
+    "found": [
+      "assets/songs/dropdead/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "dropdead",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/dropdead/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "fallensquare",
+    "stem": "base",
+    "found": [
+      "assets/songs/fallensquare/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "fallensquare",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/fallensquare/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "nhelv",
+    "stem": "base",
+    "found": [
+      "assets/songs/nhelv/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "nhelv",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/nhelv/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "nhelv",
+    "stem": "3",
+    "found": [
+      "assets/songs/nhelv/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "nhelv",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/nhelv/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "espebranch",
+    "stem": "base",
+    "found": [
+      "assets/songs/espebranch/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "espebranch",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/espebranch/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "purgatorium",
+    "stem": "base",
+    "found": [
+      "assets/songs/purgatorium/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "purgatorium",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/purgatorium/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "purgatorium",
+    "stem": "3",
+    "found": [
+      "assets/songs/purgatorium/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "purgatorium",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/purgatorium/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "hikari",
+    "stem": "base",
+    "found": [
+      "assets/songs/hikari/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "hikari",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/hikari/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "stager",
+    "stem": "base",
+    "found": [
+      "assets/songs/stager/base.jpg"
+    ]
+  },
+  {
+    "id": "stager",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/stager/base_256.jpg"
+    ]
+  },
+  {
+    "id": "stager",
+    "stem": "1",
+    "found": [
+      "assets/songs/stager/1.jpg"
+    ]
+  },
+  {
+    "id": "stager",
+    "stem": "1_256",
+    "found": [
+      "assets/songs/stager/1_256.jpg"
+    ]
+  },
+  {
+    "id": "stager",
+    "stem": "0",
+    "found": [
+      "assets/songs/stager/0.jpg"
+    ]
+  },
+  {
+    "id": "stager",
+    "stem": "0_256",
+    "found": [
+      "assets/songs/stager/0_256.jpg"
+    ]
+  },
+  {
+    "id": "hallofmirrors",
+    "stem": "base",
+    "found": [
+      "assets/songs/hallofmirrors/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "hallofmirrors",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/hallofmirrors/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "linearaccelerator",
+    "stem": "base",
+    "found": [
+      "assets/songs/linearaccelerator/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "linearaccelerator",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/linearaccelerator/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "tiferet",
+    "stem": "base",
+    "found": [
+      "assets/songs/tiferet/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "tiferet",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/tiferet/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "alexandrite",
+    "stem": "base",
+    "found": [
+      "assets/songs/alexandrite/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "alexandrite",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/alexandrite/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "rugie",
+    "stem": "base",
+    "found": [
+      "assets/songs/rugie/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "rugie",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/rugie/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "astraltale",
+    "stem": "base",
+    "found": [
+      "assets/songs/astraltale/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "astraltale",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/astraltale/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "phantasia",
+    "stem": "base",
+    "found": [
+      "assets/songs/phantasia/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "phantasia",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/phantasia/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "empireofwinter",
+    "stem": "base",
+    "found": [
+      "assets/songs/empireofwinter/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "empireofwinter",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/empireofwinter/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "merlin",
+    "stem": "base",
+    "found": [
+      "assets/songs/merlin/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "merlin",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/merlin/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "dxfullmetal",
+    "stem": "base",
+    "found": [
+      "assets/songs/dxfullmetal/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "dxfullmetal",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/dxfullmetal/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "omakeno",
+    "stem": "base",
+    "found": [
+      "assets/songs/omakeno/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "omakeno",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/omakeno/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "scarletlance",
+    "stem": "base",
+    "found": [
+      "assets/songs/scarletlance/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "scarletlance",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/scarletlance/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ouroboros",
+    "stem": "base",
+    "found": [
+      "assets/songs/ouroboros/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "ouroboros",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/ouroboros/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "libertas",
+    "stem": "base",
+    "found": [
+      "assets/songs/libertas/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "libertas",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/libertas/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "libertas",
+    "stem": "3",
+    "found": [
+      "assets/songs/libertas/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "libertas",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/libertas/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "solitarydream",
+    "stem": "base",
+    "found": [
+      "assets/songs/solitarydream/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "solitarydream",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/solitarydream/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "solitarydream",
+    "stem": "base_ja",
+    "found": [
+      "assets/songs/solitarydream/1080_base_ja.jpg"
+    ]
+  },
+  {
+    "id": "solitarydream",
+    "stem": "base_ja_256",
+    "found": [
+      "assets/songs/solitarydream/1080_base_ja_256.jpg",
+      "assets/songs/solitarydream/base_ja_256.jpg"
+    ]
+  },
+  {
+    "id": "antithese",
+    "stem": "base",
+    "found": [
+      "assets/songs/antithese/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "antithese",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/antithese/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "antithese",
+    "stem": "3",
+    "found": [
+      "assets/songs/antithese/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "antithese",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/antithese/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "corruption",
+    "stem": "base",
+    "found": [
+      "assets/songs/corruption/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "corruption",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/corruption/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "blackterritory",
+    "stem": "base",
+    "found": [
+      "assets/songs/blackterritory/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "blackterritory",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/blackterritory/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "viciousheroism",
+    "stem": "base",
+    "found": [
+      "assets/songs/viciousheroism/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "viciousheroism",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/viciousheroism/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "viciousheroism",
+    "stem": "3",
+    "found": [
+      "assets/songs/viciousheroism/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "viciousheroism",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/viciousheroism/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "cyaegha",
+    "stem": "base",
+    "found": [
+      "assets/songs/cyaegha/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "cyaegha",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/cyaegha/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "revixy",
+    "stem": "base",
+    "found": [
+      "assets/songs/revixy/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "revixy",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/revixy/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "grimheart",
+    "stem": "base",
+    "found": [
+      "assets/songs/grimheart/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "grimheart",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/grimheart/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "vector",
+    "stem": "base",
+    "found": [
+      "assets/songs/vector/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "vector",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/vector/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "supernova",
+    "stem": "base",
+    "found": [
+      "assets/songs/supernova/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "supernova",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/supernova/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "dottodot",
+    "stem": "base",
+    "found": [
+      "assets/songs/dottodot/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "dottodot",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/dottodot/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "garakuta",
+    "stem": "base",
+    "found": [
+      "assets/songs/garakuta/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "garakuta",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/garakuta/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ikazuchi",
+    "stem": "base",
+    "found": [
+      "assets/songs/ikazuchi/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "ikazuchi",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/ikazuchi/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "worldvanquisher",
+    "stem": "base",
+    "found": [
+      "assets/songs/worldvanquisher/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "worldvanquisher",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/worldvanquisher/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "dreadnought",
+    "stem": "base",
+    "found": [
+      "assets/songs/dreadnought/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "dreadnought",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/dreadnought/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "particlearts",
+    "stem": "base",
+    "found": [
+      "assets/songs/particlearts/base.jpg"
+    ]
+  },
+  {
+    "id": "particlearts",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/particlearts/base_256.jpg"
+    ]
+  },
+  {
+    "id": "vindication",
+    "stem": "base",
+    "found": [
+      "assets/songs/vindication/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "vindication",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/vindication/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "heavensdoor",
+    "stem": "base",
+    "found": [
+      "assets/songs/heavensdoor/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "heavensdoor",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/heavensdoor/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "heavensdoor",
+    "stem": "3",
+    "found": [
+      "assets/songs/heavensdoor/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "heavensdoor",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/heavensdoor/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "ringedgenesis",
+    "stem": "base",
+    "found": [
+      "assets/songs/ringedgenesis/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "ringedgenesis",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/ringedgenesis/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "chelsea",
+    "stem": "base",
+    "found": [
+      "assets/songs/chelsea/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "chelsea",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/chelsea/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "aiueoon",
+    "stem": "base",
+    "found": [
+      "assets/songs/aiueoon/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "aiueoon",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/aiueoon/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "melodyoflove",
+    "stem": "base",
+    "found": [
+      "assets/songs/melodyoflove/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "melodyoflove",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/melodyoflove/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "melodyoflove",
+    "stem": "base_night",
+    "found": [
+      "assets/songs/melodyoflove/1080_base_night.jpg"
+    ]
+  },
+  {
+    "id": "melodyoflove",
+    "stem": "base_night_256",
+    "found": [
+      "assets/songs/melodyoflove/1080_base_night_256.jpg",
+      "assets/songs/melodyoflove/base_night_256.jpg"
+    ]
+  },
+  {
+    "id": "tiemedowngently",
+    "stem": "base",
+    "found": [
+      "assets/songs/tiemedowngently/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "tiemedowngently",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/tiemedowngently/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "valhallazero",
+    "stem": "base",
+    "found": [
+      "assets/songs/valhallazero/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "valhallazero",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/valhallazero/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "mirzam",
+    "stem": "base",
+    "found": [
+      "assets/songs/mirzam/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "mirzam",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/mirzam/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "diode",
+    "stem": "base",
+    "found": [
+      "assets/songs/diode/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "diode",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/diode/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "freefall",
+    "stem": "base",
+    "found": [
+      "assets/songs/freefall/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "freefall",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/freefall/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "freefall",
+    "stem": "3",
+    "found": [
+      "assets/songs/freefall/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "freefall",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/freefall/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "gloryroad",
+    "stem": "base",
+    "found": [
+      "assets/songs/gloryroad/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "gloryroad",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/gloryroad/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "monochromeprincess",
+    "stem": "base",
+    "found": [
+      "assets/songs/monochromeprincess/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "monochromeprincess",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/monochromeprincess/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "heavenlycaress",
+    "stem": "base",
+    "found": [
+      "assets/songs/heavenlycaress/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "heavenlycaress",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/heavenlycaress/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "heavenlycaress",
+    "stem": "3",
+    "found": [
+      "assets/songs/heavenlycaress/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "heavenlycaress",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/heavenlycaress/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "senkyou",
+    "stem": "base",
+    "found": [
+      "assets/songs/senkyou/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "senkyou",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/senkyou/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "filament",
+    "stem": "base",
+    "found": [
+      "assets/songs/filament/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "filament",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/filament/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "avantraze",
+    "stem": "base",
+    "found": [
+      "assets/songs/avantraze/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "avantraze",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/avantraze/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "battlenoone",
+    "stem": "base",
+    "found": [
+      "assets/songs/battlenoone/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "battlenoone",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/battlenoone/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "laqryma",
+    "stem": "base",
+    "found": [
+      "assets/songs/laqryma/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "laqryma",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/laqryma/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "laqryma",
+    "stem": "3",
+    "found": [
+      "assets/songs/laqryma/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "laqryma",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/laqryma/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "einherjar",
+    "stem": "base",
+    "found": [
+      "assets/songs/einherjar/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "einherjar",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/einherjar/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "einherjar",
+    "stem": "3",
+    "found": [
+      "assets/songs/einherjar/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "einherjar",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/einherjar/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "izana",
+    "stem": "base",
+    "found": [
+      "assets/songs/izana/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "izana",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/izana/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "saikyostronger",
+    "stem": "base",
+    "found": [
+      "assets/songs/saikyostronger/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "saikyostronger",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/saikyostronger/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "worldexecuteme",
+    "stem": "base",
+    "found": [
+      "assets/songs/worldexecuteme/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "worldexecuteme",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/worldexecuteme/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "blrink",
+    "stem": "base",
+    "found": [
+      "assets/songs/blrink/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "blrink",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/blrink/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "oblivia",
+    "stem": "base",
+    "found": [
+      "assets/songs/oblivia/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "oblivia",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/oblivia/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "oblivia",
+    "stem": "3",
+    "found": [
+      "assets/songs/oblivia/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "oblivia",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/oblivia/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "amygdata",
+    "stem": "base",
+    "found": [
+      "assets/songs/amygdata/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "amygdata",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/amygdata/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "corpssansorganes",
+    "stem": "base",
+    "found": [
+      "assets/songs/corpssansorganes/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "corpssansorganes",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/corpssansorganes/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "equilibrium",
+    "stem": "base",
+    "found": [
+      "assets/songs/equilibrium/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "equilibrium",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/equilibrium/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "antagonism",
+    "stem": "base",
+    "found": [
+      "assets/songs/antagonism/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "antagonism",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/antagonism/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lostdesire",
+    "stem": "base",
+    "found": [
+      "assets/songs/lostdesire/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lostdesire",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lostdesire/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "dantalion",
+    "stem": "base",
+    "found": [
+      "assets/songs/dantalion/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "dantalion",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/dantalion/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ifi",
+    "stem": "base",
+    "found": [
+      "assets/songs/ifi/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "ifi",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/ifi/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "tempestissimo",
+    "stem": "base",
+    "found": [
+      "assets/songs/tempestissimo/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "tempestissimo",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/tempestissimo/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "tempestissimo",
+    "stem": "3",
+    "found": [
+      "assets/songs/tempestissimo/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "tempestissimo",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/tempestissimo/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "arcahv",
+    "stem": "base",
+    "found": [
+      "assets/songs/arcahv/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "arcahv",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/arcahv/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "altale",
+    "stem": "base",
+    "found": [
+      "assets/songs/altale/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "altale",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/altale/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "givemeanightmare",
+    "stem": "base",
+    "found": [
+      "assets/songs/givemeanightmare/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "givemeanightmare",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/givemeanightmare/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "blacklotus",
+    "stem": "base",
+    "found": [
+      "assets/songs/blacklotus/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "blacklotus",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/blacklotus/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "gekka",
+    "stem": "base",
+    "found": [
+      "assets/songs/gekka/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "gekka",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/gekka/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "vividtheory",
+    "stem": "base",
+    "found": [
+      "assets/songs/vividtheory/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "vividtheory",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/vividtheory/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "onefr",
+    "stem": "base",
+    "found": [
+      "assets/songs/onefr/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "onefr",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/onefr/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "scarletcage",
+    "stem": "base",
+    "found": [
+      "assets/songs/scarletcage/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "scarletcage",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/scarletcage/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "faintlight",
+    "stem": "base",
+    "found": [
+      "assets/songs/faintlight/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "faintlight",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/faintlight/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "feelssoright",
+    "stem": "base",
+    "found": [
+      "assets/songs/feelssoright/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "feelssoright",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/feelssoright/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "teriqma",
+    "stem": "base",
+    "found": [
+      "assets/songs/teriqma/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "teriqma",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/teriqma/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "mahoroba",
+    "stem": "base",
+    "found": [
+      "assets/songs/mahoroba/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "mahoroba",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/mahoroba/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "badtek",
+    "stem": "base",
+    "found": [
+      "assets/songs/badtek/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "badtek",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/badtek/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "maliciousmischance",
+    "stem": "base",
+    "found": [
+      "assets/songs/maliciousmischance/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "maliciousmischance",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/maliciousmischance/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "gothiveofra",
+    "stem": "base",
+    "found": [
+      "assets/songs/gothiveofra/base.jpg"
+    ]
+  },
+  {
+    "id": "gothiveofra",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/gothiveofra/base_256.jpg"
+    ]
+  },
+  {
+    "id": "buchigireberserker",
+    "stem": "base",
+    "found": [
+      "assets/songs/buchigireberserker/base.jpg"
+    ]
+  },
+  {
+    "id": "buchigireberserker",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/buchigireberserker/base_256.jpg"
+    ]
+  },
+  {
+    "id": "galaxyfriends",
+    "stem": "base",
+    "found": [
+      "assets/songs/galaxyfriends/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "galaxyfriends",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/galaxyfriends/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "crossover",
+    "stem": "base",
+    "found": [
+      "assets/songs/crossover/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "crossover",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/crossover/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "xeraphinite",
+    "stem": "base",
+    "found": [
+      "assets/songs/xeraphinite/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "xeraphinite",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/xeraphinite/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lapis",
+    "stem": "base",
+    "found": [
+      "assets/songs/lapis/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lapis",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lapis/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "xanatos",
+    "stem": "base",
+    "found": [
+      "assets/songs/xanatos/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "xanatos",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/xanatos/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "purpleverse",
+    "stem": "base",
+    "found": [
+      "assets/songs/purpleverse/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "purpleverse",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/purpleverse/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "purpleverse",
+    "stem": "3",
+    "found": [
+      "assets/songs/purpleverse/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "purpleverse",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/purpleverse/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "alicealamode",
+    "stem": "base",
+    "found": [
+      "assets/songs/alicealamode/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "alicealamode",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/alicealamode/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "eccentrictale",
+    "stem": "base",
+    "found": [
+      "assets/songs/eccentrictale/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "eccentrictale",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/eccentrictale/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "eccentrictale",
+    "stem": "3",
+    "found": [
+      "assets/songs/eccentrictale/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "eccentrictale",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/eccentrictale/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "alicessuitcase",
+    "stem": "base",
+    "found": [
+      "assets/songs/alicessuitcase/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "alicessuitcase",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/alicessuitcase/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "jump",
+    "stem": "base",
+    "found": [
+      "assets/songs/jump/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "jump",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/jump/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "felis",
+    "stem": "base",
+    "found": [
+      "assets/songs/felis/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "felis",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/felis/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "besideyou",
+    "stem": "base",
+    "found": [
+      "assets/songs/besideyou/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "besideyou",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/besideyou/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "heartjackin",
+    "stem": "base",
+    "found": [
+      "assets/songs/heartjackin/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "heartjackin",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/heartjackin/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "toaliceliddell",
+    "stem": "base",
+    "found": [
+      "assets/songs/toaliceliddell/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "toaliceliddell",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/toaliceliddell/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lazyaddiction",
+    "stem": "base",
+    "found": [
+      "assets/songs/lazyaddiction/base.jpg"
+    ]
+  },
+  {
+    "id": "lazyaddiction",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lazyaddiction/base_256.jpg"
+    ]
+  },
+  {
+    "id": "dazzlehop",
+    "stem": "base",
+    "found": [
+      "assets/songs/dazzlehop/base.jpg"
+    ]
+  },
+  {
+    "id": "dazzlehop",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/dazzlehop/base_256.jpg"
+    ]
+  },
+  {
+    "id": "viyellastears",
+    "stem": "base",
+    "found": [
+      "assets/songs/viyellastears/base.jpg"
+    ]
+  },
+  {
+    "id": "viyellastears",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/viyellastears/base_256.jpg"
+    ]
+  },
+  {
+    "id": "omegafour",
+    "stem": "base",
+    "found": [
+      "assets/songs/omegafour/base.jpg"
+    ]
+  },
+  {
+    "id": "omegafour",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/omegafour/base_256.jpg"
+    ]
+  },
+  {
+    "id": "aprilshowers",
+    "stem": "base",
+    "found": [
+      "assets/songs/aprilshowers/base.jpg"
+    ]
+  },
+  {
+    "id": "aprilshowers",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/aprilshowers/base_256.jpg"
+    ]
+  },
+  {
+    "id": "seventhsense",
+    "stem": "base",
+    "found": [
+      "assets/songs/seventhsense/base.jpg"
+    ]
+  },
+  {
+    "id": "seventhsense",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/seventhsense/base_256.jpg"
+    ]
+  },
+  {
+    "id": "oshamascramble",
+    "stem": "base",
+    "found": [
+      "assets/songs/oshamascramble/base.jpg"
+    ]
+  },
+  {
+    "id": "oshamascramble",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/oshamascramble/base_256.jpg"
+    ]
+  },
+  {
+    "id": "amazingmightyyyy",
+    "stem": "base",
+    "found": [
+      "assets/songs/amazingmightyyyy/base.jpg"
+    ]
+  },
+  {
+    "id": "amazingmightyyyy",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/amazingmightyyyy/base_256.jpg"
+    ]
+  },
+  {
+    "id": "climax",
+    "stem": "base",
+    "found": [
+      "assets/songs/climax/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "climax",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/climax/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lastcelebration",
+    "stem": "base",
+    "found": [
+      "assets/songs/lastcelebration/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lastcelebration",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lastcelebration/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "gou",
+    "stem": "base",
+    "found": [
+      "assets/songs/gou/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "gou",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/gou/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "glow",
+    "stem": "base",
+    "found": [
+      "assets/songs/glow/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "glow",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/glow/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "attraqtia",
+    "stem": "base",
+    "found": [
+      "assets/songs/attraqtia/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "attraqtia",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/attraqtia/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "enchantedlove",
+    "stem": "base",
+    "found": [
+      "assets/songs/enchantedlove/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "enchantedlove",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/enchantedlove/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "take",
+    "stem": "base",
+    "found": [
+      "assets/songs/take/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "take",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/take/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "gimmedablood",
+    "stem": "base",
+    "found": [
+      "assets/songs/gimmedablood/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "gimmedablood",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/gimmedablood/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "bassline",
+    "stem": "base",
+    "found": [
+      "assets/songs/bassline/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "bassline",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/bassline/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lifeispiano",
+    "stem": "base",
+    "found": [
+      "assets/songs/lifeispiano/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lifeispiano",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lifeispiano/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "paperwitch",
+    "stem": "base",
+    "found": [
+      "assets/songs/paperwitch/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "paperwitch",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/paperwitch/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "crystalgravity",
+    "stem": "base",
+    "found": [
+      "assets/songs/crystalgravity/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "crystalgravity",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/crystalgravity/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "farawaylight",
+    "stem": "base",
+    "found": [
+      "assets/songs/farawaylight/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "farawaylight",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/farawaylight/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "loschen",
+    "stem": "base",
+    "found": [
+      "assets/songs/loschen/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "loschen",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/loschen/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "aegleseeker",
+    "stem": "base",
+    "found": [
+      "assets/songs/aegleseeker/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "aegleseeker",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/aegleseeker/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "coastalhighway",
+    "stem": "base",
+    "found": [
+      "assets/songs/coastalhighway/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "coastalhighway",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/coastalhighway/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "odysseia",
+    "stem": "base",
+    "found": [
+      "assets/songs/odysseia/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "odysseia",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/odysseia/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "overwhelm",
+    "stem": "base",
+    "found": [
+      "assets/songs/overwhelm/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "overwhelm",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/overwhelm/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "vandalism",
+    "stem": "base",
+    "found": [
+      "assets/songs/vandalism/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "vandalism",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/vandalism/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "turbocharger",
+    "stem": "base",
+    "found": [
+      "assets/songs/turbocharger/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "turbocharger",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/turbocharger/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "theultimacy",
+    "stem": "base",
+    "found": [
+      "assets/songs/theultimacy/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "theultimacy",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/theultimacy/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "rekkaresonance",
+    "stem": "base",
+    "found": [
+      "assets/songs/rekkaresonance/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "rekkaresonance",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/rekkaresonance/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "kyogenkigo",
+    "stem": "base",
+    "found": [
+      "assets/songs/kyogenkigo/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "kyogenkigo",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/kyogenkigo/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "kyogenkigo",
+    "stem": "3",
+    "found": [
+      "assets/songs/kyogenkigo/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "kyogenkigo",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/kyogenkigo/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "hivemind",
+    "stem": "base",
+    "found": [
+      "assets/songs/hivemind/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "hivemind",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/hivemind/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "seclusion",
+    "stem": "base",
+    "found": [
+      "assets/songs/seclusion/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "seclusion",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/seclusion/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "smallcloud",
+    "stem": "base",
+    "found": [
+      "assets/songs/smallcloud/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "smallcloud",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/smallcloud/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "smallcloud",
+    "stem": "3",
+    "found": [
+      "assets/songs/smallcloud/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "smallcloud",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/smallcloud/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "alterale",
+    "stem": "base",
+    "found": [
+      "assets/songs/alterale/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "alterale",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/alterale/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "divinelight",
+    "stem": "base",
+    "found": [
+      "assets/songs/divinelight/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "divinelight",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/divinelight/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "mazymetroplex",
+    "stem": "base",
+    "found": [
+      "assets/songs/mazymetroplex/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "mazymetroplex",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/mazymetroplex/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "quonwacca",
+    "stem": "base",
+    "found": [
+      "assets/songs/quonwacca/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "quonwacca",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/quonwacca/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "withu",
+    "stem": "base",
+    "found": [
+      "assets/songs/withu/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "withu",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/withu/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "genocider",
+    "stem": "base",
+    "found": [
+      "assets/songs/genocider/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "genocider",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/genocider/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "letyoudivermx",
+    "stem": "base",
+    "found": [
+      "assets/songs/letyoudivermx/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "letyoudivermx",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/letyoudivermx/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "sheriruthrmx",
+    "stem": "base",
+    "found": [
+      "assets/songs/sheriruthrmx/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "sheriruthrmx",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/sheriruthrmx/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "eveninginscarlet",
+    "stem": "base",
+    "found": [
+      "assets/songs/eveninginscarlet/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "eveninginscarlet",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/eveninginscarlet/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "bluecomet",
+    "stem": "base",
+    "found": [
+      "assets/songs/bluecomet/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "bluecomet",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/bluecomet/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "energysynergymatrix",
+    "stem": "base",
+    "found": [
+      "assets/songs/energysynergymatrix/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "energysynergymatrix",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/energysynergymatrix/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "gengaozo",
+    "stem": "base",
+    "found": [
+      "assets/songs/gengaozo/base.jpg"
+    ]
+  },
+  {
+    "id": "gengaozo",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/gengaozo/base_256.jpg"
+    ]
+  },
+  {
+    "id": "goldenslaughterer",
+    "stem": "base",
+    "found": [
+      "assets/songs/goldenslaughterer/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "goldenslaughterer",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/goldenslaughterer/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lastendconductor",
+    "stem": "base",
+    "found": [
+      "assets/songs/lastendconductor/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lastendconductor",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lastendconductor/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "redolentshape",
+    "stem": "base",
+    "found": [
+      "assets/songs/redolentshape/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "redolentshape",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/redolentshape/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "cosmica",
+    "stem": "base",
+    "found": [
+      "assets/songs/cosmica/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "cosmica",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/cosmica/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ascent",
+    "stem": "base",
+    "found": [
+      "assets/songs/ascent/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "ascent",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/ascent/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "livefastdieyoung",
+    "stem": "base",
+    "found": [
+      "assets/songs/livefastdieyoung/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "livefastdieyoung",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/livefastdieyoung/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "summerfireworks",
+    "stem": "base",
+    "found": [
+      "assets/songs/summerfireworks/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "summerfireworks",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/summerfireworks/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "firstsnow",
+    "stem": "base",
+    "found": [
+      "assets/songs/firstsnow/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "firstsnow",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/firstsnow/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "bluerose",
+    "stem": "base",
+    "found": [
+      "assets/songs/bluerose/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "bluerose",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/bluerose/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "blockedlibrary",
+    "stem": "base",
+    "found": [
+      "assets/songs/blockedlibrary/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "blockedlibrary",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/blockedlibrary/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "neokosmo",
+    "stem": "base",
+    "found": [
+      "assets/songs/neokosmo/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "neokosmo",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/neokosmo/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lightningscrew",
+    "stem": "base",
+    "found": [
+      "assets/songs/lightningscrew/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lightningscrew",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lightningscrew/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lightsofmuse",
+    "stem": "base",
+    "found": [
+      "assets/songs/lightsofmuse/base.jpg"
+    ]
+  },
+  {
+    "id": "lightsofmuse",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lightsofmuse/base_256.jpg"
+    ]
+  },
+  {
+    "id": "finalstep",
+    "stem": "base",
+    "found": [
+      "assets/songs/finalstep/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "finalstep",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/finalstep/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "akinokagerou",
+    "stem": "base",
+    "found": [
+      "assets/songs/akinokagerou/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "akinokagerou",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/akinokagerou/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "medusa",
+    "stem": "base",
+    "found": [
+      "assets/songs/medusa/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "medusa",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/medusa/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "init",
+    "stem": "base",
+    "found": [
+      "assets/songs/init/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "init",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/init/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "internetoverdose",
+    "stem": "base",
+    "found": [
+      "assets/songs/internetoverdose/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "internetoverdose",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/internetoverdose/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "sakurafubuki",
+    "stem": "base",
+    "found": [
+      "assets/songs/sakurafubuki/base.jpg"
+    ]
+  },
+  {
+    "id": "sakurafubuki",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/sakurafubuki/base_256.jpg"
+    ]
+  },
+  {
+    "id": "nulctrl",
+    "stem": "base",
+    "found": [
+      "assets/songs/nulctrl/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "nulctrl",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/nulctrl/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "macromod",
+    "stem": "base",
+    "found": [
+      "assets/songs/macromod/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "macromod",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/macromod/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "neowings",
+    "stem": "base",
+    "found": [
+      "assets/songs/neowings/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "neowings",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/neowings/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "kissinglucifer",
+    "stem": "base",
+    "found": [
+      "assets/songs/kissinglucifer/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "kissinglucifer",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/kissinglucifer/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "avril",
+    "stem": "base",
+    "found": [
+      "assets/songs/avril/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "avril",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/avril/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "avril",
+    "stem": "1",
+    "found": [
+      "assets/songs/avril/1080_1.jpg"
+    ]
+  },
+  {
+    "id": "avril",
+    "stem": "1_256",
+    "found": [
+      "assets/songs/avril/1080_1_256.jpg"
+    ]
+  },
+  {
+    "id": "avril",
+    "stem": "0",
+    "found": [
+      "assets/songs/avril/1080_0.jpg"
+    ]
+  },
+  {
+    "id": "avril",
+    "stem": "0_256",
+    "found": [
+      "assets/songs/avril/1080_0_256.jpg"
+    ]
+  },
+  {
+    "id": "aurgelmir",
+    "stem": "base",
+    "found": [
+      "assets/songs/aurgelmir/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "aurgelmir",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/aurgelmir/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "headbonkache",
+    "stem": "base",
+    "found": [
+      "assets/songs/headbonkache/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "headbonkache",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/headbonkache/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ddd",
+    "stem": "base",
+    "found": [
+      "assets/songs/ddd/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "ddd",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/ddd/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "prism",
+    "stem": "base",
+    "found": [
+      "assets/songs/prism/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "prism",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/prism/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "prism",
+    "stem": "1",
+    "found": [
+      "assets/songs/prism/1080_1.jpg"
+    ]
+  },
+  {
+    "id": "prism",
+    "stem": "1_256",
+    "found": [
+      "assets/songs/prism/1080_1_256.jpg"
+    ]
+  },
+  {
+    "id": "prism",
+    "stem": "0",
+    "found": [
+      "assets/songs/prism/1080_0.jpg"
+    ]
+  },
+  {
+    "id": "prism",
+    "stem": "0_256",
+    "found": [
+      "assets/songs/prism/1080_0_256.jpg"
+    ]
+  },
+  {
+    "id": "protoflicker",
+    "stem": "base",
+    "found": [
+      "assets/songs/protoflicker/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "protoflicker",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/protoflicker/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "protoflicker",
+    "stem": "1",
+    "found": [
+      "assets/songs/protoflicker/1080_1.jpg"
+    ]
+  },
+  {
+    "id": "protoflicker",
+    "stem": "1_256",
+    "found": [
+      "assets/songs/protoflicker/1080_1_256.jpg"
+    ]
+  },
+  {
+    "id": "protoflicker",
+    "stem": "0",
+    "found": [
+      "assets/songs/protoflicker/1080_0.jpg"
+    ]
+  },
+  {
+    "id": "protoflicker",
+    "stem": "0_256",
+    "found": [
+      "assets/songs/protoflicker/1080_0_256.jpg"
+    ]
+  },
+  {
+    "id": "stasis",
+    "stem": "base",
+    "found": [
+      "assets/songs/stasis/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "stasis",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/stasis/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "stasis",
+    "stem": "1",
+    "found": [
+      "assets/songs/stasis/1080_1.jpg"
+    ]
+  },
+  {
+    "id": "stasis",
+    "stem": "1_256",
+    "found": [
+      "assets/songs/stasis/1080_1_256.jpg"
+    ]
+  },
+  {
+    "id": "stasis",
+    "stem": "0",
+    "found": [
+      "assets/songs/stasis/1080_0.jpg"
+    ]
+  },
+  {
+    "id": "stasis",
+    "stem": "0_256",
+    "found": [
+      "assets/songs/stasis/1080_0_256.jpg"
+    ]
+  },
+  {
+    "id": "picopicotranslation",
+    "stem": "base",
+    "found": [
+      "assets/songs/picopicotranslation/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "picopicotranslation",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/picopicotranslation/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "nekonote",
+    "stem": "base",
+    "found": [
+      "assets/songs/nekonote/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "nekonote",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/nekonote/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "mu",
+    "stem": "base",
+    "found": [
+      "assets/songs/mu/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "mu",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/mu/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "sanskia",
+    "stem": "base",
+    "found": [
+      "assets/songs/sanskia/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "sanskia",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/sanskia/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "altair",
+    "stem": "base",
+    "found": [
+      "assets/songs/altair/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "altair",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/altair/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "mukishitsu",
+    "stem": "base",
+    "found": [
+      "assets/songs/mukishitsu/base.jpg"
+    ]
+  },
+  {
+    "id": "mukishitsu",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/mukishitsu/base_256.jpg"
+    ]
+  },
+  {
+    "id": "trapcrow",
+    "stem": "base",
+    "found": [
+      "assets/songs/trapcrow/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "trapcrow",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/trapcrow/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "pupa",
+    "stem": "base",
+    "found": [
+      "assets/songs/pupa/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "pupa",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/pupa/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "defection",
+    "stem": "base",
+    "found": [
+      "assets/songs/defection/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "defection",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/defection/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "infinitestrife",
+    "stem": "base",
+    "found": [
+      "assets/songs/infinitestrife/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "infinitestrife",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/infinitestrife/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "worldender",
+    "stem": "base",
+    "found": [
+      "assets/songs/worldender/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "worldender",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/worldender/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "pentiment",
+    "stem": "base",
+    "found": [
+      "assets/songs/pentiment/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "pentiment",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/pentiment/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "arcanaeden",
+    "stem": "base",
+    "found": [
+      "assets/songs/arcanaeden/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "arcanaeden",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/arcanaeden/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "testify",
+    "stem": "base",
+    "found": [
+      "assets/songs/testify/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "testify",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/testify/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lovelessdress",
+    "stem": "base",
+    "found": [
+      "assets/songs/lovelessdress/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lovelessdress",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lovelessdress/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "last",
+    "stem": "base",
+    "found": [
+      "assets/songs/last/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "last",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/last/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "last",
+    "stem": "3",
+    "found": [
+      "assets/songs/last/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "last",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/last/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "lasteternity",
+    "stem": "base",
+    "found": [
+      "assets/songs/lasteternity/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lasteternity",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lasteternity/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "callimakarma",
+    "stem": "base",
+    "found": [
+      "assets/songs/callimakarma/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "callimakarma",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/callimakarma/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "kokoro",
+    "stem": "base",
+    "found": [
+      "assets/songs/kokoro/base.jpg"
+    ]
+  },
+  {
+    "id": "kokoro",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/kokoro/base_256.jpg"
+    ]
+  },
+  {
+    "id": "aidrew",
+    "stem": "base",
+    "found": [
+      "assets/songs/aidrew/base.jpg"
+    ]
+  },
+  {
+    "id": "aidrew",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/aidrew/base_256.jpg"
+    ]
+  },
+  {
+    "id": "fluffyflash",
+    "stem": "base",
+    "found": [
+      "assets/songs/fluffyflash/base.jpg"
+    ]
+  },
+  {
+    "id": "fluffyflash",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/fluffyflash/base_256.jpg"
+    ]
+  },
+  {
+    "id": "goodbyemerry",
+    "stem": "base",
+    "found": [
+      "assets/songs/goodbyemerry/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "goodbyemerry",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/goodbyemerry/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lamia",
+    "stem": "base",
+    "found": [
+      "assets/songs/lamia/base.jpg"
+    ]
+  },
+  {
+    "id": "lamia",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lamia/base_256.jpg"
+    ]
+  },
+  {
+    "id": "freemyself",
+    "stem": "base",
+    "found": [
+      "assets/songs/freemyself/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "freemyself",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/freemyself/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "cocorocosmetic",
+    "stem": "base",
+    "found": [
+      "assets/songs/cocorocosmetic/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "cocorocosmetic",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/cocorocosmetic/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "capella",
+    "stem": "base",
+    "found": [
+      "assets/songs/capella/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "capella",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/capella/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "dialnote",
+    "stem": "base",
+    "found": [
+      "assets/songs/dialnote/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "dialnote",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/dialnote/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "tsukinimurakumo",
+    "stem": "base",
+    "found": [
+      "assets/songs/tsukinimurakumo/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "tsukinimurakumo",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/tsukinimurakumo/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "mantis",
+    "stem": "base",
+    "found": [
+      "assets/songs/mantis/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "mantis",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/mantis/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "worldfragments",
+    "stem": "base",
+    "found": [
+      "assets/songs/worldfragments/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "worldfragments",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/worldfragments/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "astrawalkthrough",
+    "stem": "base",
+    "found": [
+      "assets/songs/astrawalkthrough/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "astrawalkthrough",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/astrawalkthrough/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "chronicle",
+    "stem": "base",
+    "found": [
+      "assets/songs/chronicle/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "chronicle",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/chronicle/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "nullapophenia",
+    "stem": "base",
+    "found": [
+      "assets/songs/nullapophenia/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "nullapophenia",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/nullapophenia/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "crimsonthrone",
+    "stem": "base",
+    "found": [
+      "assets/songs/crimsonthrone/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "crimsonthrone",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/crimsonthrone/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "manicjeer",
+    "stem": "base",
+    "found": [
+      "assets/songs/manicjeer/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "manicjeer",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/manicjeer/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "hiirogekka",
+    "stem": "base",
+    "found": [
+      "assets/songs/hiirogekka/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "hiirogekka",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/hiirogekka/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "letsrock",
+    "stem": "base",
+    "found": [
+      "assets/songs/letsrock/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "letsrock",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/letsrock/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "cycles",
+    "stem": "base",
+    "found": [
+      "assets/songs/cycles/base.jpg"
+    ]
+  },
+  {
+    "id": "cycles",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/cycles/base_256.jpg"
+    ]
+  },
+  {
+    "id": "maxrage",
+    "stem": "base",
+    "found": [
+      "assets/songs/maxrage/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "maxrage",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/maxrage/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "infinity",
+    "stem": "base",
+    "found": [
+      "assets/songs/infinity/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "infinity",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/infinity/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "temptation",
+    "stem": "base",
+    "found": [
+      "assets/songs/temptation/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "temptation",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/temptation/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "primitivelights",
+    "stem": "base",
+    "found": [
+      "assets/songs/primitivelights/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "primitivelights",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/primitivelights/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "cosmopop",
+    "stem": "base",
+    "found": [
+      "assets/songs/cosmopop/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "cosmopop",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/cosmopop/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "impact",
+    "stem": "base",
+    "found": [
+      "assets/songs/impact/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "impact",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/impact/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "genesischunithm",
+    "stem": "base",
+    "found": [
+      "assets/songs/genesischunithm/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "genesischunithm",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/genesischunithm/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "trrricksters",
+    "stem": "base",
+    "found": [
+      "assets/songs/trrricksters/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "trrricksters",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/trrricksters/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "spidersthread",
+    "stem": "base",
+    "found": [
+      "assets/songs/spidersthread/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "spidersthread",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/spidersthread/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lostemotion",
+    "stem": "base",
+    "found": [
+      "assets/songs/lostemotion/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lostemotion",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lostemotion/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "gimmick",
+    "stem": "base",
+    "found": [
+      "assets/songs/gimmick/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "gimmick",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/gimmick/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "thesurvivor",
+    "stem": "base",
+    "found": [
+      "assets/songs/thesurvivor/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "thesurvivor",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/thesurvivor/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "newyorkbackraise",
+    "stem": "base",
+    "found": [
+      "assets/songs/newyorkbackraise/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "newyorkbackraise",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/newyorkbackraise/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "galacticlove",
+    "stem": "base",
+    "found": [
+      "assets/songs/galacticlove/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "galacticlove",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/galacticlove/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lawlesspoint",
+    "stem": "base",
+    "found": [
+      "assets/songs/lawlesspoint/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lawlesspoint",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lawlesspoint/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lostintheabyss",
+    "stem": "base",
+    "found": [
+      "assets/songs/lostintheabyss/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lostintheabyss",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lostintheabyss/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "hybris",
+    "stem": "base",
+    "found": [
+      "assets/songs/hybris/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "hybris",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/hybris/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "tothemilkyway",
+    "stem": "base",
+    "found": [
+      "assets/songs/tothemilkyway/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "tothemilkyway",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/tothemilkyway/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "internetyamero",
+    "stem": "base",
+    "found": [
+      "assets/songs/internetyamero/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "internetyamero",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/internetyamero/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "bulletwaiting",
+    "stem": "base",
+    "found": [
+      "assets/songs/bulletwaiting/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "bulletwaiting",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/bulletwaiting/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "devillicsphere",
+    "stem": "base",
+    "found": [
+      "assets/songs/devillicsphere/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "devillicsphere",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/devillicsphere/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lucidtraveler",
+    "stem": "base",
+    "found": [
+      "assets/songs/lucidtraveler/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lucidtraveler",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lucidtraveler/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lucidtraveler",
+    "stem": "2",
+    "found": [
+      "assets/songs/lucidtraveler/1080_2.jpg"
+    ]
+  },
+  {
+    "id": "lucidtraveler",
+    "stem": "2_256",
+    "found": [
+      "assets/songs/lucidtraveler/1080_2_256.jpg"
+    ]
+  },
+  {
+    "id": "chaos",
+    "stem": "base",
+    "found": [
+      "assets/songs/chaos/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "chaos",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/chaos/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "usedtobe",
+    "stem": "base",
+    "found": [
+      "assets/songs/usedtobe/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "usedtobe",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/usedtobe/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ultimatetaste",
+    "stem": "base",
+    "found": [
+      "assets/songs/ultimatetaste/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "ultimatetaste",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/ultimatetaste/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "syuten",
+    "stem": "base",
+    "found": [
+      "assets/songs/syuten/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "syuten",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/syuten/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "drg",
+    "stem": "base",
+    "found": [
+      "assets/songs/drg/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "drg",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/drg/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "nnglooms",
+    "stem": "base",
+    "found": [
+      "assets/songs/nnglooms/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "nnglooms",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/nnglooms/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ii",
+    "stem": "base",
+    "found": [
+      "assets/songs/ii/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "ii",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/ii/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ii",
+    "stem": "1",
+    "found": [
+      "assets/songs/ii/1080_1.jpg"
+    ]
+  },
+  {
+    "id": "ii",
+    "stem": "1_256",
+    "found": [
+      "assets/songs/ii/1080_1_256.jpg"
+    ]
+  },
+  {
+    "id": "ii",
+    "stem": "0",
+    "found": [
+      "assets/songs/ii/1080_0.jpg"
+    ]
+  },
+  {
+    "id": "ii",
+    "stem": "0_256",
+    "found": [
+      "assets/songs/ii/1080_0_256.jpg"
+    ]
+  },
+  {
+    "id": "magnolia",
+    "stem": "base",
+    "found": [
+      "assets/songs/magnolia/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "magnolia",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/magnolia/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "sacrifice",
+    "stem": "base",
+    "found": [
+      "assets/songs/sacrifice/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "sacrifice",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/sacrifice/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "rgb",
+    "stem": "base",
+    "found": [
+      "assets/songs/rgb/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "rgb",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/rgb/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "waitfordawn",
+    "stem": "base",
+    "found": [
+      "assets/songs/waitfordawn/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "waitfordawn",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/waitfordawn/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ravenspride",
+    "stem": "base",
+    "found": [
+      "assets/songs/ravenspride/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "ravenspride",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/ravenspride/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "riseoftheworld",
+    "stem": "base",
+    "found": [
+      "assets/songs/riseoftheworld/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "riseoftheworld",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/riseoftheworld/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "unknownlevels",
+    "stem": "base",
+    "found": [
+      "assets/songs/unknownlevels/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "unknownlevels",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/unknownlevels/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "abstrusedilemma",
+    "stem": "base",
+    "found": [
+      "assets/songs/abstrusedilemma/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "abstrusedilemma",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/abstrusedilemma/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "matenrou",
+    "stem": "base",
+    "found": [
+      "assets/songs/matenrou/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "matenrou",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/matenrou/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "tothefurthestdream",
+    "stem": "base",
+    "found": [
+      "assets/songs/tothefurthestdream/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "tothefurthestdream",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/tothefurthestdream/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "tothefurthestdream",
+    "stem": "1",
+    "found": [
+      "assets/songs/tothefurthestdream/1080_1.jpg"
+    ]
+  },
+  {
+    "id": "tothefurthestdream",
+    "stem": "1_256",
+    "found": [
+      "assets/songs/tothefurthestdream/1080_1_256.jpg"
+    ]
+  },
+  {
+    "id": "tothefurthestdream",
+    "stem": "0",
+    "found": [
+      "assets/songs/tothefurthestdream/1080_0.jpg"
+    ]
+  },
+  {
+    "id": "tothefurthestdream",
+    "stem": "0_256",
+    "found": [
+      "assets/songs/tothefurthestdream/1080_0_256.jpg"
+    ]
+  },
+  {
+    "id": "remindthesouls",
+    "stem": "base",
+    "found": [
+      "assets/songs/remindthesouls/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "remindthesouls",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/remindthesouls/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "dynitikos",
+    "stem": "base",
+    "found": [
+      "assets/songs/dynitikos/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "dynitikos",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/dynitikos/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "amekagura",
+    "stem": "base",
+    "found": [
+      "assets/songs/amekagura/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "amekagura",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/amekagura/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "bbkkbkk",
+    "stem": "base",
+    "found": [
+      "assets/songs/bbkkbkk/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "bbkkbkk",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/bbkkbkk/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "primevaltexture",
+    "stem": "base",
+    "found": [
+      "assets/songs/primevaltexture/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "primevaltexture",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/primevaltexture/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "technicolour",
+    "stem": "base",
+    "found": [
+      "assets/songs/technicolour/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "technicolour",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/technicolour/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "logos",
+    "stem": "base",
+    "found": [
+      "assets/songs/logos/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "logos",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/logos/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "egoeimi",
+    "stem": "base",
+    "found": [
+      "assets/songs/egoeimi/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "egoeimi",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/egoeimi/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "arghena",
+    "stem": "base",
+    "found": [
+      "assets/songs/arghena/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "arghena",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/arghena/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "fantasy",
+    "stem": "base",
+    "found": [
+      "assets/songs/fantasy/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "fantasy",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/fantasy/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "transientspace",
+    "stem": "base",
+    "found": [
+      "assets/songs/transientspace/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "transientspace",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/transientspace/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "namelesspassion",
+    "stem": "base",
+    "found": [
+      "assets/songs/namelesspassion/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "namelesspassion",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/namelesspassion/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "teravolt",
+    "stem": "base",
+    "found": [
+      "assets/songs/teravolt/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "teravolt",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/teravolt/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "stratoliner",
+    "stem": "base",
+    "found": [
+      "assets/songs/stratoliner/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "stratoliner",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/stratoliner/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ouverture",
+    "stem": "base",
+    "found": [
+      "assets/songs/ouverture/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "ouverture",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/ouverture/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "xtreme",
+    "stem": "base",
+    "found": [
+      "assets/songs/xtreme/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "xtreme",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/xtreme/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "edenwacca",
+    "stem": "base",
+    "found": [
+      "assets/songs/edenwacca/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "edenwacca",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/edenwacca/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "metamysteria",
+    "stem": "base",
+    "found": [
+      "assets/songs/metamysteria/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "metamysteria",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/metamysteria/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "aloneandlorn",
+    "stem": "base",
+    "found": [
+      "assets/songs/aloneandlorn/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "aloneandlorn",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/aloneandlorn/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "wishuponasnow",
+    "stem": "base",
+    "found": [
+      "assets/songs/wishuponasnow/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "wishuponasnow",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/wishuponasnow/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "overdrive",
+    "stem": "base",
+    "found": [
+      "assets/songs/overdrive/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "overdrive",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/overdrive/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "felys",
+    "stem": "base",
+    "found": [
+      "assets/songs/felys/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "felys",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/felys/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "onandon",
+    "stem": "base",
+    "found": [
+      "assets/songs/onandon/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "onandon",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/onandon/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lightmyway",
+    "stem": "base",
+    "found": [
+      "assets/songs/lightmyway/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lightmyway",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lightmyway/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "hotarubinoyuki",
+    "stem": "base",
+    "found": [
+      "assets/songs/hotarubinoyuki/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "hotarubinoyuki",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/hotarubinoyuki/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "theformula",
+    "stem": "base",
+    "found": [
+      "assets/songs/theformula/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "theformula",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/theformula/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lunarossa",
+    "stem": "base",
+    "found": [
+      "assets/songs/lunarossa/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lunarossa",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lunarossa/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "jingle",
+    "stem": "base",
+    "found": [
+      "assets/songs/jingle/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "jingle",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/jingle/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "innocence",
+    "stem": "base",
+    "found": [
+      "assets/songs/innocence/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "innocence",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/innocence/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ionostream",
+    "stem": "base",
+    "found": [
+      "assets/songs/ionostream/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "ionostream",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/ionostream/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "alephzero",
+    "stem": "base",
+    "found": [
+      "assets/songs/alephzero/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "alephzero",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/alephzero/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "masqueradelegion",
+    "stem": "base",
+    "found": [
+      "assets/songs/masqueradelegion/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "masqueradelegion",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/masqueradelegion/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "kyorenromance",
+    "stem": "base",
+    "found": [
+      "assets/songs/kyorenromance/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "kyorenromance",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/kyorenromance/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "qovat",
+    "stem": "base",
+    "found": [
+      "assets/songs/qovat/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "qovat",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/qovat/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "hellohell",
+    "stem": "base",
+    "found": [
+      "assets/songs/hellohell/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "hellohell",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/hellohell/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ichirin",
+    "stem": "base",
+    "found": [
+      "assets/songs/ichirin/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "ichirin",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/ichirin/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "awakeninruins",
+    "stem": "base",
+    "found": [
+      "assets/songs/awakeninruins/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "awakeninruins",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/awakeninruins/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "morningloom",
+    "stem": "base",
+    "found": [
+      "assets/songs/morningloom/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "morningloom",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/morningloom/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lethalvoltage",
+    "stem": "base",
+    "found": [
+      "assets/songs/lethalvoltage/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lethalvoltage",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lethalvoltage/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "mirinae",
+    "stem": "base",
+    "found": [
+      "assets/songs/mirinae/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "mirinae",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/mirinae/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ultradiaxon",
+    "stem": "base",
+    "found": [
+      "assets/songs/ultradiaxon/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "ultradiaxon",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/ultradiaxon/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "leaveallbehind",
+    "stem": "base",
+    "found": [
+      "assets/songs/leaveallbehind/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "leaveallbehind",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/leaveallbehind/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "distortedfate",
+    "stem": "base",
+    "found": [
+      "assets/songs/distortedfate/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "distortedfate",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/distortedfate/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "floatingworld",
+    "stem": "base",
+    "found": [
+      "assets/songs/floatingworld/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "floatingworld",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/floatingworld/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "chromafill",
+    "stem": "base",
+    "found": [
+      "assets/songs/chromafill/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "chromafill",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/chromafill/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "desive",
+    "stem": "base",
+    "found": [
+      "assets/songs/desive/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "desive",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/desive/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "epicurus",
+    "stem": "base",
+    "found": [
+      "assets/songs/epicurus/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "epicurus",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/epicurus/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "tasogare",
+    "stem": "base",
+    "found": [
+      "assets/songs/tasogare/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "tasogare",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/tasogare/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "oldschoolsalvage",
+    "stem": "base",
+    "found": [
+      "assets/songs/oldschoolsalvage/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "oldschoolsalvage",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/oldschoolsalvage/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "beautifuldreamer",
+    "stem": "base",
+    "found": [
+      "assets/songs/beautifuldreamer/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "beautifuldreamer",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/beautifuldreamer/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "backtobasics",
+    "stem": "base",
+    "found": [
+      "assets/songs/backtobasics/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "backtobasics",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/backtobasics/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "stargateextreme",
+    "stem": "base",
+    "found": [
+      "assets/songs/stargateextreme/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "stargateextreme",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/stargateextreme/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "signof",
+    "stem": "base",
+    "found": [
+      "assets/songs/signof/base.jpg"
+    ]
+  },
+  {
+    "id": "signof",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/signof/base_256.jpg"
+    ]
+  },
+  {
+    "id": "temptationgc",
+    "stem": "base",
+    "found": [
+      "assets/songs/temptationgc/base.jpg"
+    ]
+  },
+  {
+    "id": "temptationgc",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/temptationgc/base_256.jpg"
+    ]
+  },
+  {
+    "id": "blackmind",
+    "stem": "base",
+    "found": [
+      "assets/songs/blackmind/base.jpg"
+    ]
+  },
+  {
+    "id": "blackmind",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/blackmind/base_256.jpg"
+    ]
+  },
+  {
+    "id": "hypervision",
+    "stem": "base",
+    "found": [
+      "assets/songs/hypervision/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "hypervision",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/hypervision/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "distortionhuman",
+    "stem": "base",
+    "found": [
+      "assets/songs/distortionhuman/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "distortionhuman",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/distortionhuman/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "shrink",
+    "stem": "base",
+    "found": [
+      "assets/songs/shrink/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "shrink",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/shrink/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "invain",
+    "stem": "base",
+    "found": [
+      "assets/songs/invain/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "invain",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/invain/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "hypnotize",
+    "stem": "base",
+    "found": [
+      "assets/songs/hypnotize/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "hypnotize",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/hypnotize/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ashenboundary",
+    "stem": "base",
+    "found": [
+      "assets/songs/ashenboundary/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "ashenboundary",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/ashenboundary/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "judgement",
+    "stem": "base",
+    "found": [
+      "assets/songs/judgement/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "judgement",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/judgement/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "alterego",
+    "stem": "base",
+    "found": [
+      "assets/songs/alterego/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "alterego",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/alterego/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "epitaxy",
+    "stem": "base",
+    "found": [
+      "assets/songs/epitaxy/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "epitaxy",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/epitaxy/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "waltzforlorelei",
+    "stem": "base",
+    "found": [
+      "assets/songs/waltzforlorelei/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "waltzforlorelei",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/waltzforlorelei/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "dualdoom",
+    "stem": "base",
+    "found": [
+      "assets/songs/dualdoom/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "dualdoom",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/dualdoom/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "invertedworld",
+    "stem": "base",
+    "found": [
+      "assets/songs/invertedworld/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "invertedworld",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/invertedworld/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "mvurbd",
+    "stem": "base",
+    "found": [
+      "assets/songs/mvurbd/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "mvurbd",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/mvurbd/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "vulcanus",
+    "stem": "base",
+    "found": [
+      "assets/songs/vulcanus/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "vulcanus",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/vulcanus/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "rainofconflict",
+    "stem": "base",
+    "found": [
+      "assets/songs/rainofconflict/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "rainofconflict",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/rainofconflict/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "saintorsinner",
+    "stem": "base",
+    "found": [
+      "assets/songs/saintorsinner/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "saintorsinner",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/saintorsinner/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "saintorsinner",
+    "stem": "3",
+    "found": [
+      "assets/songs/saintorsinner/1080_3.jpg"
+    ]
+  },
+  {
+    "id": "saintorsinner",
+    "stem": "3_256",
+    "found": [
+      "assets/songs/saintorsinner/1080_3_256.jpg"
+    ]
+  },
+  {
+    "id": "hailstone",
+    "stem": "base",
+    "found": [
+      "assets/songs/hailstone/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "hailstone",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/hailstone/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "furetemitai",
+    "stem": "base",
+    "found": [
+      "assets/songs/furetemitai/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "furetemitai",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/furetemitai/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "gensounosatellite",
+    "stem": "base",
+    "found": [
+      "assets/songs/gensounosatellite/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "gensounosatellite",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/gensounosatellite/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "prayer",
+    "stem": "base",
+    "found": [
+      "assets/songs/prayer/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "prayer",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/prayer/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "crimsonquartz",
+    "stem": "base",
+    "found": [
+      "assets/songs/crimsonquartz/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "crimsonquartz",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/crimsonquartz/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "thirdsun",
+    "stem": "base",
+    "found": [
+      "assets/songs/thirdsun/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "thirdsun",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/thirdsun/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "spiritdauntless",
+    "stem": "base",
+    "found": [
+      "assets/songs/spiritdauntless/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "spiritdauntless",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/spiritdauntless/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "diesirae",
+    "stem": "base",
+    "found": [
+      "assets/songs/diesirae/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "diesirae",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/diesirae/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "astralexe",
+    "stem": "base",
+    "found": [
+      "assets/songs/astralexe/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "astralexe",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/astralexe/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "liftoff",
+    "stem": "base",
+    "found": [
+      "assets/songs/liftoff/base.jpg"
+    ]
+  },
+  {
+    "id": "liftoff",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/liftoff/base_256.jpg"
+    ]
+  },
+  {
+    "id": "superambulance",
+    "stem": "base",
+    "found": [
+      "assets/songs/superambulance/base.jpg"
+    ]
+  },
+  {
+    "id": "superambulance",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/superambulance/base_256.jpg"
+    ]
+  },
+  {
+    "id": "dontfightmusic",
+    "stem": "base",
+    "found": [
+      "assets/songs/dontfightmusic/base.jpg"
+    ]
+  },
+  {
+    "id": "dontfightmusic",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/dontfightmusic/base_256.jpg"
+    ]
+  },
+  {
+    "id": "andrevivemelody",
+    "stem": "base",
+    "found": [
+      "assets/songs/andrevivemelody/base.jpg"
+    ]
+  },
+  {
+    "id": "andrevivemelody",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/andrevivemelody/base_256.jpg"
+    ]
+  },
+  {
+    "id": "swansong",
+    "stem": "base",
+    "found": [
+      "assets/songs/swansong/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "swansong",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/swansong/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "renegade",
+    "stem": "base",
+    "found": [
+      "assets/songs/renegade/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "renegade",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/renegade/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "raysofremnant",
+    "stem": "base",
+    "found": [
+      "assets/songs/raysofremnant/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "raysofremnant",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/raysofremnant/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "breachoffaith",
+    "stem": "base",
+    "found": [
+      "assets/songs/breachoffaith/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "breachoffaith",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/breachoffaith/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lamentrain",
+    "stem": "base",
+    "found": [
+      "assets/songs/lamentrain/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lamentrain",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lamentrain/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "designant",
+    "stem": "base",
+    "found": [
+      "assets/songs/designant/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "designant",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/designant/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "astralquant",
+    "stem": "base",
+    "found": [
+      "assets/songs/astralquant/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "astralquant",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/astralquant/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ignition",
+    "stem": "base",
+    "found": [
+      "assets/songs/ignition/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "ignition",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/ignition/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "blazingair",
+    "stem": "base",
+    "found": [
+      "assets/songs/blazingair/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "blazingair",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/blazingair/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "eightem",
+    "stem": "base",
+    "found": [
+      "assets/songs/eightem/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "eightem",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/eightem/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "daat",
+    "stem": "base",
+    "found": [
+      "assets/songs/daat/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "daat",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/daat/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "breakbreak",
+    "stem": "base",
+    "found": [
+      "assets/songs/breakbreak/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "breakbreak",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/breakbreak/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "straightintolights",
+    "stem": "base",
+    "found": [
+      "assets/songs/straightintolights/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "straightintolights",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/straightintolights/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "virtus",
+    "stem": "base",
+    "found": [
+      "assets/songs/virtus/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "virtus",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/virtus/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "yomibitoshirazu",
+    "stem": "base",
+    "found": [
+      "assets/songs/yomibitoshirazu/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "yomibitoshirazu",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/yomibitoshirazu/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "aethercrest",
+    "stem": "base",
+    "found": [
+      "assets/songs/aethercrest/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "aethercrest",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/aethercrest/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "heartache",
+    "stem": "base",
+    "found": [
+      "assets/songs/heartache/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "heartache",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/heartache/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "deathbyglamour",
+    "stem": "base",
+    "found": [
+      "assets/songs/deathbyglamour/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "deathbyglamour",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/deathbyglamour/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "yourbestnightmare",
+    "stem": "base",
+    "found": [
+      "assets/songs/yourbestnightmare/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "yourbestnightmare",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/yourbestnightmare/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lastgoodbye",
+    "stem": "base",
+    "found": [
+      "assets/songs/lastgoodbye/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lastgoodbye",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lastgoodbye/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "megalovania",
+    "stem": "base",
+    "found": [
+      "assets/songs/megalovania/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "megalovania",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/megalovania/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "megalovaniarmx",
+    "stem": "base",
+    "found": [
+      "assets/songs/megalovaniarmx/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "megalovaniarmx",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/megalovaniarmx/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "placebobattler",
+    "stem": "base",
+    "found": [
+      "assets/songs/placebobattler/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "placebobattler",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/placebobattler/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "blackmirror",
+    "stem": "base",
+    "found": [
+      "assets/songs/blackmirror/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "blackmirror",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/blackmirror/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "shinchoku",
+    "stem": "base",
+    "found": [
+      "assets/songs/shinchoku/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "shinchoku",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/shinchoku/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "trpno",
+    "stem": "base",
+    "found": [
+      "assets/songs/trpno/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "trpno",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/trpno/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "tau",
+    "stem": "base",
+    "found": [
+      "assets/songs/tau/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "tau",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/tau/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "dullblade",
+    "stem": "base",
+    "found": [
+      "assets/songs/dullblade/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "dullblade",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/dullblade/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "wontbackdown",
+    "stem": "base",
+    "found": [
+      "assets/songs/wontbackdown/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "wontbackdown",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/wontbackdown/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "dontdie",
+    "stem": "base",
+    "found": [
+      "assets/songs/dontdie/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "dontdie",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/dontdie/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ladymadestar",
+    "stem": "base",
+    "found": [
+      "assets/songs/ladymadestar/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "ladymadestar",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/ladymadestar/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "endmoonlight",
+    "stem": "base",
+    "found": [
+      "assets/songs/endmoonlight/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "endmoonlight",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/endmoonlight/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "uad",
+    "stem": "base",
+    "found": [
+      "assets/songs/uad/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "uad",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/uad/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "oblivion",
+    "stem": "base",
+    "found": [
+      "assets/songs/oblivion/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "oblivion",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/oblivion/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "nightmare",
+    "stem": "base",
+    "found": [
+      "assets/songs/nightmare/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "nightmare",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/nightmare/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "tictactoe",
+    "stem": "base",
+    "found": [
+      "assets/songs/tictactoe/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "tictactoe",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/tictactoe/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "satisfaction",
+    "stem": "base",
+    "found": [
+      "assets/songs/satisfaction/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "satisfaction",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/satisfaction/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "someday",
+    "stem": "base",
+    "found": [
+      "assets/songs/someday/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "someday",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/someday/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "miles",
+    "stem": "base",
+    "found": [
+      "assets/songs/miles/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "miles",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/miles/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "iwantyou",
+    "stem": "base",
+    "found": [
+      "assets/songs/iwantyou/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "iwantyou",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/iwantyou/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "syriana",
+    "stem": "base",
+    "found": [
+      "assets/songs/syriana/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "syriana",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/syriana/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "liar",
+    "stem": "base",
+    "found": [
+      "assets/songs/liar/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "liar",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/liar/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "blythe",
+    "stem": "base",
+    "found": [
+      "assets/songs/blythe/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "blythe",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/blythe/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "wereallgonnadie",
+    "stem": "base",
+    "found": [
+      "assets/songs/wereallgonnadie/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "wereallgonnadie",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/wereallgonnadie/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "dematerialized",
+    "stem": "base",
+    "found": [
+      "assets/songs/dematerialized/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "dematerialized",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/dematerialized/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "seethelights",
+    "stem": "base",
+    "found": [
+      "assets/songs/seethelights/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "seethelights",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/seethelights/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "scarletlunar",
+    "stem": "base",
+    "found": [
+      "assets/songs/scarletlunar/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "scarletlunar",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/scarletlunar/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "dualdependency",
+    "stem": "base",
+    "found": [
+      "assets/songs/dualdependency/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "dualdependency",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/dualdependency/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lilly",
+    "stem": "base",
+    "found": [
+      "assets/songs/lilly/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lilly",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lilly/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "extradimensional",
+    "stem": "base",
+    "found": [
+      "assets/songs/extradimensional/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "extradimensional",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/extradimensional/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "disintegration",
+    "stem": "base",
+    "found": [
+      "assets/songs/disintegration/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "disintegration",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/disintegration/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "factorder",
+    "stem": "base",
+    "found": [
+      "assets/songs/factorder/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "factorder",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/factorder/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "incompleteone",
+    "stem": "base",
+    "found": [
+      "assets/songs/incompleteone/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "incompleteone",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/incompleteone/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "chaosblast",
+    "stem": "base",
+    "found": [
+      "assets/songs/chaosblast/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "chaosblast",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/chaosblast/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "welcomequeen",
+    "stem": "base",
+    "found": [
+      "assets/songs/welcomequeen/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "welcomequeen",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/welcomequeen/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "altergate",
+    "stem": "base",
+    "found": [
+      "assets/songs/altergate/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "altergate",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/altergate/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "acheron",
+    "stem": "base",
+    "found": [
+      "assets/songs/acheron/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "acheron",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/acheron/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "eternitybreak",
+    "stem": "base",
+    "found": [
+      "assets/songs/eternitybreak/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "eternitybreak",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/eternitybreak/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "rostpagegene",
+    "stem": "base",
+    "found": [
+      "assets/songs/rostpagegene/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "rostpagegene",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/rostpagegene/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "violaillyria",
+    "stem": "base",
+    "found": [
+      "assets/songs/violaillyria/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "violaillyria",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/violaillyria/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "vainspire",
+    "stem": "base",
+    "found": [
+      "assets/songs/vainspire/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "vainspire",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/vainspire/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "nowayback",
+    "stem": "base",
+    "found": [
+      "assets/songs/nowayback/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "nowayback",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/nowayback/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "andorxor",
+    "stem": "base",
+    "found": [
+      "assets/songs/andorxor/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "andorxor",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/andorxor/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "undyingmacula",
+    "stem": "base",
+    "found": [
+      "assets/songs/undyingmacula/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "undyingmacula",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/undyingmacula/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "awakening",
+    "stem": "base",
+    "found": [
+      "assets/songs/awakening/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "awakening",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/awakening/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "mod",
+    "stem": "base",
+    "found": [
+      "assets/songs/mod/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "mod",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/mod/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "particle",
+    "stem": "base",
+    "found": [
+      "assets/songs/particle/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "particle",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/particle/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "paradoxpalette",
+    "stem": "base",
+    "found": [
+      "assets/songs/paradoxpalette/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "paradoxpalette",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/paradoxpalette/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "xxium",
+    "stem": "base",
+    "found": [
+      "assets/songs/xxium/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "xxium",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/xxium/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "angelsboundary",
+    "stem": "base",
+    "found": [
+      "assets/songs/angelsboundary/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "angelsboundary",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/angelsboundary/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "xterfusion",
+    "stem": "base",
+    "found": [
+      "assets/songs/xterfusion/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "xterfusion",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/xterfusion/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "infinitedim",
+    "stem": "base",
+    "found": [
+      "assets/songs/infinitedim/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "infinitedim",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/infinitedim/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "incarnator",
+    "stem": "base",
+    "found": [
+      "assets/songs/incarnator/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "incarnator",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/incarnator/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "zephyrlast",
+    "stem": "base",
+    "found": [
+      "assets/songs/zephyrlast/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "zephyrlast",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/zephyrlast/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "marenyx",
+    "stem": "base",
+    "found": [
+      "assets/songs/marenyx/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "marenyx",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/marenyx/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "codeoblivion",
+    "stem": "base",
+    "found": [
+      "assets/songs/codeoblivion/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "codeoblivion",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/codeoblivion/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "azalea",
+    "stem": "base",
+    "found": [
+      "assets/songs/azalea/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "azalea",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/azalea/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "tabootears",
+    "stem": "base",
+    "found": [
+      "assets/songs/tabootears/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "tabootears",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/tabootears/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "grandspell",
+    "stem": "base",
+    "found": [
+      "assets/songs/grandspell/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "grandspell",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/grandspell/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "undefined",
+    "stem": "base",
+    "found": [
+      "assets/songs/undefined/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "undefined",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/undefined/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "mask",
+    "stem": "base",
+    "found": [
+      "assets/songs/mask/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "mask",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/mask/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "paranoidarc",
+    "stem": "base",
+    "found": [
+      "assets/songs/paranoidarc/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "paranoidarc",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/paranoidarc/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "subsphere",
+    "stem": "base",
+    "found": [
+      "assets/songs/subsphere/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "subsphere",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/subsphere/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "theraft",
+    "stem": "base",
+    "found": [
+      "assets/songs/theraft/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "theraft",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/theraft/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "omajinai",
+    "stem": "base",
+    "found": [
+      "assets/songs/omajinai/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "omajinai",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/omajinai/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "chaintonite",
+    "stem": "base",
+    "found": [
+      "assets/songs/chaintonite/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "chaintonite",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/chaintonite/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "onestepcloser",
+    "stem": "base",
+    "found": [
+      "assets/songs/onestepcloser/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "onestepcloser",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/onestepcloser/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "mylifeismine",
+    "stem": "base",
+    "found": [
+      "assets/songs/mylifeismine/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "mylifeismine",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/mylifeismine/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "meltyrhapsody",
+    "stem": "base",
+    "found": [
+      "assets/songs/meltyrhapsody/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "meltyrhapsody",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/meltyrhapsody/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "signal",
+    "stem": "base",
+    "found": [
+      "assets/songs/signal/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "signal",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/signal/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "caramelpop",
+    "stem": "base",
+    "found": [
+      "assets/songs/caramelpop/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "caramelpop",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/caramelpop/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "shinoukyoseki",
+    "stem": "base",
+    "found": [
+      "assets/songs/shinoukyoseki/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "shinoukyoseki",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/shinoukyoseki/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "unknownnum",
+    "stem": "base",
+    "found": [
+      "assets/songs/unknownnum/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "unknownnum",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/unknownnum/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "thirdavenue",
+    "stem": "base",
+    "found": [
+      "assets/songs/thirdavenue/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "thirdavenue",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/thirdavenue/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "vallista",
+    "stem": "base",
+    "found": [
+      "assets/songs/vallista/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "vallista",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/vallista/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "goodrage",
+    "stem": "base",
+    "found": [
+      "assets/songs/goodrage/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "goodrage",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/goodrage/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "cryogenic",
+    "stem": "base",
+    "found": [
+      "assets/songs/cryogenic/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "cryogenic",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/cryogenic/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "desertrealm",
+    "stem": "base",
+    "found": [
+      "assets/songs/desertrealm/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "desertrealm",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/desertrealm/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "spiderdance",
+    "stem": "base",
+    "found": [
+      "assets/songs/spiderdance/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "spiderdance",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/spiderdance/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "spearofjustice",
+    "stem": "base",
+    "found": [
+      "assets/songs/spearofjustice/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "spearofjustice",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/spearofjustice/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "asgore",
+    "stem": "base",
+    "found": [
+      "assets/songs/asgore/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "asgore",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/asgore/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "mirrorrmx",
+    "stem": "base",
+    "found": [
+      "assets/songs/mirrorrmx/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "mirrorrmx",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/mirrorrmx/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "riotsystem",
+    "stem": "base",
+    "found": [
+      "assets/songs/riotsystem/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "riotsystem",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/riotsystem/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "cosmogyral",
+    "stem": "base",
+    "found": [
+      "assets/songs/cosmogyral/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "cosmogyral",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/cosmogyral/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "flexidefine",
+    "stem": "base",
+    "found": [
+      "assets/songs/flexidefine/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "flexidefine",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/flexidefine/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "altersist",
+    "stem": "base",
+    "found": [
+      "assets/songs/altersist/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "altersist",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/altersist/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "csqn",
+    "stem": "base",
+    "found": [
+      "assets/songs/csqn/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "csqn",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/csqn/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "sucromania",
+    "stem": "base",
+    "found": [
+      "assets/songs/sucromania/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "sucromania",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/sucromania/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lavie",
+    "stem": "base",
+    "found": [
+      "assets/songs/lavie/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lavie",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lavie/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "kamippoi",
+    "stem": "base",
+    "found": [
+      "assets/songs/kamippoi/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "kamippoi",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/kamippoi/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "override",
+    "stem": "base",
+    "found": [
+      "assets/songs/override/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "override",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/override/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "telepathy",
+    "stem": "base",
+    "found": [
+      "assets/songs/telepathy/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "telepathy",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/telepathy/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "aishite",
+    "stem": "base",
+    "found": [
+      "assets/songs/aishite/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "aishite",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/aishite/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "synthesis",
+    "stem": "base",
+    "found": [
+      "assets/songs/synthesis/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "synthesis",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/synthesis/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "acidgod",
+    "stem": "base",
+    "found": [
+      "assets/songs/acidgod/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "acidgod",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/acidgod/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "diein",
+    "stem": "base",
+    "found": [
+      "assets/songs/diein/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "diein",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/diein/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "chronologia",
+    "stem": "base",
+    "found": [
+      "assets/songs/chronologia/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "chronologia",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/chronologia/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "balor",
+    "stem": "base",
+    "found": [
+      "assets/songs/balor/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "balor",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/balor/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "dreadarea",
+    "stem": "base",
+    "found": [
+      "assets/songs/dreadarea/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "dreadarea",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/dreadarea/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "un",
+    "stem": "base",
+    "found": [
+      "assets/songs/un/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "un",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/un/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "rivenpilgrim",
+    "stem": "base",
+    "found": [
+      "assets/songs/rivenpilgrim/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "rivenpilgrim",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/rivenpilgrim/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "cataclysmcry",
+    "stem": "base",
+    "found": [
+      "assets/songs/cataclysmcry/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "cataclysmcry",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/cataclysmcry/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "deinosphainein",
+    "stem": "base",
+    "found": [
+      "assets/songs/deinosphainein/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "deinosphainein",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/deinosphainein/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ember",
+    "stem": "base",
+    "found": [
+      "assets/songs/ember/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "ember",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/ember/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "hivemindrmx",
+    "stem": "base",
+    "found": [
+      "assets/songs/hivemindrmx/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "hivemindrmx",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/hivemindrmx/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ifirmx",
+    "stem": "base",
+    "found": [
+      "assets/songs/ifirmx/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "ifirmx",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/ifirmx/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "ignotusafterburn",
+    "stem": "base",
+    "found": [
+      "assets/songs/ignotusafterburn/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "ignotusafterburn",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/ignotusafterburn/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "lfdyrmx",
+    "stem": "base",
+    "found": [
+      "assets/songs/lfdyrmx/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "lfdyrmx",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/lfdyrmx/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "mismal",
+    "stem": "base",
+    "found": [
+      "assets/songs/mismal/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "mismal",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/mismal/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "overdead",
+    "stem": "base",
+    "found": [
+      "assets/songs/overdead/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "overdead",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/overdead/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "redandblueandgreen",
+    "stem": "base",
+    "found": [
+      "assets/songs/redandblueandgreen/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "redandblueandgreen",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/redandblueandgreen/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "singularityvvvip",
+    "stem": "base",
+    "found": [
+      "assets/songs/singularityvvvip/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "singularityvvvip",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/singularityvvvip/1080_base_256.jpg"
+    ]
+  },
+  {
+    "id": "unknownrmx",
+    "stem": "base",
+    "found": [
+      "assets/songs/unknownrmx/1080_base.jpg"
+    ]
+  },
+  {
+    "id": "unknownrmx",
+    "stem": "base_256",
+    "found": [
+      "assets/songs/unknownrmx/1080_base_256.jpg"
+    ]
+  }
+]

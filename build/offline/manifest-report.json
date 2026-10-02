@@ -1,0 +1,7 @@
+{
+  "removed_permissions": [
+    "android.permission.INTERNET"
+  ],
+  "original_bytes": 26936,
+  "output_bytes": 26856
+}

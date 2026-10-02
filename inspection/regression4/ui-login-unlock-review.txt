@@ -1,0 +1,99 @@
+Independent localization and UI review, regression 4, 2026-10-02
+Original engine: Arcaea 7.0.255c, arm64 libcocos2dcpp.so
+SHA256 72e42cb4925655ecfef98bf2dbf92a5ac05145eb005a531c96c11b927a46e6dc
+Read-only audit: no shared source, prepared binary or APK changed.
+
+Conclusion
+----------
+The missing-local-BYD-AFF path has a complete static chain to the exact observed
+login-to-unlock prompt. Correcting the local AFF path is the causal fix; do not
+replace the common login dialog or force a fake online state. The candidate
+9031d4 b.eq -> NOP is separately implemented/verified by the native/assets agents.
+This review independently confirms the UI-facing half of that repair.
+
+The earlier regression 3 factory fix corrected download requirements and the
+icon. It does not change the subsequent real AFF path or exists() call.
+
+Exact localization
+------------------
+Native key at 0x56ee36:
+  You must be online and logged in to unlock songs.
+  Log in via Network on the main menu.
+Original assets/tl/zh-Hans.mo translation:
+  你需要登录来解锁歌曲
+  通过主菜单的「网络」选项登录
+Two direct key references: e1e4c0 (function e1e488) and 119627c (1196244).
+1196244 supplies title "Unlock" (532b20), action "To Main Menu" (527b0f),
+and "Cancel" (5518f8), creates the dialog at 11962e8, then adds it to scene
+at 1196380 and invokes its presentation method at 1196390.
+
+The separate shorter key at 5728ab is translated as needing to connect/login
+to buy songs. Its caller d2889c deals with pairs of named songs from story/unlock
+helpers; it is not necessary to explain the current exact prompt.
+
+Causal chain from ordinary Start
+--------------------------------
+1. The normal local click route in SongSelectScene 131d814 reaches 131e400:
+   169ee90 callback -> at 169ef1c call d2a368, the required-assets/start helper.
+2. Existing fix2 d2a3e4 branches a local song directly to d2a3fc, bypassing the
+   initial remote-token predicate. This bypass does NOT skip real file checks.
+3. d2a424 calls 1956124 for actual AFF existence. The assets audit established
+   1956124 -> 903168, whose unpatched 9031d4 sends even remote_dl=false difficulty
+   3 to the download-cache path at 9032d4, instead of the bundled 3.aff path.
+4. False AFF-exists is saved to sp+2fc at d2a43c. d2a484 first checks music;
+   when music exists, d2a488/48c still sends false AFF-exists to d2a568.
+5. d2a568..d2a9ec logs the missing-resource diagnostic and resets resource state.
+   CRITICAL: d2a9ec sets w19=1. The path then reaches d2afc8 after cleanup.
+   d2afc8 is `tbz w19,#0,d2b074`. With w19=1 it falls into d2afcc, NOT the return.
+6. d2afcc builds an error callback with vtable 1a9a628 and captured scene x20.
+   d2b01c calls downloader 172660c with x5 pointing to that callback wrapper.
+7. The downloader stores x5 in x21 at 1726640. Its cf9298/d8aa30 offline checks
+   at 1726658/64 go to 1726700. That block obtains callback storage [x21+20],
+   reads virtual function +30 and invokes it at 1726710.
+8. Relocation 1a9a658 (vtable+30) resolves to da5b94. That thunk loads the
+   captured scene [x0+8] and tail-calls 1196244. The exact observed dialog opens.
+
+This also explains why only fixing the download icon was insufficient and why
+the popup text misleadingly looks like another entitlement gate. No extra
+independent account check is needed for this path to reproduce the symptom.
+
+Correction to an interim message
+-------------------------------
+An interim audit message said missing AFF only logs/resets and cannot open this
+dialog. That statement omitted the branch AFTER temporary cleanup at d2afc8.
+The w19=1 fallthrough above corrects it. The final conclusion includes this
+verified path and does not retain that earlier inference.
+
+Other genuine unlock UI, reviewed but not patched
+-----------------------------------------------
+SongSelectScene 16e2a54 is an account-checked unlock entry. Its delegate thunk
+1a05610 appears at 1ac2498, delegate vtable+28; normal select/start 131d814 is
+the adjacent delegate+30 thunk 12e073c. However, callers are distinct:
+
+  12e4514 lambda -> d8c2f0 -> delegate+28 -> 16e2a54 -> 1196244 offline.
+
+The lambda captures the selection panel, guards panel+4f0, reads selected
+Song+4d0/difficulty+4c8 and its controller+488. Its vtable 1aba5b0 is bound at
+15986dc..15986fc. The node is created by faf258 at 15984a4 from purple event
+button textures, after 15981b8..1598360 finds a matching World map object.
+It is an additional World/unlock button, not evidence that normal Start was
+rebound to the unlock callback. Do not patch it based only on adjacency.
+
+d8c2f0's only other direct caller is 131e424 in normal Start's pack+bc fallback,
+and that path requires 9ba724 to return false. The existing local ownership
+patch makes the relevant predicate true. Similarly, 131e434 -> 1732f04 can show
+1196244 for a locked song/pack, but existing 133b904 ownership=true excludes
+that earlier fallback for this catalogue.
+
+1515a94 also examines Song+160 before Difficulty+f0. The assets audit independently
+confirmed +160 is top-level world_unlock and all 561 actual fix3 APK records
+explicitly set it false. Difficulty world_unlock is false too. In any case,
+7e185c's offline popup is the World Mode/Beginner Missions availability message,
+not this exact login-to-unlock text (independently checked by native reviewer).
+
+Verification and limits
+-----------------------
+Run python inspection/regression4/ui-login-unlock-evidence.py.
+It verifies original-engine hash, exact localization, callback relocation,
+candidate original AFF branch and the real cleanup TBZ truth table, and saves
+focused disassembly. This is host static evidence, not a device test.

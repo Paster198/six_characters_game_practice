@@ -1,0 +1,3 @@
+# APKs are preserved as split assets in the full-archive Release.
+*.apk
+/.github-upload/

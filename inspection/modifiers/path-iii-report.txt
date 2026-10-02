@@ -1,0 +1,132 @@
+Path III / practice modifiers integration review (7.0.255c ARM64)
+
+Implementation: native/practice_modifiers.cpp and .h
+Independent instruction verification: inspection/modifiers/verify_path_iii.py
+Host checks: native/test_practice_modifiers.cpp
+Original engine SHA256:
+72e42cb4925655ecfef98bf2dbf92a5ac05145eb005a531c96c11b927a46e6dc
+
+Exact native mechanism
+----------------------
+GameScene::init creates its LogicChart at 0xeb2b28 -> 0x134a8c8.
+This factory reads the selected AFF and calls the parser at 0x134a958 ->
+0xeee14c, then allocates a new LogicChart at 0x134aa0c -> 0xf197cc.
+LogicChart::init 0x13d2b10 invokes the derived note construction pass
+0x158a9bc exactly once (BL at 0x13d3504), before sorting and finalizing notes.
+It is the only direct caller of that pass in the original binary.
+
+At 0x158bd18..0x158bd40 the pass reads App->ChallengeManager and calls its
+getter 0xef9b28, saving the integer result in w26. The getter is exactly:
+  0xef9b28: ldr w0,[x0,#0x38]
+  0xef9b2c: ret
+The next function starts at 0xef9b30. A conventional 16-byte detour here
+would overwrite the neighbor and is intentionally not used.
+
+The note pass uses native dynamic_cast on the input Note:
+  typeinfo 0x1aca4f8 = SimpleNote
+  typeinfo 0x1af9438 = HoldNote
+Its native mode==3 branches are at 0x158be64 and 0x158c748, with their own
+constructors, timing-group lookup, ArcTap attachment, hit geometry and
+native amplitude/visual settings. Arc conversion is at 0x158d234..24c,
+using the original max(1-y,0) for the relevant arc endpoint heights. The
+module does not reproduce or simplify these algorithms. All original
+mirror/timing-group/hold/arc handling executes in the original engine.
+
+The pass contains seven challenge-mode reads. Six compare only with 2 or 6
+and therefore behave identically for ordinary mode 0 and Path III mode 3:
+  0x158b0d0, 0x158b52c, 0x158bb94,
+  0x158bd78, 0x158c46c, 0x158d1e4.
+Only the 0x158bd2c read supplies w26 to the Path III decisions. Redirecting
+that call is sufficient to select the exact Path III conversion branches
+without enabling unrelated challenge setup, failure handling or rewards.
+
+Call-site adapter and register ABI
+---------------------------------
+The only runtime instruction change is the BL at 0x158bd2c, whose original
+word is 0x97e5b77f (bytes 7f b7 e5 97). A single aligned atomic 32-bit store
+replaces it with another BL. The short getter and every neighboring
+instruction remain intact.
+
+An anonymous branch island is requested with mmap hints, never MAP_FIXED.
+The result is accepted only inside ARM64 BL's exact [-128MiB,+128MiB) range
+and at 4-byte alignment. Otherwise the mapping is released and another
+hint is tried; failure returns an error without installing a patch.
+The island contains LDR X16,+8; BR X16; a 64-bit C++ adapter pointer. BL
+sets the original continuation LR, and BR preserves it for normal return.
+Island RX setup is completed before the call-site mutation. Cache flushes
+and code-page protection restoration are performed. Protection failure
+after mutation rolls the instruction back before returning an error.
+
+The adapter ABI is int(ChallengeManager*), input x0 and result w0.
+The live-register analysis at this exact site supports ordinary AAPCS64:
+  - x23 is loaded before the call and is callee-saved.
+  - Immediately afterward, w8 is reloaded from [x23+8]. x19 receives a new
+    RTTI address, x2 receives a new target RTTI address, w26 receives w0,
+    x0/x1/x3 are set for dynamic_cast, and x28 receives sign-extended w8.
+  - No x4..x18 value or condition flag is read between the replaced call
+    and the ordinary __dynamic_cast call at 0x158bd5c.
+  - Persistent vector constants q0/q1 were spilled to stack +0x60/+0x70/
+    +0x80 at 0x158bcd0..bce0. The persistent scalar constants are s12 and
+    s14, covered by AAPCS64's preserved low 64 bits of v8..v15. The pass's
+    own prologue/epilogue likewise preserves d8..d15, not full q8..q15.
+  - Therefore the island's x16 use and normal C++/TLS caller-saved clobbers
+    do not destroy live source values. No speculative register thunk is
+    required. Android API24 -Werror compilation confirms the adapter and
+    __emutls_get_address definition link successfully in libpractice.so.
+
+Scope, input ownership, repeated previews
+----------------------------------------
+ChartScope is thread_local and saves/restores its previous bool. The
+adapter changes only ordinary actual mode 0 to 3 while this scope is true.
+Actual challenge modes 1..6 retain their real result, even if called inside
+a practice scope. Another thread has an independent, initially false
+scope. A nested false scope temporarily restores the ordinary behavior;
+its destructor restores the enclosing scope.
+
+The bridge wraps exactly originalChartInit, only for a matching active
+practice rebuild. It does not wrap the entire GameScene::init. It never
+writes ChallengeManager+0x38, GameScene+0x310, or GameScene+0x308.
+Normal construction and practice eligibility continue to see ordinary mode.
+
+The module writes no parsed notes, Song, AFF cache or existing LogicChart.
+It selects native branches while a fresh LogicChart constructs new logic
+notes from the factory's freshly parsed AFF input. Each preview, loop,
+cancel and retry rebuilds from the original asset. Turning the switch off
+therefore runs native ordinary construction; no reverse transformation is
+needed, and repeated builds cannot alternately transform/undo a cached
+chart. This is a control-flow/ownership argument from the original factory,
+not a claim of device-tested playback.
+
+Path I integration
+------------------
+applyHidden runs once after successful original GameScene::init on its new
+TrackLayer and model. It validates GameScene, TrackLayer, GameModel and
+LogicChart vtables. It validates all recognized renderer/child vectors in
+a first pass, then sets only existing native hidden flags in a second pass.
+Parent time is inclusive [0, LogicChart+0xbc]; ArcTap children inherit their
+parent Arc's decision. Existing partner hidden flags are never cleared.
+Disabling is a fresh rebuild without applyHidden. No process-global hidden
+flag or reset is involved. Full instruction evidence is in path-i-report.txt.
+
+Validation actually completed
+-----------------------------
+1. verify_path_iii.py PASS: 10 native instruction ranges, the unique
+   constructor caller, all seven mode reads, original getter and neighbor.
+2. test_practice_modifiers.exe PASS: twenty on/off scope iterations,
+   nested scopes, cross-thread isolation, original challenge preservation,
+   exact signed ARM64 BL bounds and misalignment rejection, all five
+   renderer classes, inclusive start/end boundaries, child inheritance
+   independent of child time, partner flag preservation, invalid late
+   child rejection before any earlier mutation, malformed vector and ABI.
+3. Module and bridge compiled together for Android ARM64 API24 with
+   -Wall -Wextra -Werror; sibling confirmed __emutls_get_address is defined
+   internally and only system libraries are required.
+4. Independent sibling review confirmed Path I field/vtable/child ABI and
+   the single-BL island/return sequence; no concrete blocker found.
+
+Limit: no attached Android device. Native branch-island mapping availability,
+actual visual behavior of all imported charts, audio synchronization and
+touch judgement with both effects remain device-test items. An unavailable
+branch island or ABI validation failure produces bridge error 7 and keeps
+the scene paused so the effect can be disabled; it does not make a partially
+initialized GameScene fail construction.

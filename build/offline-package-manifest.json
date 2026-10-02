@@ -1,0 +1,31 @@
+{
+  "input": "arcaea.apk",
+  "output": "arcaea-offline-practice-unsigned.apk",
+  "offline": true,
+  "architecture": "arm64-v8a",
+  "added_or_replaced": {
+    "classes2.dex": "301107c68d205a923d6ecf23eaccaf885d12995dbda07b7aa5000e86f1082e60",
+    "classes3.dex": "8df9db092b550507ecf92445c02cd37652c7783c97b367cb2910e040e214f70f",
+    "lib/arm64-v8a/libpractice.so": "c251289e2ebaf167f50c4319f525bc85b2d132747f983670fe2932cb1f1a77d5",
+    "AndroidManifest.xml": "d9852f1e0d71ee64ba900a5fd25830e2ad70b2ebb3522b410cfece32b9089b61",
+    "lib/arm64-v8a/libcocos2dcpp.so": "dea0ecc6e2be00b75abcf7a5a67565b7712d60b0dfb8051f226e3f51a17748f8",
+    "assets/songs/songlist": "f9d23c71f8dd0d794d85ec61719bcdd3eceaa9306e7804e331fa42a134fd9ee4",
+    "assets/songs/packlist": "7a2a0ca5f4642ab4b2ea879a73b324c6a59ad6679d8165284b06badf2247ac11",
+    "assets/songs/unlocks": "5d7afc619586bc0b8fb138e6353a7b8f8f5f5b887f1c0741db66d5f5aff0fbc0",
+    "assets/layouts/mainmenu/MainMenu.csb": "2b9127f0c53c4aa12e8b7444ce3509ce552518772871707a2b0c892ffe4738df",
+    "assets/layouts/topbar/TopBar.csb": "91c1f2c1f0daf84602692dc863f8a8c1d00eac040bd7264dbdcc135c35c7d970"
+  },
+  "removed": [
+    "META-INF/ANDROID.RSA",
+    "META-INF/ANDROID.SF",
+    "META-INF/MANIFEST.MF",
+    "lib/armeabi-v7a/libcocos2dcpp.so",
+    "lib/armeabi-v7a/libcrashlytics-common.so",
+    "lib/armeabi-v7a/libcrashlytics-handler.so",
+    "lib/armeabi-v7a/libcrashlytics-trampoline.so",
+    "lib/armeabi-v7a/libcrashlytics.so",
+    "lib/armeabi-v7a/libdatastore_shared_counter.so",
+    "lib/armeabi-v7a/libfmod.so",
+    "lib/armeabi-v7a/libfmodProvider.so"
+  ]
+}

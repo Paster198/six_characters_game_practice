@@ -1,0 +1,73 @@
+Regression: offline edition exits before the main menu; preceding practice
+edition launches normally. Static native investigation, 2026-10-02.
+
+CONFIRMED STARTUP FAILURE PATH
+
+StartScene::init 0x121de7c constructs a std::function object at 0x121ef90
+using vtable 0x1aa26c0. Its RTTI explicitly identifies it as the closure for
+cocos2d::ThreadTasks::enqueue<StartScene::init::$_10>. The invocation slot
+vtable+0x30 points to 0x13dafd0.
+
+This task reads songs/songlist, songs/packlist and songs/unlocks. Each file
+is converted by 0x7caba4 to lowercase MD5 hex, concatenated with itself by
+0x984164, then converted by 0x7caba4 once more. In Python:
+  H(bytes) = md5((md5(bytes).hexdigest() * 2).encode('ascii')).hexdigest()
+
+The formula was checked against the original APK: all three results match
+the respective native expected strings exactly. The offline replacements
+fail all three comparisons. Whitespace is included; the checksum must be
+calculated from the exact packaged bytes, not parsed/reserialized JSON.
+
+Mismatch branches at 0x13db3fc / 0x13db418 / 0x13db444 / 0x13db460 /
+0x13db48c / 0x13db4a8 converge at 0x13db670. That code passes w0=0 and
+calls PLT 0x1a5bb20. Its GOT slot 0x1b85f60 has .rela.plt symbol "exit".
+This is an intentional exit(0), not a null-pointer dereference or stack
+failure. It explains why the existing practice edition, which did not
+replace these metadata assets, survives the same startup stage.
+
+CORRECTION PROVIDED TO PARENT
+
+Retain the integrity-check code. Update only the three 32-byte ASCII
+expected digests, leaving the following NUL bytes untouched. All listed
+ELF VAs equal file offsets for this engine:
+
+songlist: global pointer 0x1bcacd0 -> constant 0x56ef5b
+  old: 1eb4b7a347871f43c0db99af63bdf599
+  new for reviewed replacement: 93d541627e4c45f7ea69e3f72307c187
+packlist: global pointer 0x1bcace0 -> constant 0x58c15d
+  old: 08a76f3ccd517273f4aa71d3d6037841
+  new for reviewed replacement: c754825f56fdb74605a2092fceeacfb7
+unlocks: global pointer 0x1bcac30 -> constant 0x58c17e
+  old: 04ab6071bb921db76317903464c64bec
+  new for reviewed replacement: e990803900a04905b2c72ed2a4d0eb5c
+
+The build should calculate new values from generated asset bytes after
+preparing metadata, rather than hardcode this report's values. Validate
+the original engine fingerprint, original constants, NUL terminators and
+original APK digests before writing. The existing branch-patch VA mapper
+requires executable PT_LOAD; these are read-only data constants, so use
+a separate appropriately bounded mapper for the data edits.
+
+INDEPENDENT REVIEW OF THE FOUR EXISTING NATIVE BRANCH PATCHES
+
+1. 0x132d42c -> 0x132d4b4 (skip credential attempts): destination explicitly
+   sets w8=1 and x0=x19 before writing StartScene+0x353 and calling 0x1668e8c.
+   It branches straight to 0x132d4f0. The function prologue already saved
+   callee-saved registers and initialized its stack guard. It does not enter
+   the cleanup path for temporary objects created only in the token branch.
+   No skipped required x0 initialization or uninitialized cleanup was found.
+2. 0x12ef268 -> 0x12ef290: the same target as the original TBZ; destination
+   sets x0=x19, invokes the preexisting helper, then exits normally.
+3. 0x12ef2ac -> 0x12ef2e4: the same target as the original TBZ; destination
+   performs the already-initialized stack-guard check and function epilogue.
+4. 0x176b008 -> 0x176b064: Arcahv GameScene modifier selection is not on the
+   observed pre-main-menu startup path. No changed object lifecycle at this
+   branch was identified in the previous review.
+
+The three metadata digest mismatches are a concrete startup blocker even
+if other independent regressions exist. Updating those values still needs
+an Android run to demonstrate that no later issue remains. No core scripts,
+APK assets, or engine binaries were changed by this investigation.
+
+Reproduction: inspection/crash/check_metadata_integrity.py
+Evidence: metadata-integrity-evidence.json, native-control-flow-evidence.txt

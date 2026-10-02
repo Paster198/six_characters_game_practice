@@ -1,0 +1,100 @@
+Regression 4: BYD/Inscribed Start shows the login-to-unlock dialog
+Engine: original ARM64 7.0.255c. Static analysis; no device/runtime claim.
+
+Conclusion
+----------
+Recommend one additional instruction change: VA 0x9031d4, little-endian
+00080054 (b.eq 0x9032d4) -> 1f2003d5 (nop). This changes bundled local BYD
+chart resolution to the existing local AFF path. Do not bypass account checks,
+redirect unlock callbacks, force file-existence results, or change metadata.
+
+This fixes the chart path used both by the actual Start existence check and by
+GameScene loading. It also explains the precise login message, with a complete
+native control-flow chain. Earlier fixes only changed the download-requirement
+list and icon; the AFF path getter still selected the downloader cache for BYD.
+
+Exact failure chain
+-------------------
+1. d2a368 is SongSelectScene::getRequiredAssetsAndTokenForStartGameScene.
+   d2a424 calls 1956124 (real AFF existence check). That calls 903168.
+2. 903168 reads Song.remote_dl at +1c0. Remote songs are routed to the cache
+   before 9031d0. Local songs still execute cmp difficulty,3 at 9031d0 and the
+   erroneous-for-bundled-BYD b.eq cache branch at 9031d4.
+   Cache construction at 9032d4 uses <song-id>_3 and c23908; the packaged
+   songs/<song-id>/3.aff is consequently not checked.
+3. d2a484 checks real audio existence. d2a488/48c checks the AFF result and
+   branches to d2a568 when false. That builds the diagnostic beginning
+   "Tried to launch song, but all data isn't available. %s".
+4. After diagnostics and string cleanup, d2a9ec explicitly sets w19=1.
+   d2a9f8 goes to d2afc8. Its TBZ w19,0 returns only for zero; with missing
+   files it falls through to d2afcc, creating the download callbacks.
+5. The error callback uses vtable 1a9a628, RTTI containing
+   SongSelectScene::getRequiredAssetsAndTokenForStartGameScene::$_90.
+   Its invoke slot (+0x30) is da5b94. Capture +8 is the SongSelectScene.
+6. d2b01c calls downloader entry 172660c with that callback in x5.
+   1726658/cf9298 and 1726664/d8aa30 perform the original account checks.
+   An offline result branches to 1726700, invokes callback slot +0x30,
+   and returns without downloading.
+7. da5b94 loads the captured scene, then da5b98 tail-calls 1196244.
+   This displays the localized Chinese message at 56ee36:
+   "你需要登录来解锁歌曲\n通过主菜单的『网络』选项登录".
+
+This is the actual ordinary Start path and the exact observed dialog, rather
+than an inference based on a similarly named unlock or download function.
+
+Success after resolving the real local file
+------------------------------------------
+The one-instruction change leaves remote_dl=true on the original cache path.
+For local difficulty 3, 9031d8's existing local builder uses the original song
+directory and 130ac5c's difficulty filename. Rating class 3 resolves to 3.aff;
+Inscribed's display alias does not change the filename. Audio remains handled
+by 15c7e54, whose local branch has no unconditional BYD-to-cache override.
+
+With AFF and audio actually present, d2a484/48c reach the success route. The
+existing offline non-World patch at d2a494 sends normal mode to d2acc8.
+Mode 0 uses d2ad68..d2ad98 and invokes the existing success std::function:
+  vtable 1ada598 + 0x30 -> 16ed388
+  16ed3d4 -> f818d8 (startGameScene)
+  f82944 -> 7eafb0 (GameScene constructor)
+  f82a18 -> 178de80 (loading scene)
+  f82a24 -> fed4b0 (Director scene replacement).
+GameScene's actual chart load is eb2b28 -> 134a8c8 -> 134a910 (903168),
+then FileUtils read at 134a928 and the AFF parser. Its load-failure diagnostic
+also calls the same getter at eb34cc. Thus the check and actual read agree.
+
+The later startGameScene function was reviewed for a universal BYD login gate.
+No difficulty==3 account guard or exact login-dialog call exists on its normal
+path. Character/specific-song story branches and the konzetsu story-state
+helper 932c68 exist, but do not explain all BYD tracks. No change there is
+justified by this regression.
+
+Excluded candidates
+-------------------
+* 15a5a6c is the advanced-tutorial "Level Warning" keyed by
+  tutorialSeenAdvanced, not a login predicate.
+* 1515a94/e16058 inspect song/difficulty world_unlock. Generated metadata
+  explicitly clears both. Their World unlock dialog 7e185c shows World Mode
+  or Beginner Missions requirements, not the exact reported login text.
+* 16e2a54 does show the exact login dialog, but its delegate+0x28 entry is
+  attached to the additional World unlock event button (lambda12e4514).
+  Its other route from ordinary SongTapped is the unowned pack fallback,
+  already bypassed by the existing ownership patch. Redirecting this callback
+  would alter the wrong button and is unnecessary.
+* 17aa46c/1732f04/1881dac are purchase/unlock dialogs. They are not a new
+  general difficulty-3 predicate; leave their account semantics intact.
+* byd_local_unlock (+0x161) belongs to the earlier download-status route and
+  does not repair the actual AFF getter. No new metadata change is needed.
+
+Verification
+------------
+native-start-verify.py is read-only and accepts an optional prepared engine.
+It checks original-engine SHA, exact critical instruction fingerprints,
+preserved relocation/function-invoke slots, real call destinations, and the
+actual CBZ/TBZ control-flow words for all AFF/audio existence combinations and
+offline download-error dispatch. It intentionally confirms that missing files
+still enter the error path. It does not force or simulate an account login.
+The independent path-verify.py and assets-report.txt cover local/remote paths,
+the one-word delta, and all bundled BYD/Inscribed resources.
+
+Build inputs were not edited by this review. Runtime validation still requires
+installing the resulting candidate on a device.

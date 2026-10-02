@@ -1,0 +1,91 @@
+audioOverride JSON absent defaults false:
+0193d078 adrp     x8, #0x58b000
+0193d07c add      x8, x8, #0xf51
+0193d080 stp      x8, x9, [x29, #-0x70]
+0193d084 sub      x1, x29, #0x70
+0193d088 bl       #0x198a3c8
+0193d08c ldr      w8, [x0, #0x10]
+0193d090 adrp     x22, #0x57a000
+0193d094 mov      w21, #0x18
+0193d098 add      x22, x22, #0x1a3
+0193d09c cmp      w8, #0x102
+0193d0a0 cset     w8, eq
+0193d0a4 str      w8, [sp, #0x1cc]
+0193d0a8 b        #0x193d0b0
+0193d0ac str      wzr, [sp, #0x1cc]
+0193d0b0 adrp     x8, #0x592000
+Song audio path (remote_dl at +0x1c0, Difficulty audioOverride at +0xe9):
+015c7e88 stur     x8, [x29, #-8]
+015c7e8c ldrb     w8, [x0, #0x1c0]
+015c7e90 stp      xzr, xzr, [x29, #-0x40]
+015c7e94 stur     xzr, [x29, #-0x30]
+015c7e98 cbz      w8, #0x15c7eb4
+015c7e9c adrp     x0, #0x539000
+015c7ea0 add      x0, x0, #0xc7c
+015c7ea4 sub      x8, x29, #0x58
+015c7ea8 mov      x1, x22
+015c7eac bl       #0x1a5b5c0
+015c7eb0 b        #0x15c7ec0
+015c7eb4 sub      x0, x29, #0x58
+015c7eb8 mov      x1, x22
+015c7ebc bl       #0x1a5b400
+015c7ec0 mov      w0, w21
+015c7ec4 bl       #0x863e1c
+015c7ec8 add      x8, x22, w0, sxtw #3
+015c7ecc ldr      x8, [x8, #0x228]
+015c7ed0 sub      x24, x29, #0x70
+015c7ed4 ldrb     w8, [x8, #0xe9]
+015c7ed8 cbz      w8, #0x15c7f64
+015c7edc mov      w0, w21
+015c7ee0 bl       #0x863e1c
+015c7ee4 add      x8, sp, #0x50
+015c7ee8 bl       #0x1a5b510
+015c7eec adrp     x2, #0x52a000
+015c7ef0 add      x2, x2, #0xd3c
+015c7ef4 add      x0, sp, #0x50
+015c7ef8 mov      x1, xzr
+015c7efc bl       #0x1a5b5b0
+015c7f00 ldr      x8, [x0, #0x10]
+015c7f04 ldr      q0, [x0]
+015c7f08 str      x8, [sp, #0x80]
+015c7f0c str      q0, [sp, #0x70]
+015c7f10 stp      xzr, xzr, [x0, #8]
+015c7f14 str      xzr, [x0]
+015c7f18 adrp     x1, #0x548000
+015c7f1c add      x1, x1, #0x815
+015c7f20 add      x0, sp, #0x70
+015c7f24 bl       #0x1a5b4d0
+015c7f28 ldr      x8, [x0, #0x10]
+015c7f2c ldr      q0, [x0]
+015c7f30 stur     x8, [x29, #-0x60]
+015c7f34 str      q0, [x24]
+015c7f38 stp      xzr, xzr, [x0, #8]
+015c7f3c str      xzr, [x0]
+015c7f40 ldrb     w8, [sp, #0x70]
+015c7f44 tbz      w8, #0, #0x15c7f50
+015c7f48 ldr      x0, [sp, #0x80]
+015c7f4c bl       #0x1a5b390
+015c7f50 ldrb     w8, [sp, #0x50]
+015c7f54 tbz      w8, #0, #0x15c7f84
+015c7f58 ldr      x0, [sp, #0x60]
+015c7f5c bl       #0x1a5b390
+015c7f60 b        #0x15c7f84
+015c7f64 adrp     x9, #0x552000
+015c7f68 add      x9, x9, #0x869
+015c7f6c ldr      x9, [x9]
+015c7f70 mov      w8, #0x12
+015c7f74 sturb    w8, [x29, #-0x70]
+015c7f78 mov      w8, #0x67
+015c7f7c sturh    w8, [x24, #9]
+015c7f80 stur     x9, [x24, #1]
+015c7f84 mov      w0, w21
+Difficulty index conversion:
+00863e1c cmp      w0, #5
+00863e20 csinc    w0, w0, wzr, lo
+00863e24 ret      
+String literals:
+0x539c7c 'dl_'
+0x52ad3c '/'
+0x552869 '/base.ogg'
+0x548815 '.ogg'
+0x5713d7 'file:///android_asset/'

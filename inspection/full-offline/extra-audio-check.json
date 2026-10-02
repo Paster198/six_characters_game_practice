@@ -1,0 +1,176 @@
+[
+  {
+    "id": "hivemindrmx",
+    "aff_sha256": "a974768ede03def03de5de1cf9b07f4a07e9a1a7f14e4be477738e89c11f50a7",
+    "identical_aff_paths": [
+      "assets/songs/hivemindrmx/2.aff"
+    ],
+    "music_sha256": "948f8a77166471414b044dcd11ec019683515f8a82925e0c717a77a924faa619",
+    "audio_duration_ms": 157143,
+    "sample_rate": 44100,
+    "ogg_pages": 872,
+    "first_bpm": 252.0,
+    "last_note_end_ms": 156666,
+    "audio_offset_ms": 0,
+    "last_judgeable_note_end_ms": 156666,
+    "judgeable_notes_within_audio_duration": true,
+    "identical_music_crc_size_candidates": [
+      "assets/songs/hivemindrmx/base.ogg"
+    ]
+  },
+  {
+    "id": "ifirmx",
+    "aff_sha256": "a215b7c169f6720c88b811ec65e7884948ebe85bbef3c3aff05e9c7ee8e351de",
+    "identical_aff_paths": [
+      "assets/songs/ifirmx/2.aff"
+    ],
+    "music_sha256": "0461c6038575c8ef86f936f03bc702b25056b5f88690fe55c20a9b3315788950",
+    "audio_duration_ms": 165191,
+    "sample_rate": 44100,
+    "ogg_pages": 913,
+    "first_bpm": 216.0,
+    "last_note_end_ms": 163219,
+    "audio_offset_ms": 0,
+    "last_judgeable_note_end_ms": 163080,
+    "judgeable_notes_within_audio_duration": true,
+    "identical_music_crc_size_candidates": [
+      "assets/songs/ifirmx/base.ogg"
+    ]
+  },
+  {
+    "id": "ignotusafterburn",
+    "aff_sha256": "b2b68ea499c6886bddf920214436c59cacb3774c86f7e638bdd25b5dc81caf76",
+    "identical_aff_paths": [
+      "assets/songs/ignotusafterburn/2.aff"
+    ],
+    "music_sha256": "dca0fbb5a6242f55ae0c86aa8af660ec49e4e9940413a8cdfaef53aaa94cebac",
+    "audio_duration_ms": 140809,
+    "sample_rate": 44100,
+    "ogg_pages": 779,
+    "first_bpm": 170.0,
+    "last_note_end_ms": 138351,
+    "audio_offset_ms": 0,
+    "last_judgeable_note_end_ms": 138351,
+    "judgeable_notes_within_audio_duration": true,
+    "identical_music_crc_size_candidates": [
+      "assets/songs/ignotusafterburn/base.ogg"
+    ]
+  },
+  {
+    "id": "lfdyrmx",
+    "aff_sha256": "17d126d07067367c32c0e520585d08793fab2965e652ad10b995154dce363c3b",
+    "identical_aff_paths": [
+      "assets/songs/lfdyrmx/2.aff"
+    ],
+    "music_sha256": "35cb3605b3c3e5190321b14d75b97ed36197470a799c71f3735788be239a1b91",
+    "audio_duration_ms": 150574,
+    "sample_rate": 44100,
+    "ogg_pages": 839,
+    "first_bpm": 200.0,
+    "last_note_end_ms": 147300,
+    "audio_offset_ms": 0,
+    "last_judgeable_note_end_ms": 147300,
+    "judgeable_notes_within_audio_duration": true,
+    "identical_music_crc_size_candidates": [
+      "assets/songs/lfdyrmx/base.ogg"
+    ]
+  },
+  {
+    "id": "mismal",
+    "aff_sha256": "ccae7823cf41ab9e944b79ebb89bf40181275c3cea6e083ddbc3283bf8753ca0",
+    "identical_aff_paths": [
+      "assets/songs/mismal/2.aff"
+    ],
+    "music_sha256": "a45141af50609bdd7f3782a621e21c9e50bf73f94998c269b77b45f8f0f8f47b",
+    "audio_duration_ms": 158629,
+    "sample_rate": 44100,
+    "ogg_pages": 885,
+    "first_bpm": 155.0,
+    "last_note_end_ms": 177516,
+    "audio_offset_ms": 0,
+    "last_judgeable_note_end_ms": 150867,
+    "judgeable_notes_within_audio_duration": true,
+    "identical_music_crc_size_candidates": [
+      "assets/songs/mismal/base.ogg"
+    ]
+  },
+  {
+    "id": "overdead",
+    "aff_sha256": "e96dcbe6ff049bba247995255f4d0c838fae99b15a4efe1d7809c7841dc3211e",
+    "identical_aff_paths": [
+      "assets/songs/overdead/2.aff"
+    ],
+    "music_sha256": "a7232f32dc2edb49161b8d60200e745fb7c9ce22bc613a255c1f83d993fdf711",
+    "audio_duration_ms": 157712,
+    "sample_rate": 44100,
+    "ogg_pages": 869,
+    "first_bpm": 500.0,
+    "last_note_end_ms": 262862,
+    "audio_offset_ms": 0,
+    "last_judgeable_note_end_ms": 155062,
+    "judgeable_notes_within_audio_duration": true,
+    "identical_music_crc_size_candidates": [
+      "assets/songs/dropdead/3.ogg",
+      "assets/songs/overdead/base.ogg"
+    ]
+  },
+  {
+    "id": "redandblueandgreen",
+    "aff_sha256": "126bd1651d87fe20042097944f0888bb4b0cb1a32b1e2034ef9229347914abd7",
+    "identical_aff_paths": [
+      "assets/songs/redandblueandgreen/2.aff"
+    ],
+    "music_sha256": "2c12d8afc7a32252796c107ebef65329bc7d7d9742c0a991e42c695accde0b77",
+    "audio_duration_ms": 151500,
+    "sample_rate": 44100,
+    "ogg_pages": 844,
+    "first_bpm": 160.0,
+    "last_note_end_ms": 148500,
+    "audio_offset_ms": -1500,
+    "last_judgeable_note_end_ms": 147187,
+    "judgeable_notes_within_audio_duration": true,
+    "identical_music_crc_size_candidates": [
+      "assets/songs/redandblue/3.ogg",
+      "assets/songs/redandblueandgreen/base.ogg"
+    ]
+  },
+  {
+    "id": "singularityvvvip",
+    "aff_sha256": "eb50bcfda7088048cce851adfdb92275affb8629462959c8cc20d2078a3e27ac",
+    "identical_aff_paths": [
+      "assets/songs/singularityvvvip/2.aff"
+    ],
+    "music_sha256": "d29fb048c261f129f2b18b07d3cb85a4e8189ce9e23fce0b0a1245502bada138",
+    "audio_duration_ms": 137662,
+    "sample_rate": 44100,
+    "ogg_pages": 763,
+    "first_bpm": 175.0,
+    "last_note_end_ms": 134312,
+    "audio_offset_ms": 0,
+    "last_judgeable_note_end_ms": 134312,
+    "judgeable_notes_within_audio_duration": true,
+    "identical_music_crc_size_candidates": [
+      "assets/songs/singularity/3.ogg",
+      "assets/songs/singularityvvvip/base.ogg"
+    ]
+  },
+  {
+    "id": "unknownrmx",
+    "aff_sha256": "810dad187b046f3bac1eccb4701c2383ba243ea005278c0d24b465abf594d2ec",
+    "identical_aff_paths": [
+      "assets/songs/unknownrmx/2.aff"
+    ],
+    "music_sha256": "634224398735bc8ae9a88fe7033f6ac8d14df7704c0a7965b8deb0a9227b719b",
+    "audio_duration_ms": 161999,
+    "sample_rate": 44100,
+    "ogg_pages": 902,
+    "first_bpm": 200.0,
+    "last_note_end_ms": 161097,
+    "audio_offset_ms": 0,
+    "last_judgeable_note_end_ms": 161097,
+    "judgeable_notes_within_audio_duration": true,
+    "identical_music_crc_size_candidates": [
+      "assets/songs/unknownrmx/base.ogg"
+    ]
+  }
+]

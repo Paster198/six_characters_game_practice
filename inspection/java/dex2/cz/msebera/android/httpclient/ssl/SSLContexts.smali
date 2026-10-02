@@ -1,0 +1,107 @@
+.class public Lcz/msebera/android/httpclient/ssl/SSLContexts;
+.super Ljava/lang/Object;
+.source "SSLContexts.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 43
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static createDefault()Ljavax/net/ssl/SSLContext;
+    .registers 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcz/msebera/android/httpclient/ssl/SSLInitializationException;
+        }
+    .end annotation
+
+    .line 54
+    :try_start_0
+    const-string v0, "TLS"
+
+    invoke-static {v0}, Ljavax/net/ssl/SSLContext;->getInstance(Ljava/lang/String;)Ljavax/net/ssl/SSLContext;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    .line 55
+    invoke-virtual {v0, v1, v1, v1}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
+    :try_end_a
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_a} :catch_16
+    .catch Ljava/security/KeyManagementException; {:try_start_0 .. :try_end_a} :catch_b
+
+    return-object v0
+
+    :catch_b
+    move-exception v0
+
+    .line 60
+    new-instance v1, Lcz/msebera/android/httpclient/ssl/SSLInitializationException;
+
+    invoke-virtual {v0}, Ljava/security/KeyManagementException;->getMessage()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-direct {v1, v2, v0}, Lcz/msebera/android/httpclient/ssl/SSLInitializationException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v1
+
+    :catch_16
+    move-exception v0
+
+    .line 58
+    new-instance v1, Lcz/msebera/android/httpclient/ssl/SSLInitializationException;
+
+    invoke-virtual {v0}, Ljava/security/NoSuchAlgorithmException;->getMessage()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-direct {v1, v2, v0}, Lcz/msebera/android/httpclient/ssl/SSLInitializationException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v1
+.end method
+
+.method public static createSystemDefault()Ljavax/net/ssl/SSLContext;
+    .registers 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcz/msebera/android/httpclient/ssl/SSLInitializationException;
+        }
+    .end annotation
+
+    .line 75
+    :try_start_0
+    invoke-static {}, Ljavax/net/ssl/SSLContext;->getDefault()Ljavax/net/ssl/SSLContext;
+
+    move-result-object v0
+    :try_end_4
+    .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_4} :catch_5
+
+    return-object v0
+
+    .line 77
+    :catch_5
+    invoke-static {}, Lcz/msebera/android/httpclient/ssl/SSLContexts;->createDefault()Ljavax/net/ssl/SSLContext;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static custom()Lcz/msebera/android/httpclient/ssl/SSLContextBuilder;
+    .registers 1
+
+    .line 87
+    invoke-static {}, Lcz/msebera/android/httpclient/ssl/SSLContextBuilder;->create()Lcz/msebera/android/httpclient/ssl/SSLContextBuilder;
+
+    move-result-object v0
+
+    return-object v0
+.end method

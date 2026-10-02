@@ -1,0 +1,3461 @@
+{
+  "arcaea.apk": {
+    "songs": 553,
+    "diff_keys": {
+      "ratingClass": 1833,
+      "chartDesigner": 1833,
+      "jacketDesigner": 1833,
+      "rating": 1833,
+      "date": 50,
+      "version": 50,
+      "jacketOverride": 58,
+      "ratingPlus": 388,
+      "bg": 14,
+      "bg_inverse": 9,
+      "hidden_until": 68,
+      "title_localized": 8,
+      "audioOverride": 8,
+      "legacy11": 27,
+      "plusFingers": 6,
+      "artist": 6,
+      "bpm": 4,
+      "bpm_base": 4,
+      "jacket_night": 3,
+      "hidden_until_unlocked": 38,
+      "world_unlock": 7,
+      "ratingClassAlias": 4
+    },
+    "song_remote": {
+      "None": 17,
+      "True": 521,
+      "False": 15
+    },
+    "byd": [
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitro affected by Nitro",
+        "jacketDesigner": "みしゃも + yoshimo",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1620691201,
+        "version": "3.6",
+        "id": "lostcivilization",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/lostcivilization/3.aff": false,
+          "assets/songs/lostcivilization/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "GOODTOAST",
+        "jacketDesigner": "出前",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1590537603,
+        "version": "3.0",
+        "id": "goodtek",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/goodtek/3.aff": false,
+          "assets/songs/goodtek/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitro in Wonderland",
+        "jacketDesigner": "Khronetic",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1590537601,
+        "version": "3.0",
+        "id": "fairytale",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/fairytale/3.aff": false,
+          "assets/songs/fairytale/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "én + Nitro",
+        "jacketDesigner": "",
+        "rating": 9,
+        "ratingPlus": true,
+        "bg": "nijuusei2_light",
+        "bg_inverse": "nijuusei2_conflict",
+        "date": 1745452800,
+        "version": "6.4",
+        "hidden_until": "difficulty",
+        "id": "snowwhite",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/snowwhite/3.aff": false,
+          "assets/songs/snowwhite/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "N↑TRO",
+        "jacketDesigner": "RiceGnat",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1678320000,
+        "version": "4.3",
+        "id": "shadesoflight",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/shadesoflight/3.aff": false,
+          "assets/songs/shadesoflight/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "石樂",
+        "jacketDesigner": "Koyama Mai",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1590537600,
+        "version": "3.0",
+        "id": "vexaria",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/vexaria/3.aff": false,
+          "assets/songs/vexaria/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "moonquay -end of chartaesthesia-",
+        "jacketDesigner": "khronetic -synesthesia-",
+        "rating": 9,
+        "jacketOverride": true,
+        "ratingPlus": true,
+        "date": 1639008001,
+        "version": "3.10",
+        "hidden_until": "difficulty",
+        "id": "qualia",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/qualia/3.aff": false,
+          "assets/songs/qualia/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "PRAGMATISM -RESURRECTION-"
+        },
+        "audioOverride": true,
+        "chartDesigner": "THE LAST DREAM",
+        "jacketDesigner": "シエラ",
+        "jacketOverride": true,
+        "bg": "pragmatism3",
+        "rating": 11,
+        "legacy11": true,
+        "date": 1639008004,
+        "version": "3.10",
+        "hidden_until": "difficulty",
+        "id": "pragmatism",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/pragmatism/3.aff": false,
+          "assets/songs/pragmatism/3.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toaster.",
+        "jacketDesigner": "mins",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1604880000,
+        "version": "3.2",
+        "id": "lumia",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/lumia/3.aff": false,
+          "assets/songs/lumia/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitro ~ABYSS~",
+        "jacketDesigner": "",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1597968001,
+        "version": "3.1",
+        "id": "dement",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/dement/3.aff": false,
+          "assets/songs/dement/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Astral Luxance",
+        "jacketDesigner": "Khronetic",
+        "rating": 9,
+        "ratingPlus": true,
+        "bg": "single2_conflict",
+        "bg_inverse": "single2_light",
+        "date": 1745452801,
+        "version": "6.4",
+        "hidden_until": "difficulty",
+        "id": "anokumene",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/anokumene/3.aff": false,
+          "assets/songs/anokumene/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitr∞",
+        "jacketDesigner": "Tagtraume",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1590537602,
+        "version": "3.0",
+        "id": "infinityheaven",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/infinityheaven/3.aff": false,
+          "assets/songs/infinityheaven/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Party Exschwasion",
+        "jacketDesigner": "アサヤ",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1671667202,
+        "version": "4.1",
+        "id": "partyvinyl",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/partyvinyl/3.aff": false,
+          "assets/songs/partyvinyl/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Exschwas↓on",
+        "jacketDesigner": "白鳥怜 + Khronetic",
+        "rating": 9,
+        "jacketOverride": true,
+        "ratingPlus": true,
+        "date": 1639008000,
+        "version": "3.10",
+        "id": "kanagawa",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/kanagawa/3.aff": false,
+          "assets/songs/kanagawa/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "Ignotus Afterburn"
+        },
+        "artist": "Arcaea Sound Team",
+        "audioOverride": true,
+        "chartDesigner": "Toaster × 石樂",
+        "jacketDesigner": "Khronetic",
+        "jacketOverride": true,
+        "bg": "byd_conflict",
+        "bg_inverse": "byd_light",
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1646784000,
+        "version": "3.12",
+        "id": "ignotus",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/ignotus/3.aff": false,
+          "assets/songs/ignotus/3.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toaster",
+        "jacketDesigner": "VMWT + ljc",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1610064000,
+        "version": "3.4",
+        "id": "moonheart",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/moonheart/3.aff": false,
+          "assets/songs/moonheart/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "NITRO -mesmerize-",
+        "jacketDesigner": "Shionty",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1677715200,
+        "version": "4.3",
+        "id": "trappola",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/trappola/3.aff": false,
+          "assets/songs/trappola/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "Axium Divergence"
+        },
+        "artist": "ak+q (lowiro)",
+        "bpm": "170?",
+        "bpm_base": 180,
+        "audioOverride": true,
+        "chartDesigner": "Monolith - Diverged",
+        "jacketDesigner": "すずなし",
+        "jacketOverride": true,
+        "bg": "axiumcrisis3",
+        "rating": 11,
+        "legacy11": true,
+        "date": 1773014406,
+        "version": "6.13",
+        "hidden_until": "difficulty",
+        "id": "axiumcrisis",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/axiumcrisis/3.aff": false,
+          "assets/songs/axiumcrisis/3.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "Red and Blue and Green"
+        },
+        "artist": "fn(ArcaeaSoundTeam)",
+        "bpm": "160",
+        "bpm_base": 160,
+        "audioOverride": true,
+        "chartDesigner": "moonquay \"retrograde\"\nBLUE=LEFT RIGHT=RED",
+        "jacketDesigner": "yusi.",
+        "jacketOverride": true,
+        "bg": "byd_conflict",
+        "bg_inverse": "byd_light",
+        "rating": 10,
+        "date": 1646784001,
+        "version": "3.12",
+        "id": "redandblue",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/redandblue/3.aff": false,
+          "assets/songs/redandblue/3.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "Singularity VVVIP"
+        },
+        "artist": "Arcaea Sound Team against. ETIA.",
+        "audioOverride": true,
+        "chartDesigner": "Exschwasion against. 絶滅",
+        "jacketDesigner": "yusi.",
+        "jacketOverride": true,
+        "bg": "byd_conflict",
+        "bg_inverse": "byd_light",
+        "rating": 10,
+        "date": 1646784002,
+        "version": "3.12",
+        "id": "singularity",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/singularity/3.aff": false,
+          "assets/songs/singularity/3.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toastie",
+        "jacketDesigner": "mins",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1620691200,
+        "version": "3.6",
+        "id": "nexttoyou",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/nexttoyou/3.aff": false,
+          "assets/songs/nexttoyou/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "BE KARAT",
+        "jacketDesigner": "のう + Khronetic",
+        "jacketOverride": true,
+        "rating": 10,
+        "bg": "single2_light",
+        "bg_inverse": "single2_conflict",
+        "date": 1773014404,
+        "version": "6.13",
+        "id": "bethere",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/bethere/3.aff": false,
+          "assets/songs/bethere/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "antymis",
+        "jacketDesigner": "mirimo",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1706140801,
+        "version": "5.3",
+        "id": "cyberneciacatharsis",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/cyberneciacatharsis/3.aff": false,
+          "assets/songs/cyberneciacatharsis/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "CERiNG",
+        "jacketDesigner": "Ancy",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1706140800,
+        "version": "5.3",
+        "id": "inkarusi",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/inkarusi/3.aff": false,
+          "assets/songs/inkarusi/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toastmaker",
+        "jacketDesigner": "窓壁九真好キ",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1625011201,
+        "version": "3.6",
+        "id": "bookmaker",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/bookmaker/3.aff": false,
+          "assets/songs/bookmaker/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "overdead."
+        },
+        "artist": "fn",
+        "bpm": "500",
+        "bpm_base": 500,
+        "audioOverride": true,
+        "chartDesigner": "絶滅 over 夜浪.",
+        "jacketDesigner": "Hanamori Hiro + yusi.",
+        "jacketOverride": true,
+        "bg": "byd_conflict",
+        "bg_inverse": "byd_light",
+        "rating": 10,
+        "date": 1646784003,
+        "version": "3.12",
+        "id": "dropdead",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/dropdead/3.aff": false,
+          "assets/songs/dropdead/3.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "零下 -descent-",
+        "jacketDesigner": "shun yamaguchi",
+        "jacketOverride": true,
+        "rating": 10,
+        "ratingPlus": true,
+        "bg": "eden_conflict",
+        "date": 1745452804,
+        "version": "6.4",
+        "hidden_until": "difficulty",
+        "id": "nhelv",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/nhelv/3.aff": false,
+          "assets/songs/nhelv/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toaster",
+        "jacketDesigner": "michele",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1597968000,
+        "version": "3.1",
+        "id": "purgatorium",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/purgatorium/3.aff": false,
+          "assets/songs/purgatorium/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "EXSCHWASiON",
+        "jacketDesigner": "",
+        "rating": 9,
+        "date": 1647993600,
+        "version": "3.12",
+        "id": "merlin",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/merlin/3.aff": false,
+          "assets/songs/merlin/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "NITRO",
+        "jacketDesigner": "",
+        "rating": 10,
+        "date": 1647993601,
+        "version": "3.12",
+        "id": "omakeno",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/omakeno/3.aff": false,
+          "assets/songs/omakeno/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Exschwasion -unbound-",
+        "jacketDesigner": "wacca",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1706140803,
+        "version": "5.3",
+        "id": "libertas",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/libertas/3.aff": false,
+          "assets/songs/libertas/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "石樂",
+        "jacketDesigner": "釜飯轟々丸 + jht",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1639008002,
+        "version": "3.10",
+        "hidden_until": "difficulty",
+        "id": "antithese",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/antithese/3.aff": false,
+          "assets/songs/antithese/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "Vicious [ANTi] Heroism"
+        },
+        "artist": "Kobaryo",
+        "bpm": "271",
+        "bpm_base": 271,
+        "audioOverride": true,
+        "chartDesigner": "[FUTiLE] Defiance",
+        "jacketDesigner": "陽葉ヨウ",
+        "jacketOverride": true,
+        "bg": "viciousheroism3",
+        "rating": 11,
+        "legacy11": true,
+        "date": 1706140806,
+        "version": "5.3",
+        "hidden_until": "difficulty",
+        "id": "viciousheroism",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/viciousheroism/3.aff": false,
+          "assets/songs/viciousheroism/3.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "東星※天の門",
+        "jacketDesigner": "nonokuro",
+        "jacketOverride": true,
+        "rating": 10,
+        "ratingPlus": true,
+        "date": 1639008003,
+        "version": "3.10",
+        "hidden_until": "difficulty",
+        "id": "heavensdoor",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/heavensdoor/3.aff": false,
+          "assets/songs/heavensdoor/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "TO4STER",
+        "jacketDesigner": "きらばがに",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1668038400,
+        "version": "4.1",
+        "id": "freefall",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/freefall/3.aff": false,
+          "assets/songs/freefall/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "絶･零･夜",
+        "jacketDesigner": "fixro2n",
+        "jacketOverride": true,
+        "rating": 10,
+        "ratingPlus": true,
+        "date": 1773014405,
+        "version": "6.13",
+        "id": "heavenlycaress",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/heavenlycaress/3.aff": false,
+          "assets/songs/heavenlycaress/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitro 「The Forsaken」",
+        "jacketDesigner": "和音ハカ",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1625011200,
+        "version": "3.6",
+        "id": "laqryma",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/laqryma/3.aff": false,
+          "assets/songs/laqryma/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "~REQUIEM~ 夜浪",
+        "jacketDesigner": "すずなし",
+        "jacketOverride": true,
+        "rating": 10,
+        "ratingPlus": true,
+        "date": 1706140805,
+        "version": "5.3",
+        "hidden_until": "difficulty",
+        "id": "einherjar",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/einherjar/3.aff": false,
+          "assets/songs/einherjar/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitro 「The Forgotten」",
+        "jacketDesigner": "クルエルGZ",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1706140802,
+        "version": "5.3",
+        "id": "oblivia",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/oblivia/3.aff": false,
+          "assets/songs/oblivia/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Finale - The Tempest",
+        "jacketDesigner": "シエラ",
+        "rating": 11,
+        "legacy11": true,
+        "jacketOverride": true,
+        "hidden_until_unlocked": true,
+        "hidden_until": "difficulty",
+        "id": "tempestissimo",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/tempestissimo/3.aff": false,
+          "assets/songs/tempestissimo/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "nora::neko << fantasy",
+        "jacketDesigner": "",
+        "rating": 10,
+        "date": 1745452802,
+        "version": "6.4",
+        "hidden_until": "difficulty",
+        "id": "altale",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/altale/3.aff": false,
+          "assets/songs/altale/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "én 200716",
+        "jacketDesigner": "",
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1679529600,
+        "version": "4.4",
+        "id": "teriqma",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/teriqma/3.aff": false,
+          "assets/songs/teriqma/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "/ERROR/ 絶滅",
+        "jacketDesigner": "HakureiNeko",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1706140804,
+        "version": "5.3",
+        "hidden_until": "difficulty",
+        "id": "purpleverse",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/purpleverse/3.aff": false,
+          "assets/songs/purpleverse/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitro「The Aberrant」",
+        "jacketDesigner": "シエラ + Khronetic",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1773014400,
+        "version": "6.13",
+        "id": "eccentrictale",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/eccentrictale/3.aff": false,
+          "assets/songs/eccentrictale/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "¬ə",
+        "jacketDesigner": "あすだ",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "bg": "nijuusei2_conflict",
+        "bg_inverse": "nijuusei2_light",
+        "date": 1773014402,
+        "version": "6.13",
+        "id": "kyogenkigo",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/kyogenkigo/3.aff": false,
+          "assets/songs/kyogenkigo/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "@#7¥M!$",
+        "jacketDesigner": "のう + jht",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1773014401,
+        "version": "6.13",
+        "id": "smallcloud",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/smallcloud/3.aff": false,
+          "assets/songs/smallcloud/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "XIII: The Journey/Nitro",
+        "jacketDesigner": "",
+        "jacketOverride": false,
+        "rating": 10,
+        "id": "quonwacca",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/quonwacca/3.aff": false,
+          "assets/songs/quonwacca/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "白亜紀と古第三紀の間の大量絶滅",
+        "jacketDesigner": "からめる",
+        "rating": 10,
+        "bg": "nijuusei2_conflict",
+        "bg_inverse": "nijuusei2_light",
+        "date": 1745452803,
+        "version": "6.4",
+        "hidden_until": "difficulty",
+        "id": "energysynergymatrix",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/energysynergymatrix/3.aff": false,
+          "assets/songs/energysynergymatrix/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toaster",
+        "jacketDesigner": "",
+        "rating": 10,
+        "id": "lastendconductor",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/lastendconductor/3.aff": false,
+          "assets/songs/lastendconductor/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "jacketDesigner": "Enji",
+        "chartDesigner": "Inner Labyrinth",
+        "rating": 10,
+        "ratingPlus": true,
+        "world_unlock": false,
+        "hidden_until": "none",
+        "id": "infinitestrife",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/infinitestrife/3.aff": false,
+          "assets/songs/infinitestrife/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "jacketDesigner": "米室",
+        "chartDesigner": "Imaginary Sky",
+        "rating": 11,
+        "legacy11": true,
+        "world_unlock": false,
+        "hidden_until": "none",
+        "id": "worldender",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/worldender/3.aff": false,
+          "assets/songs/worldender/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "jacketDesigner": "村カルキ",
+        "chartDesigner": "Paradox Blight",
+        "rating": 11,
+        "legacy11": true,
+        "world_unlock": false,
+        "hidden_until": "none",
+        "id": "pentiment",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/pentiment/3.aff": false,
+          "assets/songs/pentiment/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "jacketDesigner": "シエラ",
+        "chartDesigner": "Eye of the Storm",
+        "rating": 11,
+        "legacy11": true,
+        "world_unlock": false,
+        "hidden_until": "none",
+        "id": "arcanaeden",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/arcanaeden/3.aff": false,
+          "assets/songs/arcanaeden/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "jacketDesigner": "シエラ",
+        "chartDesigner": "Silent¦END",
+        "rating": 12,
+        "legacy11": true,
+        "world_unlock": false,
+        "hidden_until": "song",
+        "id": "testify",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/testify/3.aff": false,
+          "assets/songs/testify/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "Last | Moment"
+        },
+        "audioOverride": true,
+        "chartDesigner": "Arcaea",
+        "jacketDesigner": "シエラ",
+        "jacketOverride": true,
+        "rating": 9,
+        "world_unlock": false,
+        "hidden_until_unlocked": true,
+        "hidden_until": "difficulty",
+        "id": "last",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/last/3.aff": false,
+          "assets/songs/last/3.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Arcaea",
+        "jacketDesigner": "シエラ",
+        "rating": 9,
+        "ratingPlus": true,
+        "world_unlock": false,
+        "hidden_until_unlocked": true,
+        "hidden_until": "difficulty",
+        "id": "lasteternity",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/lasteternity/3.aff": false,
+          "assets/songs/lasteternity/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toaster NEW!!",
+        "jacketDesigner": "",
+        "rating": 10,
+        "id": "impact",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/impact/3.aff": false,
+          "assets/songs/impact/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "↑零下↑",
+        "jacketDesigner": "yawa",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1773014403,
+        "version": "6.13",
+        "id": "saintorsinner",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/saintorsinner/3.aff": false,
+          "assets/songs/saintorsinner/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "raycast, The Irresolute",
+        "jacketDesigner": "辷",
+        "rating": 10,
+        "hidden_until": "none",
+        "id": "renegade",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/renegade/3.aff": false,
+          "assets/songs/renegade/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "nora::nue",
+        "jacketDesigner": "はむメロン",
+        "rating": 10,
+        "hidden_until": "none",
+        "id": "raysofremnant",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/raysofremnant/3.aff": false,
+          "assets/songs/raysofremnant/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "夜浪「perfidulo」",
+        "jacketDesigner": "おにねこ",
+        "rating": 10,
+        "ratingPlus": true,
+        "hidden_until": "none",
+        "id": "breachoffaith",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/breachoffaith/3.aff": false,
+          "assets/songs/breachoffaith/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "⇆ Projection",
+        "jacketDesigner": "ああもんど",
+        "rating": 11,
+        "legacy11": true,
+        "hidden_until": "none",
+        "id": "lamentrain",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/lamentrain/3.aff": false,
+          "assets/songs/lamentrain/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Final Command. Infinity",
+        "jacketDesigner": "すずなし",
+        "rating": 11,
+        "legacy11": true,
+        "ratingPlus": true,
+        "hidden_until_unlocked": true,
+        "hidden_until": "song",
+        "id": "designant",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/designant/3.aff": false,
+          "assets/songs/designant/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Arcaea Charting Team【The Six Souls】",
+        "jacketDesigner": "",
+        "rating": 10,
+        "hidden_until": "none",
+        "id": "yourbestnightmare",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/yourbestnightmare/3.aff": false,
+          "assets/songs/yourbestnightmare/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "ratingClassAlias": 1,
+        "chartDesigner": "絶滅「天道」",
+        "jacketDesigner": "あらへなす",
+        "rating": 11,
+        "hidden_until": "difficulty",
+        "legacy11": true,
+        "id": "dreadarea",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/dreadarea/3.aff": false,
+          "assets/songs/dreadarea/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "ratingClassAlias": 1,
+        "chartDesigner": "零下 vs 夜浪「gardantoj」",
+        "jacketDesigner": "雨儀",
+        "rating": 11,
+        "hidden_until": "difficulty",
+        "legacy11": true,
+        "id": "rivenpilgrim",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/rivenpilgrim/3.aff": false,
+          "assets/songs/rivenpilgrim/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "ratingClassAlias": 1,
+        "chartDesigner": "運命の淵 -threshold of fate-",
+        "jacketDesigner": "すずなし",
+        "rating": 11,
+        "ratingPlus": true,
+        "hidden_until": "difficulty",
+        "legacy11": true,
+        "id": "cataclysmcry",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/cataclysmcry/3.aff": false,
+          "assets/songs/cataclysmcry/base.ogg": false
+        }
+      },
+      {
+        "ratingClass": 3,
+        "ratingClassAlias": 1,
+        "chartDesigner": "DIVINE WRATH ⟦憤怒⟧",
+        "jacketDesigner": "すずなし",
+        "rating": 12,
+        "hidden_until_unlocked": true,
+        "hidden_until": "difficulty",
+        "legacy11": true,
+        "id": "deinosphainein",
+        "song_remote_dl": true,
+        "file_checks": {
+          "assets/songs/deinosphainein/3.aff": false,
+          "assets/songs/deinosphainein/base.ogg": false
+        }
+      }
+    ]
+  },
+  "Arcaea Infinity_7.0.1f.apk": {
+    "songs": 552,
+    "diff_keys": {
+      "ratingClass": 1833,
+      "chartDesigner": 1833,
+      "jacketDesigner": 1833,
+      "rating": 1833,
+      "date": 50,
+      "version": 50,
+      "jacketOverride": 57,
+      "ratingPlus": 388,
+      "bg": 14,
+      "bg_inverse": 9,
+      "title_localized": 8,
+      "audioOverride": 8,
+      "legacy11": 23,
+      "artist": 6,
+      "bpm": 4,
+      "bpm_base": 4,
+      "jacket_night": 3,
+      "hidden_until": 3,
+      "ratingClassAlias": 4
+    },
+    "song_remote": {
+      "None": 552
+    },
+    "byd": [
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitro affected by Nitro",
+        "jacketDesigner": "みしゃも + yoshimo",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1620691201,
+        "version": "3.6",
+        "id": "lostcivilization",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/lostcivilization/3.aff": true,
+          "assets/songs/lostcivilization/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "GOODTOAST",
+        "jacketDesigner": "出前",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1590537603,
+        "version": "3.0",
+        "id": "goodtek",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/goodtek/3.aff": true,
+          "assets/songs/goodtek/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitro in Wonderland",
+        "jacketDesigner": "Khronetic",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1590537601,
+        "version": "3.0",
+        "id": "fairytale",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/fairytale/3.aff": true,
+          "assets/songs/fairytale/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "én + Nitro",
+        "jacketDesigner": "",
+        "rating": 9,
+        "ratingPlus": true,
+        "bg": "nijuusei2_light",
+        "bg_inverse": "nijuusei2_conflict",
+        "date": 1745452800,
+        "version": "6.4",
+        "id": "snowwhite",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/snowwhite/3.aff": true,
+          "assets/songs/snowwhite/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "N↑TRO",
+        "jacketDesigner": "RiceGnat",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1678320000,
+        "version": "4.3",
+        "id": "shadesoflight",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/shadesoflight/3.aff": true,
+          "assets/songs/shadesoflight/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "石樂",
+        "jacketDesigner": "Koyama Mai",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1590537600,
+        "version": "3.0",
+        "id": "vexaria",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/vexaria/3.aff": true,
+          "assets/songs/vexaria/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "moonquay -end of chartaesthesia-",
+        "jacketDesigner": "khronetic -synesthesia-",
+        "rating": 9,
+        "jacketOverride": true,
+        "ratingPlus": true,
+        "date": 1639008001,
+        "version": "3.10",
+        "id": "qualia",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/qualia/3.aff": true,
+          "assets/songs/qualia/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "PRAGMATISM -RESURRECTION-"
+        },
+        "audioOverride": true,
+        "chartDesigner": "THE LAST DREAM",
+        "jacketDesigner": "シエラ",
+        "jacketOverride": true,
+        "bg": "pragmatism3",
+        "rating": 11,
+        "legacy11": true,
+        "date": 1639008004,
+        "version": "3.10",
+        "id": "pragmatism",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/pragmatism/3.aff": true,
+          "assets/songs/pragmatism/3.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toaster.",
+        "jacketDesigner": "mins",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1604880000,
+        "version": "3.2",
+        "id": "lumia",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/lumia/3.aff": true,
+          "assets/songs/lumia/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitro ~ABYSS~",
+        "jacketDesigner": "",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1597968001,
+        "version": "3.1",
+        "id": "dement",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/dement/3.aff": true,
+          "assets/songs/dement/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Astral Luxance",
+        "jacketDesigner": "Khronetic",
+        "rating": 9,
+        "ratingPlus": true,
+        "bg": "single2_conflict",
+        "bg_inverse": "single2_light",
+        "date": 1745452801,
+        "version": "6.4",
+        "id": "anokumene",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/anokumene/3.aff": true,
+          "assets/songs/anokumene/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitr∞",
+        "jacketDesigner": "Tagtraume",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1590537602,
+        "version": "3.0",
+        "id": "infinityheaven",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/infinityheaven/3.aff": true,
+          "assets/songs/infinityheaven/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Party Exschwasion",
+        "jacketDesigner": "アサヤ",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1671667202,
+        "version": "4.1",
+        "id": "partyvinyl",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/partyvinyl/3.aff": true,
+          "assets/songs/partyvinyl/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Exschwas↓on",
+        "jacketDesigner": "白鳥怜 + Khronetic",
+        "rating": 9,
+        "jacketOverride": true,
+        "ratingPlus": true,
+        "date": 1639008000,
+        "version": "3.10",
+        "id": "kanagawa",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/kanagawa/3.aff": true,
+          "assets/songs/kanagawa/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "Ignotus Afterburn"
+        },
+        "artist": "Arcaea Sound Team",
+        "audioOverride": true,
+        "chartDesigner": "Toaster × 石樂",
+        "jacketDesigner": "Khronetic",
+        "jacketOverride": true,
+        "bg": "byd_conflict",
+        "bg_inverse": "byd_light",
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1646784000,
+        "version": "3.12",
+        "id": "ignotus",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/ignotus/3.aff": true,
+          "assets/songs/ignotus/3.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toaster",
+        "jacketDesigner": "VMWT + ljc",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1610064000,
+        "version": "3.4",
+        "id": "moonheart",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/moonheart/3.aff": true,
+          "assets/songs/moonheart/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "NITRO -mesmerize-",
+        "jacketDesigner": "Shionty",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1677715200,
+        "version": "4.3",
+        "id": "trappola",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/trappola/3.aff": true,
+          "assets/songs/trappola/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "Axium Divergence"
+        },
+        "artist": "ak+q (lowiro)",
+        "bpm": "170?",
+        "bpm_base": 180,
+        "audioOverride": true,
+        "chartDesigner": "Monolith - Diverged",
+        "jacketDesigner": "すずなし",
+        "jacketOverride": true,
+        "bg": "axiumcrisis3",
+        "rating": 11,
+        "legacy11": true,
+        "date": 1773014406,
+        "version": "6.13",
+        "id": "axiumcrisis",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/axiumcrisis/3.aff": true,
+          "assets/songs/axiumcrisis/3.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "Red and Blue and Green"
+        },
+        "artist": "fn(ArcaeaSoundTeam)",
+        "bpm": "160",
+        "bpm_base": 160,
+        "audioOverride": true,
+        "chartDesigner": "moonquay \"retrograde\"\nBLUE=LEFT RIGHT=RED",
+        "jacketDesigner": "yusi.",
+        "jacketOverride": true,
+        "bg": "byd_conflict",
+        "bg_inverse": "byd_light",
+        "rating": 10,
+        "date": 1646784001,
+        "version": "3.12",
+        "id": "redandblue",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/redandblue/3.aff": true,
+          "assets/songs/redandblue/3.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "Singularity VVVIP"
+        },
+        "artist": "Arcaea Sound Team against. ETIA.",
+        "audioOverride": true,
+        "chartDesigner": "Exschwasion against. 絶滅",
+        "jacketDesigner": "yusi.",
+        "jacketOverride": true,
+        "bg": "byd_conflict",
+        "bg_inverse": "byd_light",
+        "rating": 10,
+        "date": 1646784002,
+        "version": "3.12",
+        "id": "singularity",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/singularity/3.aff": true,
+          "assets/songs/singularity/3.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toastie",
+        "jacketDesigner": "mins",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1620691200,
+        "version": "3.6",
+        "id": "nexttoyou",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/nexttoyou/3.aff": true,
+          "assets/songs/nexttoyou/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "BE KARAT",
+        "jacketDesigner": "のう + Khronetic",
+        "jacketOverride": true,
+        "rating": 10,
+        "bg": "single2_light",
+        "bg_inverse": "single2_conflict",
+        "date": 1773014404,
+        "version": "6.13",
+        "id": "bethere",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/bethere/3.aff": true,
+          "assets/songs/bethere/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "antymis",
+        "jacketDesigner": "mirimo",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1706140801,
+        "version": "5.3",
+        "id": "cyberneciacatharsis",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/cyberneciacatharsis/3.aff": true,
+          "assets/songs/cyberneciacatharsis/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "CERiNG",
+        "jacketDesigner": "Ancy",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1706140800,
+        "version": "5.3",
+        "id": "inkarusi",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/inkarusi/3.aff": true,
+          "assets/songs/inkarusi/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toastmaker",
+        "jacketDesigner": "窓壁九真好キ",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1625011201,
+        "version": "3.6",
+        "id": "bookmaker",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/bookmaker/3.aff": true,
+          "assets/songs/bookmaker/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "overdead."
+        },
+        "artist": "fn",
+        "bpm": "500",
+        "bpm_base": 500,
+        "audioOverride": true,
+        "chartDesigner": "絶滅 over 夜浪.",
+        "jacketDesigner": "Hanamori Hiro + yusi.",
+        "jacketOverride": true,
+        "bg": "byd_conflict",
+        "bg_inverse": "byd_light",
+        "rating": 10,
+        "date": 1646784003,
+        "version": "3.12",
+        "id": "dropdead",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/dropdead/3.aff": true,
+          "assets/songs/dropdead/3.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "零下 -descent-",
+        "jacketDesigner": "shun yamaguchi",
+        "jacketOverride": true,
+        "rating": 10,
+        "ratingPlus": true,
+        "bg": "eden_conflict",
+        "date": 1745452804,
+        "version": "6.4",
+        "id": "nhelv",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/nhelv/3.aff": true,
+          "assets/songs/nhelv/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toaster",
+        "jacketDesigner": "michele",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1597968000,
+        "version": "3.1",
+        "id": "purgatorium",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/purgatorium/3.aff": true,
+          "assets/songs/purgatorium/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "EXSCHWASiON",
+        "jacketDesigner": "",
+        "rating": 9,
+        "date": 1647993600,
+        "version": "3.12",
+        "id": "merlin",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/merlin/3.aff": true,
+          "assets/songs/merlin/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "NITRO",
+        "jacketDesigner": "",
+        "rating": 10,
+        "date": 1647993601,
+        "version": "3.12",
+        "id": "omakeno",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/omakeno/3.aff": true,
+          "assets/songs/omakeno/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Exschwasion -unbound-",
+        "jacketDesigner": "wacca",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1706140803,
+        "version": "5.3",
+        "id": "libertas",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/libertas/3.aff": true,
+          "assets/songs/libertas/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "石樂",
+        "jacketDesigner": "釜飯轟々丸 + jht",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1639008002,
+        "version": "3.10",
+        "id": "antithese",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/antithese/3.aff": true,
+          "assets/songs/antithese/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "Vicious [ANTi] Heroism"
+        },
+        "artist": "Kobaryo",
+        "bpm": "271",
+        "bpm_base": 271,
+        "audioOverride": true,
+        "chartDesigner": "[FUTiLE] Defiance",
+        "jacketDesigner": "陽葉ヨウ",
+        "jacketOverride": true,
+        "bg": "viciousheroism3",
+        "rating": 11,
+        "legacy11": true,
+        "date": 1706140806,
+        "version": "5.3",
+        "id": "viciousheroism",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/viciousheroism/3.aff": true,
+          "assets/songs/viciousheroism/3.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "東星※天の門",
+        "jacketDesigner": "nonokuro",
+        "jacketOverride": true,
+        "rating": 10,
+        "ratingPlus": true,
+        "date": 1639008003,
+        "version": "3.10",
+        "id": "heavensdoor",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/heavensdoor/3.aff": true,
+          "assets/songs/heavensdoor/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "TO4STER",
+        "jacketDesigner": "きらばがに",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1668038400,
+        "version": "4.1",
+        "id": "freefall",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/freefall/3.aff": true,
+          "assets/songs/freefall/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "絶･零･夜",
+        "jacketDesigner": "fixro2n",
+        "jacketOverride": true,
+        "rating": 10,
+        "ratingPlus": true,
+        "date": 1773014405,
+        "version": "6.13",
+        "id": "heavenlycaress",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/heavenlycaress/3.aff": true,
+          "assets/songs/heavenlycaress/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitro 「The Forsaken」",
+        "jacketDesigner": "和音ハカ",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1625011200,
+        "version": "3.6",
+        "id": "laqryma",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/laqryma/3.aff": true,
+          "assets/songs/laqryma/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "~REQUIEM~ 夜浪",
+        "jacketDesigner": "すずなし",
+        "jacketOverride": true,
+        "rating": 10,
+        "ratingPlus": true,
+        "date": 1706140805,
+        "version": "5.3",
+        "id": "einherjar",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/einherjar/3.aff": true,
+          "assets/songs/einherjar/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitro 「The Forgotten」",
+        "jacketDesigner": "クルエルGZ",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1706140802,
+        "version": "5.3",
+        "id": "oblivia",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/oblivia/3.aff": true,
+          "assets/songs/oblivia/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Finale - The Tempest",
+        "jacketDesigner": "シエラ",
+        "rating": 11,
+        "legacy11": true,
+        "jacketOverride": true,
+        "id": "tempestissimo",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/tempestissimo/3.aff": true,
+          "assets/songs/tempestissimo/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "nora::neko << fantasy",
+        "jacketDesigner": "",
+        "rating": 10,
+        "date": 1745452802,
+        "version": "6.4",
+        "id": "altale",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/altale/3.aff": true,
+          "assets/songs/altale/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "én 200716",
+        "jacketDesigner": "",
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1679529600,
+        "version": "4.4",
+        "id": "teriqma",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/teriqma/3.aff": true,
+          "assets/songs/teriqma/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "/ERROR/ 絶滅",
+        "jacketDesigner": "HakureiNeko",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1706140804,
+        "version": "5.3",
+        "id": "purpleverse",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/purpleverse/3.aff": true,
+          "assets/songs/purpleverse/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitro「The Aberrant」",
+        "jacketDesigner": "シエラ + Khronetic",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1773014400,
+        "version": "6.13",
+        "id": "eccentrictale",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/eccentrictale/3.aff": true,
+          "assets/songs/eccentrictale/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "¬ə",
+        "jacketDesigner": "あすだ",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "bg": "nijuusei2_conflict",
+        "bg_inverse": "nijuusei2_light",
+        "date": 1773014402,
+        "version": "6.13",
+        "id": "kyogenkigo",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/kyogenkigo/3.aff": true,
+          "assets/songs/kyogenkigo/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "@#7¥M!$",
+        "jacketDesigner": "のう + jht",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1773014401,
+        "version": "6.13",
+        "id": "smallcloud",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/smallcloud/3.aff": true,
+          "assets/songs/smallcloud/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "XIII: The Journey/Nitro",
+        "jacketDesigner": "",
+        "rating": 10,
+        "id": "quonwacca",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/quonwacca/3.aff": true,
+          "assets/songs/quonwacca/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "白亜紀と古第三紀の間の大量絶滅",
+        "jacketDesigner": "からめる",
+        "rating": 10,
+        "bg": "nijuusei2_conflict",
+        "bg_inverse": "nijuusei2_light",
+        "date": 1745452803,
+        "version": "6.4",
+        "id": "energysynergymatrix",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/energysynergymatrix/3.aff": true,
+          "assets/songs/energysynergymatrix/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toaster",
+        "jacketDesigner": "",
+        "rating": 10,
+        "id": "lastendconductor",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/lastendconductor/3.aff": true,
+          "assets/songs/lastendconductor/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "jacketDesigner": "Enji",
+        "chartDesigner": "Inner Labyrinth",
+        "rating": 10,
+        "ratingPlus": true,
+        "id": "infinitestrife",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/infinitestrife/3.aff": true,
+          "assets/songs/infinitestrife/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "jacketDesigner": "米室",
+        "chartDesigner": "Imaginary Sky",
+        "rating": 11,
+        "legacy11": true,
+        "id": "worldender",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/worldender/3.aff": true,
+          "assets/songs/worldender/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "jacketDesigner": "村カルキ",
+        "chartDesigner": "Paradox Blight",
+        "rating": 11,
+        "legacy11": true,
+        "id": "pentiment",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/pentiment/3.aff": true,
+          "assets/songs/pentiment/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "jacketDesigner": "シエラ",
+        "chartDesigner": "Eye of the Storm",
+        "rating": 11,
+        "legacy11": true,
+        "id": "arcanaeden",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/arcanaeden/3.aff": true,
+          "assets/songs/arcanaeden/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "jacketDesigner": "シエラ",
+        "chartDesigner": "Silent¦END",
+        "rating": 12,
+        "legacy11": true,
+        "id": "testify",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/testify/3.aff": true,
+          "assets/songs/testify/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "Last | Moment"
+        },
+        "audioOverride": true,
+        "chartDesigner": "Arcaea",
+        "jacketDesigner": "シエラ",
+        "jacketOverride": true,
+        "rating": 9,
+        "id": "last",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/last/3.aff": true,
+          "assets/songs/last/3.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Arcaea",
+        "jacketDesigner": "シエラ",
+        "rating": 9,
+        "ratingPlus": true,
+        "id": "lasteternity",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/lasteternity/3.aff": true,
+          "assets/songs/lasteternity/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toaster NEW!!",
+        "jacketDesigner": "",
+        "rating": 10,
+        "id": "impact",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/impact/3.aff": true,
+          "assets/songs/impact/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "↑零下↑",
+        "jacketDesigner": "yawa",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1773014403,
+        "version": "6.13",
+        "id": "saintorsinner",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/saintorsinner/3.aff": true,
+          "assets/songs/saintorsinner/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "raycast, The Irresolute",
+        "jacketDesigner": "辷",
+        "rating": 10,
+        "id": "renegade",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/renegade/3.aff": true,
+          "assets/songs/renegade/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "nora::nue",
+        "jacketDesigner": "はむメロン",
+        "rating": 10,
+        "id": "raysofremnant",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/raysofremnant/3.aff": true,
+          "assets/songs/raysofremnant/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "夜浪「perfidulo」",
+        "jacketDesigner": "おにねこ",
+        "rating": 10,
+        "ratingPlus": true,
+        "id": "breachoffaith",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/breachoffaith/3.aff": true,
+          "assets/songs/breachoffaith/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "⇆ Projection",
+        "jacketDesigner": "ああもんど",
+        "rating": 11,
+        "legacy11": true,
+        "id": "lamentrain",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/lamentrain/3.aff": true,
+          "assets/songs/lamentrain/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Final Command. Infinity",
+        "jacketDesigner": "すずなし",
+        "rating": 11,
+        "ratingPlus": true,
+        "legacy11": true,
+        "id": "designant",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/designant/3.aff": true,
+          "assets/songs/designant/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Arcaea Charting Team【The Six Souls】",
+        "jacketDesigner": "",
+        "rating": 10,
+        "id": "yourbestnightmare",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/yourbestnightmare/3.aff": true,
+          "assets/songs/yourbestnightmare/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "ratingClassAlias": 1,
+        "chartDesigner": "絶滅「天道」",
+        "jacketDesigner": "あらへなす",
+        "rating": 11,
+        "legacy11": true,
+        "id": "dreadarea",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/dreadarea/3.aff": true,
+          "assets/songs/dreadarea/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "ratingClassAlias": 1,
+        "chartDesigner": "零下 vs 夜浪「gardantoj」",
+        "jacketDesigner": "雨儀",
+        "rating": 11,
+        "legacy11": true,
+        "id": "rivenpilgrim",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/rivenpilgrim/3.aff": true,
+          "assets/songs/rivenpilgrim/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "ratingClassAlias": 1,
+        "chartDesigner": "運命の淵 -threshold of fate-",
+        "jacketDesigner": "すずなし",
+        "rating": 11,
+        "ratingPlus": true,
+        "legacy11": true,
+        "id": "cataclysmcry",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/cataclysmcry/3.aff": true,
+          "assets/songs/cataclysmcry/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "ratingClassAlias": 1,
+        "chartDesigner": "DIVINE WRATH ⟦憤怒⟧",
+        "jacketDesigner": "すずなし",
+        "rating": 12,
+        "legacy11": true,
+        "id": "deinosphainein",
+        "song_remote_dl": null,
+        "file_checks": {
+          "assets/songs/deinosphainein/3.aff": true,
+          "assets/songs/deinosphainein/base.ogg": true
+        }
+      }
+    ]
+  },
+  "arcaea-full-offline-practice-arm64-fix2.apk": {
+    "songs": 561,
+    "diff_keys": {
+      "ratingClass": 1839,
+      "chartDesigner": 1839,
+      "jacketDesigner": 1839,
+      "rating": 1839,
+      "world_unlock": 1839,
+      "hidden_until": 1839,
+      "date": 50,
+      "version": 50,
+      "jacketOverride": 57,
+      "ratingPlus": 388,
+      "bg": 14,
+      "bg_inverse": 9,
+      "title_localized": 8,
+      "audioOverride": 8,
+      "legacy11": 23,
+      "artist": 6,
+      "bpm": 4,
+      "bpm_base": 4,
+      "jacket_night": 3,
+      "ratingClassAlias": 4
+    },
+    "song_remote": {
+      "False": 561
+    },
+    "byd": [
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitro affected by Nitro",
+        "jacketDesigner": "みしゃも + yoshimo",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1620691201,
+        "version": "3.6",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "lostcivilization",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/lostcivilization/3.aff": true,
+          "assets/songs/lostcivilization/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "GOODTOAST",
+        "jacketDesigner": "出前",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1590537603,
+        "version": "3.0",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "goodtek",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/goodtek/3.aff": true,
+          "assets/songs/goodtek/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitro in Wonderland",
+        "jacketDesigner": "Khronetic",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1590537601,
+        "version": "3.0",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "fairytale",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/fairytale/3.aff": true,
+          "assets/songs/fairytale/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "én + Nitro",
+        "jacketDesigner": "",
+        "rating": 9,
+        "ratingPlus": true,
+        "bg": "nijuusei2_light",
+        "bg_inverse": "nijuusei2_conflict",
+        "date": 1745452800,
+        "version": "6.4",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "snowwhite",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/snowwhite/3.aff": true,
+          "assets/songs/snowwhite/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "N↑TRO",
+        "jacketDesigner": "RiceGnat",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1678320000,
+        "version": "4.3",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "shadesoflight",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/shadesoflight/3.aff": true,
+          "assets/songs/shadesoflight/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "石樂",
+        "jacketDesigner": "Koyama Mai",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1590537600,
+        "version": "3.0",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "vexaria",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/vexaria/3.aff": true,
+          "assets/songs/vexaria/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "moonquay -end of chartaesthesia-",
+        "jacketDesigner": "khronetic -synesthesia-",
+        "rating": 9,
+        "jacketOverride": true,
+        "ratingPlus": true,
+        "date": 1639008001,
+        "version": "3.10",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "qualia",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/qualia/3.aff": true,
+          "assets/songs/qualia/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "PRAGMATISM -RESURRECTION-"
+        },
+        "audioOverride": true,
+        "chartDesigner": "THE LAST DREAM",
+        "jacketDesigner": "シエラ",
+        "jacketOverride": true,
+        "bg": "pragmatism3",
+        "rating": 11,
+        "legacy11": true,
+        "date": 1639008004,
+        "version": "3.10",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "pragmatism",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/pragmatism/3.aff": true,
+          "assets/songs/pragmatism/3.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toaster.",
+        "jacketDesigner": "mins",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1604880000,
+        "version": "3.2",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "lumia",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/lumia/3.aff": true,
+          "assets/songs/lumia/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitro ~ABYSS~",
+        "jacketDesigner": "",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1597968001,
+        "version": "3.1",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "dement",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/dement/3.aff": true,
+          "assets/songs/dement/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Astral Luxance",
+        "jacketDesigner": "Khronetic",
+        "rating": 9,
+        "ratingPlus": true,
+        "bg": "single2_conflict",
+        "bg_inverse": "single2_light",
+        "date": 1745452801,
+        "version": "6.4",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "anokumene",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/anokumene/3.aff": true,
+          "assets/songs/anokumene/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitr∞",
+        "jacketDesigner": "Tagtraume",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1590537602,
+        "version": "3.0",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "infinityheaven",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/infinityheaven/3.aff": true,
+          "assets/songs/infinityheaven/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Party Exschwasion",
+        "jacketDesigner": "アサヤ",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1671667202,
+        "version": "4.1",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "partyvinyl",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/partyvinyl/3.aff": true,
+          "assets/songs/partyvinyl/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Exschwas↓on",
+        "jacketDesigner": "白鳥怜 + Khronetic",
+        "rating": 9,
+        "jacketOverride": true,
+        "ratingPlus": true,
+        "date": 1639008000,
+        "version": "3.10",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "kanagawa",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/kanagawa/3.aff": true,
+          "assets/songs/kanagawa/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "Ignotus Afterburn"
+        },
+        "artist": "Arcaea Sound Team",
+        "audioOverride": true,
+        "chartDesigner": "Toaster × 石樂",
+        "jacketDesigner": "Khronetic",
+        "jacketOverride": true,
+        "bg": "byd_conflict",
+        "bg_inverse": "byd_light",
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1646784000,
+        "version": "3.12",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "ignotus",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/ignotus/3.aff": true,
+          "assets/songs/ignotus/3.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toaster",
+        "jacketDesigner": "VMWT + ljc",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1610064000,
+        "version": "3.4",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "moonheart",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/moonheart/3.aff": true,
+          "assets/songs/moonheart/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "NITRO -mesmerize-",
+        "jacketDesigner": "Shionty",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1677715200,
+        "version": "4.3",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "trappola",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/trappola/3.aff": true,
+          "assets/songs/trappola/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "Axium Divergence"
+        },
+        "artist": "ak+q (lowiro)",
+        "bpm": "170?",
+        "bpm_base": 180,
+        "audioOverride": true,
+        "chartDesigner": "Monolith - Diverged",
+        "jacketDesigner": "すずなし",
+        "jacketOverride": true,
+        "bg": "axiumcrisis3",
+        "rating": 11,
+        "legacy11": true,
+        "date": 1773014406,
+        "version": "6.13",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "axiumcrisis",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/axiumcrisis/3.aff": true,
+          "assets/songs/axiumcrisis/3.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "Red and Blue and Green"
+        },
+        "artist": "fn(ArcaeaSoundTeam)",
+        "bpm": "160",
+        "bpm_base": 160,
+        "audioOverride": true,
+        "chartDesigner": "moonquay \"retrograde\"\nBLUE=LEFT RIGHT=RED",
+        "jacketDesigner": "yusi.",
+        "jacketOverride": true,
+        "bg": "byd_conflict",
+        "bg_inverse": "byd_light",
+        "rating": 10,
+        "date": 1646784001,
+        "version": "3.12",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "redandblue",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/redandblue/3.aff": true,
+          "assets/songs/redandblue/3.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "Singularity VVVIP"
+        },
+        "artist": "Arcaea Sound Team against. ETIA.",
+        "audioOverride": true,
+        "chartDesigner": "Exschwasion against. 絶滅",
+        "jacketDesigner": "yusi.",
+        "jacketOverride": true,
+        "bg": "byd_conflict",
+        "bg_inverse": "byd_light",
+        "rating": 10,
+        "date": 1646784002,
+        "version": "3.12",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "singularity",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/singularity/3.aff": true,
+          "assets/songs/singularity/3.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toastie",
+        "jacketDesigner": "mins",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1620691200,
+        "version": "3.6",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "nexttoyou",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/nexttoyou/3.aff": true,
+          "assets/songs/nexttoyou/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "BE KARAT",
+        "jacketDesigner": "のう + Khronetic",
+        "jacketOverride": true,
+        "rating": 10,
+        "bg": "single2_light",
+        "bg_inverse": "single2_conflict",
+        "date": 1773014404,
+        "version": "6.13",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "bethere",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/bethere/3.aff": true,
+          "assets/songs/bethere/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "antymis",
+        "jacketDesigner": "mirimo",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1706140801,
+        "version": "5.3",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "cyberneciacatharsis",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/cyberneciacatharsis/3.aff": true,
+          "assets/songs/cyberneciacatharsis/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "CERiNG",
+        "jacketDesigner": "Ancy",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1706140800,
+        "version": "5.3",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "inkarusi",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/inkarusi/3.aff": true,
+          "assets/songs/inkarusi/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toastmaker",
+        "jacketDesigner": "窓壁九真好キ",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1625011201,
+        "version": "3.6",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "bookmaker",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/bookmaker/3.aff": true,
+          "assets/songs/bookmaker/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "overdead."
+        },
+        "artist": "fn",
+        "bpm": "500",
+        "bpm_base": 500,
+        "audioOverride": true,
+        "chartDesigner": "絶滅 over 夜浪.",
+        "jacketDesigner": "Hanamori Hiro + yusi.",
+        "jacketOverride": true,
+        "bg": "byd_conflict",
+        "bg_inverse": "byd_light",
+        "rating": 10,
+        "date": 1646784003,
+        "version": "3.12",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "dropdead",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/dropdead/3.aff": true,
+          "assets/songs/dropdead/3.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "零下 -descent-",
+        "jacketDesigner": "shun yamaguchi",
+        "jacketOverride": true,
+        "rating": 10,
+        "ratingPlus": true,
+        "bg": "eden_conflict",
+        "date": 1745452804,
+        "version": "6.4",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "nhelv",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/nhelv/3.aff": true,
+          "assets/songs/nhelv/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toaster",
+        "jacketDesigner": "michele",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1597968000,
+        "version": "3.1",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "purgatorium",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/purgatorium/3.aff": true,
+          "assets/songs/purgatorium/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "EXSCHWASiON",
+        "jacketDesigner": "",
+        "rating": 9,
+        "date": 1647993600,
+        "version": "3.12",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "merlin",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/merlin/3.aff": true,
+          "assets/songs/merlin/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "NITRO",
+        "jacketDesigner": "",
+        "rating": 10,
+        "date": 1647993601,
+        "version": "3.12",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "omakeno",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/omakeno/3.aff": true,
+          "assets/songs/omakeno/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Exschwasion -unbound-",
+        "jacketDesigner": "wacca",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1706140803,
+        "version": "5.3",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "libertas",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/libertas/3.aff": true,
+          "assets/songs/libertas/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "石樂",
+        "jacketDesigner": "釜飯轟々丸 + jht",
+        "jacketOverride": true,
+        "rating": 9,
+        "date": 1639008002,
+        "version": "3.10",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "antithese",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/antithese/3.aff": true,
+          "assets/songs/antithese/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "Vicious [ANTi] Heroism"
+        },
+        "artist": "Kobaryo",
+        "bpm": "271",
+        "bpm_base": 271,
+        "audioOverride": true,
+        "chartDesigner": "[FUTiLE] Defiance",
+        "jacketDesigner": "陽葉ヨウ",
+        "jacketOverride": true,
+        "bg": "viciousheroism3",
+        "rating": 11,
+        "legacy11": true,
+        "date": 1706140806,
+        "version": "5.3",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "viciousheroism",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/viciousheroism/3.aff": true,
+          "assets/songs/viciousheroism/3.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "東星※天の門",
+        "jacketDesigner": "nonokuro",
+        "jacketOverride": true,
+        "rating": 10,
+        "ratingPlus": true,
+        "date": 1639008003,
+        "version": "3.10",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "heavensdoor",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/heavensdoor/3.aff": true,
+          "assets/songs/heavensdoor/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "TO4STER",
+        "jacketDesigner": "きらばがに",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1668038400,
+        "version": "4.1",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "freefall",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/freefall/3.aff": true,
+          "assets/songs/freefall/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "絶･零･夜",
+        "jacketDesigner": "fixro2n",
+        "jacketOverride": true,
+        "rating": 10,
+        "ratingPlus": true,
+        "date": 1773014405,
+        "version": "6.13",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "heavenlycaress",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/heavenlycaress/3.aff": true,
+          "assets/songs/heavenlycaress/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitro 「The Forsaken」",
+        "jacketDesigner": "和音ハカ",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1625011200,
+        "version": "3.6",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "laqryma",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/laqryma/3.aff": true,
+          "assets/songs/laqryma/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "~REQUIEM~ 夜浪",
+        "jacketDesigner": "すずなし",
+        "jacketOverride": true,
+        "rating": 10,
+        "ratingPlus": true,
+        "date": 1706140805,
+        "version": "5.3",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "einherjar",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/einherjar/3.aff": true,
+          "assets/songs/einherjar/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitro 「The Forgotten」",
+        "jacketDesigner": "クルエルGZ",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1706140802,
+        "version": "5.3",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "oblivia",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/oblivia/3.aff": true,
+          "assets/songs/oblivia/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Finale - The Tempest",
+        "jacketDesigner": "シエラ",
+        "rating": 11,
+        "legacy11": true,
+        "jacketOverride": true,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "tempestissimo",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/tempestissimo/3.aff": true,
+          "assets/songs/tempestissimo/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "nora::neko << fantasy",
+        "jacketDesigner": "",
+        "rating": 10,
+        "date": 1745452802,
+        "version": "6.4",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "altale",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/altale/3.aff": true,
+          "assets/songs/altale/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "én 200716",
+        "jacketDesigner": "",
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1679529600,
+        "version": "4.4",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "teriqma",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/teriqma/3.aff": true,
+          "assets/songs/teriqma/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "/ERROR/ 絶滅",
+        "jacketDesigner": "HakureiNeko",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1706140804,
+        "version": "5.3",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "purpleverse",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/purpleverse/3.aff": true,
+          "assets/songs/purpleverse/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Nitro「The Aberrant」",
+        "jacketDesigner": "シエラ + Khronetic",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "date": 1773014400,
+        "version": "6.13",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "eccentrictale",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/eccentrictale/3.aff": true,
+          "assets/songs/eccentrictale/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "¬ə",
+        "jacketDesigner": "あすだ",
+        "jacketOverride": true,
+        "rating": 9,
+        "ratingPlus": true,
+        "bg": "nijuusei2_conflict",
+        "bg_inverse": "nijuusei2_light",
+        "date": 1773014402,
+        "version": "6.13",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "kyogenkigo",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/kyogenkigo/3.aff": true,
+          "assets/songs/kyogenkigo/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "@#7¥M!$",
+        "jacketDesigner": "のう + jht",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1773014401,
+        "version": "6.13",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "smallcloud",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/smallcloud/3.aff": true,
+          "assets/songs/smallcloud/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "XIII: The Journey/Nitro",
+        "jacketDesigner": "",
+        "rating": 10,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "quonwacca",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/quonwacca/3.aff": true,
+          "assets/songs/quonwacca/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "白亜紀と古第三紀の間の大量絶滅",
+        "jacketDesigner": "からめる",
+        "rating": 10,
+        "bg": "nijuusei2_conflict",
+        "bg_inverse": "nijuusei2_light",
+        "date": 1745452803,
+        "version": "6.4",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "energysynergymatrix",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/energysynergymatrix/3.aff": true,
+          "assets/songs/energysynergymatrix/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toaster",
+        "jacketDesigner": "",
+        "rating": 10,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "lastendconductor",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/lastendconductor/3.aff": true,
+          "assets/songs/lastendconductor/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "jacketDesigner": "Enji",
+        "chartDesigner": "Inner Labyrinth",
+        "rating": 10,
+        "ratingPlus": true,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "infinitestrife",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/infinitestrife/3.aff": true,
+          "assets/songs/infinitestrife/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "jacketDesigner": "米室",
+        "chartDesigner": "Imaginary Sky",
+        "rating": 11,
+        "legacy11": true,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "worldender",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/worldender/3.aff": true,
+          "assets/songs/worldender/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "jacketDesigner": "村カルキ",
+        "chartDesigner": "Paradox Blight",
+        "rating": 11,
+        "legacy11": true,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "pentiment",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/pentiment/3.aff": true,
+          "assets/songs/pentiment/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "jacketDesigner": "シエラ",
+        "chartDesigner": "Eye of the Storm",
+        "rating": 11,
+        "legacy11": true,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "arcanaeden",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/arcanaeden/3.aff": true,
+          "assets/songs/arcanaeden/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "jacketDesigner": "シエラ",
+        "chartDesigner": "Silent¦END",
+        "rating": 12,
+        "legacy11": true,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "testify",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/testify/3.aff": true,
+          "assets/songs/testify/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "title_localized": {
+          "en": "Last | Moment"
+        },
+        "audioOverride": true,
+        "chartDesigner": "Arcaea",
+        "jacketDesigner": "シエラ",
+        "jacketOverride": true,
+        "rating": 9,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "last",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/last/3.aff": true,
+          "assets/songs/last/3.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Arcaea",
+        "jacketDesigner": "シエラ",
+        "rating": 9,
+        "ratingPlus": true,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "lasteternity",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/lasteternity/3.aff": true,
+          "assets/songs/lasteternity/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Toaster NEW!!",
+        "jacketDesigner": "",
+        "rating": 10,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "impact",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/impact/3.aff": true,
+          "assets/songs/impact/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "↑零下↑",
+        "jacketDesigner": "yawa",
+        "jacketOverride": true,
+        "rating": 10,
+        "date": 1773014403,
+        "version": "6.13",
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "saintorsinner",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/saintorsinner/3.aff": true,
+          "assets/songs/saintorsinner/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "raycast, The Irresolute",
+        "jacketDesigner": "辷",
+        "rating": 10,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "renegade",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/renegade/3.aff": true,
+          "assets/songs/renegade/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "nora::nue",
+        "jacketDesigner": "はむメロン",
+        "rating": 10,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "raysofremnant",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/raysofremnant/3.aff": true,
+          "assets/songs/raysofremnant/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "夜浪「perfidulo」",
+        "jacketDesigner": "おにねこ",
+        "rating": 10,
+        "ratingPlus": true,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "breachoffaith",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/breachoffaith/3.aff": true,
+          "assets/songs/breachoffaith/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "⇆ Projection",
+        "jacketDesigner": "ああもんど",
+        "rating": 11,
+        "legacy11": true,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "lamentrain",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/lamentrain/3.aff": true,
+          "assets/songs/lamentrain/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Final Command. Infinity",
+        "jacketDesigner": "すずなし",
+        "rating": 11,
+        "ratingPlus": true,
+        "legacy11": true,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "designant",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/designant/3.aff": true,
+          "assets/songs/designant/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "chartDesigner": "Arcaea Charting Team【The Six Souls】",
+        "jacketDesigner": "",
+        "rating": 10,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "yourbestnightmare",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/yourbestnightmare/3.aff": true,
+          "assets/songs/yourbestnightmare/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "ratingClassAlias": 1,
+        "chartDesigner": "絶滅「天道」",
+        "jacketDesigner": "あらへなす",
+        "rating": 11,
+        "legacy11": true,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "dreadarea",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/dreadarea/3.aff": true,
+          "assets/songs/dreadarea/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "ratingClassAlias": 1,
+        "chartDesigner": "零下 vs 夜浪「gardantoj」",
+        "jacketDesigner": "雨儀",
+        "rating": 11,
+        "legacy11": true,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "rivenpilgrim",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/rivenpilgrim/3.aff": true,
+          "assets/songs/rivenpilgrim/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "ratingClassAlias": 1,
+        "chartDesigner": "運命の淵 -threshold of fate-",
+        "jacketDesigner": "すずなし",
+        "rating": 11,
+        "ratingPlus": true,
+        "legacy11": true,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "cataclysmcry",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/cataclysmcry/3.aff": true,
+          "assets/songs/cataclysmcry/base.ogg": true
+        }
+      },
+      {
+        "ratingClass": 3,
+        "ratingClassAlias": 1,
+        "chartDesigner": "DIVINE WRATH ⟦憤怒⟧",
+        "jacketDesigner": "すずなし",
+        "rating": 12,
+        "legacy11": true,
+        "world_unlock": false,
+        "hidden_until": "",
+        "id": "deinosphainein",
+        "song_remote_dl": false,
+        "file_checks": {
+          "assets/songs/deinosphainein/3.aff": true,
+          "assets/songs/deinosphainein/base.ogg": true
+        }
+      }
+    ]
+  }
+}

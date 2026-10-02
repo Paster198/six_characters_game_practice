@@ -1,0 +1,65 @@
+007879fc sub      sp, sp, #0x50
+00787a00 stp      x29, x30, [sp, #0x20]
+00787a04 stp      x22, x21, [sp, #0x30]
+00787a08 stp      x20, x19, [sp, #0x40]
+00787a0c add      x29, sp, #0x20
+00787a10 mrs      x21, tpidr_el0
+00787a14 ldr      x8, [x21, #0x28]
+00787a18 adrp     x22, #0x1b82000
+00787a1c stur     x8, [x29, #-8]
+00787a20 ldr      x22, [x22, #0xf50]
+00787a24 ldr      x8, [x22]
+00787a28 cbz      x8, #0x787a34
+00787a2c ldr      x20, [x8, #0x20]
+00787a30 b        #0x787a38
+00787a34 mov      x20, xzr
+00787a38 add      x19, x0, #0xb8
+00787a3c mov      x0, sp
+00787a40 mov      x1, x19
+00787a44 bl       #0x1a5b400
+00787a48 mov      x1, sp
+00787a4c mov      x0, x20
+00787a50 bl       #0x19e8f54
+00787a54 ldrb     w8, [sp]
+00787a58 mov      x20, x0
+00787a5c tbz      w8, #0, #0x787a68
+00787a60 ldr      x0, [sp, #0x10]
+00787a64 bl       #0x1a5b390
+00787a68 ldrb     w8, [x20, #0x160]
+00787a6c cbz      w8, #0x787aa0
+00787a70 mov      x0, x20
+00787a74 bl       #0x18d6ac0
+00787a78 cbz      x0, #0x787aa8
+00787a7c ldrb     w8, [x0, #0xbb]
+00787a80 ldrb     w9, [x0, #0xbc]
+00787a84 mov      x1, x0
+00787a88 orr      w8, w8, w9
+00787a8c cbz      w8, #0x787aa8
+00787a90 ldr      x8, [x22]
+00787a94 ldr      x0, [x8, #0x38]
+00787a98 bl       #0x9ba724
+00787a9c tbz      w0, #0, #0x787aa8
+00787aa0 mov      w0, #1
+00787aa4 b        #0x787ab8
+00787aa8 ldr      x8, [x22]
+00787aac mov      x1, x19
+00787ab0 ldr      x0, [x8, #0x38]
+00787ab4 bl       #0x14ff234
+00787ab8 ldr      x8, [x21, #0x28]
+00787abc ldur     x9, [x29, #-8]
+00787ac0 cmp      x8, x9
+00787ac4 b.ne     #0x787ae0
+00787ac8 ldp      x20, x19, [sp, #0x40]
+00787acc ldp      x22, x21, [sp, #0x30]
+00787ad0 ldp      x29, x30, [sp, #0x20]
+00787ad4 and      w0, w0, #1
+00787ad8 add      sp, sp, #0x50
+00787adc ret      
+00787ae0 bl       #0x1a5b3f0
+00787ae4 ldrb     w8, [sp]
+00787ae8 mov      x19, x0
+00787aec tbz      w8, #0, #0x787af8
+00787af0 ldr      x0, [sp, #0x10]
+00787af4 bl       #0x1a5b390
+00787af8 mov      x0, x19
+00787afc bl       #0x16c2190

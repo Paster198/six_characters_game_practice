@@ -1,0 +1,78 @@
+actual fix3 selected instructions
+0x903194 09004739 [('ldrb', 'w9, [x0, #0x1c0]')]
+0x9031cc 48080035 [('cbnz', 'w8, #0x9032d4')]
+0x9031d0 9f0e0071 [('cmp', 'w20, #3')]
+0x9031d4 00080054 [('b.eq', '#0x9032d4')]
+0x15c8064 c8024739 [('ldrb', 'w8, [x22, #0x1c0]')]
+0x15c8068 68060034 [('cbz', 'w8, #0x15c8134')]
+filename getter
+0130ac5c ldr      w9, [x0, #0x124]
+0130ac60 cmp      w9, #4
+0130ac64 b.hi     #0x130ac88
+0130ac68 adrp     x10, #0x4f8000
+0130ac6c add      x10, x10, #0xa21
+0130ac70 adr      x11, #0x130ac80
+0130ac74 ldrb     w12, [x10, x9]
+0130ac78 add      x11, x11, x12, lsl #2
+0130ac7c br       x11
+0130ac80 mov      w10, #0x2e30
+0130ac84 b        #0x130aca4
+0130ac88 mov      w10, #0x2e31
+0130ac8c b        #0x130aca4
+0130ac90 mov      w10, #0x2e32
+0130ac94 b        #0x130aca4
+0130ac98 mov      w10, #0x2e33
+0130ac9c b        #0x130aca4
+0130aca0 mov      w10, #0x2e34
+0130aca4 mov      w9, #0xa
+0130aca8 movk     w10, #0x6661, lsl #16
+0130acac mov      w11, #0x66
+0130acb0 strb     w9, [x8]
+0130acb4 stur     w10, [x8, #1]
+0130acb8 strb     w11, [x8, #5]
+0130acbc strb     wzr, [x8, #6]
+0130acc0 ret      
+filename jump table [0, 2, 4, 6, 8]
+GameScene init actual read caller
+00eb34a4 ldr      x9, [x8, #0x70]
+00eb34a8 ldr      x0, [x8, #0x58]
+00eb34ac ldrb     w8, [x9, #0x1c]
+00eb34b0 eor      w3, w8, #1
+00eb34b4 bl       #0x950c88
+00eb34b8 ldr      x9, [x19, #0x318]
+00eb34bc ldr      w1, [x19, #0x320]
+00eb34c0 mov      w21, w0
+00eb34c4 sub      x8, x29, #0x80
+00eb34c8 mov      x0, x9
+00eb34cc bl       #0x903168
+00eb34d0 mov      w0, #0x10
+00eb34d4 bl       #0x1a5b3b0
+00eb34d8 ldr      x1, [x19, #0x318]
+00eb34dc mov      x20, x0
+00eb34e0 add      x0, sp, #0xc8
+00eb34e4 bl       #0x1a5b400
+00eb34e8 adrp     x2, #0x532000
+00eb34ec add      x2, x2, #0x690
+00eb34f0 add      x0, sp, #0xc8
+00eb34f4 mov      x1, xzr
+00eb34f8 bl       #0x1a5b5b0
+00eb34fc ldr      x8, [x0, #0x10]
+00eb3500 ldr      q0, [x0]
+00eb3504 str      x8, [sp, #0xf0]
+00eb3508 str      q0, [sp, #0xe0]
+00eb350c stp      xzr, xzr, [x0, #8]
+00eb3510 str      xzr, [x0]
+00eb3514 adrp     x1, #0x539000
+00eb3518 add      x1, x1, #0x273
+00eb351c add      x0, sp, #0xe0
+00eb3520 bl       #0x1a5b4d0
+00eb3524 ldr      x8, [x0, #0x10]
+00eb3528 ldr      q0, [x0]
+00eb352c str      x8, [sp, #0x110]
+00eb3530 str      q0, [sp, #0x100]
+15a5a6c text keys
+0x52bbdc 'tutorialSeenAdvanced'
+0x556052 'Level Warning'
+0x54be80 'Present difficulties and above provide a greater challenge.\n\nBefore challenging this level we recommend that you\nplay the Advanced Tutorial.\n\nYou can view the Tutorial later from Main Menu > About.'
+0x56b9d5 'Advanced Tutorial'
+0x585961 'Skip'

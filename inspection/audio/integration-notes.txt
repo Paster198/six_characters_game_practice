@@ -1,0 +1,65 @@
+Practice audio integration notes (arm64 APK supplied in this workspace)
+
+Sources:
+https://www.fmod.com/docs/2.03/api/core-api-channelcontrol.html
+https://www.fmod.com/docs/2.02/api/core-api-common-dsp-effects.html#fmod_dsp_pitchshift
+https://www.fmod.com/docs/2.02/api/effects-reference.html#pitch-shifter
+https://qa.fmod.com/t/how-to-set-playback-speed-given-a-tempo-scalar/20825
+
+ABI evidence:
+- provider init 0x3b758 passes FMOD version 0x20307 (2.03.07).
+- provider +0x18 = main BGM group; +0x38/+0x40/+0x48 = BGM vector begin/end/capacity.
+- 10 slots, each { Sound*, Channel* } = 16 bytes; main BGM is index 0.
+- +0x20/+0x28/+0x30 = scheduled song effect vector, entries 40 bytes.
+- provider setBGMPosition(this, milliseconds, index) = 0x26efc; virtual offset 0x40.
+- provider getBGMPosition(this, index) = 0x2cc70; virtual offset 0x38.
+- provider's system is a global pointer at libfmodProvider base +0x584f8.
+- Module intentionally obtains System from FMOD_ChannelGroup_GetSystemObject instead.
+- Main BGM group also owns separately scheduled song effects; per-group pitch changes
+  its DSP clock, so scheduled effects retain their relationship to the song.
+
+Usage:
+#include "practice_audio.h"
+practice_audio::initialize(provider_pointer);
+practice_audio::setRate(1.38f);
+// Only commit UI settings if true. Copy lastError() immediately on error.
+// Pause before seek/rate changes. getPosition returns source-song milliseconds.
+// The game chart timeline still needs its separate rate multiplier and state seek.
+practice_audio::seek(start_ms);
+practice_audio::reset();
+// shutdown before provider destruction, while original FMOD objects still exist.
+practice_audio::shutdown();
+
+Implementation:
+- No FMOD SDK headers or added runtime dependency. All calls resolved from original .so exports.
+- Mixer lock prevents an audio block seeing rate without reciprocal pitch correction.
+- For 0.5..2x: channel group pitch=r; DSP factors 1/r and 1 (second bypassed).
+- For >2..2.5x: pitch=r; DSP factors .5 and 2/r. Both within FMOD's legal .5..2 range.
+- Both DSPs are bypassed at 1x. No FFT degradation or added DSP buffering at normal speed.
+- Failure attempts rollback to prior configuration, then safe dry normal speed if rollback fails.
+- DSP history resets on confirmed seeks. All result-bearing FMOD calls are checked.
+- Original provider seek returns void; module confirms position using FMOD afterward.
+
+Limits requiring integration/device validation:
+- Original provider seek shifts currently scheduled effects and stops ones now in the past.
+  It cannot recreate effects whose old channels have already stopped. Rebuild/reload the
+  chart's scheduled song effects when seeking backward or starting the next A/B loop.
+- FMOD PitchShift FFT imposes its own signal latency and can smear transients. FFT size
+  is 1024. A real device listening/sync check is required; do not claim audio tested from
+  host mock tests. No unmeasured constant latency adjustment has been added.
+- Module targets arm64 only. Offsets must not be reused for armeabi-v7a.
+- Functions are intended for one serialized game/audio thread; no internal cross-thread lock.
+- nullptr/unloaded slot checks cannot validate arbitrary invalid provider pointers. Only
+  pass the provider captured from the actual game's verified calls.
+
+Built:
+native/build/libpractice_audio.so (ELF64 AArch64 Android API21).
+NEEDED: libdl.so, libm.so, libc.so. No libc++_shared.so requirement.
+Use NDK clang++.exe --target=aarch64-linux-android21 directly; bundled .cmd wrappers
+fail when the installed NDK path contains spaces.
+
+Validated:
+Host mock test native/test_practice_audio.cpp passes with injected FMOD failures,
+partial DSP initialization cleanup, .5x/.8x/2x/2.5x correction math, input bounds,
+seek argument order and milliseconds, duration, invalid slots, and retryable cleanup.
+Android native compile with -Wall -Wextra -Werror passes. No on-device audio test run.

@@ -1,0 +1,71 @@
+{
+  "input_sha256": "72e42cb4925655ecfef98bf2dbf92a5ac05145eb005a531c96c11b927a46e6dc",
+  "output_sha256": "dea0ecc6e2be00b75abcf7a5a67565b7712d60b0dfb8051f226e3f51a17748f8",
+  "entry": "lib/arm64-v8a/libcocos2dcpp.so",
+  "patches": [
+    {
+      "name": "startup_use_existing_no_credentials_branch",
+      "address": "0x132d42c",
+      "before": "607a41f9",
+      "branch_target": "0x132d4b4",
+      "reason": "StartScene::performExistingLoginAttempt retains readiness checks, then follows its existing no-token path: this+0x353=1 and hides the login wait UI. It skips both access-token and username-token requests.",
+      "file_offset": "0x132d42c",
+      "after": "22000014"
+    },
+    {
+      "name": "arcahv_use_ordinary_chart_loader",
+      "address": "0x176b008",
+      "before": "f5020036",
+      "branch_target": "0x176b064",
+      "reason": "Skip the Arcahv special challenge factory in the GameScene modifier selector and continue with the ordinary song/chart loader. This static change applies to all modes using this selector.",
+      "file_offset": "0x176b008",
+      "after": "17000014"
+    },
+    {
+      "name": "skip_saved_registration_landing_prompt",
+      "address": "0x12ef268",
+      "before": "40010036",
+      "branch_target": "0x12ef290",
+      "reason": "Always take the existing false-preference branch after reading showRegistrationWelcomeDialogOnLanding; leave saved preferences untouched.",
+      "file_offset": "0x12ef268",
+      "after": "0a000014"
+    },
+    {
+      "name": "skip_saved_verification_landing_prompt",
+      "address": "0x12ef2ac",
+      "before": "c0010036",
+      "branch_target": "0x12ef2e4",
+      "reason": "Always take the existing false-preference branch after reading showVerificationPromptOnLanding; leave saved preferences untouched.",
+      "file_offset": "0x12ef2ac",
+      "after": "0e000014"
+    },
+    {
+      "entry": "assets/songs/songlist",
+      "address": "0x56ef5b",
+      "before": "1eb4b7a347871f43c0db99af63bdf599",
+      "name": "startup_metadata_fingerprint",
+      "file_offset": "0x56ef5b",
+      "after": "93d541627e4c45f7ea69e3f72307c187",
+      "algorithm": "MD5(ASCII(MD5(data).hex repeated twice))"
+    },
+    {
+      "entry": "assets/songs/packlist",
+      "address": "0x58c15d",
+      "before": "08a76f3ccd517273f4aa71d3d6037841",
+      "name": "startup_metadata_fingerprint",
+      "file_offset": "0x58c15d",
+      "after": "c754825f56fdb74605a2092fceeacfb7",
+      "algorithm": "MD5(ASCII(MD5(data).hex repeated twice))"
+    },
+    {
+      "entry": "assets/songs/unlocks",
+      "address": "0x58c17e",
+      "before": "04ab6071bb921db76317903464c64bec",
+      "name": "startup_metadata_fingerprint",
+      "file_offset": "0x58c17e",
+      "after": "e990803900a04905b2c72ed2a4d0eb5c",
+      "algorithm": "MD5(ASCII(MD5(data).hex repeated twice))"
+    }
+  ],
+  "validation": "Static instruction/ELF checks only; Android runtime untested."
+}

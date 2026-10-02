@@ -1,0 +1,10 @@
+{
+  "apk": "arcaea-practice-arm64-test.apk",
+  "size_bytes": 2207477944,
+  "sha256": "929a5b56dfffee50c5ba5514413caf7fe9c7642add839a8f68ac8533f4560d44",
+  "original_sha256": "76f009eb4bcaf2e3647adf7b32422a395d4a52fb20ea2392a0b4e510c51d2335",
+  "unchanged_payload_entries": 7941,
+  "zip_crc": "passed",
+  "new_payload_hashes": "matched compiled artifacts",
+  "android_runtime_test": "not performed: no connected device"
+}

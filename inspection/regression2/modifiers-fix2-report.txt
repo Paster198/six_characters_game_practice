@@ -1,0 +1,49 @@
+Path III initializer repair, fix2
+================================
+
+Device feedback: enabling sky/ground conversion displayed the editor's
+"effect could not be applied" message. No device log was available to identify
+the individual failed initializer check. The previous helper required mmap to
+return memory within +/-128 MiB of its BL call site. mmap hints are not a
+guarantee; removing that address-range dependency is a concrete repair to its
+device-dependent initialization path, not proof of the phone's exact errno.
+
+The new adapter fingerprints all 16 overwritten bytes at 0x158bd2c:
+  7f b7 e5 97 e8 0a 40 b9 13 2e 00 b0 73 a2 12 91
+  BL getter; LDR W8,[X23,#8]; ADRP X19,0x1b4c000; ADD X19,X19,#0x4a8.
+The original getter at 0xef9b28 and its neighbor are still untouched.
+
+Entry uses LDR X17,+8 / BR X17 / 64-bit absolute thunk address. The thunk may
+be anywhere in the 64-bit address space, using the same anonymous RW->RX
+mapping approach as the already functioning practice hooks. No MAP_FIXED or
+near-address allocation is used.
+
+The 64-byte thunk calls modeForNewNote via BLR, then replays the original W8
+load and X19 RTTI address. It also restores X30 to the original BL return
+address (engine+0x158bd30), then jumps to engine+0x158bd3c, where the untouched
+ADRP X2 / MOV W26,W0 sequence continues. Literal offsets are checked against
+the emitted instructions, not copied PC-relative original code. Its C++ helper
+preserves callee-saved registers under AAPCS64; X16/X17 are not live across this
+original call site. Independent sibling review confirmed the literal offsets,
+continuation, RTTI address, W8 use and original LR restoration.
+
+ChartScope, thread isolation, original-challenge preservation and fresh AFF
+construction remain unchanged. The bridge never sets the global challenge
+mode or transforms an already modified source chart. Runtime patching occurs
+on the GL thread before entering the single LogicChart construction caller.
+Failure before installation preserves original code. Code protection failure
+after installation restores the verified original 16 bytes.
+
+Verification completed:
+- Native host test executes the actual emitted AArch64 entry/thunk instructions
+  in a small interpreter, with a helper that clobbers caller-saved registers.
+  Two deliberately distant (>128 MiB and >4 GiB) mapping layouts, both toggle
+  states and modes 0..6 verify the return value, W8, X19, X20..X29 and X30.
+- Existing scope nesting, twenty repeats, cross-thread isolation and native
+  hidden renderer/ArcTap boundary tests pass.
+- Path III original-engine fingerprint/call-graph checks pass.
+- Android ARM64 API24 -Wall -Wextra -Werror --no-undefined module compile passes.
+
+No Android device execution was available. The final package's compiled module
+and native engine are compared to the validated build artifacts by the package
+verifier. On-device rendering and gameplay remain to be checked.

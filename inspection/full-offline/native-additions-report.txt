@@ -1,0 +1,116 @@
+Full offline native additions and partner-selection review
+=========================================================
+Engine: supplied arcaea.apk / 7.0.255c, ARM64
+SHA256: 72e42cb4925655ecfef98bf2dbf92a5ac05145eb005a531c96c11b927a46e6dc
+Review is static; no Android device test was performed for this build.
+
+Implemented, frozen API
+-----------------------
+tools/prepare_offline_characters.py exports
+patch_additions(original_engine, offline_engine) -> (bytes, list[report]).
+It modifies four ARM64 instructions in memory after exact SHA/old-byte checks.
+The caller must restrict this API to the full, local-resource offline build.
+It is not a runtime online/offline switch and does not preserve online ownership
+semantics. The build removes INTERNET and uses only the supplied asset catalog.
+
+1. 0x9ba728: 010100b4 -> 08000014
+   cbz x1,0x9ba748 -> b 0x9ba748
+   0x9ba724(Manager*,Pack*) only tests Pack pointer membership in the local
+   manager list (+0x88 array, +0x288 count). Its original null-Pack branch
+   already returns true at 0x9ba748, then balances its stack at 0x9ba7dc.
+   No account, entitlement, or network response is constructed or saved.
+
+2. 0x133b928: 810c00b4 -> 64000014
+   cbz x1,0x133bab8 -> b 0x133bab8
+   0x133b904(Manager*,Song*) is the corresponding local Song ownership check.
+   Normal songs use Song+0x190 Pack*, which is parsed from set. Empty purchase
+   does NOT bypass that path. Its existing true branch initializes w9 and
+   uses the normal stack-guard/epilogue. The initial branch precedes all local
+   C++ temporary-string construction, so none is skipped during destruction.
+   Song difficulty existence/hidden/unlock/resource checks remain outside it.
+
+3. 0x13f4974: 48010034 -> 0a000014
+   cbz w8,0x13f499c -> b 0x13f499c
+   Pack constructor 0xfd634c sets +0xb8 by exact id == "epilogue"
+   (string 0x538d7d, comparison 0xfd64d0..0xfd6518). Pack availability
+   0x13f492c otherwise requires UserConfig+0x9c for that one pack even after
+   ownership succeeds. This instruction skips only that progress-display
+   gate, retaining availability return logic. It does not mark story complete.
+   +0xb9 identifies "finale"; the same routine bypasses its story scan once
+   the ordinary pack-ownership result is true. No extra finale patch needed.
+
+4. 0x176ab0c: 1f090071 -> 1f791e72
+   cmp w8,#2 -> tst w8,#0xfffffffd
+   GameScene modifier selector 0x176aabc has an existing mode-2 no-modifier
+   path at 0x176ab14. It releases an existing scene+0x308 modifier, clears
+   the pointer and runs its normal epilogue. The new test selects exactly
+   modes 0 and 2; all other modes remain as before. Ordinary mode 0 therefore
+   uses the native ordinary chart loader without forced story/video stages.
+   GameScene::init calls this selector at 0xeb2534. Native AFF scenecontrols
+   remain loaded; practice eligibility requires ordinary mode/no modifier.
+
+Selector song IDs before this change:
+axiumcrisis, antagonism, dantalion, equilibrium, ifi, etherstrike,
+singularity, tempestissimo, aegleseeker, testify, arcahv, last, lasteternity,
+arghena, desive, alterego, designant, lamentrain, yourbestnightmare,
+dreadarea, cataclysmcry, deinosphainein, ember.
+
+Partner selection: verified behavior and deliberate limitation
+-------------------------------------------------------------
+The original APK has 100 records in assets/char/characters.json and 427 files
+under assets/char/. Infinity has an older 99-record catalog. Preserve original
+character data/resources. No character ownership or skill patch is shipped.
+
+A normal offline partner dialog entry already exists:
+- MainMenu::init 0x913f10 passes w5=1 at 0x9143c8 into TopBar factory 0x1962dec.
+  SongSelectScene::init does the same at 0x16559d0.
+- The factory passes this as w6 to TopBar::init 0x8e8558, storing it at
+  TopBar+0x2b2 (0x8e8638). TopBar refresh 0x14b9a04 copies it into the
+  embedded user-cell+0x630 (0x14b9dd4).
+- User-cell touch callback 0x107035c checks event type 2 and +0x630, then
+  calls partner dialog factory 0x13033e4 at 0x10704ec. It has no login test.
+  Its initial 0xa07080 check concerns App+0xb0 special presentation state,
+  not OnlineUser/session authentication; do not remove it as a login gate.
+- PartnerSelectDialogASide::init 0x8aa75c queries login state but continues
+  building the dialog; it does not require a successful login to open.
+
+Selection/save path:
+- 0x1a0ec90 checks selected Character.id against User's local integer vector
+  at +0/+8. A non-owned selection is restored to the current character.
+- The normal offline path reaches 0x1a0ef08; when login predicate 0xd8aa30 is
+  false and the character changed, 0x1a0ef1c calls 0xc53fe0(User*,id).
+- 0xc53fe0 finds an existing Character object in User+0x18/+0x20, optionally
+  calls a non-null skill's change callback, assigns User+0x58, and writes the
+  integer to the existing UserDefault key "ch" at string 0x551af3.
+- Startup 0x1a5550c reads "ch", creates supported Character objects through
+  0x10dbfbc -> 0x152f6a4 for ids 0..199, then selects the stored id.
+- 0x9dec24 enforces a minimum owned list: if fewer than two entries exist,
+  its fallback allocates two ints containing 0 and 1 (0x9dec78..0x9decac).
+  Thus fresh offline installs support the two initial partners.
+
+Do NOT claim that other previously owned partners are restored offline:
+we have not verified a startup disk-cache -> owned/stats load path. Merely
+observing an in-memory owned vector does not prove persistence across restart.
+
+Why no full-partner unlock is shipped:
+- Static characters.json is parsed at 0xf56bb8 into distinct metadata objects
+  (factory 0x8fed3c), not complete runtime Character state.
+- The runtime Character factory zeroes a 0x140-byte object and initializes
+  its native containers/assets. Most non-initial characters do not receive
+  a skill instance there. Runtime character response initialization is a
+  separate JSON-array routine 0x172291c; it sets stats via 0x10b69f8 and builds
+  skills through 0x11ed3d4 -> 0xe74100.
+- Verified runtime setter fields: +0xac/+0xb0/+0xb4 floats; +0xb8/+0xbc ints;
+  +0xc0/+0xc4 ints; +0xc8 bool; +0x10 base-character/type; +0xd0 skill pointer.
+  No guessed field writes are used in this build.
+- Infinity's libarcinf.so is 29,784 bytes, but is not a generic unlock flag.
+  Its function 0x35fc replaces a 99-character initializer with many skill
+  factory calls; 0x2808 also assigns and retains skill instances. JNI_OnLoad
+  installs fixed hooks into its older engine. It depends on dozens of older
+  function addresses and has layout differences (e.g. +0x118 vs +0x120).
+  It was inspected only; it is neither loaded nor copied into our output.
+
+Conclusion: original default-partner offline selection/save remains available.
+No additional characters are promised by this build. Full local-only partner
+initialization, or a separately designed sealed-skill visual-only mode, needs
+its own verified initialization/UI path and device validation.

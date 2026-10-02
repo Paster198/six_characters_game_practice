@@ -1,0 +1,21 @@
+{
+  "apk": "arcaea-full-offline-practice-arm64-fix2.apk",
+  "bytes": 3826151060,
+  "sha256": "817c476085a2896004b64843908048a5583f24bba758abfd88b79d462f5a56da",
+  "songs": 561,
+  "charts": 1839,
+  "charts_by_class": {
+    "0": 551,
+    "1": 551,
+    "2": 560,
+    "4": 109,
+    "3": 68
+  },
+  "full_audio_files_used": 569,
+  "retained_payloads": 6230,
+  "imported_payloads": 3518,
+  "zip_crc": "passed",
+  "startup_fingerprints": "all three match actual packaged metadata; verification code preserved",
+  "native_and_layout_patches": "matched verified outputs",
+  "android_runtime_test": "not performed: no test device"
+}

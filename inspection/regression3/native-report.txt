@@ -1,0 +1,127 @@
+Residual BYD / Inscribed download indicator: native findings
+==========================================================
+Input engine: original Arcaea 7.0.255c arm64 libcocos2dcpp.so
+SHA256 72e42cb4925655ecfef98bf2dbf92a5ac05145eb005a531c96c11b927a46e6dc
+Date 2026-10-02. Static analysis and bounded host simulation, no phone execution.
+
+Conclusion
+----------
+Fix2 removed the content lock and start-time BYD download branch, but the
+download indicator also uses a separate shared resource-requirements factory.
+That factory deliberately treats BYD as a download independent of the song's
+remote_dl flag. Inscribed uses ratingClass 3 and follows the exact same path.
+The absent downloader cache, not missing APK files, causes this residual state.
+
+The smallest repair for the complete local catalogue is one conditional branch:
+
+  Address/file offset 0xA16FF8
+  Before 48 10 00 34: cbz w8,0xa17200
+  After  c8 21 00 34: cbz w8,0xa17430
+
+The parent owns application of this replacement in prepare_offline_characters.py.
+This agent wrote only inspection evidence and the read-only verifier.
+The prepared build/full-offline/lib/arm64-v8a/libcocos2dcpp.so has been independently
+checked and passed this verifier after the parent's application.
+
+Data identity and ABI
+---------------------
+0xa16fb0 is a resource-requirements vector factory. Inputs include Song* in x1,
+resource group in w2, and the AArch64 indirect result address in x8.
+0xa16fcc saves x8 in x19; 0xa16fd8/fdc initializes all three vector pointers to 0.
+0xa16fe0 sends a null Song directly to the existing epilogue, without touching
+an unconstructed string. For non-null Song, 0xa16fe8 saves x1 as x20 and
+0xa16ff0 copies Song.id into the local C++ string at sp+0x20.
+0xa16ff4 then loads byte [x20+0x1c0], i.e. Song.remote_dl.
+
+The field identity is independently established in parser 0x19398d8:
+0x193ac70..0x193ad98 parses remote_dl; 0x193ad50 tests JSON true (type 0x102),
+and 0x193ad98 saves its boolean at sp+0x108. 0x193f75c/760 copies that value to
+constructor argument sp+0x38. The Song constructor at 0x195d8f0 loads that
+boolean at 0x195dc34 and stores it to +0x1c0 at 0x195dc50.
+The start-assets routine at 0xd2a3d8 and audio-path helper at 0x15c7e8c read
+the same field as their local-versus-download selector.
+
+Song+0x256 is NOT remote_dl. Constructor 0x195dc88..0x195dd48 derives that
+separate flag from Pack.id=="single" and Song.id!="innocence". Its use in
+0x9bcf88 must not be confused with the serialized remote_dl boolean.
+
+Original download requirements and false-positive readiness
+----------------------------------------------------------
+The original factory appends the following resource names:
+  Group 0/2 AND remote_dl: song_0, song_1, song_2, optional song_4 and song audio.
+  Group 1/2 AND hasDifficulty(3): song_3, irrespective of remote_dl.
+  BYD audioOverride true: song_audio_3, also irrespective of remote_dl.
+  Song+0xd0/0xd8 additional resource vector: appended afterwards.
+The relevant BYD block is 0xa17200..0xa172f8. Literal addresses are:
+  0x5796a4 "_3"; 0x5554f0 "_audio_3".
+
+Download status 0x950c88 calls this factory at 0x950d24. For an empty vector,
+0x950d2c/30 branches to 0x950e2c and returns status zero (nothing to download).
+Otherwise it looks up cached server download records at 0x950d40/50. An absent
+song record or required resource key becomes status 1. This is a download-cache
+status check, not an APK AFF/music file-existence test.
+
+0x9bcf88 feeds per-chart/per-pack download status into several callers.
+0x13360a4 calls it twice (w2=0 then w2=1), and reports a download needed if the
+first result is 1 or the second result is 1/2. With empty requirements both
+statuses are zero, so it correctly reports false for every bundled local chart.
+
+Changing only byd_local_unlock would be incomplete. The +0x161 check exists
+only in 0x9bcf88's w2=false path. Its w2=true path directly invokes 0x950c88,
+and the second call of 0x13360a4 would still generate/require the BYD cache key.
+The assets reviewer verified fix2 has all 68 declared BYD AFF/music pairs,
+including the Inscribed aliases. Missing files are not this indicator's cause.
+
+Independent UI evidence from inspect_audio
+-----------------------------------------
+SongSelect UI routine 0x136f860 calls 0x13360a4 at 0x1370ba0 and reads the
+Song.remote_dl field at 0x1370ba8. It displays a download icon when the status
+says download is needed AND either remote_dl is true or difficulty is 3.
+0x1370c18 selects literal 0x56826c "img/download.png".
+The false path at 0x1370bcc selects literal 0x5242e1
+"layouts/songselect/start.png". Thus correcting the shared factory fixes the
+icon without replacing art or hiding the download UI independently of readiness.
+
+Lifetime safety and scope
+-------------------------
+The patched local branch goes to 0xa17430. At this point the output vector is
+empty, and the sole local Song.id string is fully constructed.
+0xa17430 reads its short/heap storage flag. Inline strings skip free; heap
+strings free sp+0x30 exactly once at 0xa1743c. Then 0xa17440 checks the original
+stack cookie and restores all saved registers/stack. This is the existing
+normal function cleanup; there is no custom return or shared cache mutation.
+
+remote_dl=true takes the same fall-through path as before. Every remaining byte
+of the complete function, including remote handling and exception cleanup, is
+unchanged. Null Song retains the original direct epilogue.
+
+For local songs this also skips their additional download-only requirements.
+That is intended for this build's ordinary-play catalogue: narrative special
+modifiers are already disabled and their videos are not a prerequisite to AFF
+practice. This is not a claim that absent narrative videos were added.
+
+Actual selected-file validation remains in the normal start routine:
+  0xd2a424 calls 0x1956124 for actual AFF existence.
+  0xd2a458 calls 0x15c7e54 to construct the selected audio path.
+  0xd2a46c performs the FileUtils existence check for that exact path.
+  0xd2a484/48c retain the missing-audio/AFF branches.
+The audio helper still reads Difficulty+0xe9 for audioOverride and uses the
+selected difficulty's .ogg when true; the patch does not substitute base.ogg
+or manufacture a download-success/token result.
+
+Independent verification
+------------------------
+Run:
+  E:/Python/Python311/python.exe inspection/regression3/native-verify.py
+  E:/Python/Python311/python.exe inspection/regression3/native-verify.py build/full-offline/lib/arm64-v8a/libcocos2dcpp.so
+
+Both passed. Checks cover the exact original/replacement branch, its target,
+the whole factory unchanged except those 4 bytes, eight preserved native ranges
+including AFF/audio checks and audioOverride path, and 24 executable small
+instruction-slice fixtures: null/non-null Song, local/remote, groups 0/1/2 and
+inline/heap id strings. They verify output-vector initialization, no local
+append path, one required heap free, and no null/unconstructed-string cleanup.
+The string-copy/free calls are modeled; this is not an Android runtime test.
+
+Supporting disassembly: native-download-disasm.txt. Previous field proof:
+inspection/offline/song-constructor.txt and inspection/offline/audio-path-proof.txt.

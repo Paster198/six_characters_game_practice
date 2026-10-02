@@ -1,0 +1,107 @@
+Independent UI/download review, 2026-10-02
+Original engine: 7.0.255c arm64 libcocos2dcpp.so
+SHA256: 72e42cb4925655ecfef98bf2dbf92a5ac05145eb005a531c96c11b927a46e6dc
+Scope: read-only native inspection. No engine, Java, package script or APK changed.
+
+Conclusion
+----------
+The proposed a16ff8 instruction replacement is consistent with the declared
+local catalogue and is safe at its cleanup boundary. It fixes the shared status
+used by the ordinary start/download icon and by download decisions. No separate
+icon or click bypass is justified by this review. Keep the existing fix2 local
+branch at d2a3e4 as well as actual AFF/music existence checks.
+
+This is static analysis, not an Android test. The exact dynamic caller that
+produced this device's login prompt is not known without a runtime trace.
+
+1. Song fields are NOT interchangeable
+-------------------------------------
+Song+0x1c0 is the JSON remote_dl value, with this complete provenance:
+  193a75c/764 materialize string 54bddb, "remote_dl".
+  193ad48 finds that JSON member; 193ad50 compares its type to 0x102 (true).
+  193ad54 cset w19,eq; absent-member branch 193ad5c sets zero.
+  193ad98 stores the parsed boolean to caller sp+0x108.
+  193f75c/760 copy it to constructor argument slot sp+0x38.
+  193f79c calls Song constructor 195d8f0.
+  Constructor reserves 0x120 bytes and sets x29=sp+0xc0, so [x29+0x98]
+  addresses that incoming stack+0x38 argument.
+  195dc34 reads it; 195dc44 normalizes bit 0; 195dc50 stores Song+0x1c0.
+
+Song+0x256 is a different derived category flag. Constructor 195dc88..195dd48
+sets it for pack.id == "single" AND song.id != "innocence". The two compared
+strings are 5887e6="single" and 523314="innocence". It is not remote_dl.
+Download dispatch 9bcf88 uses this category flag but ultimately reaches the same
+resource-status function; the proposed guard correctly reads +0x1c0 instead.
+
+2. Requirement-factory lifetime and candidate patch
+--------------------------------------------------
+Factory a16fb0 returns vector<string> via x8. x1 is Song*. It clears all three
+result pointers at a16fd8/dc. Null Song directly takes the empty-result epilogue
+a17440. For a non-null Song, a16fec/f0 copies its ID into a stack string at +0x20.
+Then a16ff4 reads Song+0x1c0 and a16ff8 tests it.
+
+Original a16ff8 bytes 48 10 00 34: cbz w8,0xa17200.
+Candidate bytes         c8 21 00 34: cbz w8,0xa17430.
+
+The original false branch skips the base remote resources but still enters:
+  a17200..a172f4: mode 1/2, existing difficulty 3 -> songid + "_3";
+                 Difficulty+0xe9 audioOverride -> songid + "_audio_3".
+  a172f8 onward: Song+0xd0/+0xd8 extra-resource vector processing.
+This is why setting remote_dl=false did not make BYD/Inscribed resource status
+local. In particular, these generated identifiers are downloader cache keys;
+they are not a test of whether assets/songs/<id>/3.aff is bundled.
+
+At a16ff8 no result allocation or later temporary is live. a17430..a1743c
+tests and conditionally frees precisely the initialized ID string. a17440 onward
+validates the cookie, restores the complete frame and returns the empty vector.
+Thus the candidate neither leaks that ID nor skips destruction of an allocated
+later object. The remote_dl=true path is unchanged.
+
+3. Main start/download icon
+--------------------------
+UI function 136f860, at 1370ba0:
+  13360a4(selected Song, selected difficulty, online flag, audio setting)
+13360a4 returns true if the first 9bcf88 status is 1 OR the second status is 1/2.
+The second status explicitly uses its direct-song flag true.
+
+1370ba8 reads Song+0x1c0. The 1370bac..1370bc8 instruction slice is equivalent to:
+  download_icon = needs_download && (remote_dl || difficulty == 3)
+
+True goes to 1370c18 and materializes 56826c="img/download.png".
+False goes to 1370bcc and materializes 5242e1="layouts/songselect/start.png".
+Both update the same node with virtual method +0x518. This explains the BYD icon
+remaining even after an existing remote_dl=false start-path bypass.
+
+Resource status 950c88 calls a16fb0 at 950d24. Empty begin==end takes 950e2c,
+which sets status=0. For a fully local catalogue the candidate therefore makes
+both 9bcf88 results zero and 13360a4 false, for either online-flag argument.
+The ordinary icon then becomes the normal start icon without changing UI code.
+
+4. Click and other UI paths
+--------------------------
+Ordinary selected-song click is 131d814 (primary virtual entry 1ac2318;
+adjusting delegate thunk 12e073c). The normal local route, after ownership and
+difficulty condition checks, reaches 131e400 -> 169ee90. That callback calls
+d2a368 at 169ef1c.
+
+d2a368 first calls the same 13360a4 at d2a3d4. Fix2's d2a3e4 already makes a
+remote_dl=false song take d2a3fc directly; retain it. The unmodified local path
+then checks actual AFF existence at d2a424 (1956124), computes the real audio
+path at d2a458 (15c7e54), and checks audio existence at d2a46c (FileUtils+0x108).
+There is another 9bcf88 status read at d2a440. The new factory guard also makes
+this status zero. Missing resources still take the original missing-file path.
+
+131d814's only direct 172660c downloader call is 131d964. It belongs to an
+app+b0+0x1098 special branch that looks up hardcoded "sacrosanct", evaluates
+9bcf88 at 131d914, and downloads only for a nonzero status. The candidate also
+fixes that status for a locally bundled sacrosanct, although this review does
+not establish that the device actually took this special branch.
+
+The other inspected 9bcf88 UI callers use the same status, rather than another
+Inscribed/BYD-specific file cache: 115ca40 updates room readiness; d442e0 adds
+nonzero-status songs to a download-needed vector; 8e441c/11a0118/11a0174/
+18dd628 are hardcoded narrative-song flows. 1755c2c uses 950c88 directly to
+choose its downloader branch. All reach the common resource factory.
+
+Direct reference scanning finds only d2a3d4 and 1370ba0 calling 13360a4.
+No additional change to 131d814, 136f860, login callbacks or textures is advised.

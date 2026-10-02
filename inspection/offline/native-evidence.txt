@@ -1,0 +1,245 @@
+Input SHA256: 72e42cb4925655ecfef98bf2dbf92a5ac05145eb005a531c96c11b927a46e6dc
+Retained songs: 31
+Retained modifier intersections: ['arcahv']
+Direct getSong calls in StartScene / MainMenu init: []
+
+arcahv_factory_branch
+0176afd8 ldr      x1, [x25]
+0176afdc sub      x0, x29, #0x20
+0176afe0 bl       #0x1a5b400
+0176afe4 adrp     x1, #0x563000
+0176afe8 add      x1, x1, #0x627
+0176afec sub      x0, x29, #0x20
+0176aff0 bl       #0x1396070
+0176aff4 ldurb    w8, [x29, #-0x20]
+0176aff8 mov      w21, w0
+0176affc tbz      w8, #0, #0x176b008
+0176b000 ldur     x0, [x29, #-0x10]
+0176b004 bl       #0x1a5b390
+0176b008 tbz      w21, #0, #0x176b064
+0176b00c mov      w0, wzr
+0176b010 bl       #0x9f9918
+0176b014 str      x0, [x23]
+0176b018 b        #0x176ade0
+0176b01c mov      x21, xzr
+0176b020 adrp     x1, #0x563000
+0176b024 add      x1, x1, #0x619
+0176b028 add      x0, sp, #0x30
+0176b02c bl       #0x19aa138
+0176b030 add      x1, sp, #0x30
+0176b034 mov      x0, x21
+0176b038 mov      w2, wzr
+0176b03c bl       #0x109461c
+0176b040 cbz      x0, #0x176b054
+0176b044 mov      w21, wzr
+0176b048 ldrb     w8, [sp, #0x30]
+0176b04c tbnz     w8, #0, #0x176b210
+0176b050 b        #0x176b218
+0176b054 ldr      x8, [x24]
+0176b058 cbz      x8, #0x176b120
+0176b05c ldr      x21, [x8, #0x30]
+0176b060 b        #0x176b124
+0176b064 ldr      x1, [x25]
+
+song_lookup_missing_returns_null
+019e8f54 stp      x29, x30, [sp, #-0x20]!
+019e8f58 str      x19, [sp, #0x10]
+019e8f5c mov      x29, sp
+019e8f60 mov      x19, x0
+019e8f64 add      x0, x0, #0x18
+019e8f68 bl       #0x1348e2c
+019e8f6c add      x8, x19, #0x20
+019e8f70 cmp      x8, x0
+019e8f74 b.eq     #0x19e8f80
+019e8f78 ldr      x0, [x0, #0x38]
+019e8f7c b        #0x19e8f84
+019e8f80 mov      x0, xzr
+019e8f84 ldr      x19, [sp, #0x10]
+019e8f88 ldp      x29, x30, [sp], #0x20
+019e8f8c ret      
+019e8f90 adrp     x0, #0x1acb000
+019e8f94 add      x0, x0, #0xcc0
+019e8f98 ret      
+019e8f9c ldr      x8, [x1, #8]
+019e8fa0 adrp     x9, #0x465000
+019e8fa4 add      x9, x9, #0xc91
+019e8fa8 add      x10, x0, #0x10
+019e8fac cmp      x8, x9
+019e8fb0 csel     x0, x10, xzr, eq
+019e8fb4 ret      
+019e8fb8 adrp     x8, #0x1afe000
+019e8fbc add      x8, x8, #0x3a8
+019e8fc0 str      x8, [x1]
+
+song_selection_null_guard
+010b0270 str      d8, [sp, #-0x70]!
+010b0274 stp      x29, x30, [sp, #0x10]
+010b0278 stp      x28, x27, [sp, #0x20]
+010b027c stp      x26, x25, [sp, #0x30]
+010b0280 stp      x24, x23, [sp, #0x40]
+010b0284 stp      x22, x21, [sp, #0x50]
+010b0288 stp      x20, x19, [sp, #0x60]
+010b028c add      x29, sp, #0x10
+010b0290 sub      sp, sp, #0x190
+010b0294 mrs      x9, tpidr_el0
+010b0298 ldr      x8, [x9, #0x28]
+010b029c stur     x8, [x29, #-0x20]
+010b02a0 cbz      x1, #0x10b0b80
+010b02a4 ldr      x8, [x0]
+010b02a8 mov      x22, x1
+010b02ac mov      x19, x0
+
+song_selection_difficulty_fallback
+010b034c mov      x0, x22
+010b0350 mov      w1, w24
+010b0354 stp      w27, w26, [sp, #0x2c]
+010b0358 bl       #0x8bed58
+010b035c tbz      w0, #0, #0x10b0374
+010b0360 mov      x0, x22
+010b0364 mov      w1, w24
+010b0368 bl       #0x17303f8
+010b036c bl       #0xeeac50
+010b0370 tbz      w0, #0, #0x10b037c
+010b0374 mov      w23, #2
+010b0378 mov      w24, #2
+010b037c ldp      x8, x9, [x29, #-0x38]
+
+song_difficulty_flag_check
+008bed58 stp      x29, x30, [sp, #-0x20]!
+008bed5c str      x19, [sp, #0x10]
+008bed60 mov      x29, sp
+008bed64 mov      x19, x0
+008bed68 mov      w0, w1
+008bed6c bl       #0x863e1c
+008bed70 add      x8, x19, w0, sxtw
+008bed74 ldrb     w0, [x8, #0x250]
+008bed78 ldr      x19, [sp, #0x10]
+008bed7c ldp      x29, x30, [sp], #0x20
+008bed80 ret      
+
+pack_lookup_missing_returns_null
+00eb0a94 add      x0, x20, #0x60
+00eb0a98 mov      x1, x19
+00eb0a9c bl       #0x1353d94
+00eb0aa0 add      x8, x20, #0x68
+00eb0aa4 cmp      x8, x0
+00eb0aa8 b.eq     #0xeb0ab4
+00eb0aac add      x8, x0, #0x38
+00eb0ab0 b        #0xeb0ac8
+00eb0ab4 mov      x0, xzr
+00eb0ab8 b        #0xeb0acc
+00eb0abc add      x8, x20, #0x80
+00eb0ac0 b        #0xeb0ac8
+00eb0ac4 add      x8, x20, #0x88
+00eb0ac8 ldr      x0, [x8]
+00eb0acc ldp      x20, x19, [sp, #0x10]
+00eb0ad0 ldp      x29, x30, [sp], #0x20
+00eb0ad4 ret      
+
+pack_selection_null_guard
+016f60b0 mov      x21, x1
+016f60b4 mov      x19, x0
+016f60b8 stur     x8, [x29, #-0x20]
+016f60bc cbz      x1, #0x16f60f4
+016f60c0 mov      x1, x21
+016f60c4 ldrb     w8, [x1, #0x20]!
+016f60c8 ldr      x9, [x1, #8]
+016f60cc lsr      x10, x8, #1
+016f60d0 tst      w8, #1
+016f60d4 csel     x8, x10, x9, eq
+016f60d8 cbz      x8, #0x16f60f4
+016f60dc adrp     x8, #0x1b82000
+016f60e0 ldr      x8, [x8, #0xf50]
+016f60e4 ldr      x8, [x8]
+016f60e8 cbz      x8, #0x16f60fc
+016f60ec ldr      x23, [x8, #0x20]
+016f60f0 b        #0x16f6100
+016f60f4 mov      x25, xzr
+
+pack_selection_all_fallback
+016f61c0 ldurb    w8, [x29, #-0x68]
+016f61c4 mov      x21, x0
+016f61c8 tbz      w8, #0, #0x16f61d4
+016f61cc ldur     x0, [x29, #-0x58]
+016f61d0 bl       #0x1a5b390
+016f61d4 cbz      x21, #0x16f61e8
+016f61d8 sub      x0, x29, #0x80
+016f61dc add      x1, x21, #8
+016f61e0 bl       #0x1a5b400
+016f61e4 b        #0x16f6200
+016f61e8 mov      w9, #0x6c61
+016f61ec mov      x21, xzr
+016f61f0 mov      w8, #6
+016f61f4 movk     w9, #0x6c, lsl #16
+016f61f8 sturb    w8, [x29, #-0x80]
+016f61fc stur     w9, [x23, #1]
+016f6200 ldr      x1, [x19]
+016f6204 sub      x0, x29, #0xb0
+016f6208 bl       #0x10c5e0c
+016f620c sub      x0, x29, #0xc8
+016f6210 sub      x1, x29, #0x80
+016f6214 bl       #0x1a5b400
+016f6218 sub      x8, x29, #0x98
+016f621c sub      x2, x29, #0xb0
+016f6220 sub      x4, x29, #0xc8
+016f6224 mov      w1, w20
+016f6228 mov      w3, w22
+016f622c bl       #0x126f07c
+016f6230 ldurb    w8, [x29, #-0xc8]
+016f6234 tbz      w8, #0, #0x16f6240
+016f6238 ldur     x0, [x29, #-0xb8]
+016f623c bl       #0x1a5b390
+
+songlist_max_idx
+0193efa8 str      xzr, [sp, #0x528]
+0193efac str      xzr, [sp, #0x520]
+0193efb0 cmp      x19, x21
+0193efb4 str      xzr, [sp, #0x530]
+0193efb8 b.ne     #0x193f028
+0193efbc ldr      x8, [x25, #0x78]
+0193efc0 ldr      x9, [sp, #0x198]
+0193efc4 cmp      x9, x8
+0193efc8 b.le     #0x193efd4
+0193efcc ldr      x8, [sp, #0x198]
+0193efd0 str      x8, [x25, #0x78]
+0193efd4 mov      w0, #0x258
+0193efd8 bl       #0x1a5b370
+0193efdc mov      x19, x0
+
+topbar_status_visibility
+014b9af8 ldr      x8, [x21]
+014b9afc mov      x0, x21
+014b9b00 mov      w1, wzr
+014b9b04 ldr      x8, [x8, #0x150]
+014b9b08 blr      x8
+014b9b0c ldr      x8, [x20]
+014b9b10 mov      x0, x20
+014b9b14 mov      w1, wzr
+014b9b18 ldr      x8, [x8, #0x150]
+014b9b1c blr      x8
+014b9b20 bl       #0xee6524
+014b9b24 ldr      x8, [x20]
+014b9b28 mov      w9, #0x8000
+014b9b2c movk     w9, #0x4388, lsl #16
+014b9b30 mov      w10, #0x438a0000
+014b9b34 ldr      x8, [x8, #0xc8]
+014b9b38 tst      w0, #1
+014b9b3c fmov     s0, w9
+014b9b40 fmov     s1, w10
+014b9b44 fcsel    s0, s1, s0, ne
+014b9b48 mov      x0, x20
+014b9b4c blr      x8
+014b9b50 ldr      x0, [x19, #0x2a8]
+014b9b54 bl       #0x1080370
+014b9b58 mov      w1, #2
+014b9b5c b        #0x14b9c30
+014b9b60 ldr      x8, [x21]
+014b9b64 mov      w1, #1
+014b9b68 mov      x0, x21
+014b9b6c ldr      x8, [x8, #0x150]
+014b9b70 blr      x8
+014b9b74 ldr      x8, [x20]
+014b9b78 mov      w1, #1
+014b9b7c mov      x0, x20
+014b9b80 ldr      x8, [x8, #0x150]
+014b9b84 blr      x8

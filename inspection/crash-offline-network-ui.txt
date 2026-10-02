@@ -1,0 +1,92 @@
+Offline-startup regression review: network permissions and CSB layouts
+====================================================================
+Scope: read-only. No build/output/Java/native production file was modified.
+Current leading cause from sibling native review is the metadata fingerprint
+comparison at 0x13dafd0 and its exit path. Findings below do NOT identify a
+competing confirmed root cause and do not justify widening this repair.
+
+Verified manifest delta
+-----------------------
+inspection/crash-offline-risk.py reparsed original and offline binary XML.
+Every start-node/attribute record is identical except removal of the complete
+INTERNET uses-permission declaration. ACCESS_NETWORK_STATE is still declared.
+Providers, authorities, services and metadata are unchanged.
+
+ReachabilityMonitor
+-------------------
+AppActivity.onCreate calls ReachabilityMonitor.sharedInstance(context).start().
+start calls ConnectivityManager.registerDefaultNetworkCallback without a catch.
+That API requires ACCESS_NETWORK_STATE, not INTERNET. The capability callbacks
+also use getNetworkCapabilities, which requires ACCESS_NETWORK_STATE. Therefore
+deleting only INTERNET does not establish a SecurityException at these calls.
+Official API evidence:
+https://developer.android.com/reference/android/net/ConnectivityManager#registerDefaultNetworkCallback(android.net.ConnectivityManager.NetworkCallback)
+
+Firebase startup and networking
+-------------------------------
+AppActivity.onCreate still enables FCM auto-init and calls FirebaseApp init.
+FirebaseInitProvider also initializes Firebase before Activity creation. It
+rethrows component-construction exceptions, so a logcat showing that provider
+would matter; no actual constructor path requiring INTERNET was found here.
+
+Concrete existing safeguards in the APK:
+- com/google/android/gms/measurement/internal/zzio.smali around lines 2142 and
+  3062 checks android.permission.INTERNET; missing permission logs 'App is
+  missing INTERNET permission' and marks upload unavailable. This is not a
+  direct unchecked SecurityException path.
+- firebase/messaging/SyncTask.smali explicitly catches SecurityException while
+  retrieving the token and schedules retry.
+- firebase/installations/remote/FirebaseInstallationServiceClient network calls
+  catch IOException/AssertionError and otherwise rethrow. However, the actual
+  FirebaseInstallationsRegistrar wraps the network executor in
+  FirebaseExecutors.newSequentialExecutor. SequentialExecutor$QueueWorker
+  catches RuntimeException from Runnable.run (which includes SecurityException),
+  logs it and continues. Thus the tempting FIS missing-INTERNET explanation
+  does not form an unhandled-process-crash chain in this APK.
+
+Other Java network functions
+----------------------------
+- Cocos2dxHttpURLConnection.connect/sendRequest/getResponseMessage catch only
+  IOException, so a SecurityException would escape those particular methods.
+  But libcocos2dcpp.so contains no Cocos2dxHttpURLConnection/HttpURLConnection
+  class or getResponseCode reference; it contains native curl strings instead.
+  No evidence shows this Java HTTP implementation runs during this game's
+  startup. Do not patch it solely because it exists in the DEX.
+- MultiplayerManager.startListening catches only SocketException around its
+  DatagramSocket constructor. Its Java constructor itself only stores fields
+  and calls native initComplete; it does not create a socket. No confirmed
+  pre-menu SecurityException chain through startListening was established.
+- FMOD.java init only registers a headset receiver and audio-device callback;
+  it does not create network connections or require INTERNET. The native FMOD
+  library is unchanged between the working practice build and offline build.
+
+FlatBuffers/CSB format
+---------------------
+The negative-vtable-offset incompatibility hypothesis is contradicted by the
+ORIGINAL target objects, which already have negative signed offsets:
+  MainMenu networkButton: original -1030; patched -12360.
+  TopBar memoriesButton: original -3234; patched -3780.
+So the engine already must handle vtables stored after their object.
+
+The read-only structure check additionally verified:
+- Private vtables remain 2-byte aligned, all their bytes inside the buffer.
+- Both table sizes remain 84; vtable sizes remain 46.
+- New visible/touch bool fields are at object offsets +4/+5, zero bytes within
+  existing unused padding; no pointers or other fields overlap these bytes.
+- Original nodes/identities and all timelines are retained; only target
+  visible/touch state changes. No networkButton visibility timeline exists.
+- The original root/header/version/other payload references remain unchanged.
+No static evidence supports a FlatBuffers verifier rejection here. Only a
+device stack trace could conclusively eliminate other runtime UI behavior.
+
+Recommendation
+--------------
+Prioritize the separately found metadata-integrity exit path. Preserve the
+current network permission boundary and UI patch unless device evidence points
+to them. Avoid removing SDK initializers or relaxing permissions as an unproven
+shotgun fix. If the integrity repair does not resolve startup, collect Android
+logcat/exit diagnostics and isolate one delta at a time from the user-confirmed
+working arcaea-practice-arm64-test.apk.
+
+Generated evidence: inspection/crash-offline-structure.json
+No Android runtime execution was performed in this review.

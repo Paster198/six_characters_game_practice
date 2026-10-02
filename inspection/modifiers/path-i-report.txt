@@ -1,0 +1,103 @@
+Path I lower-hidden rendering reuse (original 7.0.255c ARM64)
+==========================================================
+
+Scope and result
+----------------
+The native Path I implementation is a per-render-note boolean, not a global
+shader toggle or a challenge scene that has to be instantiated. The existing
+renderer applies the game's precise fade behavior each frame. Ordinary practice
+can set those booleans on the freshly built current scene; it must not overwrite
+the global challenge manager or change a user's persistent play settings.
+
+Origin of the flag
+------------------
+0x1325f00 is the TrackLayer render-note construction function, with arguments
+  x0 TrackLayer*, x1 vector<LogicNote*>*, x2 CharacterAbility* (nullable).
+At 0x1325f64..0x1325fa8 it obtains app+0xe0's challenge mode via 0xef9b28.
+Mode 1 constructs one pair<int,int> [0, chart duration] where the upper bound is
+TrackLayer+0x2f0 (GameModel*) -> +0x28 (LogicChart*) -> int+0xbc.
+At 0x13260e0..0x1326124 each parent LogicNote's int timestamp+0x18 is compared
+against this inclusive range. The resulting w24 is passed to native renderers.
+
+Renderer instance layout and existing update code
+------------------------------------------------
+All virtual addresses below are offsets from the loaded game's ELF base.
+All listed renderers have their LogicNote* at +0x2a8 (getter 0x129a620).
+
+Type          Exact vtable   Hidden byte  Init function  Byte write   Update reader
+Tap           0x1a90640      +0x2b4       0x963214       0x96329c     0x169a464
+Hold          0x1ad6178      +0x2c5       0x197e238      0x197e2f0    0xded1ac
+ArcTap        0x1aa53c8      +0x2d9       0xbcaa0c       0xbcaa7c     0x9b7474
+Arc           0x1a91fc0      +0x2d8       0x18e0da8      0x18e0e0c   0x1497f34
+Flick         0x1abd100      +0x2b4       0x14d1168      0x14d11f0   0xe2522c
+
+Tap/Hold/ArcTap init ABI:
+  bool init(void* self, void* logic, void* ability, int category, int color,
+            bool lowerHidden)  // w5 lowerHidden
+Arc init ABI:
+  bool init(void* self, void* logic, void* ability, int category,
+            void* childRendererVector, bool lowerHidden, int color)
+Flick init ABI:
+  bool init(void* self, void* logic, void* ability, int category,
+            bool lowerHidden)  // w4 lowerHidden
+No extra init hooks are necessary if applying the fields after GameScene::init.
+
+The factor for Tap/Hold/ArcTap/Flick is clamp(-LogicNote.int+0x30 / 8700.f,0,1)
+and is multiplied by other native opacity behavior. Arc body segments use the
+native minimum factor 0.2, so making every type fade to zero would NOT reproduce
+Path I. The denominator bits 0x4607f000 and all branches are native code; do not
+reimplement the curve in the practice module.
+
+Traversal and child inheritance
+------------------------------
+GameScene+0x3b0 -> TrackLayer.
+TrackLayer+0x3b8/+0x3c0 is vector<RenderNote*> begin/end; +0x3c8 is capacity.
+The constructor 0xc1c94c creates every chart render-note through 0x1325f00;
+0xd596f4 returns GameModel->LogicChart+0x20 (the chart's full note vector).
+This is not merely the currently active note list.
+
+RenderArc+0x2e8/+0x2f0 is vector<RenderArcTapNote*> begin/end (+0x2f8 capacity).
+0x18e12b4..0x18e12dc copies and retains the supplied child vector there.
+Do not omit these children: they are NOT independently pushed into TrackLayer's
+main vector. The source path computes the hidden flag from the parent arc start
+timestamp, then gives the same flag to all child Arctaps, regardless of each
+child's timestamp. CharacterAbility id 0xb can also set Arctap's flag in ordinary
+play (0x1326218..0x1326228). Consequently, preserve original true flags: enable
+Path I using logical OR, and disable it by a fresh native scene rebuild.
+
+Recommended minimal integration
+-------------------------------
+After original GameScene::init succeeds and all renderer instances exist,
+if the current practice session has lowerHidden=true:
+  - obtain the current scene's TrackLayer and model/chart duration;
+  - iterate the main renderer vector; require an exact known vtable before any
+    layout-specific read/write;
+  - for parent logic timestamp in [0, duration], set its known hidden byte to 1;
+  - for Arc parents in range, set hidden on every exact ArcTap child as well;
+  - leave unsupported renderer types and out-of-range notes unchanged.
+This is a field-only operation, no allocation and no ownership transfer.
+
+Do it before the first native rendering visit. GameScene visit at
+0x902fdc..0x90300c calls TrackLayer render update 0xc98524 even while the game is
+paused; there is no paused flag guard around it. Thus paused A/B preview uses the
+same opacity calculation. GameModel::update also continues timestamp/depth and
+camera work before its paused judgment guard at 0x928738.
+
+Lifecycle requirements (bridge owner confirmed implementation strategy)
+----------------------------------------------------------------------
+The checkbox is part of draft settings and saved settings, not a global config.
+Checkbox changes queue a preview at the currently previewed location, causing a
+new scene with the draft flag. Apply, Cancel, disable, Retry, and End rebuild the
+scene through the existing path. Cancel rebuilds with saved settings. End or a
+new unrelated song does not apply lowerHidden. Nothing is changed on the old
+scene after it is destroyed, and original character-specific true flags are
+recreated by the engine. No global renderer state is modified, so no next-song
+leak is introduced by this mechanism.
+
+Verification
+------------
+verify_path_i.py checks the exact instruction ranges above and renderer vtable
+init/update slots against an input native binary, read-only. It confirms the
+mapping is still the inspected implementation, not runtime Android visual QA.
+Native modifier module ownership: inspect_native. Java/bridge: inspect_audio.
+This analysis subtask did not modify Java, bridge, native modules or full assets.

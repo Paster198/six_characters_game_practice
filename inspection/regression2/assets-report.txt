@@ -1,0 +1,74 @@
+Regression 2 asset/metadata investigation
+=======================================
+
+Concrete metadata defect and fix
+-------------------------------
+The previous generator removed hidden_until and only wrote world_unlock=false
+when the source field already existed. The original 7.0.255c native parser
+(193d6fc..193d708, 193db24..193dbbc, independently identified by native agent)
+defaults omitted BYD fields to hidden enum 3 and world-unlock required.
+An absent JSON gate therefore does not mean an unrestricted native difficulty.
+
+tools/prepare_full_assets.py now explicitly writes hidden_until="" and
+world_unlock=false for EVERY real difficulty, including imported extra charts.
+The empty string falls through the original parser's recognized hidden strings
+to enum 0 (193d870). Existing rating/alias, audio, artwork and chart data are
+preserved. No placeholder difficulties are created.
+
+Prepared independent output: build/regression2-assets. The production
+build/full-offline directory was not overwritten by this agent.
+Result: 561 songs, 1839 playable charts, 3518 import entries. Packlist, unlocks,
+resource import mapping and omitted redundant download assets are unchanged.
+Only explicit difficulty-level gate values changed in the songlist.
+The native metadata integrity literals must be regenerated for the changed JSON.
+
+Black Fate click-to-enter crash
+------------------------------
+Black Fate is pack "vs", containing equilibrium, antagonism, lostdesire,
+dantalion, ifi, tempestissimo and arcahv. Original pack metadata and support
+assets are retained. Pack selection 16f607c calls the central difficulty-state
+function 1809390 at 16f6604 and 16f66e8 while choosing an initial song, before the
+user manually selects one. Thus the native agent's null UnlockCondition
+dereference at 180940c can be reached from a pack click, not only from Start.
+
+All direct calls to ff4e0c (unlock lookup) are 1809408/18094fc/1809508 in that
+central state routine and 1596234/1596e04 in song-detail code. The latter two
+immediately check null and do not have the same unconditional dereference.
+No evidence supports replacing the Black Fate pack ID, backgrounds or charts.
+See assets-blackfate-native.txt.
+
+Divine Oblivion locked jackets
+-----------------------------
+The five normal songs' real 1080_base/1080_base_256 images are present and
+decode successfully. In the normal jacket-path helper efc484, efc6a8 calls
+1809390. Return bit 32 selects the locked path via efc6d4 -> 18d7b88. That helper
+compares Song+190 pack id to "konzetsu" and returns
+img/jacket_locked_konzetsu.jpg at 18d7c48. Other UI callers likewise select
+locked artwork from the central difficulty state. Correcting that state restores
+the existing real images; replacing image pixels would hide the actual problem.
+See assets-jacket-native.txt and assets-jacket-callers.txt.
+
+DIE IN and Inscribed
+--------------------
+DIE IN is id diein, virtual pack single, background djmax_nightmare. It has
+PST/PRS/FTR/ETR with no audio or jacket override. Full music, four charts and two
+jackets are present. The background and its clear layer are original-engine
+assets. Its source metadata only differs in preview times and legacy11=false
+omission besides offline gate edits. No resource-format mismatch was found.
+
+The four Inscribed records are ratingClass=3, ratingClassAlias=1 on dreadarea,
+rivenpilgrim, cataclysmcry and deinosphainein; their alias is preserved.
+
+Independent validation
+----------------------
+inspection/regression2/assets-audit.py read the actual last full test APK and
+both input APKs. It checked all 100 source song-folder entries for the 15 affected
+songs by CRC and length; decoded 53 JPEG/PNG images including jackets, ordinary
+backgrounds, clear layers and pack artwork; parsed all pages of 15 full Vorbis
+Oggs and verified preview bounds within their actual granule-derived duration.
+All passed. It also proved that corrected metadata differs only by the two
+explicit per-difficulty gate values and still contains exactly 1839 charts.
+Detailed results: assets-audit.json, assets-metadata.json.
+
+This is static evidence and host decoding. Android runtime behavior must still
+be checked on device after integrating the native central-state/start fixes.

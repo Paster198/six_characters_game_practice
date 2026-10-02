@@ -1,0 +1,5 @@
+00bfe52c ldr      x8, [x0, #0x30]
+00bfe530 and      w1, w1, #1
+00bfe534 strb     w1, [x0, #0x138]
+00bfe538 mov      x0, x8
+00bfe53c b        #0xefdfa0

@@ -1,0 +1,31 @@
+00a1a298 stp      x29, x30, [sp, #-0x20]!
+00a1a29c str      x19, [sp, #0x10]
+00a1a2a0 mov      x29, sp
+00a1a2a4 ldr      w8, [x1]
+00a1a2a8 mov      x19, x0
+00a1a2ac mov      w0, wzr
+00a1a2b0 cmp      w8, #0xb
+00a1a2b4 b.hi     #0xa1a2f0
+00a1a2b8 mov      w9, #1
+00a1a2bc lsl      w9, w9, w8
+00a1a2c0 mov      w10, #0x479
+00a1a2c4 tst      w9, w10
+00a1a2c8 b.eq     #0xa1a2fc
+00a1a2cc ldr      x8, [x19]
+00a1a2d0 ldr      w1, [x1, #0x10]
+00a1a2d4 mov      x0, x19
+00a1a2d8 ldr      x8, [x8, #0x18]
+00a1a2dc blr      x8
+00a1a2e0 mov      w8, w0
+00a1a2e4 and      w8, w8, #1
+00a1a2e8 mov      w0, wzr
+00a1a2ec strb     w8, [x19, #0x20]
+00a1a2f0 ldr      x19, [sp, #0x10]
+00a1a2f4 ldp      x29, x30, [sp], #0x20
+00a1a2f8 ret      
+00a1a2fc cmp      w8, #0xb
+00a1a300 b.ne     #0xa1a2f0
+00a1a304 ldrb     w8, [x19, #0x20]
+00a1a308 cmp      w8, #0
+00a1a30c cset     w0, ne
+00a1a310 b        #0xa1a2f0

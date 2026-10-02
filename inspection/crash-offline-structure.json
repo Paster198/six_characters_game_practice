@@ -1,0 +1,42 @@
+{
+  "manifest": {
+    "only_internet_permission_removed": true,
+    "access_network_state_retained": true
+  },
+  "layouts": [
+    {
+      "entry": "assets/layouts/mainmenu/MainMenu.csb",
+      "targets": [
+        {
+          "node": "/Layer/networkButton",
+          "original_signed_offset": -1030,
+          "patched_signed_offset": -12360,
+          "vtable_size": 46,
+          "object_size": 84,
+          "boolean_field_offsets": [
+            4,
+            5
+          ]
+        }
+      ],
+      "node_tree_and_timelines_retained": true
+    },
+    {
+      "entry": "assets/layouts/topbar/TopBar.csb",
+      "targets": [
+        {
+          "node": "/Layer/memoriesButton",
+          "original_signed_offset": -3234,
+          "patched_signed_offset": -3780,
+          "vtable_size": 46,
+          "object_size": 84,
+          "boolean_field_offsets": [
+            4,
+            5
+          ]
+        }
+      ],
+      "node_tree_and_timelines_retained": true
+    }
+  ]
+}

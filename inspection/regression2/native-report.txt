@@ -1,0 +1,170 @@
+Offline catalogue regression 2: native analysis and bounded repairs
+Engine: original 7.0.255c arm64 libcocos2dcpp.so
+SHA256: 72e42cb4925655ecfef98bf2dbf92a5ac05145eb005a531c96c11b927a46e6dc
+Date: 2026-10-02
+
+Scope and status
+---------------
+The full-offline engine additions are now 13 instruction replacements, including
+the previous 4 and 9 new ones. Implementation: tools/prepare_offline_characters.py.
+The parent combines these with its existing startup/metadata integrity patches.
+No original APK, resources, prepared engine or APK was modified by this audit.
+The implementation still rejects any original engine whose whole-file hash differs.
+Each instruction is checked in BOTH original and intermediate engine, and the
+whole output is checked against the allowed changed-byte set.
+
+Static findings are established by disassembly, not an Android crash log. The
+specific empty Unlock dereferences below are unconditional once their branch is
+entered. Device verification of the fixed build remains necessary. In particular,
+the user did not identify DIE IN's selected difficulty, so its ETR defect is proven
+but must not be presented as a proven explanation for every possible DIE IN crash.
+
+1. Visibility, displayed lock state, and playability are separate native paths
+---------------------------------------------------------------------------
+Song::hasDifficulty 0x8bed58 reads Song+0x250[normalized difficulty].
+Song::difficulty 0x17303f8 reads Song+0x228[normalized difficulty * 8].
+Ordinary list construction 0xaab270 uses hasDifficulty, pack visibility, hidden
+predicate 0xeeac50, and difficulty world requirement 0xe16058. It does not merely
+consult song ownership. Clearing purchase or remote_dl alone does not free it.
+
+The Difficulty parser defaults an ABSENT hidden_until to hidden enum 3 for BYD:
+0x193d6fc loads ratingClass, 0x193d700 compares 3, 0x193d704 selects that enum.
+An explicit empty string reaches 0x193d870 and selects enum 0. Similarly, omitted
+world_unlock on BYD defaults true (0x193db24/28 and following fallback).
+The assets agent has independently fixed every included difficulty to explicitly
+write hidden_until="" and world_unlock=false. Deleting these fields is incorrect.
+
+Central displayed state 0x1809390 returns flags in x0 (five byte booleans) and
+lock reason in w1. These control title, jacket, click/login and difficulty UI.
+0xbe14a4 tests w1 != 0 as locked; e.g. jacket 0xefc484 at 0xefc6a8 calls this and
+0xefc6b0 tests bit 32. The lock branch reaches 0x18d7b88, which specifically returns
+img/jacket_locked_konzetsu.jpg for Divine Oblivion. The actual song jackets exist.
+
+Even after metadata cleanup, this function dispatches Song+0x257 to Inscribed
+state helper 0xa6c3f0 and pack konzetsu to 0x17b0f34, and processes hardcoded
+narrative masks via 0x14adcd8. Those retained gates explain why ownership-only
+patches were insufficient.
+
+New replacements, all AFTER the untouched hasDifficulty call/test:
+  0x18093d8 e00314aa -> f3031faa  mov x19,xzr
+  0x18093dc e103162a -> f6031f2a  mov w22,wzr
+  0x18093e0 069cfc97 -> e5000014  b 0x1809774
+For an existing difficulty return normal state {flags=0, reason=0} through the
+original cookie check, stack/register restoration and return. No temporary object
+has been allocated at this point. For a missing difficulty, the original branch
+to 0x1809428 still returns all five flags true and reason 1.
+
+2. Black Fate empty Unlock condition on pack entry
+------------------------------------------------
+0x18093fc checks Song flag mask 2. The true path does:
+  0x1809404 mov x0,x21 (Difficulty)
+  0x1809408 bl 0xff4e0c (get UnlockCondition)
+  0x180940c ldr x8,[x0]              <-- no null check
+  0x1809410 ldr x8,[x8,#8]
+  0x1809414 blr x8
+With offline unlocks=[], the returned condition can be null. The repaired central
+state exits before this block for every existing chart.
+
+The assets agent independently established SongSelect::selectPack 0x16f607c
+calls the state function at 0x16f6604 and 0x16f66e8 during automatic selection,
+before the player manually picks a song. This matches the reported pack-cover
+entry point. See assets-blackfate-native.txt for that independent disassembly.
+ff4e0c has five direct call sites: three inside the repaired function, and two
+inside 0x1594c70 with immediate null checks. No other unguarded direct call was
+found in this engine.
+
+3. Existing-chart playability (Final Verdict, Silent Answer, BYD/Inscribed)
+------------------------------------------------------------------------
+Predicate 0x150560c separately checks null Song, hasDifficulty, hidden state,
+ownership, world requirement, 0x12fbb14 condition checks, and 0x1501c18 story
+progress. The latter has hardcoded finale/epilogue/last/lasteternity prerequisites
+and maps ETR to FTR for story progress. Empty purchase fields do not bypass it.
+
+  0x1505644 e00314aa -> 33008052  mov w19,#1
+  0x1505648 e103132a -> 06000014  b 0x1505660
+The original null test at 0x1505630 and hasDifficulty call/test at 0x150563c/40
+are retained. Null/missing returns false at 0x150565c. Valid local chart returns
+true through its original cookie/epilogue before allocations. This is catalogue
+playability; the later actual file existence checks have not been patched away.
+
+4. Starting local BYD also had a downloader/cache/token gate
+----------------------------------------------------------
+SongSelectScene::getRequiredAssetsAndTokenForStartGameScene is 0xd2a368.
+It calls 0x13360a4, which combines DownloadManager status 0x9bcf88/0x950c88.
+Those inspect the downloader's asset metadata/cache and can report download
+required even when a complete AFF/music file is bundled in the APK.
+Original remote_dl=false branched to 0xd2a3ec, where BYD was independently routed
+back to downloader/token acquisition 0xd2afcc. That creates a login-capable
+callback and invokes 0x172660c. Local BYD needs the same local path as local FTR.
+
+  0xd2a3e4 49000034 -> c9000034  cbz w9,0xd2a3fc
+Only remote_dl=false takes the new target. remote_dl=true retains its branch.
+Unchanged local checks after it include:
+  0xd2a410 first-play advanced tutorial helper (not login)
+  0xd2a424 bl 0x1956124 (real AFF path/FileUtils existence)
+  0xd2a458 bl 0x15c7e54 (real audio path)
+  0xd2a46c FileUtils vtable+0x108 (audio existence)
+  0xd2a484/48c missing audio/AFF -> original missing-resource flow
+
+5. Ordinary start and narrative media
+------------------------------------
+After successful AFF/audio checks, original non-World starts entered extra
+last/lasteternity narrative prompt logic. Cached story progress could activate
+that prompt before GameScene's already-disabled special-modifier selector.
+The new local build intentionally uses ordinary play for these bundled charts.
+
+  0xd2a494 c11b0054 -> a1410054  b.ne 0xd2acc8
+The preceding cmp w24,#1 is unchanged. World mode 1 retains its original branch.
+Non-World starts use the existing normal callback setup at 0xd2acc8, which
+initializes its return parameters itself. The skipped block had no pre-existing
+live temporaries needing release; the audio-path temporary is still cleaned at
+0xd2afb4..0xd2afc8. No server success result or story completion is synthesized.
+
+6. DIE IN and Aether Crest ETR have another independent empty Unlock defect
+-------------------------------------------------------------------------
+DIE IN helper 0x8a6048 checks id="diein" and diff=4, then calculates ownership
+requirements for two collaboration packs. Even with ownership patched true,
+it continues and executes:
+  0x8a62a8 normalize difficulty 4
+  0x8a62b0 ldr x8,[Song + slot + 0x228] (Difficulty)
+  0x8a62b4 ldr x0,[x8]                 (Unlock object)
+  0x8a62b8 bl 0x1313478
+0x1313478 unconditionally reads [x0+0x28] at 0x131348c. With no Unlock object
+this is a null read. Existing central UI/playability patches do not cover every
+caller: direct callers of this helper are 0xc76d10, 0xd94114, 0x12fbc74 and
+0x131e188 (the last one independently found by the assets reviewer).
+
+Aether Crest helper 0x114e23c has the same defect at 0x114e4ac/0x114e4b0.
+Both helpers return true for an additional cooperation purchase requirement,
+false when no such restriction applies. Thus in the full local catalogue they
+can take their existing false exits, leaving actual chart/resource checks outside.
+
+  0x8a60f4 61120054 -> 93000014  b 0x8a6340
+  0x114e2ec 01150054 -> a8000014 b 0x114e58c
+At each patch point the song-id temporary has been released, w21 is zero and
+the cookie is initialized. No pack-name vector is yet allocated. Each existing
+epilogue returns w21 & 1, i.e. false, restoring all saved registers and stack.
+These two patches cover all callers instead of relying on only one UI path.
+
+Direct calls to 0x1313478 were scanned as a bounded check of the same null risk.
+Besides the two repaired collaboration helpers, most sites explicitly test null.
+Two remaining unchecked calls in 0x110baec/0x1162128 operate specifically on
+hardcoded tempestissimo in narrative lambda construction, outside ordinary play;
+the full-offline special scene selector already omits that modifier. They were
+not globally patched and are not claimed safe for unsupported narrative mode.
+
+Verification
+------------
+Run: E:/Python/Python311/python.exe inspection/regression2/native-verify.py
+Optionally append a prepared engine path to check final bytes without rebuilding.
+PASS: all 13 additions, 9 independently listed new instruction fingerprints,
+15 retained critical ranges, and execution of the actual small guard slices
+with null/existing/missing inputs for every difficulty 0..4. Local/remote and
+mode branches and the two cooperation-helper exits were also checked.
+This verifier uses a restricted instruction-slice interpreter with hasDifficulty
+stubbed; it is not an emulator or a replacement for a phone runtime test.
+
+Source evidence: native-1809390.txt, native-150560c.txt,
+native-start-assets.txt, native-download-states.txt, native-collaboration-etr.txt,
+native-condition-callers.txt, native-12fbb14.txt, native-aab270.txt,
+native-19398d8.txt and the independent assets agent's reports.

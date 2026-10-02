@@ -1,0 +1,51 @@
+{
+  "engine_sha256": "72e42cb4925655ecfef98bf2dbf92a5ac05145eb005a531c96c11b927a46e6dc",
+  "algorithm": "md5((md5(asset_bytes).hexdigest() * 2).encode(\"ascii\")).hexdigest()",
+  "startup_callback_rtti": "NSt6__ndk110__function6__funcIZN7cocos2d11ThreadTasks7enqueueIRZN10StartScene4initEvE4$_10EEvRKNS_8functionIFvPvEEES9_OT_EUlvE_NS_9allocatorISG_EEFvvEEE",
+  "callback_vtable": "0x1aa26c0",
+  "callback_invoke": "0x13dafd0",
+  "exit_plt": "0x1a5bb20",
+  "exit_got": "0x1b85f60",
+  "exit_symbol": "exit",
+  "files": [
+    {
+      "asset": "assets/songs/songlist",
+      "constant_va": "0x56ef5b",
+      "constant_file_offset": "0x56ef5b",
+      "global_pointer_va": "0x1bcacd0",
+      "original_sha256": "d0fa964e32d16ca486255d123880e200bb01504cdb26c78c729de9ae0120ba86",
+      "replacement_sha256": "f9d23c71f8dd0d794d85ec61719bcdd3eceaa9306e7804e331fa42a134fd9ee4",
+      "original_native_digest": "1eb4b7a347871f43c0db99af63bdf599",
+      "original_recomputed_digest": "1eb4b7a347871f43c0db99af63bdf599",
+      "replacement_digest": "93d541627e4c45f7ea69e3f72307c187",
+      "original_matches": true,
+      "replacement_matches_old_constant": false
+    },
+    {
+      "asset": "assets/songs/packlist",
+      "constant_va": "0x58c15d",
+      "constant_file_offset": "0x58c15d",
+      "global_pointer_va": "0x1bcace0",
+      "original_sha256": "f63592697b5325b5084e2b1f8d0829ce67ad8570b0b458fb164796c307b608b6",
+      "replacement_sha256": "7a2a0ca5f4642ab4b2ea879a73b324c6a59ad6679d8165284b06badf2247ac11",
+      "original_native_digest": "08a76f3ccd517273f4aa71d3d6037841",
+      "original_recomputed_digest": "08a76f3ccd517273f4aa71d3d6037841",
+      "replacement_digest": "c754825f56fdb74605a2092fceeacfb7",
+      "original_matches": true,
+      "replacement_matches_old_constant": false
+    },
+    {
+      "asset": "assets/songs/unlocks",
+      "constant_va": "0x58c17e",
+      "constant_file_offset": "0x58c17e",
+      "global_pointer_va": "0x1bcac30",
+      "original_sha256": "18215553fd85230359951a1cd62d2b8b67190fd22d9f6c031244e03668bd13e0",
+      "replacement_sha256": "5d7afc619586bc0b8fb138e6353a7b8f8f5f5b887f1c0741db66d5f5aff0fbc0",
+      "original_native_digest": "04ab6071bb921db76317903464c64bec",
+      "original_recomputed_digest": "04ab6071bb921db76317903464c64bec",
+      "replacement_digest": "e990803900a04905b2c72ed2a4d0eb5c",
+      "original_matches": true,
+      "replacement_matches_old_constant": false
+    }
+  ]
+}

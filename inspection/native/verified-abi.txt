@@ -1,0 +1,124 @@
+Verified ABI notes for original ARM64 libcocos2dcpp.so in this APK
+================================================================
+Addresses below are virtual offsets from the shared object's load base.
+This binary is stripped; names are inferred from RTTI, vtable roles and inspected
+callers. No addresses are intended to support other versions/architectures.
+
+GameScene
+  RTTI              0x1b47720
+  primary vtable    0x1b262e8
+  constructor       0x7eafb0
+  init              0xeb2494
+  pause(bool,bool)  0x9d3508, primary vtable +0x510
+  retry(bool)       0x1a3bd48, primary vtable +0x518
+  isFinished        0xafe464, primary vtable +0x520
+  finish(bool)      0x11940cc, primary vtable +0x540
+  destructor        0xbd0f24 / 0x152bc7c
+  GameModelDelegate at scene +0x2e8 (three methods)
+  PauseDelegate     at scene +0x2f0 (four methods)
+  +0x308 SpecialSceneModifier pointer
+  +0x300 GameSceneVisualControlHandler pointer
+  +0x34c..0x373 PlayParameters copied by retry to the new scene
+  +0x34d bool permits continuation on HP failure
+         Proven by model update 0x928c28..0x928c50: nonzero selects continue,
+         zero branches to the failure delegate at 0x928d2c.
+  +0x3b0 TrackLayer pointer
+  +0x3c0 UILayer pointer
+  +0x3e0 GameModel pointer
+  +0x49a finished bool (written at the very start of finish)
+  +0x4b0 paused bool
+  +0x4b4 start offset, milliseconds
+
+retry(false) reconstructs a new scene. retry(true) additionally copies the
+current model time into newScene+0x4b4. The new scene's init consumes +0x4b4:
+  0xeb3210 onward: Path IV manager mode 4 -> mode2 skip to challengeTime-3000
+  0xeb3250 onward: nonzero +0x4b4 -> mode1 seek
+Reusing a judged model for backwards jumps does not restore consumed notes.
+
+GameModel
+  RTTI              0x1b0d630
+  primary vtable    0x1b7cd48
+  factory           0x10a7d74
+  init              0x8dd064
+  update            0x9283c0
+  currentTime       0xd2f348
+  offsetTime(delta,mode) 0x9ce624
+  +0x30 GameTimeline pointer
+  +0x38 play/scoring state pointer
+  +0x40 GameModelDelegate pointer
+  +0x54 camera transition start (int milliseconds)
+  +0x58 camera direction (int)
+  +0x5c camera duration (float)
+  +0x60 camera scale (float)
+  +0x64 previous camera scale (float)
+  +0x68 lane transition start (int)
+  +0x6c lane direction (int)
+  +0x70 lane duration (float)
+  +0x74 lane transition value (float)
+  +0x88/+0x90 vector begin/end of chart timing-group tree pointers
+  +0xa0/+0xa8 vector begin/end of currently active note pointers
+  +0x138 paused bool
+  +0x139 finished bool (model-side)
+  +0x13c/+0x140 flags set by HP failure continuation
+
+GameTimeline
+  vtable            0x1b417a0
+  update            0xccbe74
+  offsetTime        0x19768d4
+  pause(bool)       0xefdfa0
+  +0x10 monotonic origin in milliseconds (int64)
+  +0x18 second wall-time origin (int64)
+  +0x20 raw current milliseconds (int32)
+  +0x24 paused timestamp relative to start offset (int32)
+  +0x28 pause compensation (int32)
+  +0x2c paused (bool)
+  +0x2d started (bool)
+  +0x2e music started (bool)
+  +0x2f seek fade option (bool)
+  +0x30 audio offset (int32)
+  +0x34 start offset (int32)
+  +0x38 audio origin adjustment (int32)
+  Clock 0xc9cc78 returns chrono nanoseconds /1,000,000 as int64 ms.
+
+offsetTime modes
+  mode0: subtract delta from both int64 origins; no audio seek.
+  mode1: add delta to start offset, update clock, seek audio.
+  mode2: mode1 + skip earlier notes in model.
+The skip loop compares note+0x18 <= delta+3000. It handles holds, arcs,
+taps and bars through their existing virtual judgment functions; it does not
+reconstruct old camera/scene control state. mode2 is valid on a fresh model.
+Do not write a negative start offset for A<3000: the existing clock adds its
+own -3000 pre-roll whenever the start offset is <=0.
+
+Scene controls / enwiden reconstruction
+  parser            0x184b94c
+  handler           0x19dc448
+  model camera setter 0xa8abf4
+  LogicSceneControl vtable 0x1a7daf0, RTTI 0x1b058c0
+  Note +0x18 int start time; +0x64 int scene-control type
+  Control +0x68 float duration; +0x6c int direction
+  Type5 = enwidencamera; type6 = enwidenlanes
+  type5 writes model+0x54/+0x58/+0x5c
+  type6 writes model+0x68/+0x6c/+0x70
+  Model update recomputes camera as
+    clamp(direction>=1 ? 1+.5*(time-start)/duration
+                       : 1.5-.5*(time-start)/duration, 1, 1.5)
+  Lane progress uses clamp(direction>=1 ? (time-start)/duration
+                                       : 1-(time-start)/duration, 0, 1).
+
+All-note tree shape, mirrored from 0x9ce670..0x9ceac8
+  group pointer -> libc++ tree begin node at +0, end sentinel at +8
+  node +0 left, +8 right, +0x10 parent
+  node +0x28/+0x30 begin/end of vector<LogicNote*>
+  Successor traversal is implemented in native/practice_scene.cpp.
+The helper only recognizes the exact LogicSceneControl vtable and types5/6.
+It restores the last event at/before the actual post-seek chart time, including
+the scale already reached within an in-progress transition. It does not alter
+note judgments or general AFF camera events. A synthetic 64-bit ABI test covers
+multi-node traversal, forward/backward targets, defaults, and invalid vtable.
+
+Status / limits
+  Static ABI findings are supported by the disassembly files in this folder.
+  Runtime Android testing has not been performed by this analysis subtask.
+  analyze.py's fast ADRP reference scanner may yield false positives because
+  it approximates register lifetimes; findings above were checked in disassembly.

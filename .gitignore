@@ -1,3 +1,4 @@
-# APKs are preserved as split assets in the full-archive Release.
+# Installers are published as split assets in GitHub Releases.
 *.apk
+*.ipa
 /.github-upload/
